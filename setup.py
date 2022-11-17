@@ -20,7 +20,7 @@ def read(*names, **kwargs):
 
 setup(
     name='second-brain-tools',
-    version='0.0.0',
+    version='0.0.1',
     license='Apache-2.0',
     description='This project is a toolset for Second Brain, This would help us to quickly and more efficiently create notes using Second Brain Vault.',
     long_description='{}\n{}'.format(
