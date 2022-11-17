@@ -22,9 +22,8 @@ import os
 
 def main():
     """
-
     """
-    print("Hi")
+
     setup()
     return 0
 
@@ -32,7 +31,6 @@ def main():
 
 def setup():
   check=os.path.isfile(".env")
-  print(check)
   if check == True:
     print("File already exist,Do you want to overwrite?")
     args1=input("Enter your choice, Y/N : ")
@@ -47,6 +45,7 @@ def setup():
       exit()
       
   elif check == False:
+    print("Config file is missing, generating one now..")
     Second_Brain_Directory_input = input("Please enter your Vault dir: ")
     with open ('.env','w') as dot_env:
         dot_env.write ("Second_Brain_Directory = " + "\"" + Second_Brain_Directory_input + "\"")
