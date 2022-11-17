@@ -14,20 +14,39 @@ Why does this file exist, and why not put this in __main__?
 
   Also see (1) from http://click.pocoo.org/5/setuptools/#setuptools-integration
 """
-import sys
+
+# Importing modules
+import os
 
 
-def main(argv=sys.argv):
+
+def main():
     """
-    Args:
-        argv (list): List of arguments
 
-    Returns:
-        int: A return code
-
-    Does stuff.
     """
-    print(argv)
+    print("Hi")
+    setup()
     return 0
 
 ## Starting the module 
+
+def setup():
+  check=os.path.isfile(".env")
+  print(check)
+  if check == True:
+    print("File already exist,Do you want to overwrite?")
+    args1=input("Enter your choice, Y/N : ")
+    if args1 == "Y":
+      os.remove(".env")
+      Second_Brain_Directory_input = input("Please enter your Vault dir: ")
+      with open ('.env','w') as dot_env:
+        dot_env.write ("Second_Brain_Directory = " + "\"" + Second_Brain_Directory_input + "\"")
+
+    elif args1 == "N":
+      print ("Nothing to do, Exiting...")
+      exit()
+      
+  elif check == False:
+    Second_Brain_Directory_input = input("Please enter your Vault dir: ")
+    with open ('.env','w') as dot_env:
+        dot_env.write ("Second_Brain_Directory = " + "\"" + Second_Brain_Directory_input + "\"")
