@@ -1,0 +1,71 @@
+# This file exists so you can easily regenerate your project.
+#
+# `cookiepatcher` is a convenient shim around `cookiecutter`
+# for regenerating projects (it will generate a .cookiecutterrc
+# automatically for any template). To use it:
+#
+#    pip install cookiepatcher
+#    cookiepatcher gh:ionelmc/cookiecutter-pylibrary Second-Brain-Tools
+#
+# See:
+#    https://pypi.org/project/cookiepatcher
+#
+# Alternatively, you can run:
+#
+#    cookiecutter --overwrite-if-exists --config-file=Second-Brain-Tools/.cookiecutterrc gh:ionelmc/cookiecutter-pylibrary
+
+default_context:
+    allow_tests_inside_package: 'no'
+    appveyor:                  'no'
+    c_extension_function:      'longest'
+    c_extension_module:        '_second_brain_tools'
+    c_extension_optional:      'no'
+    c_extension_support:       'no'
+    c_extension_test_pypi:     'no'
+    c_extension_test_pypi_username: 'rohanbatrain'
+    codacy:                    'no'
+    codacy_projectid:          '[Get ID from https://app.codacy.com/gh/rohanbatrain/Second-Brain-Tools/settings]'
+    codeclimate:               'no'
+    codecov:                   'yes'
+    command_line_interface:    'plain'
+    command_line_interface_bin_name: 'second-brain-tools'
+    coveralls:                 'no'
+    distribution_name:         'second-brain-tools'
+    email:                     'me@rohanbatra.in'
+    full_name:                 'Rohan Batra'
+    github_actions:            'yes'
+    github_actions_osx:        'yes'
+    github_actions_windows:    'yes'
+    legacy_python:             'no'
+    license:                   'Apache Software License 2.0'
+    linter:                    'flake8'
+    package_name:              'second_brain_tools'
+    pre_commit:                'yes'
+    pre_commit_formatter:      'black'
+    project_name:              'Second-Brain-Tools'
+    project_short_description: 'This project is a toolset for Second Brain, This would help us to quickly and more efficiently create notes using Second Brain Vault.'
+    pypi_badge:                'yes'
+    pypi_disable_upload:       'no'
+    release_date:              'today'
+    repo_hosting:              'github.com'
+    repo_hosting_domain:       'github.com'
+    repo_main_branch:          'main'
+    repo_name:                 'Second-Brain-Tools'
+    repo_username:             'rohanbatrain'
+    requiresio:                'yes'
+    scrutinizer:               'no'
+    setup_py_uses_pytest_runner: 'no'
+    setup_py_uses_setuptools_scm: 'no'
+    sphinx_docs:               'no'
+    sphinx_docs_hosting:       'https://Second-Brain-Tools.readthedocs.io/'
+    sphinx_doctest:            'no'
+    sphinx_theme:              'sphinx-rtd-theme'
+    test_matrix_configurator:  'no'
+    test_matrix_separate_coverage: 'no'
+    travis:                    'no'
+    travis_osx:                'no'
+    version:                   '0.0.0'
+    version_manager:           'bump2version'
+    website:                   'rohanbatra.in'
+    year_from:                 '2022'
+    year_to:                   '2023'
