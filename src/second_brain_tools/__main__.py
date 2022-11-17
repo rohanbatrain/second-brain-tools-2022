@@ -1,5 +1,5 @@
 """
-Entrypoint module, in case you use `python -msecond_brain_tools`.
+Entrypoint module, in case you use `python -m second_brain_tools`.
 
 
 Why does this file exist, and why __main__? For more info, read:
@@ -8,9 +8,11 @@ Why does this file exist, and why __main__? For more info, read:
 - https://docs.python.org/2/using/cmdline.html#cmdoption-m
 - https://docs.python.org/3/using/cmdline.html#cmdoption-m
 """
+
 import sys
 
 from second_brain_tools.cli import main
 
 if __name__ == "__main__":
     sys.exit(main())
+
