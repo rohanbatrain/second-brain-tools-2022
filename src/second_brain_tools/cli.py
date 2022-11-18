@@ -26,7 +26,7 @@ no_vault = f"""A Second Brain Vault is required in order to run this script \n Y
 def main():
     """
     """
-    setup()
+    #setup()
     return 0
 
 ## Starting the module 
