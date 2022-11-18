@@ -20,12 +20,13 @@ import os
 
 
 # Default Variable
-GIT_URL = f"https://github.com/rohanbatrain/Second-Brain"
+GIT_URL = "https://github.com/rohanbatrain/Second-Brain"
 NO_VAULT= f"""A Second Brain Vault is required in order to run this script
 \n You can get a copy from : {GIT_URL}"""
 
 def main():
     """
+    Main Function, aka CLI app.
     """
     #setup()
     return 0
@@ -33,6 +34,9 @@ def main():
 ## Starting the module
 
 def setup():
+    """
+    A setup wizard to configure Second_Brain_Tools
+    """
     check=os.path.isfile(".env")
     if check is True:
         print("File already exist,Do you want to overwrite?")
@@ -58,7 +62,10 @@ def setup():
             print (NO_VAULT)
 
 def config():
+    """
+    Generates a config file named .env and appends the parameters as per user input.
+    """
     print("Config file is missing/removed. \n generating one now.. \n ")
-    SECOND_BRAIN_DIR= input("Please enter your Vault dir: ")
+    second_brain_dir = input("Please enter your Vault dir: ")
     with open ('.env','w', encoding="UTF.8") as dot_env:
-        dot_env.write ("Second_Brain_Directory = " + "\"" + SECOND_BRAIN_DIR + "\"")
+        dot_env.write ("Second_Brain_Directory = " + "\"" + second_brain_dir + "\"")
