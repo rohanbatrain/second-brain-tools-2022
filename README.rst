@@ -8,8 +8,7 @@ Overview
     :stub-columns: 1
 
     * - tests
-      - | |github-actions| |requires|
-        | |codecov|
+      - | |github-actions|  |codecov|
     * - package
       - | |version| |wheel| |supported-versions| |supported-implementations|
         | |commits-since|
