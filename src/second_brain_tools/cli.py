@@ -20,8 +20,9 @@ import os
 
 
 # Default Variable
-git_url = "https://github.com/rohanbatrain/Second-Brain"
-no_vault = f"""A Second Brain Vault is required in order to run this script \n You can get a copy from : {git_url}"""
+GIT_URL = f"https://github.com/rohanbatrain/Second-Brain"
+NO_VAULT= f"""A Second Brain Vault is required in order to run this script
+\n You can get a copy from : {GIT_URL}"""
 
 def main():
     """
@@ -29,37 +30,35 @@ def main():
     #setup()
     return 0
 
-## Starting the module 
+## Starting the module
 
 def setup():
-  check=os.path.isfile(".env")
-  if check == True:
-    print("File already exist,Do you want to overwrite?")
+    check=os.path.isfile(".env")
+    if check is True:
+        print("File already exist,Do you want to overwrite?")
     args1=input("Enter your choice, Y/N : ")
     if args1 == "Y":
-      os.remove(".env")
-      config()
+        os.remove(".env")
+        config()
 
     elif args1 == "N":
-      print ("Nothing to do, Exiting...")
-      exit()
-      
-  elif check == False:
-    print("Do you have vault folder ready locally in your system?")
+        print ("Nothing to do, Exiting...")
+        exit()
+    elif check is False:
+        print("Do you have vault folder ready locally in your system?")
     choice_1 = input("Y/N: ")
     if choice_1 == "Y":
-      config()
+        config()
     elif choice_1 == "N":
-      print("Do you have your vault folder in github?")
-      choice_2 = input("Y/N: ")
-      if choice_2 =="Y":
-        print ("Would you like to fetch it from the github?")
-      elif choice_2 =="N":
-        print (no_vault)
-        
+        print("Do you have your vault folder in github?")
+        choice_2 = input("Y/N: ")
+        if choice_2 =="Y":
+            print ("Would you like to fetch it from the github?")
+        elif choice_2 =="N":
+            print (NO_VAULT)
 
 def config():
     print("Config file is missing/removed. \n generating one now.. \n ")
-    Second_Brain_Directory_input = input("Please enter your Vault dir: ")
-    with open ('.env','w') as dot_env:
-        dot_env.write ("Second_Brain_Directory = " + "\"" + Second_Brain_Directory_input + "\"")
+    SECOND_BRAIN_DIR= input("Please enter your Vault dir: ")
+    with open ('.env','w', encoding="UTF.8") as dot_env:
+        dot_env.write ("Second_Brain_Directory = " + "\"" + SECOND_BRAIN_DIR + "\"")
