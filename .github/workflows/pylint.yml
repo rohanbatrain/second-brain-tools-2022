@@ -20,4 +20,4 @@ jobs:
         pip install pylint pylint-exit
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files 'src/second_brain_tools/*.py') || python pylint-exit $?
+        pylint $(git ls-files 'src/second_brain_tools/*.py') || pylint-exit $?
