@@ -20,6 +20,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        python -m pip install tox tox-gh-actions
+        python -m pip install tox tox-gh-actions pylint pylint-exit
     - name: Test with tox
       run: tox
+    - name: Analysing the code with pylint
+      run: |
+        pylint $(git ls-files 'src/second_brain_tools/*.py') || pylint-exit $?
