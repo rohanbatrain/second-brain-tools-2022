@@ -6,11 +6,11 @@ Why does this file exist, and why not put this in __main__?
   You might be tempted to import things from __main__ later, but that will cause
   problems: the code will get executed twice:
 
-  - When you run `python -m Second_Brain_Tools` python will execute
+  - When you run `python -m second_brain_tools` python will execute
     ``__main__.py`` as a script. That means there won't be any
-    ``Second_Brain_Tools.__main__`` in ``sys.modules``.
+    ``second_brain_tools.__main__`` in ``sys.modules``.
   - When you import __main__ it will get executed again (as a module) because
-    there's no ``Second_Brain_Tools.__main__`` in ``sys.modules``.
+    there's no ``second_brain_tools.__main__`` in ``sys.modules``.
 """
 
 # Importing modules
@@ -33,7 +33,7 @@ def main():
 
 def setup():
     """
-    A setup wizard to configure Second_Brain_Tools
+    A setup wizard to configure second_brain_tools
     """
     check=os.path.isfile(".env")
     if check is True:

@@ -51,21 +51,21 @@ def dir_len_three (dir_code):
     returns the absolute directory path of the code in the root dir.
     """
     #Implemented regex for making flow choice.
-    if re.match("01", dir_code):
+    if re.match("01^", dir_code):
         dir_path = dir_len_three_capture_system(dir_code)
-    elif re.match("02", dir_code):
+    elif re.match("02^", dir_code):
         dir_path = dir_len_three_production_system(dir_code)
-    elif re.match("03", dir_code):
+    elif re.match("03^", dir_code):
         dir_path = dir_len_three_knowledge_base(dir_code)
-    elif re.match("04", dir_code):
+    elif re.match("04^", dir_code):
         dir_path = dir_len_three_evergreen(dir_code)
-    elif re.match("05", dir_code):
+    elif re.match("05^", dir_code):
         dir_path = dir_len_three_projects(dir_code)
-    elif re.match("06", dir_code):
+    elif re.match("06^", dir_code):
         dir_path = dir_len_three_personal(dir_code)
-    elif re.match("07", dir_code):
+    elif re.match("07^", dir_code):
         dir_path = dir_len_three_attachments_and_templates(dir_code)
-    elif re.match("08", dir_code):
+    elif re.match("08^", dir_code):
         dir_path = dir_len_three_archive(dir_code)
     else :
         dir_path = DIR_NOT_FOUND
@@ -82,7 +82,6 @@ def dir_len_three_capture_system(dir_code):
         dir_path = "01_Capture-System/01B_Processed/"
     elif dir_code == "01C":
         dir_path = "01_Capture-System/01C_Periodic-Notes/"
-
     #01_Capture_System_regex
     else:
         dir_path = DIR_NOT_FOUND

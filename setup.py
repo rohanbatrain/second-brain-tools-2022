@@ -19,7 +19,7 @@ def read(*names, **kwargs):
 
 
 setup(
-    name='Second_Brain_Tools',
+    name='second_brain_tools',
     version='0.0.1',
     license='Apache-2.0',
     description='This project is a toolset for Second Brain, This would help us to quickly and more efficiently create notes using Second Brain Vault.',
@@ -77,7 +77,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'second-brain-tools = Second_Brain_Tools.cli:main',
+            'second-brain-tools = second_brain_tools.cli:main',
         ]
     },
 )

@@ -74,8 +74,8 @@ To use the project:
 
 .. code-block:: python
 
-    import Second_Brain_Tools
-    Second_Brain_Tools.longest()
+    import second_brain_tools
+    second_brain_tools.longest()
 
 
 Development
