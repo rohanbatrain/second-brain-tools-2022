@@ -25,4 +25,4 @@ jobs:
       run: tox
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files 'src/second_brain_tools/*.py') || pylint-exit $?
+        pylint $(git ls-files 'src/Second_Brain_Tools/*.py') || pylint-exit $?

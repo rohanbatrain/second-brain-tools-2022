@@ -1,5 +1,5 @@
 """
-Entrypoint module, in case you use `python -m second_brain_tools`.
+Entrypoint module, in case you use `python -m Second_Brain_Tools`.
 
 
 Why does this file exist, and why __main__? For more info, read:
@@ -11,7 +11,7 @@ Why does this file exist, and why __main__? For more info, read:
 
 import sys
 
-from second_brain_tools.cli import main
+from Second_Brain_Tools.cli import main
 
 if __name__ == "__main__":
     sys.exit(main())
