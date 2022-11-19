@@ -45,7 +45,7 @@ def setup():
 
     elif args1 == "N":
         print ("Nothing to do, Exiting...")
-        exit()
+        sys.exit()
     elif check is False:
         print("Do you have vault folder ready locally in your system?")
     choice_1 = input("Y/N: ")
