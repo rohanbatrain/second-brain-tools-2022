@@ -57,7 +57,12 @@ def setup():
         if choice_2 =="Y":
             print ("Would you like to fetch it from the github?")
         elif choice_2 =="N":
-            print (NO_VAULT)
+            print("Would you like to fetch it from our github repo?")
+            choice_3 = input("Y/N :")
+            if choice_3 == "Y":
+                print("Sure,Getting things ready.")
+            elif choice_3 == "N":
+                print (NO_VAULT)
 
 def config():
     """
