@@ -16,7 +16,6 @@ Why does this file exist, and why not put this in __main__?
 # Importing modules
 import os
 import sys
-import second_brain_tools.dir as sbt
 
 
 # Default Variable
@@ -28,6 +27,7 @@ def main():
     """
     Main Function, aka CLI app.
     """
+    print("Hello World")
     #setup()
 
     return 0
