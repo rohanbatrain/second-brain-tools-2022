@@ -5,7 +5,7 @@ But i would really like to hardcode the absolute path for error pruning my scrip
 """
 
 # imports
-# import re
+import re
 
 # Default values
 DIR_NOT_FOUND = "Wrong argument passed, the dir code you specified doesn't exist"
@@ -15,21 +15,21 @@ def initial_check(dir_code):
     Takes dir code as input and returns the absolute directory path of the code.
     """
     #root_dir_id_start
-    if dir_code == "^01":
+    if re.match("^01", dir_code):
         ic_01()
-    elif dir_code == "^02":
+    elif re.match("^02", dir_code):
         ic_02()
-    elif dir_code == "^03":
+    elif re.match("^03", dir_code):
         ic_03()
-    elif dir_code == "^04":
+    elif re.match("^04", dir_code):
         ic_04()
-    elif dir_code == "^05":
+    elif re.match("^05", dir_code):
         ic_05()
-    elif dir_code == "^06":
+    elif re.match("^06", dir_code):
         ic_06()
-    elif dir_code == "^07":
+    elif re.match("^07", dir_code):
         ic_07()
-    elif dir_code == "^08":
+    elif re.match("^08", dir_code):
         ic_08()
     #root_dir_id_end.
 
@@ -106,4 +106,4 @@ def ic_08():
 
 #### Testing //Comment out all the variables below in production.
 
-#initial_check("01")
+initial_check("01")
