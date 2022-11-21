@@ -65,6 +65,9 @@ def ic_root(dir_code):
     return dir_path
 
 def ic_root_regex (dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
     #ic_custom_regex-started
     if re.match("^01", dir_code):
         dir_path = ic_01(dir_code)
@@ -92,7 +95,7 @@ def ic_root_regex (dir_code):
 #ic_01-Started
 def ic_01(dir_code):
     """
-    Placeholder
+    Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "01A":
         dir_path = "01_Capture-System/01A_Inbox/"
@@ -104,16 +107,75 @@ def ic_01(dir_code):
     else:
         if re.match("^01A", dir_code):
             dir_path = ic_01a(dir_code)
+        if re.match("^01B", dir_code):
+            dir_path = ic_01b(dir_code)
+        if re.match("^01C", dir_code):
+            dir_path = ic_01c(dir_code)
     return dir_path
 #ic_01-Ended
 
 #ic_01A-Started
 def ic_01a(dir_code):
     """
-    Placeholder
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "01A1":
+        dir_path = "01_Capture-System/01A_Inbox/01A1_Quick-Capture"
+    elif dir_code == "01A2":
+        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture"
+    elif dir_code == "01A3":
+        dir_path = "01_Capture-System/01A_Inbox/01A3_Thought-Capture"
+    elif dir_code == "01A3":
+        dir_path = "01_Capture-System/01A_Inbox/01A4_API-Capture"
+    else:
+        if re.match("^01A1", dir_code):
+            dir_path = ic_01a1(dir_code)
+        if re.match("^01A2", dir_code):
+            dir_path = ic_01a2(dir_code)
+        if re.match("^01A3", dir_code):
+            dir_path = ic_01a3(dir_code)
+    return dir_path
+
+
+#ic_01a1-Started
+def ic_01a1(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
     """
     dir_path = print("---")
     return dir_path
+#newic_01a1-Ended
+
+
+#ic_01a2-Started
+def ic_01a2(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    dir_path = print("---")
+    return dir_path
+#ic_01a2-Ended
+
+
+#ic_01a3-Started
+def ic_01a3(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    dir_path = print("---")
+    return dir_path
+#ic_01a3-Ended
+
+
+#ic_01a4-Started
+def ic_01a4(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    dir_path = print("---")
+    return dir_path
+#ic_01a4-Ended
+
 #ic_01A_Ended
 
 # 01-Ended
@@ -122,7 +184,7 @@ def ic_01a(dir_code):
 # 02-Started
 def ic_02(dir_code):
     """
-    Placeholder
+    Takes dir_code as input and returns the absolute directory path of the code.
     """
     dir_path = print("---")
     return dir_path
@@ -132,7 +194,7 @@ def ic_02(dir_code):
 # 03-Started
 def ic_03(dir_code):
     """
-    Placeholder
+    Takes dir_code as input and returns the absolute directory path of the code.
     """
     dir_path = print("---")
     return dir_path
@@ -142,7 +204,7 @@ def ic_03(dir_code):
 # 04-Started
 def ic_04(dir_code):
     """
-    Placeholder
+    Takes dir_code as input and returns the absolute directory path of the code.
     """
     dir_path = print("---")
     return dir_path
@@ -152,7 +214,7 @@ def ic_04(dir_code):
 # 05-Started
 def ic_05(dir_code):
     """
-    Placeholder
+    Takes dir_code as input and returns the absolute directory path of the code.
     """
     dir_path = print("---")
     return dir_path
@@ -162,7 +224,7 @@ def ic_05(dir_code):
 # 06-Started
 def ic_06(dir_code):
     """
-    Placeholder
+    Takes dir_code as input and returns the absolute directory path of the code.
     """
     dir_path = print("---")
     return dir_path
@@ -172,7 +234,7 @@ def ic_06(dir_code):
 # 07-Started
 def ic_07(dir_code):
     """
-    Placeholder
+    Takes dir_code as input and returns the absolute directory path of the code.
     """
     dir_path = print("---")
     return dir_path
@@ -182,7 +244,7 @@ def ic_07(dir_code):
 # 08-Started
 def ic_08(dir_code):
     """
-    Placeholder
+    Takes dir_code as input and returns the absolute directory path of the code.
     """
     dir_path = print("---")
     return dir_path
