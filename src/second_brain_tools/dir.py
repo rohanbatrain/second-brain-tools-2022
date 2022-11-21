@@ -211,11 +211,54 @@ def ic_01a4(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    dir_path = print("---")
+    if dir_code == "01A4":
+        dir_path = "01_Capture-System/01A_Inbox/01A4_API-Capture/"
+    else :
+        print(dir_code)
+        dir_path = DIR_NOT_FOUND
     return dir_path
 #ic_01a4-Ended
 
 #ic_01A_Ended
+
+#ic_01B_Started
+def ic_01b(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "01B":
+        dir_path = "/home/rohan/Repos/Second-Brain/01_Capture-System/01B_Processed"
+    else :
+        print(dir_code)
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+#ic_01B_Ended
+
+#ic_01C_Started
+def ic_01c(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "01C":
+        dir_path = "/home/rohan/Repos/Second-Brain/01_Capture-System/01C_Periodic-Notes"
+    else :
+        dir_path = ic_01c1(dir_code)
+    return dir_path
+
+#ic_01C1_Started
+def ic_01c1(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "01C1":
+        dir_path = "/home/rohan/Repos/Second-Brain/01_Capture-System/01C_Periodic-Notes/01C1_Reminders"
+    else :
+        print(dir_code)
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+#ic_01C1_Ended
+
+#ic_01C_Ended
 
 # 01-Ended
 
