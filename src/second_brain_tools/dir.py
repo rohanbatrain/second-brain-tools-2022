@@ -107,9 +107,9 @@ def ic_01(dir_code):
     else:
         if re.match("^01A", dir_code):
             dir_path = ic_01a(dir_code)
-        if re.match("^01B", dir_code):
+        elif re.match("^01B", dir_code):
             dir_path = ic_01b(dir_code)
-        if re.match("^01C", dir_code):
+        elif re.match("^01C", dir_code):
             dir_path = ic_01c(dir_code)
     return dir_path
 #ic_01-Ended
@@ -130,30 +130,65 @@ def ic_01a(dir_code):
     else:
         if re.match("^01A1", dir_code):
             dir_path = ic_01a1(dir_code)
-        if re.match("^01A2", dir_code):
+        elif re.match("^01A2", dir_code):
             dir_path = ic_01a2(dir_code)
-        if re.match("^01A3", dir_code):
+        elif re.match("^01A3", dir_code):
             dir_path = ic_01a3(dir_code)
     return dir_path
-
 
 #ic_01a1-Started
 def ic_01a1(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    dir_path = print("---")
+    #Flow ended
+    print(dir_code)
+    dir_path = DIR_NOT_FOUND
     return dir_path
-#newic_01a1-Ended
-
+#ic_01a1-Ended
 
 #ic_01a2-Started
 def ic_01a2(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    dir_path = print("---")
+    if dir_code == "01A2A":
+        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2A_Social-Networking"
+    elif dir_code == "01A2B":
+        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2B_Professional-Networking"
+    else:
+        if re.match("^01A2A", dir_code):
+            dir_path = ic_01a2a(dir_code)
+        elif re.match("^01A2B", dir_code):
+            dir_path = ic_01a2b(dir_code)
     return dir_path
+
+#ic_01a2a-Started
+def ic_01a2a(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "01A2A1":
+        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2A_Social-Networking/01A2A1_Reddit/"
+    else :
+        print(dir_code)
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+#ic_01a2a-Ended
+
+#ic_01a2b-Started
+def ic_01a2b(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "01A2B1":
+        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2B_Professional-Networking/01A2B1_LinkedIn/"
+    else :
+        print(dir_code)
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+#ic_01a2b-Ended
+
 #ic_01a2-Ended
 
 
@@ -162,7 +197,11 @@ def ic_01a3(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    dir_path = print("---")
+    if dir_code == "01A3":
+        dir_path = "01_Capture-System/01A_Inbox/01A3_Thought-Capture/"
+    else :
+        print(dir_code)
+        dir_path = DIR_NOT_FOUND
     return dir_path
 #ic_01a3-Ended
 
