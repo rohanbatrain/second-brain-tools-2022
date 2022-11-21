@@ -12,9 +12,38 @@ DIR_NOT_FOUND = "Wrong argument passed, the dir code you specified doesn't exist
 
 def initial_check(dir_code):
     """
+    Takes dir_code as input and
+    returns the absolute directory
+    path of the code.
+    """
+
+    dir_path = ic_custom(dir_code)
+
+    return dir_path
+    #root_dir_id_end.
+
+# User-Custom Directories
+def ic_custom(dir_code):
+    """
+    Checks for user defined directories first from the config.
+    """
+    #some example dir
+    if dir_code=="example":
+        dir_path = "This/is/a/boiler/plate/example/"
+    elif dir_code == "example-elif" :
+        dir_path = "This/is/an/example/"
+    #loading user defined commands from config started
+
+    #loading user defined commands from config started
+    else:
+        dir_path = ic_root(dir_code)
+    return dir_path
+
+# Root-Started
+def ic_root(dir_code):
+    """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    #root_dir_id_start
     if dir_code == "01":
         dir_path = "01_Capture-System/"
     elif dir_code == "02":
@@ -32,15 +61,11 @@ def initial_check(dir_code):
     elif dir_code == "08":
         dir_path = "08_Archive/"
     else:
-        dir_path = ic_root(dir_code)
+        dir_path = ic_root_regex(dir_code)
     return dir_path
-    #root_dir_id_end.
 
-# Root-Started
-def ic_root(dir_code):
-    """
-    Takes dir_code as input and returns the absolute directory path of the code.
-    """
+def ic_root_regex (dir_code):
+    #ic_custom_regex-started
     if re.match("^01", dir_code):
         dir_path = ic_01(dir_code)
     elif re.match("^02", dir_code):
@@ -57,16 +82,39 @@ def ic_root(dir_code):
         dir_path = ic_07(dir_code)
     elif re.match("^08", dir_code):
         dir_path = ic_08(dir_code)
+    #ic_custom_regex-end
     return dir_path
+
 # Root-Ended
 
 # 01-Started
+
+#ic_01-Started
 def ic_01(dir_code):
+    """
+    Placeholder
+    """
+    if dir_code == "01A":
+        dir_path = "01_Capture-System/01A_Inbox/"
+    elif dir_code == "01B":
+        dir_path = "01_Capture-System/01B_Processed/"
+    elif dir_code == "01C":
+        dir_path = "01_Capture-System/01C_Periodic-Notes/"
+    #01_regex
+    else:
+        if re.match("^01A", dir_code):
+            dir_path = ic_01a(dir_code)
+    return dir_path
+#ic_01-Ended
+
+#ic_01A-Started
+def ic_01a(dir_code):
     """
     Placeholder
     """
     dir_path = print("---")
     return dir_path
+#ic_01A_Ended
 
 # 01-Ended
 
