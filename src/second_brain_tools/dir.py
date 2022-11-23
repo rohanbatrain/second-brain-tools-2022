@@ -370,23 +370,23 @@ def ic_03b(dir_code):
     """
     if dir_code == "03B1":
         dir_path = "03_Knowledge-Base/03B_Languages/03B1_Hindi"
-    if dir_code == "03B2":
+    elif dir_code == "03B2":
         dir_path = "03_Knowledge-Base/03B_Languages/03B2_English"
-    if dir_code == "03B3":
+    elif dir_code == "03B3":
         dir_path = "03_Knowledge-Base/03B_Languages/03B3_Sanskrit"
-    if dir_code == "03B4":
+    elif dir_code == "03B4":
         dir_path = "03_Knowledge-Base/03B_Languages/03B4_Japanese"
-    if dir_code == "03B5":
+    elif dir_code == "03B5":
         dir_path = "03_Knowledge-Base/03B_Languages/03B5_Bengali"
-    if dir_code == "03B6":
+    elif dir_code == "03B6":
         dir_path = "03_Knowledge-Base/03B_Languages/03B6_Korean"
-    if dir_code == "03B7":
+    elif dir_code == "03B7":
         dir_path = "03_Knowledge-Base/03B_Languages/03B7_Punjabi"
-    if dir_code == "03B8":
+    elif dir_code == "03B8":
         dir_path = "03_Knowledge-Base/03B_Languages/03B8_Russian"
-    if dir_code == "03B9":
+    elif dir_code == "03B9":
         dir_path = "03_Knowledge-Base/03B_Languages/03B9_French"
-    if dir_code == "03B10":
+    elif dir_code == "03B10":
         dir_path = "03_Knowledge-Base/03B_Languages/03B10_Spanish"
     else:
         print(dir_code)
@@ -401,11 +401,11 @@ def ic_03c(dir_code):
     """
     if dir_code == "03C1":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming"
-    if dir_code == "03C2":
+    elif dir_code == "03C2":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C2_Machine-Learning"
-    if dir_code == "03C3":
+    elif dir_code == "03C3":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software"
-    if dir_code == "03C4":
+    elif dir_code == "03C4":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C4_System-Administration"
     else:
         if re.match("^03C1", dir_code):
@@ -425,15 +425,121 @@ def ic_03c1(dir_code):
     """
     if dir_code == "03C1A":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages"
-    if dir_code == "03C1B":
+    elif dir_code == "03C1B":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1B_Programming-Projects"
-    if dir_code == "03C1C":
+    elif dir_code == "03C1C":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1C_Query-Languages"
     else:
-        print(dir_code)
+        if re.match("^03C1A", dir_code):
+            dir_path = ic_03c1a(dir_code)
+        elif re.match("^03C1B", dir_code):
+            dir_path = ic_03c1b(dir_code)
+        elif re.match("^03C1C", dir_code):
+            dir_path = ic_03c1c(dir_code)
+    return dir_path
+
+#ic_03c1a-Started
+def ic_03c1a(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+
+    # Splitting the code into two parts without regex, to follow pylint specifications,
+    # line too long.
+    dir_path = ic_03c1a_part_1(dir_code)
+
+    if dir_path == DIR_NOT_FOUND:
+        dir_path = ic_03c1a_part_2(dir_code)
+
+    return dir_path
+
+#ic_03c1a_part_1-Started
+def ic_03c1a_part_1(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "03C1A1":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A1_Bash"
+    elif dir_code == "03C1A2":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A2_Python"
+    elif dir_code == "03C1A3":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A3_C-Lang"
+    elif dir_code == "03C1A4":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A4_Javascript"
+    elif dir_code == "03C1A5":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A5_Dart"
+    elif dir_code == "03C1A6":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A6_Flutter"
+    elif dir_code == "03C1A7":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A7_C++"
+    elif dir_code == "03C1A8":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A8_TypeScript"
+    elif dir_code == "03C1A9":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A9_Java"
+    elif dir_code == "03C1A10":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A10_C-Sharp"
+    else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+#ic_03c1a_part_1-Ended
+
+#ic_03c1a_part_2-Started
+def ic_03c1a_part_2(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "03C1A11":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A11_PHP"
+    elif dir_code == "03C1A12":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A12_Groovy"
+    elif dir_code == "03C1A13":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A13_Ruby"
+    elif dir_code == "03C1A14":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A14_Rust"
+    elif dir_code == "03C1A15":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A15_Kotlin"
+    elif dir_code == "03C1A16":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A16_Golang"
+    elif dir_code == "03C1A17":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A17_Perl"
+    elif dir_code == "03C1A18":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A18_Visual-Basic-Dot-Net"
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+#ic_03c1a_part_2-Ended
+
+#ic_03c1a-Ended
+
+#ic_03c1b-Started
+def ic_03c1b(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "03C1B1":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1B_Programming-Projects/Project-1/"
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+#ic_03c1b-Ended
+
+#ic_03c1c-Started
+def ic_03c1c(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "03C1C1":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1C_Query-Languages/03C1C1_SQL"
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+#ic_03c1c-Ended
+
 # ic_03c1-Ended
+
+# ic_03c2-Started
+
+# ic_03c2-Ended
 
 # ic_03c-Ended
 
