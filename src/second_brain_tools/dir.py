@@ -332,7 +332,7 @@ def ic_03(dir_code):
     elif dir_code == "03C":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/"
     elif dir_code =="03D":
-        dir_path = "03_Knowledge-Base/03D_Philosphy"
+        dir_path = "03_Knowledge-Base/03D_Theology"
     else:
         if re.match("^03A", dir_code):
             dir_path = ic_03a(dir_code)
@@ -538,10 +538,100 @@ def ic_03c1c(dir_code):
 # ic_03c1-Ended
 
 # ic_03c2-Started
-
+def ic_03c2(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "03C2A":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C2_Machine-Learning/03C2A_Reinforcement-Learning/"
+    elif dir_code == "03C2B":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C2_Machine-Learning/03C2B_Deep-Learning/"
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
 # ic_03c2-Ended
 
+# ic_03c3-Started
+def ic_03c3(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "03C3A":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application"
+    elif dir_code == "03C3B":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3B_Operating-System"
+    else:
+        if re.match("^03C3A", dir_code):
+            dir_path = ic_03c3a(dir_code)
+        elif re.match("^03C3B", dir_code):
+            dir_path = ic_03c3b(dir_code)
+    return dir_path
+
+# ic_03c3a-Started
+def ic_03c3a(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "03C3A1":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A1__Unreal-Engine"
+    elif dir_code == "03C3A2":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A2__Blender"
+    elif dir_code == "03C3A3":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A3__Unity"
+    elif dir_code == "03C3A4":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A4__MariaDB"
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+# ic_03c3a-Ended
+
+# ic_03c3b-Started
+def ic_03c3b(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "03C3B1":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3B_Operating-System/03C3B1_Linux"
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+# ic_03c3b-Ended
+
+# ic_03c3-Ended
+
+# ic_03c4-Started
+def ic_03c4(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "03C4A":
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C4_System-Administration/03C4A_Web-Servers"
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+# ic_03c4-Ended
+
 # ic_03c-Ended
+
+# ic_03d-Started
+def ic_03d(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "03D1":
+        dir_path = "03_Knowledge-Base/03D_Theology/03D1_Hinduism"
+    elif dir_code == "03D2":
+        dir_path = "03_Knowledge-Base/03D_Theology/03D2_Sikhism"
+    elif dir_code == "03D3":
+        dir_path = "03_Knowledge-Base/03D_Theology/03D3_Buddhism"
+    elif dir_code == "03D4":
+        dir_path = "03_Knowledge-Base/03D_Theology/03D4_Islam"
+    elif dir_code == "03D5":
+        dir_path = "03_Knowledge-Base/03D_Theology/03D5_Christianity"
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+# ic_03d-Ended
 
 # ic_03-Ended
 # 03-Ended
