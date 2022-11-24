@@ -8,8 +8,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Codecov
-      uses: codecov/codecov-action@v3.1.1
+    - name: Codecov integration
+      run: |
+        pip install codecov
+        pip install pytest-cov
+        pytest --cov=./ --cov-report=xml
+        codecov
+    #- name: Codecov
+    #  uses: codecov/codecov-action@v3.1.1
 
     #- name: legacy 
     #  run: bash <(curl -s https://codecov.io/bash)
