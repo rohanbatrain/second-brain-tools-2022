@@ -8,14 +8,18 @@ Overview
     :stub-columns: 1
 
     * - tests
-      - | |github-actions|  |codecov|
+      - | |pylint| |tox| |codecov|
     * - package
       - | |version| |wheel| |supported-versions| |supported-implementations|
         | |commits-since|
 
-.. |github-actions| image:: https://github.com/rohanbatrain/Second-Brain-Tools/actions/workflows/github-actions.yml/badge.svg
+.. |pylint| image:: https://github.com/rohanbatrain/Second-Brain-Tools/actions/workflows/pylint.yml/badge.svg
     :alt: GitHub Actions Build Status
-    :target: https://github.com/rohanbatrain/Second-Brain-Tools/actions
+    :target: https://github.com/rohanbatrain/Second-Brain-Tools/actions/
+    
+.. |tox| image:: https://github.com/rohanbatrain/Second-Brain-Tools/actions/workflows/tox.yml/badge.svg
+    :alt: GitHub Actions Build Status
+    :target: https://github.com/rohanbatrain/Second-Brain-Tools/actions/
 
 .. |requires| image:: https://requires.io/github/rohanbatrain/Second-Brain-Tools/requirements.svg?branch=main
     :alt: Requirements Status
