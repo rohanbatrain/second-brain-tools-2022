@@ -4,6 +4,7 @@ I know i can use os.probe with some logic to get this working,
 But i would really like to hardcode the absolute path for error pruning my script.
 """
 
+
 # imports
 import re
 
@@ -86,8 +87,8 @@ def ic_root_regex (dir_code):
         dir_path = ic_06(dir_code)
     elif re.match("^07", dir_code):
         dir_path = ic_07(dir_code)
-    elif re.match("^08", dir_code):
-        dir_path = ic_08(dir_code)
+    #elif re.match("^08", dir_code):
+    #    dir_path = ic_08(dir_code)
     return dir_path
 
 # Root-Ended
@@ -634,16 +635,86 @@ def ic_03d(dir_code):
 # ic_03d-Ended
 
 # ic_03-Ended
+
 # 03-Ended
 
 
 # 04-Started
+
+# ic_04-Started
 def ic_04(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    dir_path = print("---")
+    if dir_code == "04A":
+        dir_path = "04_Evergreen/04A_Network"
+    elif dir_code == "04B":
+        dir_path = "04_Evergreen/04B_Events"
+    elif dir_code == "04C":
+        dir_path = "04_Evergreen/04C_Locations"
+    else:
+        if re.match("^04A", dir_code):
+            dir_path = ic_04a(dir_code)
+        elif re.match("^04B", dir_code):
+            dir_path = ic_04b(dir_code)
+        elif re.match("^04C", dir_code):
+            dir_path = ic_04c(dir_code)
     return dir_path
+
+# ic_04A-Started
+def ic_04a(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "04A1":
+        dir_path = "04_Evergreen/04A_Network/04A1_Bros"
+    elif dir_code == "04A2":
+        dir_path = "04_Evergreen/04A_Network/04A2_Class-Room"
+    elif dir_code == "04A3":
+        dir_path = "04_Evergreen/04A_Network/04A3_Social-Media"
+    elif dir_code == "04A4":
+        dir_path = "04_Evergreen/04A_Network/04A4_Friends"
+    elif dir_code == "04A5":
+        dir_path = "04_Evergreen/04A_Network/04A5_Family"
+    elif dir_code == "04A6":
+        dir_path = "04_Evergreen/04A_Network/04A6_Corporate"
+    elif dir_code == "04A7":
+        dir_path = "04_Evergreen/04A_Network/04A7_Relatives"
+    elif dir_code == "04A99":
+        dir_path = "04_Evergreen/04A_Network/04A99_Miscellaneous"
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+# ic_04A-Ended
+
+# ic_04B-Started
+def ic_04b(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "04B1":
+        dir_path = "04_Evergreen/04B_Events/04B1_Incidents/"
+    elif dir_code == "04B2":
+        dir_path = "04_Evergreen/04B_Events/04B2_Planned-Events/"
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+# ic_04B-Ended
+
+# ic_04C-Started
+def ic_04c(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "04C1":
+        dir_path = "04_Evergreen/04C_Locations/04C1_School"
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+# ic_04C-Ended
+
+# ic_04-Ended
+
 # 04-Ended
 
 
@@ -652,7 +723,18 @@ def ic_05(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    dir_path = print("---")
+    if dir_code == "05A":
+        dir_path = "05_Projects/05A_Brands"
+    elif dir_code == "05B":
+        dir_path = "05_Projects/05B_Startup"
+    elif dir_code == "05C":
+        dir_path = "05_Projects/05C_Business"
+    elif dir_code == "05D":
+        dir_path = "05_Projects/05D_Story-Writing"
+    elif dir_code == "05E":
+        dir_path = "05_Projects/05E_Competitions"
+    else:
+        dir_path = DIR_NOT_FOUND
     return dir_path
 # 05-Ended
 
@@ -662,8 +744,71 @@ def ic_06(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    dir_path = print("---")
+    if dir_code == "06A":
+        dir_path = "06_Personal/06A_Brand"
+    elif dir_code == "06B":
+        dir_path = "06_Personal/06B_Projects"
+    elif dir_code == "06C":
+        dir_path = "06_Personal/06C_Workspace-Log"
+    elif dir_code == "06D":
+        dir_path = "06_Personal/06D_Recommendation-List"
+    else:
+        if re.match("^06A", dir_code):
+            dir_path = ic_06a(dir_code)
+        elif re.match("^06B", dir_code):
+            dir_path = ic_06b(dir_code)
+        elif re.match("^06C", dir_code):
+            dir_path = ic_06c(dir_code)
+        elif re.match("^06D", dir_code):
+            dir_path = ic_06d(dir_code)
     return dir_path
+
+def ic_06a(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "06A1":
+        dir_path = "06_Personal/06A_Brand/06A1_Brand-1"
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+
+def ic_06b(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "06B1":
+        dir_path = "06_Personal/06B_Projects/06B1_Home-Lab"
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+
+def ic_06c(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "06C1":
+        dir_path = "06_Personal/06C_Workspace-Log/06C1_Laptop-Workspace/"
+    elif dir_code == "06C2":
+        dir_path = "06_Personal/06C_Workspace-Log/06C2_Web-Presence/"
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+
+def ic_06d(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "06D1":
+        dir_path = "06_Personal/06D_Recommendation-List/06D1_Movies"
+    elif dir_code == "06D2":
+        dir_path = "06_Personal/06D_Recommendation-List/06D2_Music"
+    elif dir_code == "06D3":
+        dir_path = "06_Personal/06D_Recommendation-List/06D3_Books"
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+
 # 06-Ended
 
 
@@ -672,18 +817,26 @@ def ic_07(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    dir_path = print("---")
+    if dir_code == "07A":
+        dir_path = "07_Attachments-and-Templates/07A_Attachments"
+    elif dir_code == "07B":
+        dir_path = "07_Attachments-and-Templates/07B_Templates"
+    else:
+        if re.match("^07B", dir_code):
+            dir_path = ic_07b(dir_code)
     return dir_path
-# 07-Ended
 
-
-# 08-Started
-def ic_08(dir_code):
+def ic_07b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    dir_path = print("---")
+    if dir_code == "07B1":
+        dir_path = "07_Attachments-and-Templates/07B_Templates/07B1_Periodic-Notes"
+    else:
+        if re.match("^07B", dir_code):
+            dir_path = ic_07b(dir_code)
     return dir_path
-# 08-Ended
+# 07-Ended
+
 
 #### Testing //Comment out all the variables below in production.
