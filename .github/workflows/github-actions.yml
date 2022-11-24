@@ -21,6 +21,14 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install tox tox-gh-actions pylint pylint-exit
+    
+    - name : CodeCov
+      run : |
+        curl -Os https://uploader.codecov.io/latest/linux/codecov
+        chmod +x codecov
+        ./codecov
+
+
     - name: Test with tox
       run: tox
     - name: Analysing the code with pylint
