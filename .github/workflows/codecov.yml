@@ -9,5 +9,5 @@ jobs:
 
     steps:
     - name: Codecov
-      runs: bash <(curl -s https://codecov.io/bash) -h
+      run: bash <(curl -s https://codecov.io/bash) -h
 
