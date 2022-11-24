@@ -33,7 +33,7 @@ pip-log.txt
 .coverage.*
 .pytest_cache/
 nosetests.xml
-coverage.xml
+#coverage.xml
 htmlcov
 
 # Translations
