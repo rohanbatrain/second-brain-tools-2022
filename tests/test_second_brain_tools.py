@@ -11,7 +11,7 @@ from second_brain_tools.dir import ic_custom
 ## Starting the initial check
 
 def initial_check_test():
-    "first test"
+    "Initial check testing with 01A"
     var = "01A"
     var_return = "01_Capture-System/"
     assert ic_custom(var) == var_return,  "01A returned 01_Capture-System/"
