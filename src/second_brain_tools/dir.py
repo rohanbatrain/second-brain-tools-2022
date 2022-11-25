@@ -221,9 +221,9 @@ def ic_01a4(dir_code):
     return dir_path
 #ic_01a4-Ended
 
-#ic_01A_Ended
+#ic_01A-Ended
 
-#ic_01B_Started
+#ic_01B-Started
 def ic_01b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
@@ -234,9 +234,9 @@ def ic_01b(dir_code):
         print(dir_code)
         dir_path = DIR_NOT_FOUND
     return dir_path
-#ic_01B_Ended
+#ic_01B-Ended
 
-#ic_01C_Started
+#ic_01C-Started
 def ic_01c(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
@@ -247,7 +247,7 @@ def ic_01c(dir_code):
         dir_path = ic_01c1(dir_code)
     return dir_path
 
-#ic_01C1_Started
+#ic_01C1-Started
 def ic_01c1(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
@@ -258,9 +258,9 @@ def ic_01c1(dir_code):
         print(dir_code)
         dir_path = DIR_NOT_FOUND
     return dir_path
-#ic_01C1_Ended
+#ic_01C1-Ended
 
-#ic_01C_Ended
+#ic_01C-Ended
 
 #ic_01-Ended
 
