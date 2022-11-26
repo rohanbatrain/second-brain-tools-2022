@@ -168,7 +168,7 @@ jobs:
         architecture: ${{ matrix.python_arch }}
     - name: install dependencies
       run: |
-        python -mpip install --progress-bar=off -r ci/requirements.txt
+        python -m pip install --progress-bar=off -r ci/requirements.txt
         virtualenv --version
         pip --version
         tox --version
@@ -178,5 +178,9 @@ jobs:
         TOXPYTHON: '${{ matrix.toxpython }}'
       run: >
         tox -e ${{ matrix.tox_env }} -v
+    - name: Generate Report
+      run: |
+        pip install coverage
+        coverage run -m unittest
     - name: Codecov
       uses: codecov/codecov-action@v3.1.1
