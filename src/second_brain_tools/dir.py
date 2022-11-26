@@ -10,6 +10,7 @@ import re
 
 #  Default values assignation started
 DIR_NOT_FOUND = "Wrong argument passed, the dir code you specified doesn't exist"
+dir_path = DIR_NOT_FOUND
 #  Default values assignation ended
 
 #  Initial check started
@@ -55,6 +56,7 @@ def ic_root(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "01":
         dir_path = "01_Capture-System/"
     elif dir_code == "02":
@@ -80,6 +82,7 @@ def ic_root_regex(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if re.match("^01", dir_code):
         dir_path = ic_01(dir_code)
     elif re.match("^02", dir_code):
@@ -96,6 +99,8 @@ def ic_root_regex(dir_code):
         dir_path = ic_07(dir_code)
     # elif re.match("^08", dir_code):
     #     dir_path = ic_08(dir_code)
+    else:
+        dir_path = DIR_NOT_FOUND
     return dir_path
 
 #  Root-Ended
@@ -109,6 +114,7 @@ def ic_01(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "01A":
         dir_path = "01_Capture-System/01A_Inbox/"
     elif dir_code == "01B":
@@ -132,6 +138,7 @@ def ic_01a(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "01A1":
         dir_path = "01_Capture-System/01A_Inbox/01A1_Quick-Capture/"
     elif dir_code == "01A2":
@@ -157,7 +164,6 @@ def ic_01a1(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     # Flow ended
-
     dir_path = DIR_NOT_FOUND
     return dir_path
 # ic_01a1-Ended
@@ -169,6 +175,7 @@ def ic_01a2(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "01A2A":
         dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2A_Social-Networking/"
     elif dir_code == "01A2B":
@@ -187,6 +194,7 @@ def ic_01a2a(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "01A2A1":
         dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2A_Social-Networking/01A2A1_Reddit/"
     else:
@@ -202,6 +210,7 @@ def ic_01a2b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "01A2B1":
         dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2B_Professional-Networking/01A2B1_LinkedIn/"
     else:
@@ -220,6 +229,7 @@ def ic_01a3(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "01A3":
         dir_path = "01_Capture-System/01A_Inbox/01A3_Thought-Capture/"
     else:
@@ -236,6 +246,7 @@ def ic_01a4(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "01A4":
         dir_path = "01_Capture-System/01A_Inbox/01A4_API-Capture/"
     else:
@@ -253,6 +264,7 @@ def ic_01b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "01B":
         dir_path = "01_Capture-System/01B_Processed"
     else:
@@ -268,6 +280,7 @@ def ic_01c(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "01C":
         dir_path = "01_Capture-System/01C_Periodic-Notes/"
     else:
@@ -281,6 +294,7 @@ def ic_01c1(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "01C1":
         dir_path = "01_Capture-System/01C_Periodic-Notes/01C1_Reminders/"
     else:
@@ -304,6 +318,7 @@ def ic_02(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "02A":
         dir_path = "02_Production-System/02A_Youtube/"
     elif dir_code == "02B":
@@ -323,6 +338,7 @@ def ic_02a(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "02A1":
         dir_path = "02_Production-System/02A_Youtube/02A1_Videos/"
     elif dir_code == "02A2":
@@ -342,6 +358,7 @@ def ic_02b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "02B1":
         dir_path = "02_Production-System/02B_Medium/02B1_Articles/"
     else:
@@ -363,6 +380,7 @@ def ic_03(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "03A":
         dir_path = "03_Knowledge-Base/03A_Science/"
     elif dir_code == "03B":
@@ -389,6 +407,7 @@ def ic_03a(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "03A1":
         dir_path = "03_Knowledge-Base/03A_Science/03A1_Chemistry/"
     elif dir_code == "03A2":
@@ -410,6 +429,7 @@ def ic_03b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "03B1":
         dir_path = "03_Knowledge-Base/03B_Languages/03B1_Hindi/"
     elif dir_code == "03B2":
@@ -443,6 +463,7 @@ def ic_03c(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "03C1":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/"
     elif dir_code == "03C2":
@@ -469,6 +490,7 @@ def ic_03c1(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "03C1A":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/"
     elif dir_code == "03C1B":
@@ -508,6 +530,7 @@ def ic_03c1a_part_1(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "03C1A1":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A1_Bash/"
     elif dir_code == "03C1A2":
@@ -540,6 +563,7 @@ def ic_03c1a_part_2(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "03C1A11":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A11_PHP/"
     elif dir_code == "03C1A12":
@@ -570,6 +594,7 @@ def ic_03c1b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "03C1B1":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1B_Programming-Projects/Project-1/"
     else:
@@ -584,6 +609,7 @@ def ic_03c1c(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "03C1C1":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1C_Query-Languages/03C1C1_SQL/"
     else:
@@ -600,6 +626,7 @@ def ic_03c2(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "03C2A":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C2_Machine-Learning/03C2A_Reinforcement-Learning/"
     elif dir_code == "03C2B":
@@ -616,6 +643,7 @@ def ic_03c3(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "03C3A":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/"
     elif dir_code == "03C3B":
@@ -634,6 +662,7 @@ def ic_03c3a(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "03C3A1":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A1__Unreal-Engine/"
     elif dir_code == "03C3A2":
@@ -654,6 +683,7 @@ def ic_03c3b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "03C3B1":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3B_Operating-System/03C3B1_Linux/"
     else:
@@ -670,6 +700,7 @@ def ic_03c4(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "03C4A":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/03C4_System-Administration/03C4A_Web-Servers/"
     else:
@@ -686,6 +717,7 @@ def ic_03d(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "03D1":
         dir_path = "03_Knowledge-Base/03D_Theology/03D1_Hinduism/"
     elif dir_code == "03D2":
@@ -713,6 +745,7 @@ def ic_04(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "04A":
         dir_path = "04_Evergreen/04A_Network/"
     elif dir_code == "04B":
@@ -735,6 +768,7 @@ def ic_04a(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "04A1":
         dir_path = "04_Evergreen/04A_Network/04A1_Bros/"
     elif dir_code == "04A2":
@@ -763,6 +797,7 @@ def ic_04b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "04B1":
         dir_path = "04_Evergreen/04B_Events/04B1_Incidents/"
     elif dir_code == "04B2":
@@ -779,6 +814,7 @@ def ic_04c(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "04C1":
         dir_path = "04_Evergreen/04C_Locations/04C1_School/"
     else:
@@ -821,6 +857,7 @@ def ic_06(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "06A":
         dir_path = "06_Personal/06A_Brand/"
     elif dir_code == "06B":
@@ -845,6 +882,7 @@ def ic_06a(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "06A1":
         dir_path = "06_Personal/06A_Brand/06A1_Brand-1/"
     else:
@@ -856,6 +894,7 @@ def ic_06b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "06B1":
         dir_path = "06_Personal/06B_Projects/06B1_Home-Lab/"
     else:
@@ -867,6 +906,7 @@ def ic_06c(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "06C1":
         dir_path = "06_Personal/06C_Workspace-Log/06C1_Laptop-Workspace/"
     elif dir_code == "06C2":
@@ -880,6 +920,7 @@ def ic_06d(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "06D1":
         dir_path = "06_Personal/06D_Recommendation-List/06D1_Movies/"
     elif dir_code == "06D2":
@@ -900,13 +941,15 @@ def ic_07(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "07A":
         dir_path = "07_Attachments-and-Templates/07A_Attachments/"
     elif dir_code == "07B":
         dir_path = "07_Attachments-and-Templates/07B_Templates/"
     else:
-        if re.match("^07B", dir_code):
-            dir_path = ic_07b(dir_code)
+        # testing shows recursion limit being hit so commenting the line below.
+        # if re.match("^07B", dir_code):
+        dir_path = ic_07b(dir_code)
     return dir_path
 
 
@@ -914,12 +957,15 @@ def ic_07b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
+    global dir_path
     if dir_code == "07B1":
         dir_path = "07_Attachments-and-Templates/07B_Templates/07B1_Periodic-Notes/"
     else:
         if re.match("^07B", dir_code):
             dir_path = ic_07b(dir_code)
     return dir_path
+
+
 #  07-Ended
 
 
