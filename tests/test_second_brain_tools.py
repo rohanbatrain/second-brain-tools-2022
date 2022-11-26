@@ -1,8 +1,8 @@
 from second_brain_tools.dir import initial_check
-from second_brain_tools.cli import DIR_NOT_FOUND
+from second_brain_tools.dir import DIR_NOT_FOUND
 
 # Defining default variables
-
+DNT = DIR_NOT_FOUND
 lorem_ipsum = "3122323-somelongrandomloremipsum"
 
 # dir.py Started
@@ -732,55 +732,55 @@ def test_08_initial_check():
 
 def test_passing_wrong_but_regex_code_1():
     dir_code = f"01{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_10():
     dir_code = f"01A4{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_100():
     dir_code = f"05C{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_101():
     dir_code = f"05D{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_102():
     dir_code = f"05E{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_103():
     dir_code = f"06{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_104():
     dir_code = f"06A{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_105():
     dir_code = f"06A1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_106():
     dir_code = f"06B{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
@@ -789,661 +789,661 @@ def test_passing_wrong_but_regex_code_107():
     # it doesn't conflict with user created directories with the exact code loaded from the config file.
 
     dir_code = f"06B1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_108():
     dir_code = f"06C{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_109():
     dir_code = f"06C1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_11():
     dir_code = f"01B{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_110():
     dir_code = f"06C2{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_111():
     dir_code = f"06D{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_112():
     dir_code = f"06D1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_113():
     dir_code = f"06D2{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_114():
     dir_code = f"06D3{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_115():
     dir_code = f"07{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_116():
     dir_code = f"07A{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_117():
     dir_code = f"07B{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_118():
     dir_code = f"07B1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_119():
     dir_code = f"08{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_12():
     dir_code = f"01C{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_13():
     dir_code = f"01C1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_14():
     dir_code = f"02{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_15():
     dir_code = f"02A{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_16():
     dir_code = f"02A1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_17():
     dir_code = f"02A2{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_18():
     dir_code = f"02A3{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_19():
     dir_code = f"02B{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_2():
     dir_code = f"01A{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_20():
     dir_code = f"02B1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_21():
     dir_code = f"03{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_22():
     dir_code = f"03A{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_23():
     dir_code = f"03A1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_24():
     dir_code = f"03A2{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_25():
     dir_code = f"03A3{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_26():
     dir_code = f"03A4{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_27():
     dir_code = f"03B{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_28():
     dir_code = f"03B1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_29():
     dir_code = f"03B10{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_3():
     dir_code = f"01A1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_30():
     dir_code = f"03B2{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_31():
     dir_code = f"03B3{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_32():
     dir_code = f"03B4{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_33():
     dir_code = f"03B5{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_34():
     dir_code = f"03B6{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_35():
     dir_code = f"03B7{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_36():
     dir_code = f"03B8{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_37():
     dir_code = f"03B9{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_38():
     dir_code = f"03C{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_39():
     dir_code = f"03C1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_4():
     dir_code = f"01A2{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_40():
     dir_code = f"03C1A{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_41():
     dir_code = f"03C1A1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_42():
     dir_code = f"03C1A10{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_43():
     dir_code = f"03C1A11{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_44():
     dir_code = f"03C1A12{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_45():
     dir_code = f"03C1A13{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_46():
     dir_code = f"03C1A14{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_47():
     dir_code = f"03C1A15{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_48():
     dir_code = f"03C1A16{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_49():
     dir_code = f"03C1A17{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_5():
     dir_code = f"01A2A{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_50():
     dir_code = f"03C1A18{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_51():
     dir_code = f"03C1A2{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_52():
     dir_code = f"03C1A3{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_53():
     dir_code = f"03C1A4{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_54():
     dir_code = f"03C1A5{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_55():
     dir_code = f"03C1A6{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_56():
     dir_code = f"03C1A7{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_57():
     dir_code = f"03C1A8{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_58():
     dir_code = f"03C1A9{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_59():
     dir_code = f"03C1B{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_6():
     dir_code = f"01A2A1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_60():
     dir_code = f"03C1B1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_61():
     dir_code = f"03C1C{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_62():
     dir_code = f"03C1C1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_63():
     dir_code = f"03C2{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_64():
     dir_code = f"03C2A{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_65():
     dir_code = f"03C2B{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_66():
     dir_code = f"03C3{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_67():
     dir_code = f"03C3A{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_68():
     dir_code = f"03C3A1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_69():
     dir_code = f"03C3A2{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_7():
     dir_code = f"01A2B{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_70():
     dir_code = f"03C3A3{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_71():
     dir_code = f"03C3A4{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_72():
     dir_code = f"03C3B{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_73():
     dir_code = f"03C3B1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_74():
     dir_code = f"03C4{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_75():
     dir_code = f"03C4A{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_76():
     dir_code = f"03D{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_77():
     dir_code = f"03D1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_78():
     dir_code = f"03D2{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_79():
     dir_code = f"03D3{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_8():
     dir_code = f"01A2B1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_80():
     dir_code = f"03D4{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_81():
     dir_code = f"03D5{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_82():
     dir_code = f"04{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_83():
     dir_code = f"04A{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_84():
     dir_code = f"04A1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_85():
     dir_code = f"04A2{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_86():
     dir_code = f"04A3{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_87():
     dir_code = f"04A4{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_88():
     dir_code = f"04A5{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_89():
     dir_code = f"04A6{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_9():
     dir_code = f"01A3{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_90():
     dir_code = f"04A7{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_91():
     dir_code = f"04A99{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_92():
     dir_code = f"04B{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_93():
     dir_code = f"04B1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_94():
     dir_code = f"04B2{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_95():
     dir_code = f"04C{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_96():
     dir_code = f"04C1{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_97():
     dir_code = f"05{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_98():
     dir_code = f"05A{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_99():
     dir_code = f"05B{lorem_ipsum}"
-    dir_path = DIR_NOT_FOUND
+    dir_path = DNT
     assert initial_check(dir_code) == dir_path
 
 # Checking with some regular expressions which matches with our internal regex. <Ended>
