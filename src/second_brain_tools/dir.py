@@ -370,7 +370,7 @@ def ic_03(dir_code):
     elif dir_code == "03C":
         dir_path = "03_Knowledge-Base/03C_IT-Skills/"
     elif dir_code == "03D":
-        dir_path = "03_Knowledge-Base/03D_Theology"
+        dir_path = "03_Knowledge-Base/03D_Theology/"
     else:
         if re.match("^03A", dir_code):
             dir_path = ic_03a(dir_code)
@@ -390,13 +390,13 @@ def ic_03a(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "03A1":
-        dir_path = "03_Knowledge-Base/03A_Science/03A1_Chemistry"
+        dir_path = "03_Knowledge-Base/03A_Science/03A1_Chemistry/"
     elif dir_code == "03A2":
-        dir_path = "03_Knowledge-Base/03A_Science/03A2_Computer-Science"
+        dir_path = "03_Knowledge-Base/03A_Science/03A2_Computer-Science/"
     elif dir_code == "03A3":
-        dir_path = "03_Knowledge-Base/03A_Science/03A3_Mathematics"
+        dir_path = "03_Knowledge-Base/03A_Science/03A3_Mathematics/"
     elif dir_code == "03A4":
-        dir_path = "03_Knowledge-Base/03A_Science/03A4_Physics"
+        dir_path = "03_Knowledge-Base/03A_Science/03A4_Physics/"
     else:
         print(dir_code)
         dir_path = DIR_NOT_FOUND
@@ -411,25 +411,25 @@ def ic_03b(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "03B1":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B1_Hindi"
+        dir_path = "03_Knowledge-Base/03B_Languages/03B1_Hindi/"
     elif dir_code == "03B2":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B2_English"
+        dir_path = "03_Knowledge-Base/03B_Languages/03B2_English/"
     elif dir_code == "03B3":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B3_Sanskrit"
+        dir_path = "03_Knowledge-Base/03B_Languages/03B3_Sanskrit/"
     elif dir_code == "03B4":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B4_Japanese"
+        dir_path = "03_Knowledge-Base/03B_Languages/03B4_Japanese/"
     elif dir_code == "03B5":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B5_Bengali"
+        dir_path = "03_Knowledge-Base/03B_Languages/03B5_Bengali/"
     elif dir_code == "03B6":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B6_Korean"
+        dir_path = "03_Knowledge-Base/03B_Languages/03B6_Korean/"
     elif dir_code == "03B7":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B7_Punjabi"
+        dir_path = "03_Knowledge-Base/03B_Languages/03B7_Punjabi/"
     elif dir_code == "03B8":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B8_Russian"
+        dir_path = "03_Knowledge-Base/03B_Languages/03B8_Russian/"
     elif dir_code == "03B9":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B9_French"
+        dir_path = "03_Knowledge-Base/03B_Languages/03B9_French/"
     elif dir_code == "03B10":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B10_Spanish"
+        dir_path = "03_Knowledge-Base/03B_Languages/03B10_Spanish/"
     else:
         print(dir_code)
         dir_path = DIR_NOT_FOUND
@@ -444,13 +444,13 @@ def ic_03c(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "03C1":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/"
     elif dir_code == "03C2":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C2_Machine-Learning"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C2_Machine-Learning/"
     elif dir_code == "03C3":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/"
     elif dir_code == "03C4":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C4_System-Administration"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C4_System-Administration/"
     else:
         if re.match("^03C1", dir_code):
             dir_path = ic_03c1(dir_code)
@@ -470,11 +470,11 @@ def ic_03c1(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "03C1A":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/"
     elif dir_code == "03C1B":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1B_Programming-Projects"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1B_Programming-Projects/"
     elif dir_code == "03C1C":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1C_Query-Languages"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1C_Query-Languages/"
     else:
         if re.match("^03C1A", dir_code):
             dir_path = ic_03c1a(dir_code)
@@ -509,25 +509,25 @@ def ic_03c1a_part_1(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "03C1A1":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A1_Bash"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A1_Bash/"
     elif dir_code == "03C1A2":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A2_Python"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A2_Python/"
     elif dir_code == "03C1A3":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A3_C-Lang"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A3_C-Lang/"
     elif dir_code == "03C1A4":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A4_Javascript"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A4_Javascript/"
     elif dir_code == "03C1A5":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A5_Dart"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A5_Dart/"
     elif dir_code == "03C1A6":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A6_Flutter"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A6_Flutter/"
     elif dir_code == "03C1A7":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A7_C++"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A7_C++/"
     elif dir_code == "03C1A8":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A8_TypeScript"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A8_TypeScript/"
     elif dir_code == "03C1A9":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A9_Java"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A9_Java/"
     elif dir_code == "03C1A10":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A10_C-Sharp"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A10_C-Sharp/"
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -541,21 +541,21 @@ def ic_03c1a_part_2(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "03C1A11":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A11_PHP"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A11_PHP/"
     elif dir_code == "03C1A12":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A12_Groovy"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A12_Groovy/"
     elif dir_code == "03C1A13":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A13_Ruby"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A13_Ruby/"
     elif dir_code == "03C1A14":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A14_Rust"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A14_Rust/"
     elif dir_code == "03C1A15":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A15_Kotlin"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A15_Kotlin/"
     elif dir_code == "03C1A16":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A16_Golang"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A16_Golang/"
     elif dir_code == "03C1A17":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A17_Perl"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A17_Perl/"
     elif dir_code == "03C1A18":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A18_Visual-Basic-Dot-Net"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A18_Visual-Basic-Dot-Net/"
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -585,7 +585,7 @@ def ic_03c1c(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "03C1C1":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1C_Query-Languages/03C1C1_SQL"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1C_Query-Languages/03C1C1_SQL/"
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -617,9 +617,9 @@ def ic_03c3(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "03C3A":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/"
     elif dir_code == "03C3B":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3B_Operating-System"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3B_Operating-System/"
     else:
         if re.match("^03C3A", dir_code):
             dir_path = ic_03c3a(dir_code)
@@ -635,13 +635,13 @@ def ic_03c3a(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "03C3A1":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A1__Unreal-Engine"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A1__Unreal-Engine/"
     elif dir_code == "03C3A2":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A2__Blender"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A2__Blender/"
     elif dir_code == "03C3A3":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A3__Unity"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A3__Unity/"
     elif dir_code == "03C3A4":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A4__MariaDB"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A4__MariaDB/"
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -655,7 +655,7 @@ def ic_03c3b(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "03C3B1":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3B_Operating-System/03C3B1_Linux"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3B_Operating-System/03C3B1_Linux/"
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -671,7 +671,7 @@ def ic_03c4(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "03C4A":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C4_System-Administration/03C4A_Web-Servers"
+        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C4_System-Administration/03C4A_Web-Servers/"
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -687,15 +687,15 @@ def ic_03d(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "03D1":
-        dir_path = "03_Knowledge-Base/03D_Theology/03D1_Hinduism"
+        dir_path = "03_Knowledge-Base/03D_Theology/03D1_Hinduism/"
     elif dir_code == "03D2":
-        dir_path = "03_Knowledge-Base/03D_Theology/03D2_Sikhism"
+        dir_path = "03_Knowledge-Base/03D_Theology/03D2_Sikhism/"
     elif dir_code == "03D3":
-        dir_path = "03_Knowledge-Base/03D_Theology/03D3_Buddhism"
+        dir_path = "03_Knowledge-Base/03D_Theology/03D3_Buddhism/"
     elif dir_code == "03D4":
-        dir_path = "03_Knowledge-Base/03D_Theology/03D4_Islam"
+        dir_path = "03_Knowledge-Base/03D_Theology/03D4_Islam/"
     elif dir_code == "03D5":
-        dir_path = "03_Knowledge-Base/03D_Theology/03D5_Christianity"
+        dir_path = "03_Knowledge-Base/03D_Theology/03D5_Christianity/"
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -714,11 +714,11 @@ def ic_04(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "04A":
-        dir_path = "04_Evergreen/04A_Network"
+        dir_path = "04_Evergreen/04A_Network/"
     elif dir_code == "04B":
-        dir_path = "04_Evergreen/04B_Events"
+        dir_path = "04_Evergreen/04B_Events/"
     elif dir_code == "04C":
-        dir_path = "04_Evergreen/04C_Locations"
+        dir_path = "04_Evergreen/04C_Locations/"
     else:
         if re.match("^04A", dir_code):
             dir_path = ic_04a(dir_code)
@@ -736,21 +736,21 @@ def ic_04a(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "04A1":
-        dir_path = "04_Evergreen/04A_Network/04A1_Bros"
+        dir_path = "04_Evergreen/04A_Network/04A1_Bros/"
     elif dir_code == "04A2":
-        dir_path = "04_Evergreen/04A_Network/04A2_Class-Room"
+        dir_path = "04_Evergreen/04A_Network/04A2_Class-Room/"
     elif dir_code == "04A3":
-        dir_path = "04_Evergreen/04A_Network/04A3_Social-Media"
+        dir_path = "04_Evergreen/04A_Network/04A3_Social-Media/"
     elif dir_code == "04A4":
-        dir_path = "04_Evergreen/04A_Network/04A4_Friends"
+        dir_path = "04_Evergreen/04A_Network/04A4_Friends/"
     elif dir_code == "04A5":
-        dir_path = "04_Evergreen/04A_Network/04A5_Family"
+        dir_path = "04_Evergreen/04A_Network/04A5_Family/"
     elif dir_code == "04A6":
-        dir_path = "04_Evergreen/04A_Network/04A6_Corporate"
+        dir_path = "04_Evergreen/04A_Network/04A6_Corporate/"
     elif dir_code == "04A7":
-        dir_path = "04_Evergreen/04A_Network/04A7_Relatives"
+        dir_path = "04_Evergreen/04A_Network/04A7_Relatives/"
     elif dir_code == "04A99":
-        dir_path = "04_Evergreen/04A_Network/04A99_Miscellaneous"
+        dir_path = "04_Evergreen/04A_Network/04A99_Miscellaneous/"
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -780,7 +780,7 @@ def ic_04c(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "04C1":
-        dir_path = "04_Evergreen/04C_Locations/04C1_School"
+        dir_path = "04_Evergreen/04C_Locations/04C1_School/"
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -799,15 +799,15 @@ def ic_05(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "05A":
-        dir_path = "05_Projects/05A_Brands"
+        dir_path = "05_Projects/05A_Brands/"
     elif dir_code == "05B":
-        dir_path = "05_Projects/05B_Startup"
+        dir_path = "05_Projects/05B_Startup/"
     elif dir_code == "05C":
-        dir_path = "05_Projects/05C_Business"
+        dir_path = "05_Projects/05C_Business/"
     elif dir_code == "05D":
-        dir_path = "05_Projects/05D_Story-Writing"
+        dir_path = "05_Projects/05D_Story-Writing/"
     elif dir_code == "05E":
-        dir_path = "05_Projects/05E_Competitions"
+        dir_path = "05_Projects/05E_Competitions/"
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -822,13 +822,13 @@ def ic_06(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "06A":
-        dir_path = "06_Personal/06A_Brand"
+        dir_path = "06_Personal/06A_Brand/"
     elif dir_code == "06B":
-        dir_path = "06_Personal/06B_Projects"
+        dir_path = "06_Personal/06B_Projects/"
     elif dir_code == "06C":
-        dir_path = "06_Personal/06C_Workspace-Log"
+        dir_path = "06_Personal/06C_Workspace-Log/"
     elif dir_code == "06D":
-        dir_path = "06_Personal/06D_Recommendation-List"
+        dir_path = "06_Personal/06D_Recommendation-List/"
     else:
         if re.match("^06A", dir_code):
             dir_path = ic_06a(dir_code)
@@ -846,7 +846,7 @@ def ic_06a(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "06A1":
-        dir_path = "06_Personal/06A_Brand/06A1_Brand-1"
+        dir_path = "06_Personal/06A_Brand/06A1_Brand-1/"
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -857,7 +857,7 @@ def ic_06b(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "06B1":
-        dir_path = "06_Personal/06B_Projects/06B1_Home-Lab"
+        dir_path = "06_Personal/06B_Projects/06B1_Home-Lab/"
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -881,11 +881,11 @@ def ic_06d(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "06D1":
-        dir_path = "06_Personal/06D_Recommendation-List/06D1_Movies"
+        dir_path = "06_Personal/06D_Recommendation-List/06D1_Movies/"
     elif dir_code == "06D2":
-        dir_path = "06_Personal/06D_Recommendation-List/06D2_Music"
+        dir_path = "06_Personal/06D_Recommendation-List/06D2_Music/"
     elif dir_code == "06D3":
-        dir_path = "06_Personal/06D_Recommendation-List/06D3_Books"
+        dir_path = "06_Personal/06D_Recommendation-List/06D3_Books/"
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -901,9 +901,9 @@ def ic_07(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "07A":
-        dir_path = "07_Attachments-and-Templates/07A_Attachments"
+        dir_path = "07_Attachments-and-Templates/07A_Attachments/"
     elif dir_code == "07B":
-        dir_path = "07_Attachments-and-Templates/07B_Templates"
+        dir_path = "07_Attachments-and-Templates/07B_Templates/"
     else:
         if re.match("^07B", dir_code):
             dir_path = ic_07b(dir_code)
@@ -915,7 +915,7 @@ def ic_07b(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "07B1":
-        dir_path = "07_Attachments-and-Templates/07B_Templates/07B1_Periodic-Notes"
+        dir_path = "07_Attachments-and-Templates/07B_Templates/07B1_Periodic-Notes/"
     else:
         if re.match("^07B", dir_code):
             dir_path = ic_07b(dir_code)
