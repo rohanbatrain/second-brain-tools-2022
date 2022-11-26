@@ -17,5 +17,10 @@ include CHANGELOG.rst
 include CONTRIBUTING.rst
 include LICENSE
 include README.rst
+include CODE_OF_CONDUCT.md
+include SECURITY.md
 
-global-exclude *.py[cod] __pycache__/* *.so *.dylib
+include .env
+recursive-include workflows *.yml
+
+global-exclude *.py[cod] __pycache__/* *.so *.dyli
