@@ -127,7 +127,7 @@ def ic_01a(dir_code):
         dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture"
     elif dir_code == "01A3":
         dir_path = "01_Capture-System/01A_Inbox/01A3_Thought-Capture"
-    elif dir_code == "01A3":
+    elif dir_code == "01A4":
         dir_path = "01_Capture-System/01A_Inbox/01A4_API-Capture"
     else:
         if re.match("^01A1", dir_code):

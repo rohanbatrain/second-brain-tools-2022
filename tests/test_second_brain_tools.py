@@ -7,15 +7,6 @@ def test_01_initial_check():
     dir_code = "01"
     dir_path = "01_Capture-System/"
     assert initial_check(dir_code) == dir_path
-
-
-## Initial Check Ended
-# dir.py Ended
-
-def test_01_initial_check():
-    dir_code = "01"
-    dir_path = "01_Capture-System/"
-    assert initial_check(dir_code) == dir_path
 def test_01A_initial_check():
     dir_code = "01A"
     dir_path = "01_Capture-System/01A_Inbox/"
@@ -488,3 +479,6 @@ def test_08_initial_check():
     dir_code = "08"
     dir_path = "08_Archive/"
     assert initial_check(dir_code) == dir_path
+## Initial Check Ended
+
+# dir.py Ended
