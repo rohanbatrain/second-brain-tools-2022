@@ -8,7 +8,7 @@ Overview
     :stub-columns: 1
 
     * - tests
-      - | |pylint| |tox| 
+      - | |pylint| |build| 
     * - package
       - | |version| |wheel| |supported-versions| |supported-implementations|
         | |commits-since|
@@ -17,7 +17,7 @@ Overview
     :alt: GitHub Actions Build Status
     :target: https://github.com/rohanbatrain/Second-Brain-Tools/actions/
     
-.. |tox| image:: https://github.com/rohanbatrain/Second-Brain-Tools/actions/workflows/tox.yml/badge.svg
+.. |tox| image:: https://github.com/rohanbatrain/Second-Brain-Tools/actions/workflows/build.yml/badge.svg
     :alt: GitHub Actions Build Status
     :target: https://github.com/rohanbatrain/Second-Brain-Tools/actions/
 
