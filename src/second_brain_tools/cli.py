@@ -16,7 +16,7 @@ Why does this file exist, and why not put this in __main__?
 # Importing modules
 import os
 import sys
-# from second_brain_tools.dir import initial_check
+from second_brain_tools.dir import initial_check
 
 
 # Default Variable
@@ -30,9 +30,9 @@ def main():
     Main Function, aka CLI app.
     """
     # print(sys.getrecursionlimit())
-    # dir_code = input("hehe")
-    # dir_path_1 = initial_check(dir_code)
-    # print(dir_path_1)
+    dir_code = input("testing: ")
+    dir_path_1 = initial_check(dir_code)
+    print(dir_path_1)
     # setup()
 
     return 0

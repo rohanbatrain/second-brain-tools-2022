@@ -948,8 +948,8 @@ def ic_07(dir_code):
         dir_path = "07_Attachments-and-Templates/07B_Templates/"
     else:
         # testing shows recursion limit being hit so commenting the line below.
-        # if re.match("^07B", dir_code):
-        dir_path = ic_07b(dir_code)
+        if re.match("^07B", dir_code):
+            dir_path = ic_07b(dir_code)
     return dir_path
 
 
@@ -961,8 +961,7 @@ def ic_07b(dir_code):
     if dir_code == "07B1":
         dir_path = "07_Attachments-and-Templates/07B_Templates/07B1_Periodic-Notes/"
     else:
-        if re.match("^07B", dir_code):
-            dir_path = ic_07b(dir_code)
+        dir_path = DIR_NOT_FOUND
     return dir_path
 
 

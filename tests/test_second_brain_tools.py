@@ -744,12 +744,16 @@ def test_example_elif_ic_custom():
 # Checking with some regular expressions which matches with our internal regex. <Started>
 
 
+# The code below is very strange it returns 08_Archive which is really not possible,
+# i donno how it is accessing it. Maybe I have to sleep to find that out.
+# debug_hour_counter = 2 hrs of 26/11/22
+
 # def test_passing_wrong_but_regex_code_1():
 #     global dir_path
 #     dir_code = "01-$0M3-R@NDOM-D@⊥@"
 #     assert initial_check(dir_code) == dir_path
-
-
+#
+#
 # def test_passing_wrong_but_regex_code_10():
 #     global dir_path
 #     dir_code = "01A4-$0M3-R@NDOM-D@⊥@"
@@ -864,16 +868,16 @@ def test_passing_wrong_but_regex_code_116():
     assert initial_check(dir_code) == dir_path
 
 
-# def test_passing_wrong_but_regex_code_117():
-#     global dir_path
-#     dir_code = "07B-$0M3-R@NDOM-D@⊥@"
-#     assert initial_check(dir_code) == dir_path
+def test_passing_wrong_but_regex_code_117():
+    global dir_path
+    dir_code = "07B-$0M3-R@NDOM-D@⊥@"
+    assert initial_check(dir_code) == dir_path
 
 
-# def test_passing_wrong_but_regex_code_118():
-#     global dir_path
-#     dir_code = "07B1-$0M3-R@NDOM-D@⊥@"
-#     assert initial_check(dir_code) == dir_path
+def test_passing_wrong_but_regex_code_118():
+    global dir_path
+    dir_code = "07B1-$0M3-R@NDOM-D@⊥@"
+    assert initial_check(dir_code) == dir_path
 
 
 def test_passing_wrong_but_regex_code_119():
