@@ -178,3 +178,5 @@ jobs:
         TOXPYTHON: '${{ matrix.toxpython }}'
       run: >
         tox -e ${{ matrix.tox_env }} -v
+    - name: Codecov
+      uses: codecov/codecov-action@v3.1.1
