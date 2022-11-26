@@ -28,12 +28,12 @@ pip-wheel-metadata/
 pip-log.txt
 
 # Unit test / coverage reports
-#.coverage
+.coverage
 .tox
-#.coverage.*
+.coverage.*
 .pytest_cache/
 nosetests.xml
-#coverage.xml
+coverage.xml
 htmlcov
 
 # Translations
