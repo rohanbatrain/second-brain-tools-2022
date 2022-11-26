@@ -133,13 +133,13 @@ def ic_01a(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "01A1":
-        dir_path = "01_Capture-System/01A_Inbox/01A1_Quick-Capture"
+        dir_path = "01_Capture-System/01A_Inbox/01A1_Quick-Capture/"
     elif dir_code == "01A2":
-        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture"
+        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/"
     elif dir_code == "01A3":
-        dir_path = "01_Capture-System/01A_Inbox/01A3_Thought-Capture"
+        dir_path = "01_Capture-System/01A_Inbox/01A3_Thought-Capture/"
     elif dir_code == "01A4":
-        dir_path = "01_Capture-System/01A_Inbox/01A4_API-Capture"
+        dir_path = "01_Capture-System/01A_Inbox/01A4_API-Capture/"
     else:
         if re.match("^01A1", dir_code):
             dir_path = ic_01a1(dir_code)
@@ -170,9 +170,9 @@ def ic_01a2(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "01A2A":
-        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2A_Social-Networking"
+        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2A_Social-Networking/"
     elif dir_code == "01A2B":
-        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2B_Professional-Networking"
+        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2B_Professional-Networking/"
     else:
         if re.match("^01A2A", dir_code):
             dir_path = ic_01a2a(dir_code)
@@ -269,7 +269,7 @@ def ic_01c(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "01C":
-        dir_path = "01_Capture-System/01C_Periodic-Notes"
+        dir_path = "01_Capture-System/01C_Periodic-Notes/"
     else:
         dir_path = ic_01c1(dir_code)
     return dir_path
@@ -282,7 +282,7 @@ def ic_01c1(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "01C1":
-        dir_path = "01_Capture-System/01C_Periodic-Notes/01C1_Reminders"
+        dir_path = "01_Capture-System/01C_Periodic-Notes/01C1_Reminders/"
     else:
         print(dir_code)
         dir_path = DIR_NOT_FOUND
@@ -307,7 +307,7 @@ def ic_02(dir_code):
     if dir_code == "02A":
         dir_path = "02_Production-System/02A_Youtube/"
     elif dir_code == "02B":
-        dir_path = "02_Production-System/02B_Medium"
+        dir_path = "02_Production-System/02B_Medium/"
 # 02_regex
     else:
         if re.match("^02A", dir_code):
