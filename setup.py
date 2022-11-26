@@ -22,7 +22,9 @@ setup(
     name='second_brain_tools',
     version='0.0.1',
     license='Apache-2.0',
-    description='This project is a toolset for Second Brain, This would help us to quickly and more efficiently create notes using Second Brain Vault.',
+    description="""This project is a toolset for Second Brain,
+    This would help us to quickly and more efficiently create notes using Second Brain Vault.
+    """,
     long_description='{}\n{}'.format(
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
         re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst')),
