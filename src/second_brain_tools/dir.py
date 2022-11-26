@@ -157,7 +157,7 @@ def ic_01a1(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     # Flow ended
-    print(dir_code)
+
     dir_path = DIR_NOT_FOUND
     return dir_path
 # ic_01a1-Ended
@@ -190,7 +190,7 @@ def ic_01a2a(dir_code):
     if dir_code == "01A2A1":
         dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2A_Social-Networking/01A2A1_Reddit/"
     else:
-        print(dir_code)
+
         dir_path = DIR_NOT_FOUND
     return dir_path
 # ic_01a2a-Ended
@@ -205,7 +205,7 @@ def ic_01a2b(dir_code):
     if dir_code == "01A2B1":
         dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2B_Professional-Networking/01A2B1_LinkedIn/"
     else:
-        print(dir_code)
+
         dir_path = DIR_NOT_FOUND
     return dir_path
 # ic_01a2b-Ended
@@ -223,7 +223,7 @@ def ic_01a3(dir_code):
     if dir_code == "01A3":
         dir_path = "01_Capture-System/01A_Inbox/01A3_Thought-Capture/"
     else:
-        print(dir_code)
+
         dir_path = DIR_NOT_FOUND
     return dir_path
 # ic_01a3-Ended
@@ -239,7 +239,7 @@ def ic_01a4(dir_code):
     if dir_code == "01A4":
         dir_path = "01_Capture-System/01A_Inbox/01A4_API-Capture/"
     else:
-        print(dir_code)
+
         dir_path = DIR_NOT_FOUND
     return dir_path
 # ic_01a4-Ended
@@ -256,7 +256,7 @@ def ic_01b(dir_code):
     if dir_code == "01B":
         dir_path = "01_Capture-System/01B_Processed"
     else:
-        print(dir_code)
+
         dir_path = DIR_NOT_FOUND
     return dir_path
 # ic_01B-Ended
@@ -284,7 +284,7 @@ def ic_01c1(dir_code):
     if dir_code == "01C1":
         dir_path = "01_Capture-System/01C_Periodic-Notes/01C1_Reminders/"
     else:
-        print(dir_code)
+
         dir_path = DIR_NOT_FOUND
     return dir_path
 # ic_01C1-Ended
@@ -330,7 +330,7 @@ def ic_02a(dir_code):
     elif dir_code == "02A3":
         dir_path = "02_Production-System/02A_Youtube/02A3_Stories/"
     else:
-        print(dir_code)
+
         dir_path = DIR_NOT_FOUND
     return dir_path
 # ic_02a-Ended
@@ -345,7 +345,7 @@ def ic_02b(dir_code):
     if dir_code == "02B1":
         dir_path = "02_Production-System/02B_Medium/02B1_Articles/"
     else:
-        print(dir_code)
+
         dir_path = DIR_NOT_FOUND
     return dir_path
 # ic_02b-Ended
@@ -398,7 +398,7 @@ def ic_03a(dir_code):
     elif dir_code == "03A4":
         dir_path = "03_Knowledge-Base/03A_Science/03A4_Physics/"
     else:
-        print(dir_code)
+
         dir_path = DIR_NOT_FOUND
     return dir_path
 #  ic_03a-Ended
@@ -431,7 +431,7 @@ def ic_03b(dir_code):
     elif dir_code == "03B10":
         dir_path = "03_Knowledge-Base/03B_Languages/03B10_Spanish/"
     else:
-        print(dir_code)
+
         dir_path = DIR_NOT_FOUND
     return dir_path
 #  ic_03b-Ended
