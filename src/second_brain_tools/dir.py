@@ -41,7 +41,9 @@ def ic_custom(dir_code):
     elif dir_code == "example-elif":
         dir_path = "This/is/an/example/"
     # loading user defined commands from config started
+    # ic_custom_regex_started
 
+    # ic_custom_regex_ended
     # loading user defined commands from config ended
     else:
         dir_path = ic_root(dir_code)

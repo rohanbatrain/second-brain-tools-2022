@@ -16,7 +16,7 @@ Why does this file exist, and why not put this in __main__?
 # Importing modules
 import os
 import sys
-from second_brain_tools.dir import initial_check
+# from second_brain_tools.dir import initial_check
 
 
 # Default Variable
@@ -30,12 +30,13 @@ def main():
     Main Function, aka CLI app.
     """
     # print(sys.getrecursionlimit())
-    dir_code = input("testing: ")
-    dir_path_1 = initial_check(dir_code)
-    print(dir_path_1)
+    # dir_code = input("testing: ")
+    # dir_path_1 = initial_check(dir_code)
+    # print(dir_path_1)
     # setup()
 
     return 0
+
 
 # Starting the module
 
@@ -47,31 +48,32 @@ def setup():
     check = os.path.isfile(".env")
     if check is True:
         print("File already exist,Do you want to overwrite?")
-    args1 = input("Enter your choice, Y/N : ")
-    if args1 == "Y":
-        os.remove(".env")
-        config()
+        args1 = input("Enter your choice, Y/N : ")
+        if args1 == "Y":
+            os.remove(".env")
+            config()
 
     elif args1 == "N":
         print("Nothing to do, Exiting...")
         sys.exit()
+
     elif check is False:
         print("Do you have vault folder ready locally in your system?")
-    choice_1 = input("Y/N: ")
-    if choice_1 == "Y":
-        config()
-    elif choice_1 == "N":
-        print("Do you have your vault folder in github?")
-        choice_2 = input("Y/N: ")
-        if choice_2 == "Y":
-            print("Would you like to fetch it from the github?")
-        elif choice_2 == "N":
-            print("Would you like to fetch it from our github repo?")
-            choice_3 = input("Y/N :")
-            if choice_3 == "Y":
-                print("Sure,Getting things ready.")
-            elif choice_3 == "N":
-                print(NO_VAULT)
+        choice_1 = input("Y/N: ")
+        if choice_1 == "Y":
+            config()
+        elif choice_1 == "N":
+            print("Do you have your vault folder in github?")
+            choice_2 = input("Y/N: ")
+            if choice_2 == "Y":
+                print("Would you like to fetch it from the github?")
+            elif choice_2 == "N":
+                print("Would you like to fetch it from our github repo?")
+                choice_3 = input("Y/N :")
+                if choice_3 == "Y":
+                    print("Sure,Getting things ready.")
+                elif choice_3 == "N":
+                    print(NO_VAULT)
 
 
 def config():
