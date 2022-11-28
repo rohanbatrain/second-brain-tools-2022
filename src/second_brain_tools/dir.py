@@ -452,6 +452,8 @@ def ic_03b(dir_code):
         dir_path = "03_Knowledge-Base/03B_Languages/03B9_French/"
     elif dir_code == "03B10":
         dir_path = "03_Knowledge-Base/03B_Languages/03B10_Spanish/"
+    elif dir_code == "03B11":
+        dir_path = "03_Knowledge-Base/03B_Languages/03B11_Urdu"
     else:
 
         dir_path = DIR_NOT_FOUND

@@ -184,6 +184,12 @@ def test_03B10_initial_check():
     assert initial_check(dir_code) == dir_path
 
 
+def test_03B11_initial_check():
+    dir_code = "03B11"
+    dir_path = "03_Knowledge-Base/03B_Languages/03B11_Urdu"
+    assert initial_check(dir_code) == dir_path
+
+
 def test_03B2_initial_check():
     dir_code = "03B2"
     dir_path = "03_Knowledge-Base/03B_Languages/03B2_English/"

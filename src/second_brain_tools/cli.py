@@ -13,34 +13,46 @@ Why does this file exist, and why not put this in __main__?
     there's no ``second_brain_tools.__main__`` in ``sys.modules``.
 """
 
-# Importing modules
+# Importing production modules // Meant for production branch
 import os
 import sys
+import typer
+# Importing production modules finished
+
+
+# Importing testing modules started // Meant for testing branch
 # from second_brain_tools.dir import initial_check
+# # Importing testing modules finished
 
 
-# Default Variable
+# Default variable assignation started.
 GIT_URL = "https://github.com/rohanbatrain/Second-Brain"
 NO_VAULT = f"""A Second Brain Vault is required in order to run this script
 \n You can get a copy from : {GIT_URL}"""
+# Default variable assignation completed
+
+
+# Main function, which calls typer app here
 
 
 def main():
     """
     Main Function, aka CLI app.
     """
-    # print(sys.getrecursionlimit())
-    # dir_code = input("testing: ")
-    # dir_path_1 = initial_check(dir_code)
-    # print(dir_path_1)
-    # setup()
-
+    app()
     return 0
 
+
+# Typer app Started
+
+app = app = typer.Typer()
+
+# Typer app Finished
 
 # Starting the module
 
 
+@app.command()
 def setup():
     """
     A setup wizard to configure second_brain_tools
