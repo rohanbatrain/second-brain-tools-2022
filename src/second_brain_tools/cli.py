@@ -15,6 +15,7 @@ Why does this file exist, and why not put this in __main__?
 
 # Importing production modules // Meant for production branch
 import typer
+from second_brain_tools.setup import setup as sbt_setup
 # Importing production modules finished
 
 
@@ -36,38 +37,43 @@ def main():
 
 # Typer app Started
 
-app = app = typer.Typer()
+app = typer.Typer()
 
 # Typer app Finished
 
 # Starting the module
 
 
-@app.command()
+@app.command("Setup")
+def setup():
+    sbt_setup()
+
+
+@app.command("Notes")
 def notes():
     return
 
 
-@app.command()
+@app.command("Dirs")
 def dir():
     return
 
 
-@app.command()
+@app.command("Quick-Create")
 def quick_create():
     return
 
 
-@app.command()
+@app.command("Obsidian-Automations")
 def obsidian_automations():
     return
 
 
-@app.command()
-def daily_note():
+@app.command("Daily-Notes")
+def daily_notes():
     return
 
 
-@app.command()
+@app.command("Web-Services")
 def web_service():
     return
