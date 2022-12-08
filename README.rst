@@ -21,13 +21,17 @@ Overview
     :alt: GitHub Actions Build Status
     :target: https://github.com/rohanbatrain/Second-Brain-Tools/actions/
 
-.. |requires| image:: https://requires.io/github/rohanbatrain/Second-Brain-Tools/requirements.svg?branch=main
-    :alt: Requirements Status
-    :target: https://requires.io/github/rohanbatrain/Second-Brain-Tools/requirements/?branch=main
+.. |mkdocs| image:: https://github.com/rohanbatrain/Second-Brain-Tools/actions/workflows/mkdocs.yml/badge.svg
+    :alt: GitHub Actions Build Status
+    :target: https://github.com/rohanbatrain/Second-Brain-Tools/actions/
 
 .. |codecov| image:: https://codecov.io/gh/rohanbatrain/Second-Brain-Tools/branch/main/graphs/badge.svg?branch=main
     :alt: Coverage Status
     :target: https://codecov.io/github/rohanbatrain/Second-Brain-Tools
+
+.. |requires| image:: https://requires.io/github/rohanbatrain/Second-Brain-Tools/requirements.svg?branch=main
+    :alt: Requirements Status
+    :target: https://requires.io/github/rohanbatrain/Second-Brain-Tools/requirements/?branch=main
 
 .. |version| image:: https://img.shields.io/pypi/v/second-brain-tools.svg
     :alt: PyPI Package latest release

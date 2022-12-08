@@ -11,6 +11,12 @@ NO_VAULT = f"""A Second Brain Vault is required in order to run this script
 # Default variable assignation completed
 
 
+# Default Warnings assignation started
+Warning_WAP = "Wrong argument passed"
+Warning_EOF = "Nothing to do, Exiting..."
+# Default Warnings assignation finished
+
+
 def setup():
     """
     A setup wizard to configure second_brain_tools
@@ -32,7 +38,11 @@ def setup_true():
         config()
 
     elif choice == "N":
-        print("Nothing to do, Exiting...")
+        print(Warning_EOF)
+        sys.exit()
+
+    else:
+        print(Warning_WAP)
         sys.exit()
 
 
@@ -53,6 +63,9 @@ def setup_false():
                 print("Sure,Getting things ready.")
             elif choice_3 == "N":
                 print(NO_VAULT)
+    else:
+        print(Warning_WAP)
+        sys.exit()
 
 
 def config():
