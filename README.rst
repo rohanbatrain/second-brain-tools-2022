@@ -8,7 +8,7 @@ Overview
     :stub-columns: 1
 
     * - tests
-      - | |pylint| |build| |codecov|
+      - | |pylint| |build| |mkdocs| |codecov|
     * - package
       - | |version| |wheel| |supported-versions| |supported-implementations|
         | |commits-since|
