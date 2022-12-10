@@ -12,12 +12,12 @@ Why does this file exist, and why not put this in __main__?
   - When you import __main__ it will get executed again(as a module) because
     there's no ``second_brain_tools.__main__`` in ``sys.modules``.
 """
-
-# Importing testing modules started // Meant for testing branch
-# from second_brain_tools.dir import initial_check
+# // Meant for testing branch
+# Importing testing modules started
 # Importing testing modules finished
 
-# Importing production modules // Meant for production branch
+# // Meant for production branch
+# Importing production modules
 import typer
 from second_brain_tools.setup import setup as sbt_setup
 # Importing production modules finished
@@ -56,6 +56,17 @@ app.add_typer(app_daily_note, name="Daily-Note", help="Daily Note Specific Comma
 
 # Starting the module
 
+# Adding app testing commands Started
+
+
+@app.command("test")
+def test():
+    """
+    A temporary command to test debugging.
+    """
+
+# Adding app testing commands Finished
+
 # Adding app commands started
 
 
@@ -67,12 +78,20 @@ def setup():
     sbt_setup()
 
 
-@app.command("Quick-Create")
-def quick_create():
+@app.command("Quick-Capture")
+def quick_capture():
     """
     Quickly create a note in your second brain inbox.
     """
 
+
+@app.command("Random-Note")
+def random_note():
+    """
+    Get a random note from your knowledge or evergreen note.
+    pass --knowledge-base , --evergreen to explicitely choose.
+    default evergreen notes.
+    """
 
 # Adding app_notes commands Started
 

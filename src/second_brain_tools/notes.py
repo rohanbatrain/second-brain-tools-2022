@@ -1,23 +1,37 @@
 # importing modules started
-from second_brain_tools.dir import initial_check
+import os
+from second_brain_tools.directories import initial_check
+from second_brain_tools.config import Second_Brain_Directory
+from rich.console import Console
+from rich.markdown import Markdown
 # importing modules finished
 
 
-def create_note(note_name, dir_code):
-    note_directory = initial_check("dir_code")
-    print(note_directory)
-    return
+def create_note(dir_code, note_name, note_body):
+    note_path = Second_Brain_Directory + initial_check(dir_code) + note_name + ".md"
+    with open(note_path, 'w') as cn_obj_1:
+        cn_obj_1.write(note_body)
 
 
-# def delete_note(note_name, dir_code):
-#     dir_code = ""
-#     note_name = ""
-#     note_directory = initial_check("dir_code")
-#     return
+def delete_note(dir_code, note_name):
+    note_path = Second_Brain_Directory + initial_check(dir_code) + note_name + ".md"
+    print(f"Caution, You are deleting a file at \n {note_path}")
+    choice = input("Are you sure, you want to delte this file?(Y/N): ")
+    if choice == "Y":
+        os.remove(note_path)
+    elif choice == "N":
+        print("Aborting!!!")
 
 
-# def note_auto_sort(note_name, dir_code):
-#     dir_code = ""
-#     note_name = ""
-#     note_directory = initial_check("dir_code")
-#     return
+def move_note(old_dir_code, new_dir_code, note_name):
+    odc_note_path = Second_Brain_Directory + initial_check(old_dir_code) + note_name + ".md"
+    ndc_note_path = Second_Brain_Directory + initial_check(new_dir_code) + note_name + ".md"
+    os.replace(odc_note_path, ndc_note_path)
+
+
+def view_note(dir_code, note_name):
+    note_path = Second_Brain_Directory + initial_check(dir_code) + note_name + ".md"
+    with open(note_path, 'r') as MARKDOWN:
+        console = Console()
+        md = Markdown(MARKDOWN)
+        console.print(md)
