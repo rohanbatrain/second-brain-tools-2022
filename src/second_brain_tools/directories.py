@@ -5,8 +5,10 @@ But i would really like to hardcode the absolute path for error pruning my scrip
 """
 
 
-#  imports
+# Importing production modules Started
 import re
+import second_brain_tools.config as sbtc
+# Importing production modules finished
 
 #  Default values assignation started
 DIR_NOT_FOUND = "Wrong argument passed, the dir code you specified doesn't exist"
@@ -37,14 +39,14 @@ def ic_custom(dir_code):
     """
     # some example dir
     if dir_code == "example":
-        dir_path = "This/is/a/boiler/plate/example/"
-    elif dir_code == "example-elif":
-        dir_path = "This/is/an/example/"
-    # loading user defined commands from config started
-    # ic_custom_regex_started
-
-    # ic_custom_regex_ended
-    # loading user defined commands from config ended
+        dir_path = sbtc._example
+    elif dir_code == "example_elif":
+        dir_path = sbtc._example_elif
+    # Add your directories here.
+    # Add your directories here.
+    # Add your directories here.
+    # Add your directories here.
+    # Add your directories here.
     else:
         dir_path = ic_root(dir_code)
     return dir_path
@@ -60,21 +62,21 @@ def ic_root(dir_code):
     """
     global dir_path
     if dir_code == "01":
-        dir_path = "01_Capture-System/"
+        dir_path = sbtc._01
     elif dir_code == "02":
-        dir_path = "02_Production-System/"
+        dir_path = sbtc._02
     elif dir_code == "03":
-        dir_path = "03_Knowledge-Base/"
+        dir_path = sbtc._03
     elif dir_code == "04":
-        dir_path = "04_Evergreen/"
+        dir_path = sbtc._04
     elif dir_code == "05":
-        dir_path = "05_Projects/"
+        dir_path = sbtc._05
     elif dir_code == "06":
-        dir_path = "06_Personal/"
+        dir_path = sbtc._06
     elif dir_code == "07":
-        dir_path = "07_Attachments-and-Templates/"
+        dir_path = sbtc._07
     elif dir_code == "08":
-        dir_path = "08_Archive/"
+        dir_path = sbtc._08
     else:
         dir_path = ic_root_regex(dir_code)
     return dir_path
@@ -118,11 +120,11 @@ def ic_01(dir_code):
     """
     global dir_path
     if dir_code == "01A":
-        dir_path = "01_Capture-System/01A_Inbox/"
+        dir_path = sbtc._01A
     elif dir_code == "01B":
-        dir_path = "01_Capture-System/01B_Processed/"
+        dir_path = sbtc._01B
     elif dir_code == "01C":
-        dir_path = "01_Capture-System/01C_Periodic-Notes/"
+        dir_path = sbtc._01C
     # 01_regex
     else:
         if re.match("^01A", dir_code):
@@ -142,13 +144,13 @@ def ic_01a(dir_code):
     """
     global dir_path
     if dir_code == "01A1":
-        dir_path = "01_Capture-System/01A_Inbox/01A1_Quick-Capture/"
+        dir_path = sbtc._01A1
     elif dir_code == "01A2":
-        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/"
+        dir_path = sbtc._01A2
     elif dir_code == "01A3":
-        dir_path = "01_Capture-System/01A_Inbox/01A3_Thought-Capture/"
+        dir_path = sbtc._01A3
     elif dir_code == "01A4":
-        dir_path = "01_Capture-System/01A_Inbox/01A4_API-Capture/"
+        dir_path = sbtc._01A4
     else:
         if re.match("^01A1", dir_code):
             dir_path = ic_01a1(dir_code)
@@ -179,9 +181,9 @@ def ic_01a2(dir_code):
     """
     global dir_path
     if dir_code == "01A2A":
-        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2A_Social-Networking/"
+        dir_path = sbtc._01A2A
     elif dir_code == "01A2B":
-        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2B_Professional-Networking/"
+        dir_path = sbtc._01A2B
     else:
         if re.match("^01A2A", dir_code):
             dir_path = ic_01a2a(dir_code)
@@ -198,7 +200,7 @@ def ic_01a2a(dir_code):
     """
     global dir_path
     if dir_code == "01A2A1":
-        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2A_Social-Networking/01A2A1_Reddit/"
+        dir_path = sbtc._01A2A1
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -213,7 +215,7 @@ def ic_01a2b(dir_code):
     """
     global dir_path
     if dir_code == "01A2B1":
-        dir_path = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2B_Professional-Networking/01A2B1_LinkedIn/"
+        dir_path = sbtc._01A2B1
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -231,7 +233,7 @@ def ic_01a3(dir_code):
     """
     global dir_path
     if dir_code == "01A3":
-        dir_path = "01_Capture-System/01A_Inbox/01A3_Thought-Capture/"
+        dir_path = sbtc._01A3
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -247,7 +249,7 @@ def ic_01a4(dir_code):
     """
     global dir_path
     if dir_code == "01A4":
-        dir_path = "01_Capture-System/01A_Inbox/01A4_API-Capture/"
+        dir_path = sbtc._01A4
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -264,7 +266,7 @@ def ic_01b(dir_code):
     """
     global dir_path
     if dir_code == "01B":
-        dir_path = "01_Capture-System/01B_Processed"
+        dir_path = sbtc._01B
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -279,7 +281,7 @@ def ic_01c(dir_code):
     """
     global dir_path
     if dir_code == "01C":
-        dir_path = "01_Capture-System/01C_Periodic-Notes/"
+        dir_path = sbtc._01C
     else:
         dir_path = ic_01c1(dir_code)
     return dir_path
@@ -293,7 +295,7 @@ def ic_01c1(dir_code):
     """
     global dir_path
     if dir_code == "01C1":
-        dir_path = "01_Capture-System/01C_Periodic-Notes/01C1_Reminders/"
+        dir_path = sbtc._01C1
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -316,9 +318,9 @@ def ic_02(dir_code):
     """
     global dir_path
     if dir_code == "02A":
-        dir_path = "02_Production-System/02A_Youtube/"
+        dir_path = sbtc._02A
     elif dir_code == "02B":
-        dir_path = "02_Production-System/02B_Medium/"
+        dir_path = sbtc._02B
 # 02_regex
     else:
         if re.match("^02A", dir_code):
@@ -336,11 +338,11 @@ def ic_02a(dir_code):
     """
     global dir_path
     if dir_code == "02A1":
-        dir_path = "02_Production-System/02A_Youtube/02A1_Videos/"
+        dir_path = sbtc._02A1
     elif dir_code == "02A2":
-        dir_path = "02_Production-System/02A_Youtube/02A2_Shorts/"
+        dir_path = sbtc._02A2
     elif dir_code == "02A3":
-        dir_path = "02_Production-System/02A_Youtube/02A3_Stories/"
+        dir_path = sbtc._02A3
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -355,7 +357,7 @@ def ic_02b(dir_code):
     """
     global dir_path
     if dir_code == "02B1":
-        dir_path = "02_Production-System/02B_Medium/02B1_Articles/"
+        dir_path = sbtc._02B1
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -364,7 +366,9 @@ def ic_02b(dir_code):
 # ic_02-Ended
 
 #  02-Ended
+
 # -------------------------------------#
+
 #  03-Started
 
 #  ic_03-Started
@@ -376,13 +380,13 @@ def ic_03(dir_code):
     """
     global dir_path
     if dir_code == "03A":
-        dir_path = "03_Knowledge-Base/03A_Science/"
+        dir_path = sbtc._03A
     elif dir_code == "03B":
-        dir_path = "03_Knowledge-Base/03B_Languages/"
+        dir_path = sbtc._03B
     elif dir_code == "03C":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/"
+        dir_path = sbtc._03C
     elif dir_code == "03D":
-        dir_path = "03_Knowledge-Base/03D_Theology/"
+        dir_path = sbtc._03D
     else:
         if re.match("^03A", dir_code):
             dir_path = ic_03a(dir_code)
@@ -403,13 +407,13 @@ def ic_03a(dir_code):
     """
     global dir_path
     if dir_code == "03A1":
-        dir_path = "03_Knowledge-Base/03A_Science/03A1_Chemistry/"
+        dir_path = sbtc._03A1
     elif dir_code == "03A2":
-        dir_path = "03_Knowledge-Base/03A_Science/03A2_Computer-Science/"
+        dir_path = sbtc._03A2
     elif dir_code == "03A3":
-        dir_path = "03_Knowledge-Base/03A_Science/03A3_Mathematics/"
+        dir_path = sbtc._03A3
     elif dir_code == "03A4":
-        dir_path = "03_Knowledge-Base/03A_Science/03A4_Physics/"
+        dir_path = sbtc._03A4
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -424,27 +428,27 @@ def ic_03b(dir_code):
     """
     global dir_path
     if dir_code == "03B1":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B1_Hindi/"
+        dir_path = sbtc._03B1
     elif dir_code == "03B2":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B2_English/"
+        dir_path = sbtc._03B2
     elif dir_code == "03B3":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B3_Sanskrit/"
+        dir_path = sbtc._03B3
     elif dir_code == "03B4":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B4_Japanese/"
+        dir_path = sbtc._03B4
     elif dir_code == "03B5":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B5_Bengali/"
+        dir_path = sbtc._03B5
     elif dir_code == "03B6":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B6_Korean/"
+        dir_path = sbtc._03B6
     elif dir_code == "03B7":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B7_Punjabi/"
+        dir_path = sbtc._03B7
     elif dir_code == "03B8":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B8_Russian/"
+        dir_path = sbtc._03B8
     elif dir_code == "03B9":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B9_French/"
+        dir_path = sbtc._03B9
     elif dir_code == "03B10":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B10_Spanish/"
+        dir_path = sbtc._03B10
     elif dir_code == "03B11":
-        dir_path = "03_Knowledge-Base/03B_Languages/03B11_Urdu"
+        dir_path = sbtc._03B11
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -459,13 +463,13 @@ def ic_03c(dir_code):
     """
     global dir_path
     if dir_code == "03C1":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/"
+        dir_path = sbtc._03C1
     elif dir_code == "03C2":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C2_Machine-Learning/"
+        dir_path = sbtc._03C2
     elif dir_code == "03C3":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/"
+        dir_path = sbtc._03C3
     elif dir_code == "03C4":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C4_System-Administration/"
+        dir_path = sbtc._03C4
     else:
         if re.match("^03C1", dir_code):
             dir_path = ic_03c1(dir_code)
@@ -486,11 +490,11 @@ def ic_03c1(dir_code):
     """
     global dir_path
     if dir_code == "03C1A":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/"
+        dir_path = sbtc._03C1A
     elif dir_code == "03C1B":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1B_Programming-Projects/"
+        dir_path = sbtc._03C1B
     elif dir_code == "03C1C":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1C_Query-Languages/"
+        dir_path = sbtc._03C1C
     else:
         if re.match("^03C1A", dir_code):
             dir_path = ic_03c1a(dir_code)
@@ -526,25 +530,25 @@ def ic_03c1a_part_1(dir_code):
     """
     global dir_path
     if dir_code == "03C1A1":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A1_Bash/"
+        dir_path = sbtc._03C1A1
     elif dir_code == "03C1A2":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A2_Python/"
+        dir_path = sbtc._03C1A2
     elif dir_code == "03C1A3":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A3_C-Lang/"
+        dir_path = sbtc._03C1A3
     elif dir_code == "03C1A4":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A4_Javascript/"
+        dir_path = sbtc._03C1A4
     elif dir_code == "03C1A5":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A5_Dart/"
+        dir_path = sbtc._03C1A5
     elif dir_code == "03C1A6":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A6_Flutter/"
+        dir_path = sbtc._03C1A6
     elif dir_code == "03C1A7":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A7_C++/"
+        dir_path = sbtc._03C1A7
     elif dir_code == "03C1A8":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A8_TypeScript/"
+        dir_path = sbtc._03C1A8
     elif dir_code == "03C1A9":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A9_Java/"
+        dir_path = sbtc._03C1A9
     elif dir_code == "03C1A10":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A10_C-Sharp/"
+        dir_path = sbtc._03C1A10
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -559,21 +563,21 @@ def ic_03c1a_part_2(dir_code):
     """
     global dir_path
     if dir_code == "03C1A11":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A11_PHP/"
+        dir_path = sbtc._03C1A11
     elif dir_code == "03C1A12":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A12_Groovy/"
+        dir_path = sbtc._03C1A12
     elif dir_code == "03C1A13":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A13_Ruby/"
+        dir_path = sbtc._03C1A13
     elif dir_code == "03C1A14":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A14_Rust/"
+        dir_path = sbtc._03C1A14
     elif dir_code == "03C1A15":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A15_Kotlin/"
+        dir_path = sbtc._03C1A15
     elif dir_code == "03C1A16":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A16_Golang/"
+        dir_path = sbtc._03C1A16
     elif dir_code == "03C1A17":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A17_Perl/"
+        dir_path = sbtc._03C1A17
     elif dir_code == "03C1A18":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A18_Visual-Basic-Dot-Net/"
+        dir_path = sbtc._03C1A18
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -590,7 +594,7 @@ def ic_03c1b(dir_code):
     """
     global dir_path
     if dir_code == "03C1B1":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1B_Programming-Projects/Project-1/"
+        dir_path = sbtc._03C1B1
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -605,7 +609,7 @@ def ic_03c1c(dir_code):
     """
     global dir_path
     if dir_code == "03C1C1":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1C_Query-Languages/03C1C1_SQL/"
+        dir_path = sbtc._03C1C1
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -622,9 +626,9 @@ def ic_03c2(dir_code):
     """
     global dir_path
     if dir_code == "03C2A":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C2_Machine-Learning/03C2A_Reinforcement-Learning/"
+        dir_path = sbtc._03C2A
     elif dir_code == "03C2B":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C2_Machine-Learning/03C2B_Deep-Learning/"
+        dir_path = sbtc._03C2B
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -639,9 +643,9 @@ def ic_03c3(dir_code):
     """
     global dir_path
     if dir_code == "03C3A":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/"
+        dir_path = sbtc._03C3A
     elif dir_code == "03C3B":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3B_Operating-System/"
+        dir_path = sbtc._03C3B
     else:
         if re.match("^03C3A", dir_code):
             dir_path = ic_03c3a(dir_code)
@@ -658,13 +662,13 @@ def ic_03c3a(dir_code):
     """
     global dir_path
     if dir_code == "03C3A1":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A1__Unreal-Engine/"
+        dir_path = sbtc._03C3A1
     elif dir_code == "03C3A2":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A2__Blender/"
+        dir_path = sbtc._03C3A2
     elif dir_code == "03C3A3":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A3__Unity/"
+        dir_path = sbtc._03C3A3
     elif dir_code == "03C3A4":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A4__MariaDB/"
+        dir_path = sbtc._03C3A4
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -679,7 +683,7 @@ def ic_03c3b(dir_code):
     """
     global dir_path
     if dir_code == "03C3B1":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3B_Operating-System/03C3B1_Linux/"
+        dir_path = sbtc._03C3B1
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -696,7 +700,7 @@ def ic_03c4(dir_code):
     """
     global dir_path
     if dir_code == "03C4A":
-        dir_path = "03_Knowledge-Base/03C_IT-Skills/03C4_System-Administration/03C4A_Web-Servers/"
+        dir_path = sbtc._03C4A
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -713,15 +717,15 @@ def ic_03d(dir_code):
     """
     global dir_path
     if dir_code == "03D1":
-        dir_path = "03_Knowledge-Base/03D_Theology/03D1_Hinduism/"
+        dir_path = sbtc._03D1
     elif dir_code == "03D2":
-        dir_path = "03_Knowledge-Base/03D_Theology/03D2_Sikhism/"
+        dir_path = sbtc._03D2
     elif dir_code == "03D3":
-        dir_path = "03_Knowledge-Base/03D_Theology/03D3_Buddhism/"
+        dir_path = sbtc._03D3
     elif dir_code == "03D4":
-        dir_path = "03_Knowledge-Base/03D_Theology/03D4_Islam/"
+        dir_path = sbtc._03D4
     elif dir_code == "03D5":
-        dir_path = "03_Knowledge-Base/03D_Theology/03D5_Christianity/"
+        dir_path = sbtc._03D5
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -741,11 +745,11 @@ def ic_04(dir_code):
     """
     global dir_path
     if dir_code == "04A":
-        dir_path = "04_Evergreen/04A_Network/"
+        dir_path = sbtc._04A
     elif dir_code == "04B":
-        dir_path = "04_Evergreen/04B_Events/"
+        dir_path = sbtc._04B
     elif dir_code == "04C":
-        dir_path = "04_Evergreen/04C_Locations/"
+        dir_path = sbtc._04C
     else:
         if re.match("^04A", dir_code):
             dir_path = ic_04a(dir_code)
@@ -764,21 +768,21 @@ def ic_04a(dir_code):
     """
     global dir_path
     if dir_code == "04A1":
-        dir_path = "04_Evergreen/04A_Network/04A1_Bros/"
+        dir_path = sbtc._04A1
     elif dir_code == "04A2":
-        dir_path = "04_Evergreen/04A_Network/04A2_Class-Room/"
+        dir_path = sbtc._04A2
     elif dir_code == "04A3":
-        dir_path = "04_Evergreen/04A_Network/04A3_Social-Media/"
+        dir_path = sbtc._04A3
     elif dir_code == "04A4":
-        dir_path = "04_Evergreen/04A_Network/04A4_Friends/"
+        dir_path = sbtc._04A4
     elif dir_code == "04A5":
-        dir_path = "04_Evergreen/04A_Network/04A5_Family/"
+        dir_path = sbtc._04A5
     elif dir_code == "04A6":
-        dir_path = "04_Evergreen/04A_Network/04A6_Corporate/"
+        dir_path = sbtc._04A6
     elif dir_code == "04A7":
-        dir_path = "04_Evergreen/04A_Network/04A7_Relatives/"
+        dir_path = sbtc._04A7
     elif dir_code == "04A99":
-        dir_path = "04_Evergreen/04A_Network/04A99_Miscellaneous/"
+        dir_path = sbtc._04A99
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -793,9 +797,9 @@ def ic_04b(dir_code):
     """
     global dir_path
     if dir_code == "04B1":
-        dir_path = "04_Evergreen/04B_Events/04B1_Incidents/"
+        dir_path = sbtc._04B1
     elif dir_code == "04B2":
-        dir_path = "04_Evergreen/04B_Events/04B2_Planned-Events/"
+        dir_path = sbtc._04B2
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -810,7 +814,7 @@ def ic_04c(dir_code):
     """
     global dir_path
     if dir_code == "04C1":
-        dir_path = "04_Evergreen/04C_Locations/04C1_School/"
+        dir_path = sbtc._04C1
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -829,15 +833,15 @@ def ic_05(dir_code):
     Takes dir_code as input and returns the absolute directory path of the code.
     """
     if dir_code == "05A":
-        dir_path = "05_Projects/05A_Brands/"
+        dir_path = sbtc._05A
     elif dir_code == "05B":
-        dir_path = "05_Projects/05B_Startup/"
+        dir_path = sbtc._05B
     elif dir_code == "05C":
-        dir_path = "05_Projects/05C_Business/"
+        dir_path = sbtc._05C
     elif dir_code == "05D":
-        dir_path = "05_Projects/05D_Story-Writing/"
+        dir_path = sbtc._05D
     elif dir_code == "05E":
-        dir_path = "05_Projects/05E_Competitions/"
+        dir_path = sbtc._05E
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -853,13 +857,13 @@ def ic_06(dir_code):
     """
     global dir_path
     if dir_code == "06A":
-        dir_path = "06_Personal/06A_Brand/"
+        dir_path = sbtc._06A
     elif dir_code == "06B":
-        dir_path = "06_Personal/06B_Projects/"
+        dir_path = sbtc._06B
     elif dir_code == "06C":
-        dir_path = "06_Personal/06C_Workspace-Log/"
+        dir_path = sbtc._06C
     elif dir_code == "06D":
-        dir_path = "06_Personal/06D_Recommendation-List/"
+        dir_path = sbtc._06D
     else:
         if re.match("^06A", dir_code):
             dir_path = ic_06a(dir_code)
@@ -878,7 +882,7 @@ def ic_06a(dir_code):
     """
     global dir_path
     if dir_code == "06A1":
-        dir_path = "06_Personal/06A_Brand/06A1_Brand-1/"
+        dir_path = sbtc._06A1
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -890,7 +894,7 @@ def ic_06b(dir_code):
     """
     global dir_path
     if dir_code == "06B1":
-        dir_path = "06_Personal/06B_Projects/06B1_Home-Lab/"
+        dir_path = sbtc._06B1
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -902,9 +906,9 @@ def ic_06c(dir_code):
     """
     global dir_path
     if dir_code == "06C1":
-        dir_path = "06_Personal/06C_Workspace-Log/06C1_Laptop-Workspace/"
+        dir_path = sbtc._06C1
     elif dir_code == "06C2":
-        dir_path = "06_Personal/06C_Workspace-Log/06C2_Web-Presence/"
+        dir_path = sbtc._06C2
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -916,11 +920,11 @@ def ic_06d(dir_code):
     """
     global dir_path
     if dir_code == "06D1":
-        dir_path = "06_Personal/06D_Recommendation-List/06D1_Movies/"
+        dir_path = sbtc._06D1
     elif dir_code == "06D2":
-        dir_path = "06_Personal/06D_Recommendation-List/06D2_Music/"
+        dir_path = sbtc._06D2
     elif dir_code == "06D3":
-        dir_path = "06_Personal/06D_Recommendation-List/06D3_Books/"
+        dir_path = sbtc._06D3
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -937,9 +941,9 @@ def ic_07(dir_code):
     """
     global dir_path
     if dir_code == "07A":
-        dir_path = "07_Attachments-and-Templates/07A_Attachments/"
+        dir_path = sbtc._07A
     elif dir_code == "07B":
-        dir_path = "07_Attachments-and-Templates/07B_Templates/"
+        dir_path = sbtc._07B
     else:
         # testing shows recursion limit being hit so commenting the line below.
         if re.match("^07B", dir_code):
@@ -953,7 +957,7 @@ def ic_07b(dir_code):
     """
     global dir_path
     if dir_code == "07B1":
-        dir_path = "07_Attachments-and-Templates/07B_Templates/07B1_Periodic-Notes/"
+        dir_path = sbtc._07B1
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path

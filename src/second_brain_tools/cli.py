@@ -44,11 +44,12 @@ app = typer.Typer()
 app_notes = typer.Typer()
 app_dirs = typer.Typer()
 app_daily_note = typer.Typer()
+app_capture = typer.Typer()
 # Defining typers Finished
 
 # Adding typers to main app Started
 app.add_typer(app_notes, name="Notes", help="Notes specific commands.")
-app.add_typer(app_dirs, name="Dirs", help="Directories specific commands.")
+app.add_typer(app_capture, name="Capture", help="Capture a note using predefined flows.")
 app.add_typer(app_daily_note, name="Daily-Note", help="Daily Note Specific Commands.")
 # Adding typers to main app Finished
 
@@ -59,11 +60,11 @@ app.add_typer(app_daily_note, name="Daily-Note", help="Daily Note Specific Comma
 # Adding app testing commands Started
 
 
-@app.command("test")
-def test():
-    """
-    A temporary command to test debugging.
-    """
+# @app.command("test")
+# def test():
+#     """
+#     A temporary command to test debugging.
+#     """
 
 # Adding app testing commands Finished
 
@@ -81,17 +82,36 @@ def setup():
 @app.command("Quick-Capture")
 def quick_capture():
     """
-    Quickly create a note in your second brain inbox.
+    Quickly capture a note in your inbox.
     """
 
 
 @app.command("Random-Note")
 def random_note():
     """
-    Get a random note from your knowledge or evergreen note.
-    pass --knowledge-base , --evergreen to explicitely choose.
-    default evergreen notes.
+    View a random note from your vault.
     """
+    # knowledge or evergreen note.
+    # pass --knowledge-base , --evergreen to explicitely choose.
+    # default evergreen notes.
+
+
+# Adding app_capture commands Started
+@app_capture.command("Thought")
+def capture_thought():
+    """
+    Had a thought? Capture it.
+    """
+
+
+@app_capture.command("Link")
+def capture_link():
+    """
+    Got a url/link? Capture it.
+    """
+
+# Adding app_capture commands Finished
+
 
 # Adding app_notes commands Started
 
@@ -122,44 +142,19 @@ def notes_delete():
 
 # Adding app_notes commands Finished
 
-# Adding app_dirs commands Started
-
-@app_dirs.command("Create")
-def dirs_create():
-
-    return
-
-
-@app_dirs.command("Rename")
-def dirs_rename():
-
-    return
-
-
-@app_dirs.command("Move")
-def dirs_move():
-
-    return
-
-
-@app_dirs.command("Delete")
-def dirs_delete():
-
-    return
-# Adding app_dirs commands Finished
 
 # Adding app_daily_note commands Started
 
 
 @app_daily_note.command("Create")
 def daily_note_create():
-
+    "Create your daily note using sbt."
     return
 
 
 @app_daily_note.command("Recreate")
 def daily_note_recreate():
-    """Deletes the content of the daily note (today) and start over."""
+    "Deletes the content of the daily note (today) and start over."
     return
 
 # Adding app_daily_note commands Finished
