@@ -1,4 +1,4 @@
-from second_brain_tools.dir import initial_check, ic_custom
+from second_brain_tools.directories import initial_check, ic_custom
 
 
 # defining default variables
