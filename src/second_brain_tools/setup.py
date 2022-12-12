@@ -248,4 +248,4 @@ def sbt_config_generation(second_brain_dir):
         dot_env.write("_07A2 = \"07_Attachments-and-Templates/07A_Attachments/07A2_Shared-Vaults/\"\n")
         dot_env.write("_07B = \"07_Attachments-and-Templates/07B_Templates/\"\n")
         dot_env.write("_07B1 = \"07_Attachments-and-Templates/07B_Templates/07B1_Periodic-Notes/\"\n\n")
-        dot_env.write("######## Default Directories Defining Finished ######")
+        dot_env.write("######## Default Directories Defining Finished ###### \n")
