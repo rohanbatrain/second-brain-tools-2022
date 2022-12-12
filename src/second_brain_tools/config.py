@@ -166,3 +166,13 @@ Import your directories here
 """
 
 # User defined directories from env import Finished
+
+
+# # # #  Testing //Comment out all the variables below in production.
+
+def testing():
+    print("Testing started")
+    print(_01)
+
+
+testing()

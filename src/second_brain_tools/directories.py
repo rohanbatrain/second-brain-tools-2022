@@ -6,6 +6,7 @@ But i would really like to hardcode the absolute path for error pruning my scrip
 
 
 # Importing production modules Started
+import os
 import re
 import second_brain_tools.config as sbtc
 # Importing production modules finished
@@ -28,6 +29,7 @@ def initial_check(dir_code):
     dir_path = ic_custom(dir_code)
 
     return dir_path
+
 #  Initial check Ended
 # -------------------------------------#
 #  User-Custom Directories Started
@@ -39,9 +41,9 @@ def ic_custom(dir_code):
     """
     # some example dir
     if dir_code == "example":
-        dir_path = sbtc._example
+        dir_path = sbtc.example
     elif dir_code == "example_elif":
-        dir_path = sbtc._example_elif
+        dir_path = sbtc.example_elif
     # Add your directories here.
     # Add your directories here.
     # Add your directories here.

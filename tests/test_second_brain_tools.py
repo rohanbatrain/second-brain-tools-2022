@@ -736,12 +736,12 @@ def test_08_initial_check():
 
 def test_example_ic_custom():
     dir_code = "example"
-    dir_path = "This/is/a/boiler/plate/example/"
+    dir_path = "This/is/an/example/"
     assert ic_custom(dir_code) == dir_path
 
 
 def test_example_elif_ic_custom():
-    dir_code = "example-elif"
+    dir_code = "example_elif"
     dir_path = "This/is/an/example/"
     assert ic_custom(dir_code) == dir_path
 
