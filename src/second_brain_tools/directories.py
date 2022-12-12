@@ -151,6 +151,10 @@ def ic_01a(dir_code):
         dir_path = sbtc._01A3
     elif dir_code == "01A4":
         dir_path = sbtc._01A4
+    elif dir_code == "01A5":
+        dir_path = sbtc._01A5
+    elif dir_code == "01A6":
+        dir_path = sbtc._01A6
     else:
         if re.match("^01A1", dir_code):
             dir_path = ic_01a1(dir_code)
@@ -753,8 +757,6 @@ def ic_04(dir_code):
     else:
         if re.match("^04A", dir_code):
             dir_path = ic_04a(dir_code)
-        elif re.match("^04B", dir_code):
-            dir_path = ic_04b(dir_code)
         elif re.match("^04C", dir_code):
             dir_path = ic_04c(dir_code)
     return dir_path
@@ -788,22 +790,6 @@ def ic_04a(dir_code):
     return dir_path
 #  ic_04A-Ended
 
-#  ic_04B-Started
-
-
-def ic_04b(dir_code):
-    """
-    Takes dir_code as input and returns the absolute directory path of the code.
-    """
-    global dir_path
-    if dir_code == "04B1":
-        dir_path = sbtc._04B1
-    elif dir_code == "04B2":
-        dir_path = sbtc._04B2
-    else:
-        dir_path = DIR_NOT_FOUND
-    return dir_path
-#  ic_04B-Ended
 
 #  ic_04C-Started
 
@@ -864,6 +850,8 @@ def ic_06(dir_code):
         dir_path = sbtc._06C
     elif dir_code == "06D":
         dir_path = sbtc._06D
+    elif dir_code == "06E":
+        dir_path = sbtc._06E
     else:
         if re.match("^06A", dir_code):
             dir_path = ic_06a(dir_code)

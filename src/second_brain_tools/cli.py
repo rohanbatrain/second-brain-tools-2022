@@ -110,6 +110,7 @@ def capture_link():
     Got a url/link? Capture it.
     """
 
+
 # Adding app_capture commands Finished
 
 
@@ -146,15 +147,15 @@ def notes_delete():
 # Adding app_daily_note commands Started
 
 
-@app_daily_note.command("Create")
+@app_daily_note.command("Generate")
 def daily_note_create():
-    "Create your daily note using sbt."
+    "Generate your daily note using sbt."
     return
 
 
-@app_daily_note.command("Recreate")
+@app_daily_note.command("Regenerate")
 def daily_note_recreate():
-    "Deletes the content of the daily note (today) and start over."
+    "Regenerates the daily note."
     return
 
 # Adding app_daily_note commands Finished
