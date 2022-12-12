@@ -828,6 +828,8 @@ def ic_04(dir_code):
         dir_path = sbtc._04B
     elif dir_code == "04C":
         dir_path = sbtc._04C
+    elif dir_code == "04D":
+        dir_path = sbtc._04D
     else:
         if re.match("^04A", dir_code):
             dir_path = ic_04a(dir_code)

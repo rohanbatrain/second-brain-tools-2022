@@ -214,6 +214,7 @@ def sbt_config_generation(second_brain_dir):
         dot_env.write("_04A = \"04_Evergreen/04A_Network/\"\n")
         dot_env.write("_04B = \"04_Evergreen/04B_Events/\"\n")
         dot_env.write("_04C = \"04_Evergreen/04C_Locations/\"\n")
+        dot_env.write("_04D = \"04_Evergreen/04D_Bullet-Journal/\"\n")
         dot_env.write("_04A1 = \"04_Evergreen/04A_Network/04A1_Bros/\"\n")
         dot_env.write("_04A2 = \"04_Evergreen/04A_Network/04A2_Class-Room/\"\n")
         dot_env.write("_04A3 = \"04_Evergreen/04A_Network/04A3_Social-Media/\"\n")
