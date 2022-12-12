@@ -20,7 +20,7 @@ include README.rst
 include CODE_OF_CONDUCT.md
 include SECURITY.md
 
-include .env
+include .sbt_config
 recursive-include workflows *.yml
 
 global-exclude *.py[cod] __pycache__/* *.so *.dyli
