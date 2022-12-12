@@ -99,10 +99,10 @@ def config():
 
 def sbt_config_generation(second_brain_dir):
     with open('.sbt_config', 'a') as dot_env:
-        dot_env.write("# ic_custom_regex_started\n")
-        dot_env.write("\n")
-        dot_env.write("# ic_custom_regex_ended\n")
-        dot_env.write("Second_Brain_Directory = " + "\"" + second_brain_dir + "\"\n\n")
+        dot_env.write("######## Default Variables Assignation Started \n")
+        dot_env.write("DIR_NOT_FOUND = \"Wrong argument passed, the dir code you specified doesn't exist\"\n")
+        dot_env.write("Second_Brain_Directory = " + "\"" + second_brain_dir + "\"\n")
+        dot_env.write("######## Default Variables Assignation Finished \n\n")
         dot_env.write("######## Default Example Directories Defining Started #######\n")
         dot_env.write("example = \"This/is/an/example/\"\n")
         dot_env.write("example_elif = \"This/is/an/example/\"\n")

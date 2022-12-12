@@ -3,10 +3,14 @@ import os
 from dotenv import load_dotenv
 # Importing production modules finished
 
+# Default Functions Calling
 load_dotenv(".sbt_config")
+# Default Functions Calling
 
 # Default strings from env import Started
 Second_Brain_Directory = os.getenv("Second_Brain_Directory")
+DIR_NOT_FOUND = os.getenv("DIR_NOT_FOUND")
+
 # Default strings from env import Finished
 
 # Default examples from env import Started
