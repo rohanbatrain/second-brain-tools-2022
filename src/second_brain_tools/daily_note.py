@@ -1,7 +1,7 @@
 # Importing production modules // Meant for production branch
 from dotenv import load_dotenv
 from os.path import exists
-from second_brain_tools.config import Today, DNM_APPEND_TYPE, GLOBAL_APPEND_TYPE, SECOND_BRAIN_DIRECTORY, FILE_ALREADY_EXIST, DNM_FILE_CONTENT_CREATION  # noqa: E501
+from second_brain_tools.config import Today, PLAIN_TEXT_TIME_INCLUDE, LIST_TIME_INCLUDE, DNM_APPEND_TYPE, GLOBAL_APPEND_TYPE, SECOND_BRAIN_DIRECTORY, FILE_ALREADY_EXIST, DNM_FILE_CONTENT_CREATION  # noqa: E501
 from second_brain_tools.directories import initial_check
 from second_brain_tools.append import plain_text_append, bullet_list_append, table_append
 # Importing production modules finished
@@ -42,32 +42,49 @@ def daily_note_append(note_content, include_time=True):
     """
     Appends to daily note moc.
     """
+
     dnm_location = daily_note_moc_location()
     if DNM_APPEND_TYPE == "Plain_Text":
-        plain_text_append(dnm_location, note_content, include_time)
-        print("ok")
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnm_location, note_content, include_time)
+        else:
+            plain_text_append(dnm_location, note_content, include_time)
+
     elif DNM_APPEND_TYPE == "Bullet_List":
-        bullet_list_append(dnm_location, note_content, include_time)
-        print("ok")
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnm_location, note_content, include_time)
+        else:
+            bullet_list_append(dnm_location, note_content, include_time)
+
     elif DNM_APPEND_TYPE == "Table":
         table_append(dnm_location, note_content)
-        print("ok")
+
     if not DNM_APPEND_TYPE:
         if GLOBAL_APPEND_TYPE == "Plain_Text":
-            plain_text_append(dnm_location, note_content, include_time)
-            print("ok")
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnm_location, note_content, include_time)
+            else:
+                plain_text_append(dnm_location, note_content, include_time)
+
         elif GLOBAL_APPEND_TYPE == "Bullet_List":
-            bullet_list_append(dnm_location, note_content, include_time)
-            print("ok")
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnm_location, note_content, include_time)
+            else:
+                bullet_list_append(dnm_location, note_content, include_time)
+
         elif GLOBAL_APPEND_TYPE == "Table":
             table_append(dnm_location, note_content)
-            print("ok")
+
 
 # Testing below
-# dnm_location = daily_note_moc_location()
-# daily_note_moc_pregenerate_check()
-
-
 def test():
     daily_note_moc_pregenerate_check()
     daily_note_append("Hello new entry")

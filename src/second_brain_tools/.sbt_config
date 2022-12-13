@@ -10,11 +10,11 @@ SECOND_BRAIN_DIRECTORY = "/home/rohan/Vaults/SBT_TOOLS_TESTING/"
 
 # Include Time at the end of bullet, numeric list?
 
-LIST_TIME_INCLUDE = 
+LIST_TIME_INCLUDE = False
 
 # Include Time at the start of Plain Text?
 
-PLAIN_TEXT_TIME_INCLUDE = 
+PLAIN_TEXT_TIME_INCLUDE = False
 
 # What Text to append in before/after the content? Please don't leave spaces at the end of the string below, Time would be automatically added at the end of the line below with two spaces.
 
@@ -27,10 +27,10 @@ TIME_APPEND_TEXT = This log was added at ->
 # -> Table
 
 # Set a global default to append functions. If a type is not passed explicitely in the function then this variable would be invoked.
-GLOBAL_APPEND_TYPE = Table
+GLOBAL_APPEND_TYPE = Bullet_List
 
 # For Daily Note MOC 
-DNM_APPEND_TYPE = Table
+DNM_APPEND_TYPE = 
 
 ######## Append Options Finished 
 

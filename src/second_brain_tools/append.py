@@ -26,17 +26,17 @@ def plain_text_append(note_path, note_content, pta_include_time):
     else:
         with open(note_path, 'a+') as pta_object:
             pta_object.write("\n")
-            pta_object.write("---\n")
+            # pta_object.write("---\n")
             pta_object.write("\n")
-            pta_object.write(note_content)
+            pta_object.write(note_content + "\n\n")
             pta_object.write("---\n")
             pta_object.write("\n")
 
 
 def bullet_list_append(note_path, note_content, list_include_time):
-    if list_append_time is True:
+    if list_include_time is True:
         with open(note_path, 'a+') as bla_object:
-            bla_object.write(f" * {note_content} ({CURRENT_TIME})")
+            bla_object.write(f" * {note_content} (at {CURRENT_TIME}) \n")
     else:
         with open(note_path, 'a+') as bla_object:
             bla_object.writelines(f" * {note_content} \n")
@@ -44,19 +44,4 @@ def bullet_list_append(note_path, note_content, list_include_time):
 
 def table_append(note_path, note_content):
     with open(note_path, 'a+') as ta_object:
-        # print(Table_headers_check)
-        # for i in Table_headers_check:
-            # if i == "| You Logged -> | on    |":
-                # ta_object.write(f"|{note_content}| {CURRENT_TIME} |")
-            # else:
-                # ta_object.write("| You Logged -> | on    |")
-                # ta_object.write("| ------------- | ----- |")
-                # ta_object.write(f"|{note_content}| {CURRENT_TIME} |")
-
-# def numberic_list_append(note_path, note_content, list_append_time):
-#     if list_append_time is True:
-#         with open(note_path, 'a+') as nla_object:
-#             nla_object.write(f" * {note_content}  {CURRENT_TIME}")
-#     else:
-#         with open(note_path, 'a+') as nla_object:
-#             nla_object.write(f" * {note_content}")
+        ta_object.write(f"|{note_content}| {CURRENT_TIME} |")
