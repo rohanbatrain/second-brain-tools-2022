@@ -44,4 +44,8 @@ def bullet_list_append(note_path, note_content, list_include_time):
 
 def table_append(note_path, note_content):
     with open(note_path, 'a+') as ta_object:
-        ta_object.write(f"|{note_content}| {CURRENT_TIME} |")
+        if note_content == "%TABLE_HEADER%":
+            ta_object.write("| You Logged -> | on |\n")
+            ta_object.write("| ------------- | ----- |\n")
+        else:
+            ta_object.write(f"|{note_content}| {CURRENT_TIME} | \n")

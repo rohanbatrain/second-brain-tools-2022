@@ -27,7 +27,7 @@ TIME_APPEND_TEXT = This log was added at ->
 # -> Table
 
 # Set a global default to append functions. If a type is not passed explicitely in the function then this variable would be invoked.
-GLOBAL_APPEND_TYPE = Bullet_List
+GLOBAL_APPEND_TYPE = Table
 
 # For Daily Note MOC 
 DNM_APPEND_TYPE = 
