@@ -6,6 +6,7 @@ But i would really like to hardcode the absolute path for error pruning my scrip
 # Importing production modules Started
 import re
 import second_brain_tools.config as sbtc
+import sys
 # Importing production modules finished
 # Default values assignation started
 DIR_NOT_FOUND = sbtc.DIR_NOT_FOUND
@@ -265,9 +266,31 @@ def ic_01c1(dir_code):
     elif dir_code == "01C1I":
         dir_path = sbtc._01C1I
     else:
+        if re.match("^01C1E", dir_code):
+            dir_path = ic_01c1e(dir_code)
+        else:
+            dir_path = DIR_NOT_FOUND
+    return dir_path
+# ic_01C1-Ended # ic_01C1E-Started
+
+
+def ic_01c1e(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    if dir_code == "01C1E1":
+        dir_path = sbtc._01C1E1
+    elif dir_code == "01C1E2":
+        dir_path = sbtc._01C1E2
+    elif dir_code == "01C1E3":
+        dir_path = sbtc._01C1E3
+    elif dir_code == "01C1E4":
+        dir_path = sbtc._01C1E4
+    else:
         dir_path = DIR_NOT_FOUND
     return dir_path
-# ic_01C1-Ended # ic_01C-Ended # ic_01-Ended # 01-Ended # 02-Started # c_02-Started
+
+# ic_01C1E-Ended # ic_01C-Ended # ic_01-Ended # 01-Ended # 02-Started # c_02-Started
 
 
 def ic_02(dir_code):
@@ -497,8 +520,7 @@ def ic_03c1a_part_1(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
-# ic_03c1a_part_1-Ended
-# ic_03c1a_part_2-Started
+# ic_03c1a_part_1-Ended # ic_03c1a_part_2-Started
 
 
 def ic_03c1a_part_2(dir_code):
@@ -525,9 +547,7 @@ def ic_03c1a_part_2(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
-# ic_03c1a_part_2-Ended
-# ic_03c1a-Ended
-# ic_03c1b-Started
+# ic_03c1a_part_2-Ended # ic_03c1a-Ended # ic_03c1b-Started
 
 
 def ic_03c1b(dir_code):
@@ -540,8 +560,7 @@ def ic_03c1b(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
-# ic_03c1b-Ended
-# ic_03c1c-Started
+# ic_03c1b-Ended # ic_03c1c-Started
 
 
 def ic_03c1c(dir_code):
@@ -554,9 +573,7 @@ def ic_03c1c(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
-# ic_03c1c-Ended
-# ic_03c1-Ended
-# ic_03c2-Started
+# ic_03c1c-Ended # ic_03c1-Ended # ic_03c2-Started
 
 
 def ic_03c2(dir_code):
@@ -571,8 +588,7 @@ def ic_03c2(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
-# ic_03c2-Ended
-# ic_03c3-Started
+# ic_03c2-Ended # ic_03c3-Started
 
 
 def ic_03c3(dir_code):
@@ -611,8 +627,7 @@ def ic_03c3a(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
-# ic_03c3a-Ended
-# ic_03c3b-Started
+# ic_03c3a-Ended # ic_03c3b-Started
 
 
 def ic_03c3b(dir_code):
@@ -625,9 +640,7 @@ def ic_03c3b(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
-# ic_03c3b-Ended
-# ic_03c3-Ended
-# ic_03c4-Started
+# ic_03c3b-Ended # ic_03c3-Ended # ic_03c4-Started
 
 
 def ic_03c4(dir_code):
@@ -640,9 +653,7 @@ def ic_03c4(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
-# ic_03c4-Ended
-# ic_03c-Ended
-# ic_03d-Started
+# ic_03c4-Ended # ic_03c-Ended # ic_03d-Started
 
 
 def ic_03d(dir_code):
@@ -714,8 +725,7 @@ def ic_04a(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
-# ic_04A-Ended
-# ic_04C-Started
+# ic_04A-Ended # ic_04C-Started
 
 
 def ic_04c(dir_code):
@@ -878,5 +888,26 @@ def ic_07b(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
-
 # 07-Ended
+
+
+"""
+Testing stuff realtime.
+"""
+
+
+def directories_test():
+    """
+    Manual Testing apart from pytest to be 100% sure
+    that the fx returns correct directory.
+    """
+    test_code = input("Please enter the code to test: ")
+    if test_code == "Quit":
+        print("Testing Completed, Exiting....")
+        sys.exit()
+    else:
+        print(initial_check(test_code))
+    directories_test()
+
+
+# directories_test()

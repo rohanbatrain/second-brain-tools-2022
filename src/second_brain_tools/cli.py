@@ -20,6 +20,8 @@ Why does this file exist, and why not put this in __main__?
 # Importing production modules
 import typer
 from second_brain_tools.setup import setup as sbt_setup
+# from second_brain_tools.config import DNM_APPEND_TYPE, GLOBAL_APPEND_TYPE
+# from second_brain_tools.append import plain_text_append
 # Importing production modules finished
 
 # Defining default variables Started
@@ -148,14 +150,20 @@ def notes_delete():
 
 
 @app_daily_note.command("Generate")
-def daily_note_create():
-    "Generate your daily note using sbt."
+def daily_note_generate():
+    "Generate your daily note MOC using sbt."
+    return
+
+
+@app_daily_note.command("Append")
+def daily_note_append():
+    "Append your daily note MOC using sbt."
     return
 
 
 @app_daily_note.command("Regenerate")
-def daily_note_recreate():
-    "Regenerates the daily note."
+def daily_note_regenerate():
+    "Regenerates the daily note MOC."
     return
 
 # Adding app_daily_note commands Finished

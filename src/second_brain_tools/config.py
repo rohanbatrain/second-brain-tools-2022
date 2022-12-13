@@ -1,16 +1,25 @@
 # Importing production modules // Meant for production branch
 import os
+from datetime import datetime
 from dotenv import load_dotenv
 # Importing production modules finished
 
 # Default Functions Calling
 load_dotenv(".sbt_config")
+Today = datetime.today().strftime('%Y-%m-%d')
+NOW = datetime.now()
+CURRENT_TIME = NOW.strftime("%H:%M:%S")
 # Default Functions Calling
 
 # Default strings from env import Started
-Second_Brain_Directory = os.getenv("Second_Brain_Directory")
+SECOND_BRAIN_DIRECTORY = os.getenv("SECOND_BRAIN_DIRECTORY")
+FILE_ALREADY_EXIST = os.getenv("FILE_ALREADY_EXIST")
 DIR_NOT_FOUND = os.getenv("DIR_NOT_FOUND")
-
+GLOBAL_APPEND_TYPE = os.getenv("GLOBAL_APPEND_TYPE")
+DNM_APPEND_TYPE = os.getenv("DNM_APPEND_TYPE")
+PLAIN_TEXT_TIME_INCLUDE = os.getenv("PLAIN_TEXT_TIME_INCLUDE")
+LIST_TIME_INCLUDE = os.getenv("LIST_TIME_INCLUDE")
+TIME_APPEND_TEXT = os.getenv("TIME_APPEND_TEXT")
 # Default strings from env import Finished
 
 # Default examples from env import Started
@@ -51,6 +60,10 @@ _01C1B = os.getenv("_01C1B")
 _01C1C = os.getenv("_01C1C")
 _01C1D = os.getenv("_01C1D")
 _01C1E = os.getenv("_01C1E")
+_01C1E1 = os.getenv("_01C1E1")
+_01C1E2 = os.getenv("_01C1E2")
+_01C1E3 = os.getenv("_01C1E3")
+_01C1E4 = os.getenv("_01C1E4")
 _01C1F = os.getenv("_01C1F")
 _01C1G = os.getenv("_01C1G")
 _01C1H = os.getenv("_01C1H")
@@ -171,12 +184,38 @@ Import your directories here
 
 # User defined directories from env import Finished
 
+# Daily Note File Creation Content String Started
+DNM_FILE_CONTENT_CREATION = f"""---
+tags :
+ - daily_note/{Today}
+ - {Today}
+date : {Today}
+---
 
-# # # #  Testing //Comment out all the variables below in production.
+* [[{Today}_Events|Events]]
+* [[{Today}_Connections|Connections]]
+* [[{Today}_Tasks|Tasks]]
+* [[{Today}_Routines|Routines]]
+* [[{Today}_Reminders|Reminders]]
+* [[{Today}_Bullet-Journal|Bullet-Journal]]
+* [[{Today}_Trackers|Trackers]]
 
-def testing():
-    print("Testing started")
-    print(_01)
+# Log
+
+```
+This area would be used for bullet points appendation.
+```
 
 
-testing()
+"""
+# Daily Note File Creation Content String Finished
+
+
+# NUMBERIC_LIST_COUNTER
+# def numeric_list_counter():
+#     value = os.getenv("NUMBERIC_LIST_COUNTER")
+#     new_value = int(value) + 1
+#     new_value_str = str(new_value)
+#     os.environ["NUMBERIC_LIST_COUNTER"] = new_value_str
+#     set_key(".sbt_config", "NUMBERIC_LIST_COUNTER", os.environ["NUMBERIC_LIST_COUNTER"])
+#     return value

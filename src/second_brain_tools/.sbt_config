@@ -1,7 +1,38 @@
-# ic_custom_regex_started
+######## Default Variables Assignation Started 
+DIR_NOT_FOUND = "Wrong argument passed, the dir code you specified doesn't exist"
+FILE_ALREADY_EXIST = "Error, File already exist"
+SECOND_BRAIN_DIRECTORY = "/home/rohan/Vaults/SBT_TOOLS_TESTING/"
+######## Default Variables Assignation Finished
 
-# ic_custom_regex_ended
-Second_Brain_Directory = "test"
+######## Append Options Started 
+
+# Include Time, Supported options True/False 
+
+# Include Time at the end of bullet, numeric list?
+
+LIST_TIME_INCLUDE = 
+
+# Include Time at the start of Plain Text?
+
+PLAIN_TEXT_TIME_INCLUDE = 
+
+# What Text to append in before/after the content? Please don't leave spaces at the end of the string below, Time would be automatically added at the end of the line below with two spaces.
+
+TIME_APPEND_TEXT = This log was added at ->
+
+# Append Type Supported Options are 
+
+# -> Plain_Text
+# -> Bullet_List
+# -> Table
+
+# Set a global default to append functions. If a type is not passed explicitely in the function then this variable would be invoked.
+GLOBAL_APPEND_TYPE = Table
+
+# For Daily Note MOC 
+DNM_APPEND_TYPE = Table
+
+######## Append Options Finished 
 
 ######## Default Example Directories Defining Started #######
 example = "This/is/an/example/"
@@ -41,6 +72,10 @@ _01C1B = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1B_Bullet-Jour
 _01C1C = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1C_Connections/"
 _01C1D = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1D_Events/"
 _01C1E = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1E_Location/"
+_01C1E1 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1E_Location/01C1E1_Morning/"
+_01C1E2 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1E_Location/01C1E2_Noon/"
+_01C1E3 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1E_Location/01C1E3_Evening/"
+_01C1E4 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1E_Location/01C1E4_Night/"
 _01C1F = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1F_Reminders/"
 _01C1G = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routines/"
 _01C1H = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1H_Tasks/"
@@ -150,4 +185,5 @@ _07A2 = "07_Attachments-and-Templates/07A_Attachments/07A2_Shared-Vaults/"
 _07B = "07_Attachments-and-Templates/07B_Templates/"
 _07B1 = "07_Attachments-and-Templates/07B_Templates/07B1_Periodic-Notes/"
 
-######## Default Directories Defining Finished ######
+######## Default Directories Defining Finished ###### 
+
