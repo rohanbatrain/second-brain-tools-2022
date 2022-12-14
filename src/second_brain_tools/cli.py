@@ -44,15 +44,16 @@ def main():
 # Defining typers Started
 app = typer.Typer()
 app_notes = typer.Typer()
-app_dirs = typer.Typer()
 app_daily_note = typer.Typer()
 app_capture = typer.Typer()
+app_config = typer.Typer()
 # Defining typers Finished
 
 # Adding typers to main app Started
 app.add_typer(app_notes, name="Notes", help="Notes specific commands.")
 app.add_typer(app_capture, name="Capture", help="Capture a note using predefined flows.")
 app.add_typer(app_daily_note, name="Daily-Note", help="Daily Note Specific Commands.")
+app.add_typer(app_config, name="Config", help="Shows you configurable options.")
 # Adding typers to main app Finished
 
 # Typer app Finished
@@ -73,14 +74,6 @@ app.add_typer(app_daily_note, name="Daily-Note", help="Daily Note Specific Comma
 # Adding app commands started
 
 
-@app.command("Setup")
-def setup():
-    """
-    A setup wizard to configure second_brain_tools
-    """
-    sbt_setup()
-
-
 @app.command("Quick-Capture")
 def quick_capture():
     """
@@ -96,6 +89,25 @@ def random_note():
     # knowledge or evergreen note.
     # pass --knowledge-base , --evergreen to explicitely choose.
     # default evergreen notes.
+
+
+# Adding app_config commands Started
+
+@app_config.command("Setup")
+def config_setup():
+    """
+    A setup wizard to configure second_brain_tools
+    """
+    sbt_setup()
+
+
+@app_config.command("Check")
+def config_check():
+    """
+    A Check wizard to check what directories are missing.
+    """
+    sbt_setup()
+# Adding app_config commands Finished
 
 
 # Adding app_capture commands Started

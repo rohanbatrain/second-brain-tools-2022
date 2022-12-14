@@ -87,7 +87,7 @@ def daily_note_append(note_content, include_time=True):
 # Testing below
 def test():
     daily_note_moc_pregenerate_check()
-    daily_note_append(input("hehe"))
+    daily_note_append(input("Test data: "))
 
 
 test()

@@ -31,7 +31,7 @@ def move_note(old_dir_code, new_dir_code, note_name):
 
 def view_note(dir_code, note_name):
     note_path = SECOND_BRAIN_DIRECTORY + initial_check(dir_code) + note_name + ".md"
-    with open(note_path, 'r') as MARKDOWN:
+    with open(note_path, 'r') as vn:
+        content = vn.read()
         console = Console()
-        md = Markdown(MARKDOWN)
-        console.print(md)
+        console.print(Markdown(content))
