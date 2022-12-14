@@ -227,25 +227,28 @@ def test_dir_123():
     assert dir_path == expected_dir_path
 
 
-def test_dir_124():
-    dir_code = "06C"
-    expected_dir_path = sbtc._06C
-    dir_path = initial_check(dir_code)
-    assert dir_path == expected_dir_path
+"""test 124..126 are commented out because these
+directories are end of support for this version."""
 
-
-def test_dir_125():
-    dir_code = "06D"
-    expected_dir_path = sbtc._06D
-    dir_path = initial_check(dir_code)
-    assert dir_path == expected_dir_path
-
-
-def test_dir_126():
-    dir_code = "06E"
-    expected_dir_path = sbtc._06E
-    dir_path = initial_check(dir_code)
-    assert dir_path == expected_dir_path
+# def test_dir_124():
+#   dir_code = "06C"
+#   expected_dir_path = sbtc._06C
+#   dir_path = initial_check(dir_code)
+#   assert dir_path == expected_dir_path
+#
+#
+# def test_dir_125():
+#   dir_code = "06D"
+#   expected_dir_path = sbtc._06D
+#   dir_path = initial_check(dir_code)
+#   assert dir_path == expected_dir_path
+#
+#
+# def test_dir_126():
+#   dir_code = "06E"
+#   expected_dir_path = sbtc._06E
+#   dir_path = initial_check(dir_code)
+#   assert dir_path == expected_dir_path
 
 
 def test_dir_127():

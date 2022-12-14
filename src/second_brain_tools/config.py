@@ -2,6 +2,7 @@
 import os
 from datetime import datetime
 from dotenv import load_dotenv
+import second_brain_tools.defaults as sbt_defaults
 # Importing production modules finished
 
 # Default Functions Calling
@@ -10,6 +11,10 @@ Today = datetime.today().strftime('%Y-%m-%d')
 NOW = datetime.now()
 CURRENT_TIME = NOW.strftime("%H:%M:%S")
 # Default Functions Calling
+
+# Default Append Strings Import Started
+DNM_FILE_CONTENT_CREATION = sbt_defaults.DNM_FILE_CONTENT_CREATION
+# Default Append Strings Import Finished
 
 # Default strings from env import Started
 SECOND_BRAIN_DIRECTORY = os.getenv("SECOND_BRAIN_DIRECTORY")
@@ -157,7 +162,7 @@ _03D5 = os.getenv("_03D5")
 _04A = os.getenv("_04A")
 _04B = os.getenv("_04B")
 _04C = os.getenv("_04C")
-_04D = os.getenv("_04C")
+# _04D = os.getenv("_04D")
 _04A1 = os.getenv("_04A1")
 _04A2 = os.getenv("_04A2")
 _04A3 = os.getenv("_04A3")
@@ -202,32 +207,6 @@ Import your directories here
 """
 
 # User defined directories from env import Finished
-
-# Daily Note File Creation Content String Started
-DNM_FILE_CONTENT_CREATION = f"""---
-tags :
- - daily_note/{Today}
- - {Today}
-date : {Today}
----
-
-* [[{Today}_Events|Events]]
-* [[{Today}_Connections|Connections]]
-* [[{Today}_Tasks|Tasks]]
-* [[{Today}_Routines|Routines]]
-* [[{Today}_Reminders|Reminders]]
-* [[{Today}_Bullet-Journal|Bullet-Journal]]
-* [[{Today}_Trackers|Trackers]]
-
-# Log
-
-```
-This area would be used for bullet points appendation.
-```
-
-
-"""
-# Daily Note File Creation Content String Finished
 
 
 # NUMBERIC_LIST_COUNTER

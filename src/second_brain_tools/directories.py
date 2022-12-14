@@ -321,7 +321,7 @@ def ic_01c1(dir_code):
     else:
         # if re.match("^01C1E", dir_code):
         #    dir_path = ic_01c1e(dir_code)
-        if re.match("^01C1E", dir_code):
+        if re.match("^01C1I", dir_code):
             dir_path = ic_01c1i(dir_code)
         else:
             dir_path = DIR_NOT_FOUND
@@ -774,8 +774,8 @@ def ic_04(dir_code):
         dir_path = sbtc._04B
     elif dir_code == "04C":
         dir_path = sbtc._04C
-    elif dir_code == "04D":
-        dir_path = sbtc._04D
+    # elif dir_code == "04D":
+        # dir_path = sbtc._04D
     else:
         if re.match("^04A", dir_code):
             dir_path = ic_04a(dir_code)
