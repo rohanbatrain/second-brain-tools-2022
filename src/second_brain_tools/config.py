@@ -2,8 +2,28 @@
 import os
 from datetime import datetime
 from dotenv import load_dotenv
-import second_brain_tools.defaults as sbt_defaults
 # Importing production modules finished
+
+# Importing default variables of daily note
+"Importing module one by one because of having 'most likely due to a circular import' with time."
+from second_brain_tools.defaults import DNBJ_FILE_CONTENT_CREATION as sbt_defaults_DNBJ_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNC_FILE_CONTENT_CREATION as sbt_defaults_DNC_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNE_FILE_CONTENT_CREATION as sbt_defaults_DNE_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNL_FILE_CONTENT_CREATION as sbt_defaults_DNL_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNR_FILE_CONTENT_CREATION as sbt_defaults_DNR_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNR2_FILE_CONTENT_CREATION as sbt_defaults_DNR2_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNT_FILE_CONTENT_CREATION as sbt_defaults_DNT_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNT2_FILE_CONTENT_CREATION as sbt_defaults_DNT2_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNTE_FILE_CONTENT_CREATION as sbt_defaults_DNTE_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNTF_FILE_CONTENT_CREATION as sbt_defaults_DNTF_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNTL_FILE_CONTENT_CREATION as sbt_defaults_DNTL_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNTM_FILE_CONTENT_CREATION as sbt_defaults_DNTM_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNTM2_FILE_CONTENT_CREATION as sbt_defaults_DNTM2_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNTM3_FILE_CONTENT_CREATION as sbt_defaults_DNTM3_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNTS_FILE_CONTENT_CREATION as sbt_defaults_DNTS_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNTS2_FILE_CONTENT_CREATION as sbt_defaults_DNTS2_FILE_CONTENT_CREATION
+from second_brain_tools.defaults import DNTW_FILE_CONTENT_CREATION as sbt_defaults_DNTW_FILE_CONTENT_CREATION
+# Importing default variables of daily note
 
 # Default Functions Calling
 load_dotenv(".sbt_config")
@@ -13,19 +33,55 @@ CURRENT_TIME = NOW.strftime("%H:%M:%S")
 # Default Functions Calling
 
 # Default Append Strings Import Started
-DNM_FILE_CONTENT_CREATION = sbt_defaults.DNM_FILE_CONTENT_CREATION
+DNBJ_FILE_CONTENT_CREATION = sbt_defaults_DNBJ_FILE_CONTENT_CREATION
+DNC_FILE_CONTENT_CREATION = sbt_defaults_DNC_FILE_CONTENT_CREATION
+DNE_FILE_CONTENT_CREATION = sbt_defaults_DNE_FILE_CONTENT_CREATION
+DNL_FILE_CONTENT_CREATION = sbt_defaults_DNL_FILE_CONTENT_CREATION
+DNR_FILE_CONTENT_CREATION = sbt_defaults_DNR_FILE_CONTENT_CREATION
+DNR2_FILE_CONTENT_CREATION = sbt_defaults_DNR2_FILE_CONTENT_CREATION
+DNT_FILE_CONTENT_CREATION = sbt_defaults_DNT_FILE_CONTENT_CREATION
+DNT2_FILE_CONTENT_CREATION = sbt_defaults_DNT2_FILE_CONTENT_CREATION
+DNTE_FILE_CONTENT_CREATION = sbt_defaults_DNTE_FILE_CONTENT_CREATION
+DNTF_FILE_CONTENT_CREATION = sbt_defaults_DNTF_FILE_CONTENT_CREATION
+DNTL_FILE_CONTENT_CREATION = sbt_defaults_DNTL_FILE_CONTENT_CREATION
+DNTM_FILE_CONTENT_CREATION = sbt_defaults_DNTM_FILE_CONTENT_CREATION
+DNTM2_FILE_CONTENT_CREATION = sbt_defaults_DNTM2_FILE_CONTENT_CREATION
+DNTM3_FILE_CONTENT_CREATION = sbt_defaults_DNTM3_FILE_CONTENT_CREATION
+DNTS_FILE_CONTENT_CREATION = sbt_defaults_DNTS_FILE_CONTENT_CREATION
+DNTS2_FILE_CONTENT_CREATION = sbt_defaults_DNTS2_FILE_CONTENT_CREATION
+DNTW_FILE_CONTENT_CREATION = sbt_defaults_DNTW_FILE_CONTENT_CREATION
 # Default Append Strings Import Finished
 
 # Default strings from env import Started
 SECOND_BRAIN_DIRECTORY = os.getenv("SECOND_BRAIN_DIRECTORY")
 FILE_ALREADY_EXIST = os.getenv("FILE_ALREADY_EXIST")
 DIR_NOT_FOUND = os.getenv("DIR_NOT_FOUND")
-GLOBAL_APPEND_TYPE = os.getenv("GLOBAL_APPEND_TYPE")
-DNM_APPEND_TYPE = os.getenv("DNM_APPEND_TYPE")
 PLAIN_TEXT_TIME_INCLUDE = os.getenv("PLAIN_TEXT_TIME_INCLUDE")
 LIST_TIME_INCLUDE = os.getenv("LIST_TIME_INCLUDE")
 TIME_APPEND_TEXT = os.getenv("TIME_APPEND_TEXT")
 # Default strings from env import Finished
+
+# Append Specific Default strings from env import Started
+GLOBAL_APPEND_TYPE = os.getenv("GLOBAL_APPEND_TYPE")
+DNM_APPEND_TYPE = os.getenv("DNM_APPEND_TYPE")
+DNBJ_APPEND_TYPE = os.getenv("DNBJ_APPEND_TYPE")
+DNC_APPEND_TYPE = os.getenv("DNC_APPEND_TYPE")
+DNE_APPEND_TYPE = os.getenv("DNE_APPEND_TYPE")
+DNL_APPEND_TYPE = os.getenv("DNL_APPEND_TYPE")
+DNR_APPEND_TYPE = os.getenv("DNR_APPEND_TYPE")
+DNR2_APPEND_TYPE = os.getenv("DNR2_APPEND_TYPE")
+DNT_APPEND_TYPE = os.getenv("DNT_APPEND_TYPE")
+DNT2_APPEND_TYPE = os.getenv("DNT2_APPEND_TYPE")
+DNTE_APPEND_TYPE = os.getenv("DNTE_APPEND_TYPE")
+DNTF_APPEND_TYPE = os.getenv("DNTF_APPEND_TYPE")
+DNTL_APPEND_TYPE = os.getenv("DNTL_APPEND_TYPE")
+DNTM_APPEND_TYPE = os.getenv("DNTM_APPEND_TYPE")
+DNTM2_APPEND_TYPE = os.getenv("DNTM2_APPEND_TYPE")
+DNTM3_APPEND_TYPE = os.getenv("DNTM3_APPEND_TYPE")
+DNTS_APPEND_TYPE = os.getenv("DNTS_APPEND_TYPE")
+DNTS2_APPEND_TYPE = os.getenv("DNTS2_APPEND_TYPE")
+DNTW_APPEND_TYPE = os.getenv("DNTW_APPEND_TYPE")
+# Append Specific Default strings from env import Finished
 
 # Default examples from env import Started
 example = os.getenv("example")

@@ -12,6 +12,11 @@ list_append_time = LIST_TIME_INCLUDE
 # Default strings assignation Finished
 
 
+def paragraph_append(note_path, note_content):
+    with open(note_path, 'a+') as pa_object:
+        pa_object.write(f" {note_content}")
+
+
 def plain_text_append(note_path, note_content, pta_include_time):
     if pta_include_time is True:
         opener = TIME_APPEND_TEXT + " " + CURRENT_TIME
