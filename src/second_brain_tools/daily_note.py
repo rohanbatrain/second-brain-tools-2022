@@ -8,11 +8,11 @@ from second_brain_tools.append import plain_text_append, bullet_list_append, tab
 # Importing production modules finished
 
 # Default Append Strings Import Started
-from second_brain_tools.config import DNM_APPEND_TYPE, DNBJ_APPEND_TYPE,  DNC_APPEND_TYPE,  DNE_APPEND_TYPE,  DNL_APPEND_TYPE,  DNR_APPEND_TYPE,  DNR2_APPEND_TYPE,  DNT_APPEND_TYPE,  DNT2_APPEND_TYPE,  DNTE_APPEND_TYPE,  DNTF_APPEND_TYPE,  DNTL_APPEND_TYPE,  DNTM_APPEND_TYPE,  DNTM2_APPEND_TYPE,  DNTM3_APPEND_TYPE,  DNTS_APPEND_TYPE,  DNTS2_APPEND_TYPE,  DNTW_APPEND_TYPE, GLOBAL_APPEND_TYPE  # noqa
+from second_brain_tools.config import DNM_APPEND_TYPE, DNBJ_APPEND_TYPE,  DNC_APPEND_TYPE,  DNE_APPEND_TYPE,  DNL_APPEND_TYPE,  DNR_APPEND_TYPE,  DNR2_APPEND_TYPE,  DNT_APPEND_TYPE,  DNT2_APPEND_TYPE,  DNTE_APPEND_TYPE,  dntt_APPEND_TYPE,  DNTL_APPEND_TYPE,  DNTM_APPEND_TYPE,  DNTM2_APPEND_TYPE,  DNTM3_APPEND_TYPE,  DNTS_APPEND_TYPE,  DNTS2_APPEND_TYPE,  DNTW_APPEND_TYPE, GLOBAL_APPEND_TYPE  # noqa
 # Default Append Strings Import Finished
 
 # Default Content_Creation Strings Import Started
-from second_brain_tools.config import DNBJ_FILE_CONTENT_CREATION, DNC_FILE_CONTENT_CREATION, DNE_FILE_CONTENT_CREATION, DNL_FILE_CONTENT_CREATION, DNR_FILE_CONTENT_CREATION, DNR2_FILE_CONTENT_CREATION, DNT_FILE_CONTENT_CREATION, DNT2_FILE_CONTENT_CREATION, DNTE_FILE_CONTENT_CREATION, DNTF_FILE_CONTENT_CREATION, DNTL_FILE_CONTENT_CREATION, DNTM_FILE_CONTENT_CREATION, DNTM2_FILE_CONTENT_CREATION, DNTM3_FILE_CONTENT_CREATION, DNTS_FILE_CONTENT_CREATION, DNTS2_FILE_CONTENT_CREATION, DNTW_FILE_CONTENT_CREATION, DNM_FILE_CONTENT_CREATION  # noqa: E501
+from second_brain_tools.config import DNBJ_FILE_CONTENT_CREATION, DNC_FILE_CONTENT_CREATION, DNE_FILE_CONTENT_CREATION, DNL_FILE_CONTENT_CREATION, DNR_FILE_CONTENT_CREATION, DNR2_FILE_CONTENT_CREATION, DNT_FILE_CONTENT_CREATION, DNT2_FILE_CONTENT_CREATION, DNTE_FILE_CONTENT_CREATION, dntt_FILE_CONTENT_CREATION, DNTL_FILE_CONTENT_CREATION, DNTM_FILE_CONTENT_CREATION, DNTM2_FILE_CONTENT_CREATION, DNTM3_FILE_CONTENT_CREATION, DNTS_FILE_CONTENT_CREATION, DNTS2_FILE_CONTENT_CREATION, DNTW_FILE_CONTENT_CREATION, DNM_FILE_CONTENT_CREATION  # noqa: E501
 # Default Content_Creation Strings Import Finished
 
 
@@ -167,7 +167,7 @@ def daily_note_bullet_journal_location():
 
     """
     sbd = SECOND_BRAIN_DIRECTORY
-    dnbj_directory = initial_check("01C1B")
+    dnbj_directory = initial_check("01C1B1")
     dnbj_location = sbd + dnbj_directory + Today + "_Bullet_Journal" + ".md"
     return dnbj_location
 
@@ -522,14 +522,14 @@ def daily_note_reminders_pregenerate_check():
     else:
         daily_note_reminders_generate(dnr_location)
 
-# Reminders RELATED FUNCTIONS FINISHED  # Routines RELATED FUNCTIONS STARTED
+# Reminders RELATED FUNCTIONS FINISHED  # routine RELATED FUNCTIONS STARTED
 
 
-def daily_note_routines_append(note_content, include_time=True):
+def daily_note_routine_append(note_content, include_time=True):
     """
     appends to
     """
-    dnr2_location = daily_note_routines_location()
+    dnr2_location = daily_note_routine_location()
 
     if DNR2_APPEND_TYPE == "Paragraph":
         paragraph_append(dnr2_location, note_content)
@@ -577,7 +577,7 @@ def daily_note_routines_append(note_content, include_time=True):
             print("Error")
 
 
-def daily_note_routines_generate(dnr2_location):
+def daily_note_routine_generate(dnr2_location):
     """
 
     """
@@ -585,7 +585,7 @@ def daily_note_routines_generate(dnr2_location):
         dnr2_file_obj.write(DNR2_FILE_CONTENT_CREATION)
 
 
-def daily_note_routines_location():
+def daily_note_routine_location():
     """
 
     """
@@ -595,7 +595,7 @@ def daily_note_routines_location():
     return dnr2_location
 
 
-def daily_note_routines_pregenerate_check():
+def daily_note_routine_pregenerate_check():
     """
 
     """
@@ -604,9 +604,9 @@ def daily_note_routines_pregenerate_check():
     if dnr2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
-        daily_note_routines_generate(dnr2_location)
+        daily_note_routine_generate(dnr2_location)
 
-# Routines RELATED FUNCTIONS FINISHED  # Tasks RELATED FUNCTIONS STARTED
+# routine RELATED FUNCTIONS FINISHED  # Tasks RELATED FUNCTIONS STARTED
 
 
 def daily_note_tasks_append(note_content, include_time=True):
@@ -860,91 +860,91 @@ def daily_note_trackers_exercise_pregenerate_check():
         daily_note_trackers_exercise_generate(dnte_location)
 
 
-# Trackers_EXERCISE RELATED FUNCTIONS FINISHED # TRACKERS_FINANCE RELATED FUNCTIONS STARTED
+# Trackers_EXERCISE RELATED FUNCTIONS FINISHED # TRACKERS_TRANSACTION RELATED FUNCTIONS STARTED
 
-def daily_note_trackers_finance_append(note_content, include_time=True):
+def daily_note_trackers_transaction_append(note_content, include_time=True):
     """
 
     """
-    dntf_location = daily_note_trackers_finance_location()
+    dntt_location = daily_note_trackers_transaction_location()
 
-    if DNTF_APPEND_TYPE == "Paragraph":
-        paragraph_append(dntf_location, note_content)
+    if dntt_APPEND_TYPE == "Paragraph":
+        paragraph_append(dntt_location, note_content)
 
-    elif DNTF_APPEND_TYPE == "Plain_Text":
+    elif dntt_APPEND_TYPE == "Plain_Text":
         PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
         if PT_Time_check == "False":
             include_time = False
-            plain_text_append(dntf_location, note_content, include_time)
+            plain_text_append(dntt_location, note_content, include_time)
         else:
-            plain_text_append(dntf_location, note_content, include_time)
+            plain_text_append(dntt_location, note_content, include_time)
 
-    elif DNTF_APPEND_TYPE == "Bullet_List":
+    elif dntt_APPEND_TYPE == "Bullet_List":
         BL_Time_check = LIST_TIME_INCLUDE
         if BL_Time_check == "False":
             include_time = False
-            bullet_list_append(dntf_location, note_content, include_time)
+            bullet_list_append(dntt_location, note_content, include_time)
         else:
-            bullet_list_append(dntf_location, note_content, include_time)
+            bullet_list_append(dntt_location, note_content, include_time)
 
-    elif DNTF_APPEND_TYPE == "Table":
-        table_append(dntf_location, note_content)
+    elif dntt_APPEND_TYPE == "Table":
+        table_append(dntt_location, note_content)
 
-    if not DNTF_APPEND_TYPE:
+    if not dntt_APPEND_TYPE:
         if GLOBAL_APPEND_TYPE == "Plain_Text":
             PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
             if PT_Time_check == "False":
                 include_time = False
-                plain_text_append(dntf_location, note_content, include_time)
+                plain_text_append(dntt_location, note_content, include_time)
             else:
-                plain_text_append(dntf_location, note_content, include_time)
+                plain_text_append(dntt_location, note_content, include_time)
 
         elif GLOBAL_APPEND_TYPE == "Bullet_List":
             BL_Time_check = LIST_TIME_INCLUDE
             if BL_Time_check == "False":
                 include_time = False
-                bullet_list_append(dntf_location, note_content, include_time)
+                bullet_list_append(dntt_location, note_content, include_time)
             else:
-                bullet_list_append(dntf_location, note_content, include_time)
+                bullet_list_append(dntt_location, note_content, include_time)
         elif GLOBAL_APPEND_TYPE == "Table":
-            table_append(dntf_location, note_content)
+            table_append(dntt_location, note_content)
         elif GLOBAL_APPEND_TYPE == "Paragraph":
-            paragraph_append(dntf_location, note_content)
+            paragraph_append(dntt_location, note_content)
         else:
             print("Error")
 
 
-def daily_note_trackers_finance_generate(dntf_location):
+def daily_note_trackers_transaction_generate(dntt_location):
     """
 
     """
-    with open(dntf_location, 'a+') as dntf_file_obj:
-        dntf_file_obj.write(DNTF_FILE_CONTENT_CREATION)
+    with open(dntt_location, 'a+') as dntt_file_obj:
+        dntt_file_obj.write(dntt_FILE_CONTENT_CREATION)
 
 
-def daily_note_trackers_finance_location():
+def daily_note_trackers_transaction_location():
     """
 
     """
     sbd = SECOND_BRAIN_DIRECTORY
-    dntf_directory = initial_check("01C1I1")
-    dntf_location = sbd + dntf_directory + Today + "_" + ".md"
-    return dntf_location
+    dntt_directory = initial_check("01C1I1")
+    dntt_location = sbd + dntt_directory + Today + "_" + ".md"
+    return dntt_location
 
 
-def daily_note_trackers_finance_pregenerate_check():
+def daily_note_trackers_transaction_pregenerate_check():
     """
 
     """
-    dntf_location = daily_note_moc_location()
-    dntf_file_exist_check = exists(dntf_location)
-    if dntf_file_exist_check is True:
+    dntt_location = daily_note_moc_location()
+    dntt_file_exist_check = exists(dntt_location)
+    if dntt_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
-        daily_note_trackers_finance_generate(dntf_location)
+        daily_note_trackers_transaction_generate(dntt_location)
 
 
-# Trackers_FINANCE RELATED FUNCTIONS FINISHED # TRACKERS_LOCATION RELATED FUNCTIONS STARTED
+# Trackers_TRANSACTION RELATED FUNCTIONS FINISHED # TRACKERS_LOCATION RELATED FUNCTIONS STARTED
 
 def daily_note_trackers_location_append(note_content, include_time=True):
     """
