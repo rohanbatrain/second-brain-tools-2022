@@ -1,5 +1,5 @@
 # Importing production modules // Meant for production branch
-from second_brain_tools.config import Today
+from second_brain_tools.time import Today
 # Importing production modules finished
 
 

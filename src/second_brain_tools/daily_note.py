@@ -1,29 +1,27 @@
 # Importing production modules // Meant for production branch
 from dotenv import load_dotenv
 from os.path import exists
-from second_brain_tools.config import Today, PLAIN_TEXT_TIME_INCLUDE, LIST_TIME_INCLUDE
-from second_brain_tools.config import SECOND_BRAIN_DIRECTORY, FILE_ALREADY_EXIST
+from second_brain_tools.time import Today
+from second_brain_tools.config import PLAIN_TEXT_TIME_INCLUDE, LIST_TIME_INCLUDE, SECOND_BRAIN_DIRECTORY, FILE_ALREADY_EXIST
 from second_brain_tools.directories import initial_check
 from second_brain_tools.append import plain_text_append, bullet_list_append, table_append, paragraph_append
 # Importing production modules finished
 
 # Default Append Strings Import Started
-from second_brain_tools.config import DNM_APPEND_TYPE, DNBJ_APPEND_TYPE,  DNC_APPEND_TYPE,  DNE_APPEND_TYPE,  DNL_APPEND_TYPE,  DNR_APPEND_TYPE,  DNR2_APPEND_TYPE,  DNT_APPEND_TYPE,  DNT2_APPEND_TYPE,  DNTE_APPEND_TYPE,  DNTF_APPEND_TYPE,  DNTL_APPEND_TYPE,  DNTM_APPEND_TYPE,  DNTM2_APPEND_TYPE,  DNTM3_APPEND_TYPE,  DNTS_APPEND_TYPE,  DNTS2_APPEND_TYPE,  DNTW_APPEND_TYPE, GLOBAL_APPEND_TYPE
-from second_brain_tools.config import DNBJ_FILE_CONTENT_CREATION, DNC_FILE_CONTENT_CREATION, DNE_FILE_CONTENT_CREATION, DNL_FILE_CONTENT_CREATION, DNR_FILE_CONTENT_CREATION, DNR2_FILE_CONTENT_CREATION, DNT_FILE_CONTENT_CREATION, DNT2_FILE_CONTENT_CREATION, DNTE_FILE_CONTENT_CREATION, DNTF_FILE_CONTENT_CREATION, DNTL_FILE_CONTENT_CREATION, DNTM_FILE_CONTENT_CREATION, DNTM2_FILE_CONTENT_CREATION, DNTM3_FILE_CONTENT_CREATION, DNTS_FILE_CONTENT_CREATION, DNTS2_FILE_CONTENT_CREATION, DNTW_FILE_CONTENT_CREATION, DNM_FILE_CONTENT_CREATION  # noqa: E501
+from second_brain_tools.config import DNM_APPEND_TYPE, DNBJ_APPEND_TYPE,  DNC_APPEND_TYPE,  DNE_APPEND_TYPE,  DNL_APPEND_TYPE,  DNR_APPEND_TYPE,  DNR2_APPEND_TYPE,  DNT_APPEND_TYPE,  DNT2_APPEND_TYPE,  DNTE_APPEND_TYPE,  DNTF_APPEND_TYPE,  DNTL_APPEND_TYPE,  DNTM_APPEND_TYPE,  DNTM2_APPEND_TYPE,  DNTM3_APPEND_TYPE,  DNTS_APPEND_TYPE,  DNTS2_APPEND_TYPE,  DNTW_APPEND_TYPE, GLOBAL_APPEND_TYPE  # noqa
 # Default Append Strings Import Finished
+
+# Default Content_Creation Strings Import Started
+from second_brain_tools.config import DNBJ_FILE_CONTENT_CREATION, DNC_FILE_CONTENT_CREATION, DNE_FILE_CONTENT_CREATION, DNL_FILE_CONTENT_CREATION, DNR_FILE_CONTENT_CREATION, DNR2_FILE_CONTENT_CREATION, DNT_FILE_CONTENT_CREATION, DNT2_FILE_CONTENT_CREATION, DNTE_FILE_CONTENT_CREATION, DNTF_FILE_CONTENT_CREATION, DNTL_FILE_CONTENT_CREATION, DNTM_FILE_CONTENT_CREATION, DNTM2_FILE_CONTENT_CREATION, DNTM3_FILE_CONTENT_CREATION, DNTS_FILE_CONTENT_CREATION, DNTS2_FILE_CONTENT_CREATION, DNTW_FILE_CONTENT_CREATION, DNM_FILE_CONTENT_CREATION  # noqa: E501
+# Default Content_Creation Strings Import Finished
+
 
 # Default Functions Calling
 load_dotenv(".sbt_config")
 # Default Functions Calling
 
-# Default variable assignation started.
-
-# Default variable assignation completed
-
 
 # MOC RELATED FUNCTIONS STARTED
-
-
 def daily_note_moc_location():
     sbd = SECOND_BRAIN_DIRECTORY
     dnm_directory = initial_check("01C1A")
@@ -92,9 +90,12 @@ def daily_note_moc_append(note_content, include_time=True):
                 bullet_list_append(dnm_location, note_content, include_time)
             else:
                 bullet_list_append(dnm_location, note_content, include_time)
-
         elif GLOBAL_APPEND_TYPE == "Table":
             table_append(dnm_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnm_location, note_content)
+        else:
+            print("Error")
 # MOC RELATED FUNCTIONS FINISHED
 
 
@@ -754,23 +755,40 @@ def daily_note_trackers_water_pregenerate_check():
 def test():
     # daily_note_moc_pregenerate_check()
     # daily_note_moc_append(input("Test data: "))
-    print(dnbj_location=daily_note_bullet_journal_location())
-    print(dnc_location=daily_note_connections_location())
-    print(dne_location=daily_note_events_location())
-    print(dnl_location=daily_note_location_location())
-    print(dnr_location=daily_note_reminders_location())
-    print(dnr2_location=daily_note_routines_location())
-    print(dnt_location=daily_note_tasks_location())
-    print(dnt2_location=daily_note_trackers_moc_location())
-    print(dnte_location=daily_note_trackers_exercise_location())
-    print(dntf_location=daily_note_trackers_finance_location())
-    print(dntl_location=daily_note_trackers_location_location())
-    print(dntm_location=daily_note_trackers_meal_location())
-    print(dntm2_location=daily_note_trackers_medicine_location())
-    print(dntm3_location=daily_note_trackers_mood_location())
-    print(dnts_location=daily_note_trackers_sleep_location())
-    print(dnts2_location=daily_note_trackers_symptoms_location())
-    print(dntw_location=daily_note_trackers_water_location())
+    dnbj_location = daily_note_bullet_journal_location()
+    dnc_location = daily_note_connections_location()
+    dne_location = daily_note_events_location()
+    dnl_location = daily_note_location_location()
+    dnr_location = daily_note_reminders_location()
+    dnr2_location = daily_note_routines_location()
+    dnt_location = daily_note_tasks_location()
+    dnt2_location = daily_note_trackers_moc_location()
+    dnte_location = daily_note_trackers_exercise_location()
+    dntf_location = daily_note_trackers_finance_location()
+    dntl_location = daily_note_trackers_location_location()
+    dntm_location = daily_note_trackers_meal_location()
+    dntm2_location = daily_note_trackers_medicine_location()
+    dntm3_location = daily_note_trackers_mood_location()
+    dnts_location = daily_note_trackers_sleep_location()
+    dnts2_location = daily_note_trackers_symptoms_location()
+    dntw_location = daily_note_trackers_water_location()
+    print(dnbj_location)
+    print(dnc_location)
+    print(dne_location)
+    print(dnl_location)
+    print(dnr_location)
+    print(dnr2_location)
+    print(dnt_location)
+    print(dnt2_location)
+    print(dnte_location)
+    print(dntf_location)
+    print(dntm_location)
+    print(dntl_location)
+    print(dntm2_location)
+    print(dntm3_location)
+    print(dnts_location)
+    print(dnts2_location)
+    print(dntw_location)
     print("Testing completed")
 
 
