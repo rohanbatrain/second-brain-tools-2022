@@ -15,7 +15,7 @@ date : {Today}
 * [[{Today}_Events|Events]]
 * [[{Today}_Connections|Connections]]
 * [[{Today}_Tasks|Tasks]]
-* [[{Today}_routine|routine]]
+* [[{Today}_Routine|Routine]]
 * [[{Today}_Reminders|Reminders]]
 * [[{Today}_Bullet-Journal|Bullet-Journal]]
 * [[{Today}_Trackers|Trackers]]
