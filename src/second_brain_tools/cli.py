@@ -12,25 +12,18 @@ Why does this file exist, and why not put this in __main__?
   - When you import __main__ it will get executed again(as a module) because
     there's no ``second_brain_tools.__main__`` in ``sys.modules``.
 """
-# // Meant for testing branch
-# Importing testing modules started
-# Importing testing modules finished
-
 # // Meant for production branch
 # Importing production modules
 import typer
 from second_brain_tools.setup import setup as sbt_setup
-# from second_brain_tools.config import DNM_APPEND_TYPE, GLOBAL_APPEND_TYPE
-# from second_brain_tools.append import plain_text_append
 # Importing production modules finished
 
 # Defining default variables Started
 test_crs = "Command ran successfully."
 # Defining default variables Finished
 
+
 # Main function, which calls typer app here
-
-
 def main():
     """
     Main Function, aka CLI app.
@@ -40,7 +33,6 @@ def main():
 
 
 # Typer app Started
-
 # Defining typers Started
 app = typer.Typer()
 app_notes = typer.Typer()
@@ -48,32 +40,16 @@ app_daily_note = typer.Typer()
 app_capture = typer.Typer()
 app_config = typer.Typer()
 # Defining typers Finished
-
 # Adding typers to main app Started
 app.add_typer(app_notes, name="Notes", help="Notes specific commands.")
 app.add_typer(app_capture, name="Capture", help="Capture a note using predefined flows.")
 app.add_typer(app_daily_note, name="Daily-Note", help="Daily Note Specific Commands.")
 app.add_typer(app_config, name="Config", help="Shows you configurable options.")
 # Adding typers to main app Finished
-
 # Typer app Finished
 
+
 # Starting the module
-
-# Adding app testing commands Started
-
-
-# @app.command("test")
-# def test():
-#     """
-#     A temporary command to test debugging.
-#     """
-
-# Adding app testing commands Finished
-
-# Adding app commands started
-
-
 @app.command("Quick-Capture")
 def quick_capture():
     """

@@ -6,7 +6,7 @@ SECOND_BRAIN_DIRECTORY = "/home/rohan/Vaults/SBT_TOOLS_TESTING/"
 
 ######## Append Options Started 
 
-# Include Time, Supported options True/False 
+# Include Time, Supported options are True/False; Default is set to True. 
 
 # Include Time at the end of bullet, numeric list?
 
@@ -16,7 +16,7 @@ LIST_TIME_INCLUDE =
 
 PLAIN_TEXT_TIME_INCLUDE = 
 
-# What Text to append in before/after the content? Please don't leave spaces at the end of the string below, Time would be automatically added at the end of the line after two spaces.
+# What Text to append in before/after the content? Please don't leave spaces at the end of the string below, Time would be automatically added at the end of the line below with two spaces.
 
 TIME_APPEND_TEXT = This log was added at ->
 
@@ -49,6 +49,30 @@ DNTM3_APPEND_TYPE =
 DNTS_APPEND_TYPE = 
 DNTS2_APPEND_TYPE = 
 DNTW_APPEND_TYPE = 
+DNR2_HOUR_00_APPEND_TYPE = 
+DNR2_HOUR_01_APPEND_TYPE = 
+DNR2_HOUR_02_APPEND_TYPE = 
+DNR2_HOUR_03_APPEND_TYPE = 
+DNR2_HOUR_04_APPEND_TYPE = 
+DNR2_HOUR_05_APPEND_TYPE = 
+DNR2_HOUR_06_APPEND_TYPE = 
+DNR2_HOUR_07_APPEND_TYPE = 
+DNR2_HOUR_08_APPEND_TYPE = 
+DNR2_HOUR_09_APPEND_TYPE = 
+DNR2_HOUR_10_APPEND_TYPE = 
+DNR2_HOUR_11_APPEND_TYPE = 
+DNR2_HOUR_12_APPEND_TYPE = 
+DNR2_HOUR_13_APPEND_TYPE = 
+DNR2_HOUR_14_APPEND_TYPE = 
+DNR2_HOUR_15_APPEND_TYPE = 
+DNR2_HOUR_16_APPEND_TYPE = 
+DNR2_HOUR_17_APPEND_TYPE = 
+DNR2_HOUR_18_APPEND_TYPE = 
+DNR2_HOUR_19_APPEND_TYPE = 
+DNR2_HOUR_20_APPEND_TYPE = 
+DNR2_HOUR_21_APPEND_TYPE = 
+DNR2_HOUR_22_APPEND_TYPE = 
+DNR2_HOUR_23_APPEND_TYPE = 
 
 ######## Append Options Finished 
 
@@ -96,13 +120,38 @@ _01B3A = "01_Capture-System/01B_Processed/01B3_Lists/01B3A_Playlists/"
 _01B3B = "01_Capture-System/01B_Processed/01B3_Lists/01B3B_Wishlists/"
 _01C1 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/"
 _01C1A = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1A_MOC/"
-_01C1B = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1B_Journal/"
+_01C1B = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1B_Bullet-Journal/"
 _01C1B1 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1B_Journal/01C1B1_Bullet-Journal"
 _01C1C = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1C_Connections/"
 _01C1D = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1D_Events/"
 _01C1E = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1E_Location/"
 _01C1F = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1F_Reminders/"
 _01C1G = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/"
+_01C1G10 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G10_Hour-09/"
+_01C1G11 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G11_Hour-10/"
+_01C1G12 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G12_Hour-11/"
+_01C1G13 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G13_Hour-12/"
+_01C1G14 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G14_Hour-13/"
+_01C1G15 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G15_Hour-14/"
+_01C1G16 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G16_Hour-15/"
+_01C1G17 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G17_Hour-16/"
+_01C1G18 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G18_Hour-17/"
+_01C1G19 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G19_Hour-18/"
+_01C1G1 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G1_Hour-00/"
+_01C1G20 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G20_Hour-19/"
+_01C1G21 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G21_Hour-20/"
+_01C1G22 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G22_Hour-21/"
+_01C1G23 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G23_Hour-22/"
+_01C1G24 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G24_Hour-23/"
+_01C1G25 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G25_MOC/"
+_01C1G2 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G2_Hour-01/"
+_01C1G3 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G3_Hour-02/"
+_01C1G4 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G4_Hour-03/"
+_01C1G5 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G5_Hour-04/"
+_01C1G6 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G6_Hour-05/"
+_01C1G7 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G7_Hour-06/"
+_01C1G8 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G8_Hour-07/"
+_01C1G9 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G9_Hour-08/"
 _01C1H = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1H_Tasks/"
 _01C1I = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1I_Trackers/"
 _01C1I1 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1I_Trackers/01C1I1_Transaction/"
