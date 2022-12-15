@@ -16,12 +16,13 @@ LIST_TIME_INCLUDE =
 
 PLAIN_TEXT_TIME_INCLUDE = 
 
-# What Text to append in before/after the content? Please don't leave spaces at the end of the string below, Time would be automatically added at the end of the line below with two spaces.
+# What Text to append in before/after the content? Please don't leave spaces at the end of the string below, Time would be automatically added at the end of the line after two spaces.
 
 TIME_APPEND_TEXT = This log was added at ->
 
 # Append Type Supported Options are 
 
+# -> Paragraph
 # -> Plain_Text
 # -> Bullet_List
 # -> Table
@@ -29,8 +30,25 @@ TIME_APPEND_TEXT = This log was added at ->
 # Set a global default to append functions. If a type is not passed explicitely in the function then this variable would be invoked.
 GLOBAL_APPEND_TYPE = Table
 
-# For Daily Note MOC 
+# For Daily Notes 
 DNM_APPEND_TYPE = 
+DNBJ_APPEND_TYPE = 
+DNC_APPEND_TYPE = 
+DNE_APPEND_TYPE = 
+DNL_APPEND_TYPE = 
+DNR_APPEND_TYPE = 
+DNR2_APPEND_TYPE = 
+DNT_APPEND_TYPE = 
+DNT2_APPEND_TYPE = 
+DNTE_APPEND_TYPE = 
+DNTF_APPEND_TYPE = 
+DNTL_APPEND_TYPE = 
+DNTM_APPEND_TYPE = 
+DNTM2_APPEND_TYPE = 
+DNTM3_APPEND_TYPE = 
+DNTS_APPEND_TYPE = 
+DNTS2_APPEND_TYPE = 
+DNTW_APPEND_TYPE = 
 
 ######## Append Options Finished 
 

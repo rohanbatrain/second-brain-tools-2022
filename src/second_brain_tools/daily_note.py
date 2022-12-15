@@ -106,6 +106,52 @@ def daily_note_bullet_journal_append(note_content, include_time=True):
     """
     appends to
     """
+    dnbj_location = daily_note_bullet_journal_location()
+
+    if DNBJ_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnbj_location, note_content)
+
+    elif DNBJ_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnbj_location, note_content, include_time)
+        else:
+            plain_text_append(dnbj_location, note_content, include_time)
+
+    elif DNBJ_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnbj_location, note_content, include_time)
+        else:
+            bullet_list_append(dnbj_location, note_content, include_time)
+
+    elif DNBJ_APPEND_TYPE == "Table":
+        table_append(dnbj_location, note_content)
+
+    if not DNBJ_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnbj_location, note_content, include_time)
+            else:
+                plain_text_append(dnbj_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnbj_location, note_content, include_time)
+            else:
+                bullet_list_append(dnbj_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnbj_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnbj_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_bullet_journal_generate(dnbj_location):
@@ -144,6 +190,52 @@ def daily_note_connections_append(note_content, include_time=True):
     """
     appends to
     """
+    dnc_location = daily_note_connections_location()
+
+    if DNC_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnc_location, note_content)
+
+    elif DNC_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnc_location, note_content, include_time)
+        else:
+            plain_text_append(dnc_location, note_content, include_time)
+
+    elif DNC_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnc_location, note_content, include_time)
+        else:
+            bullet_list_append(dnc_location, note_content, include_time)
+
+    elif DNC_APPEND_TYPE == "Table":
+        table_append(dnc_location, note_content)
+
+    if not DNC_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnc_location, note_content, include_time)
+            else:
+                plain_text_append(dnc_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnc_location, note_content, include_time)
+            else:
+                bullet_list_append(dnc_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnc_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnc_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_connections_generate(dnc_location):
@@ -183,6 +275,52 @@ def daily_note_events_append(note_content, include_time=True):
     """
     appends to
     """
+    dne_location = daily_note_events_location()
+
+    if DNE_APPEND_TYPE == "Paragraph":
+        paragraph_append(dne_location, note_content)
+
+    elif DNE_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dne_location, note_content, include_time)
+        else:
+            plain_text_append(dne_location, note_content, include_time)
+
+    elif DNE_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dne_location, note_content, include_time)
+        else:
+            bullet_list_append(dne_location, note_content, include_time)
+
+    elif DNE_APPEND_TYPE == "Table":
+        table_append(dne_location, note_content)
+
+    if not DNE_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dne_location, note_content, include_time)
+            else:
+                plain_text_append(dne_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dne_location, note_content, include_time)
+            else:
+                bullet_list_append(dne_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dne_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dne_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_events_generate(dne_location):
@@ -222,6 +360,52 @@ def daily_note_location_append(note_content, include_time=True):
     """
     appends to
     """
+    dnl_location = daily_note_location_location()
+
+    if DNL_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnl_location, note_content)
+
+    elif DNL_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnl_location, note_content, include_time)
+        else:
+            plain_text_append(dnl_location, note_content, include_time)
+
+    elif DNL_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnl_location, note_content, include_time)
+        else:
+            bullet_list_append(dnl_location, note_content, include_time)
+
+    elif DNL_APPEND_TYPE == "Table":
+        table_append(dnl_location, note_content)
+
+    if not DNL_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnl_location, note_content, include_time)
+            else:
+                plain_text_append(dnl_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnl_location, note_content, include_time)
+            else:
+                bullet_list_append(dnl_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnl_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnl_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_location_generate(dnl_location):
@@ -261,6 +445,53 @@ def daily_note_reminders_append(note_content, include_time=True):
     appends to
     """
 
+    dnr_location = daily_note_reminders_location()
+
+    if DNR_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr_location, note_content)
+
+    elif DNR_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr_location, note_content, include_time)
+        else:
+            plain_text_append(dnr_location, note_content, include_time)
+
+    elif DNR_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr_location, note_content, include_time)
+
+    elif DNR_APPEND_TYPE == "Table":
+        table_append(dnr_location, note_content)
+
+    if not DNR_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr_location, note_content, include_time)
+            else:
+                plain_text_append(dnr_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr_location, note_content)
+        else:
+            print("Error")
+
 
 def daily_note_reminders_generate(dnr_location):
     """
@@ -298,6 +529,52 @@ def daily_note_routines_append(note_content, include_time=True):
     """
     appends to
     """
+    dnr2_location = daily_note_routines_location()
+
+    if DNR2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_location, note_content)
+
+    elif DNR2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_location, note_content, include_time)
+
+    elif DNR2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_location, note_content, include_time)
+
+    elif DNR2_APPEND_TYPE == "Table":
+        table_append(dnr2_location, note_content)
+
+    if not DNR2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_routines_generate(dnr2_location):
@@ -336,6 +613,52 @@ def daily_note_tasks_append(note_content, include_time=True):
     """
     appends to
     """
+    dnt_location = daily_note_tasks_location()
+
+    if DNT_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnt_location, note_content)
+
+    elif DNT_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnt_location, note_content, include_time)
+        else:
+            plain_text_append(dnt_location, note_content, include_time)
+
+    elif DNT_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnt_location, note_content, include_time)
+        else:
+            bullet_list_append(dnt_location, note_content, include_time)
+
+    elif DNT_APPEND_TYPE == "Table":
+        table_append(dnt_location, note_content)
+
+    if not DNT_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnt_location, note_content, include_time)
+            else:
+                plain_text_append(dnt_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnt_location, note_content, include_time)
+            else:
+                bullet_list_append(dnt_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnt_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnt_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_tasks_generate(dnt_location):
@@ -375,6 +698,52 @@ def daily_note_trackers_moc_append(note_content, include_time=True):
     """
     appends to
     """
+    dnt2_location = daily_note_trackers_moc_location()
+
+    if DNT2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnt2_location, note_content)
+
+    elif DNT2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnt2_location, note_content, include_time)
+        else:
+            plain_text_append(dnt2_location, note_content, include_time)
+
+    elif DNT2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnt2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnt2_location, note_content, include_time)
+
+    elif DNT2_APPEND_TYPE == "Table":
+        table_append(dnt2_location, note_content)
+
+    if not DNT2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnt2_location, note_content, include_time)
+            else:
+                plain_text_append(dnt2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnt2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnt2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnt2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnt2_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_trackers_moc_generate(dnt2_location):
@@ -413,6 +782,52 @@ def daily_note_trackers_exercise_append(note_content, include_time=True):
     """
 
     """
+    dnte_location = daily_note_trackers_exercise_location()
+
+    if DNTE_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnte_location, note_content)
+
+    elif DNTE_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnte_location, note_content, include_time)
+        else:
+            plain_text_append(dnte_location, note_content, include_time)
+
+    elif DNTE_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnte_location, note_content, include_time)
+        else:
+            bullet_list_append(dnte_location, note_content, include_time)
+
+    elif DNTE_APPEND_TYPE == "Table":
+        table_append(dnte_location, note_content)
+
+    if not DNTE_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnte_location, note_content, include_time)
+            else:
+                plain_text_append(dnte_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnte_location, note_content, include_time)
+            else:
+                bullet_list_append(dnte_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnte_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnte_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_trackers_exercise_generate(dnte_location):
@@ -451,6 +866,52 @@ def daily_note_trackers_finance_append(note_content, include_time=True):
     """
 
     """
+    dntf_location = daily_note_trackers_finance_location()
+
+    if DNTF_APPEND_TYPE == "Paragraph":
+        paragraph_append(dntf_location, note_content)
+
+    elif DNTF_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dntf_location, note_content, include_time)
+        else:
+            plain_text_append(dntf_location, note_content, include_time)
+
+    elif DNTF_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dntf_location, note_content, include_time)
+        else:
+            bullet_list_append(dntf_location, note_content, include_time)
+
+    elif DNTF_APPEND_TYPE == "Table":
+        table_append(dntf_location, note_content)
+
+    if not DNTF_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dntf_location, note_content, include_time)
+            else:
+                plain_text_append(dntf_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dntf_location, note_content, include_time)
+            else:
+                bullet_list_append(dntf_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dntf_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dntf_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_trackers_finance_generate(dntf_location):
@@ -489,6 +950,52 @@ def daily_note_trackers_location_append(note_content, include_time=True):
     """
 
     """
+    dntl_location = daily_note_trackers_location_location()
+
+    if DNTL_APPEND_TYPE == "Paragraph":
+        paragraph_append(dntl_location, note_content)
+
+    elif DNTL_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dntl_location, note_content, include_time)
+        else:
+            plain_text_append(dntl_location, note_content, include_time)
+
+    elif DNTL_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dntl_location, note_content, include_time)
+        else:
+            bullet_list_append(dntl_location, note_content, include_time)
+
+    elif DNTL_APPEND_TYPE == "Table":
+        table_append(dntl_location, note_content)
+
+    if not DNTL_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dntl_location, note_content, include_time)
+            else:
+                plain_text_append(dntl_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dntl_location, note_content, include_time)
+            else:
+                bullet_list_append(dntl_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dntl_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dntl_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_trackers_location_generate(dntl_location):
@@ -527,6 +1034,52 @@ def daily_note_trackers_meal_append(note_content, include_time=True):
     """
 
     """
+    dntm_location = daily_note_trackers_meal_location()
+
+    if DNTM_APPEND_TYPE == "Paragraph":
+        paragraph_append(dntm_location, note_content)
+
+    elif DNTM_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dntm_location, note_content, include_time)
+        else:
+            plain_text_append(dntm_location, note_content, include_time)
+
+    elif DNTM_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dntm_location, note_content, include_time)
+        else:
+            bullet_list_append(dntm_location, note_content, include_time)
+
+    elif DNTM_APPEND_TYPE == "Table":
+        table_append(dntm_location, note_content)
+
+    if not DNTM_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dntm_location, note_content, include_time)
+            else:
+                plain_text_append(dntm_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dntm_location, note_content, include_time)
+            else:
+                bullet_list_append(dntm_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dntm_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dntm_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_trackers_meal_generate(dntm_location):
@@ -565,6 +1118,52 @@ def daily_note_trackers_medicine_append(note_content, include_time=True):
     """
 
     """
+    dntm2_location = daily_note_trackers_medicine_location()
+
+    if DNTM2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dntm2_location, note_content)
+
+    elif DNTM2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dntm2_location, note_content, include_time)
+        else:
+            plain_text_append(dntm2_location, note_content, include_time)
+
+    elif DNTM2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dntm2_location, note_content, include_time)
+        else:
+            bullet_list_append(dntm2_location, note_content, include_time)
+
+    elif DNTM2_APPEND_TYPE == "Table":
+        table_append(dntm2_location, note_content)
+
+    if not DNTM2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dntm2_location, note_content, include_time)
+            else:
+                plain_text_append(dntm2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dntm2_location, note_content, include_time)
+            else:
+                bullet_list_append(dntm2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dntm2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dntm2_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_trackers_medicine_generate(dntm2_location):
@@ -603,6 +1202,52 @@ def daily_note_trackers_mood_append(note_content, include_time=True):
     """
 
     """
+    dntm3_location = daily_note_trackers_mood_location()
+
+    if DNTM3_APPEND_TYPE == "Paragraph":
+        paragraph_append(dntm3_location, note_content)
+
+    elif DNTM3_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dntm3_location, note_content, include_time)
+        else:
+            plain_text_append(dntm3_location, note_content, include_time)
+
+    elif DNTM3_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dntm3_location, note_content, include_time)
+        else:
+            bullet_list_append(dntm3_location, note_content, include_time)
+
+    elif DNTM3_APPEND_TYPE == "Table":
+        table_append(dntm3_location, note_content)
+
+    if not DNTM3_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dntm3_location, note_content, include_time)
+            else:
+                plain_text_append(dntm3_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dntm3_location, note_content, include_time)
+            else:
+                bullet_list_append(dntm3_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dntm3_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dntm3_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_trackers_mood_generate(dntm3_location):
@@ -641,6 +1286,52 @@ def daily_note_trackers_sleep_append(note_content, include_time=True):
     """
 
     """
+    dnts_location = daily_note_trackers_sleep_location()
+
+    if DNTS_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnts_location, note_content)
+
+    elif DNTS_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnts_location, note_content, include_time)
+        else:
+            plain_text_append(dnts_location, note_content, include_time)
+
+    elif DNTS_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnts_location, note_content, include_time)
+        else:
+            bullet_list_append(dnts_location, note_content, include_time)
+
+    elif DNTS_APPEND_TYPE == "Table":
+        table_append(dnts_location, note_content)
+
+    if not DNTS_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnts_location, note_content, include_time)
+            else:
+                plain_text_append(dnts_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnts_location, note_content, include_time)
+            else:
+                bullet_list_append(dnts_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnts_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnts_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_trackers_sleep_generate(dnts_location):
@@ -679,6 +1370,52 @@ def daily_note_trackers_symptoms_append(note_content, include_time=True):
     """
 
     """
+    dnts2_location = daily_note_trackers_symptoms_location()
+
+    if DNTS2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnts2_location, note_content)
+
+    elif DNTS2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnts2_location, note_content, include_time)
+        else:
+            plain_text_append(dnts2_location, note_content, include_time)
+
+    elif DNTS2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnts2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnts2_location, note_content, include_time)
+
+    elif DNTS2_APPEND_TYPE == "Table":
+        table_append(dnts2_location, note_content)
+
+    if not DNTS2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnts2_location, note_content, include_time)
+            else:
+                plain_text_append(dnts2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnts2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnts2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnts2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnts2_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_trackers_symptoms_generate(dnts2_location):
@@ -717,6 +1454,52 @@ def daily_note_trackers_water_append(note_content, include_time=True):
     """
 
     """
+    dntw_location = daily_note_trackers_water_location()
+
+    if DNTW_APPEND_TYPE == "Paragraph":
+        paragraph_append(dntw_location, note_content)
+
+    elif DNTW_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dntw_location, note_content, include_time)
+        else:
+            plain_text_append(dntw_location, note_content, include_time)
+
+    elif DNTW_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dntw_location, note_content, include_time)
+        else:
+            bullet_list_append(dntw_location, note_content, include_time)
+
+    elif DNTW_APPEND_TYPE == "Table":
+        table_append(dntw_location, note_content)
+
+    if not DNTW_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dntw_location, note_content, include_time)
+            else:
+                plain_text_append(dntw_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dntw_location, note_content, include_time)
+            else:
+                bullet_list_append(dntw_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dntw_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dntw_location, note_content)
+        else:
+            print("Error")
 
 
 def daily_note_trackers_water_generate(dntw_location):
@@ -755,40 +1538,6 @@ def daily_note_trackers_water_pregenerate_check():
 def test():
     # daily_note_moc_pregenerate_check()
     # daily_note_moc_append(input("Test data: "))
-    dnbj_location = daily_note_bullet_journal_location()
-    dnc_location = daily_note_connections_location()
-    dne_location = daily_note_events_location()
-    dnl_location = daily_note_location_location()
-    dnr_location = daily_note_reminders_location()
-    dnr2_location = daily_note_routines_location()
-    dnt_location = daily_note_tasks_location()
-    dnt2_location = daily_note_trackers_moc_location()
-    dnte_location = daily_note_trackers_exercise_location()
-    dntf_location = daily_note_trackers_finance_location()
-    dntl_location = daily_note_trackers_location_location()
-    dntm_location = daily_note_trackers_meal_location()
-    dntm2_location = daily_note_trackers_medicine_location()
-    dntm3_location = daily_note_trackers_mood_location()
-    dnts_location = daily_note_trackers_sleep_location()
-    dnts2_location = daily_note_trackers_symptoms_location()
-    dntw_location = daily_note_trackers_water_location()
-    print(dnbj_location)
-    print(dnc_location)
-    print(dne_location)
-    print(dnl_location)
-    print(dnr_location)
-    print(dnr2_location)
-    print(dnt_location)
-    print(dnt2_location)
-    print(dnte_location)
-    print(dntf_location)
-    print(dntm_location)
-    print(dntl_location)
-    print(dntm2_location)
-    print(dntm3_location)
-    print(dnts_location)
-    print(dnts2_location)
-    print(dntw_location)
     print("Testing completed")
 
 
