@@ -86,6 +86,7 @@ tags: daily_note/{Today}/Reminders
 
 """
 # ------------------------------------#
+# ------------------------------------#
 DNR2_FILE_CONTENT_CREATION = f"""---
 date: {Today}
 tags: daily_note/{Today}/Routine
@@ -272,4 +273,363 @@ tags: daily_note/{Today}/Trackers/Water
 
 
 """
+
+
 # ------------------------------------#
+DNR2_HOUR_00_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_01_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_02_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_03_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_04_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_05_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_06_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_07_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_08_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_09_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_10_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_11_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_12_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_13_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_14_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_15_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_16_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_17_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_18_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_19_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_20_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_21_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_22_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
+
+
+# ------------------------------------#
+DNR2_HOUR_23_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: daily_note/{Today}/Routine/{Hour}
+hour_number: {Hour}
+pomodora_task_01:
+pomodora_task_02:
+---
+
+
+# {Hour}_Log
+
+"""
