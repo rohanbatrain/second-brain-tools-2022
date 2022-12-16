@@ -8,7 +8,9 @@ from second_brain_tools.append import plain_text_append, bullet_list_append, tab
 # Importing production modules FINISHED
 
 # Default Append Strings Import Started
+# DAILY NOTES
 from second_brain_tools.config import DNM_APPEND_TYPE, DNBJ_APPEND_TYPE,  DNC_APPEND_TYPE,  DNE_APPEND_TYPE,  DNL_APPEND_TYPE,  DNR_APPEND_TYPE,  DNR2_APPEND_TYPE,  DNT_APPEND_TYPE,  DNT2_APPEND_TYPE,  DNTE_APPEND_TYPE,  dntt_APPEND_TYPE,  DNTL_APPEND_TYPE,  DNTM_APPEND_TYPE,  DNTM2_APPEND_TYPE,  DNTM3_APPEND_TYPE,  DNTS_APPEND_TYPE,  DNTS2_APPEND_TYPE,  DNTW_APPEND_TYPE, GLOBAL_APPEND_TYPE, DNR2_HOUR_00_APPEND_TYPE, DNR2_HOUR_01_APPEND_TYPE, DNR2_HOUR_02_APPEND_TYPE, DNR2_HOUR_03_APPEND_TYPE, DNR2_HOUR_04_APPEND_TYPE, DNR2_HOUR_05_APPEND_TYPE, DNR2_HOUR_06_APPEND_TYPE, DNR2_HOUR_07_APPEND_TYPE, DNR2_HOUR_08_APPEND_TYPE, DNR2_HOUR_09_APPEND_TYPE, DNR2_HOUR_10_APPEND_TYPE, DNR2_HOUR_11_APPEND_TYPE, DNR2_HOUR_12_APPEND_TYPE, DNR2_HOUR_13_APPEND_TYPE, DNR2_HOUR_14_APPEND_TYPE, DNR2_HOUR_15_APPEND_TYPE, DNR2_HOUR_16_APPEND_TYPE, DNR2_HOUR_17_APPEND_TYPE, DNR2_HOUR_18_APPEND_TYPE, DNR2_HOUR_19_APPEND_TYPE, DNR2_HOUR_20_APPEND_TYPE, DNR2_HOUR_21_APPEND_TYPE, DNR2_HOUR_22_APPEND_TYPE, DNR2_HOUR_23_APPEND_TYPE  # noqa
+from second_brain_tools.config import DNR2_HOUR_00_POMODORA_1_APPEND_TYPE, DNR2_HOUR_01_POMODORA_1_APPEND_TYPE, DNR2_HOUR_02_POMODORA_1_APPEND_TYPE, DNR2_HOUR_03_POMODORA_1_APPEND_TYPE, DNR2_HOUR_04_POMODORA_1_APPEND_TYPE, DNR2_HOUR_05_POMODORA_1_APPEND_TYPE, DNR2_HOUR_06_POMODORA_1_APPEND_TYPE, DNR2_HOUR_07_POMODORA_1_APPEND_TYPE, DNR2_HOUR_08_POMODORA_1_APPEND_TYPE, DNR2_HOUR_09_POMODORA_1_APPEND_TYPE, DNR2_HOUR_10_POMODORA_1_APPEND_TYPE, DNR2_HOUR_11_POMODORA_1_APPEND_TYPE, DNR2_HOUR_12_POMODORA_1_APPEND_TYPE, DNR2_HOUR_13_POMODORA_1_APPEND_TYPE, DNR2_HOUR_14_POMODORA_1_APPEND_TYPE, DNR2_HOUR_15_POMODORA_1_APPEND_TYPE, DNR2_HOUR_16_POMODORA_1_APPEND_TYPE, DNR2_HOUR_17_POMODORA_1_APPEND_TYPE, DNR2_HOUR_18_POMODORA_1_APPEND_TYPE, DNR2_HOUR_19_POMODORA_1_APPEND_TYPE, DNR2_HOUR_20_POMODORA_1_APPEND_TYPE, DNR2_HOUR_21_POMODORA_1_APPEND_TYPE, DNR2_HOUR_22_POMODORA_1_APPEND_TYPE, DNR2_HOUR_23_POMODORA_1_APPEND_TYPE, DNR2_HOUR_00_POMODORA_2_APPEND_TYPE, DNR2_HOUR_01_POMODORA_2_APPEND_TYPE, DNR2_HOUR_02_POMODORA_2_APPEND_TYPE, DNR2_HOUR_03_POMODORA_2_APPEND_TYPE, DNR2_HOUR_04_POMODORA_2_APPEND_TYPE, DNR2_HOUR_05_POMODORA_2_APPEND_TYPE, DNR2_HOUR_06_POMODORA_2_APPEND_TYPE, DNR2_HOUR_07_POMODORA_2_APPEND_TYPE, DNR2_HOUR_08_POMODORA_2_APPEND_TYPE, DNR2_HOUR_09_POMODORA_2_APPEND_TYPE, DNR2_HOUR_10_POMODORA_2_APPEND_TYPE, DNR2_HOUR_11_POMODORA_2_APPEND_TYPE, DNR2_HOUR_12_POMODORA_2_APPEND_TYPE, DNR2_HOUR_13_POMODORA_2_APPEND_TYPE, DNR2_HOUR_14_POMODORA_2_APPEND_TYPE, DNR2_HOUR_15_POMODORA_2_APPEND_TYPE, DNR2_HOUR_16_POMODORA_2_APPEND_TYPE, DNR2_HOUR_17_POMODORA_2_APPEND_TYPE, DNR2_HOUR_18_POMODORA_2_APPEND_TYPE, DNR2_HOUR_19_POMODORA_2_APPEND_TYPE, DNR2_HOUR_20_POMODORA_2_APPEND_TYPE, DNR2_HOUR_21_POMODORA_2_APPEND_TYPE, DNR2_HOUR_22_POMODORA_2_APPEND_TYPE, DNR2_HOUR_23_POMODORA_2_APPEND_TYPE  # noqa: E501
 # Default Append Strings Import FINISHED
 
 # Default Content_Creation Strings Import Started
@@ -49,7 +51,6 @@ def daily_note_moc_append(note_content, include_time=True):
     """
     Appends to daily note moc.
     """
-
     dnm_location = daily_note_moc_location()
 
     if DNM_APPEND_TYPE == "Paragraph":
@@ -607,7 +608,7 @@ def daily_note_routine_pregenerate_check():
         daily_note_routine_generate(dnr2_location)
 
 
-# Routine Hourly FUNCTIONS STARTED # Routine Hour_00 FUNCTIONS STARTED
+# Routine Hourly FUNCTIONS STARTED# Routine Hour_00 FUNCTIONS STARTED
 def daily_note_routine_hour_00_append(note_content, include_time=True):
     """
     appends to
@@ -693,7 +694,6 @@ def daily_note_routine_hour_01_append(note_content, include_time=True):
     appends to
     """
     dnr2_hour_01_location = daily_note_routine_hour_01_location()
-
     if DNR2_HOUR_01_APPEND_TYPE == "Paragraph":
         paragraph_append(dnr2_hour_01_location, note_content)
 
@@ -2555,9 +2555,4335 @@ def daily_note_routine_hour_23_pregenerate_check():
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_23_generate(dnr2_hour_23_location)
+# Routine Hour_23 FUNCTIONS FINISHED
+
+# DAILY_NOTE_ROUTINE_POMODORA STARTED
+
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_1_APPEND_STARTED
 
 
-# Routine Hour_23 FUNCTIONS FINISHED # Routine Hourly FUNCTIONS FINISHED # Routine RELATED FUNCTIONS FINISHED
+def daily_note_routine_hour_00_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_00_pomodora_1_location = daily_note_routine_hour_00_pomodora_1_location()
+
+    if DNR2_HOUR_00_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_00_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_00_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_00_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_00_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_00_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_00_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_00_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_00_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_00_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_00_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_00_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_00_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_00_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_00_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_00_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_00_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_00_pomodora_1_generate(dnr2_hour_00_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_00_pomodora_1_location, 'a+') as dnr2_hour_00_file_obj:
+        dnr2_hour_00_file_obj.write(DNR2_HOUR_00_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_00_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_00_pomodora_1_directory = initial_check("")
+    dnr2_hour_00_pomodora_1_location = sbd + dnr2_hour_00_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_00_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_00_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_00_pomodora_1_location = daily_note_routine_hour_00_pomodora_1_location()
+    dnr2_hour_00_pomodora_1_file_exist_check = exists(dnr2_hour_00_pomodora_1_location)
+    if dnr2_hour_00_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_00_pomodora_1_generate(dnr2_hour_00_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_00_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_00_pomodora_2_location = daily_note_routine_hour_00_pomodora_2_location()
+
+    if DNR2_HOUR_00_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_00_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_00_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_00_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_00_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_00_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_00_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_00_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_00_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_00_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_00_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_00_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_00_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_00_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_00_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_00_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_00_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_00_pomodora_2_generate(dnr2_hour_00_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_00_pomodora_2_location, 'a+') as dnr2_hour_00_file_obj:
+        dnr2_hour_00_file_obj.write(DNR2_HOUR_00_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_00_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_00_pomodora_2_directory = initial_check("")
+    dnr2_hour_00_pomodora_2_location = sbd + dnr2_hour_00_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_00_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_00_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_00_pomodora_2_location = daily_note_routine_hour_00_pomodora_2_location()
+    dnr2_hour_00_pomodora_2_file_exist_check = exists(dnr2_hour_00_pomodora_2_location)
+    if dnr2_hour_00_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_00_pomodora_2_generate(dnr2_hour_00_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_01_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_01_pomodora_1_location = daily_note_routine_hour_00_pomodora_1_location()
+
+    if DNR2_HOUR_01_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_01_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_01_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_01_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_01_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_01_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_01_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_01_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_01_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_01_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_01_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_01_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_01_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_01_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_01_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_01_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_01_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_01_pomodora_1_generate(dnr2_hour_01_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_01_pomodora_1_location, 'a+') as dnr2_hour_01_file_obj:
+        dnr2_hour_01_file_obj.write(DNR2_HOUR_01_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_01_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_01_pomodora_1_directory = initial_check("")
+    dnr2_hour_01_pomodora_1_location = sbd + dnr2_hour_01_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_01_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_01_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_01_pomodora_1_location = daily_note_routine_hour_00_pomodora_1_location()
+    dnr2_hour_01_pomodora_1_file_exist_check = exists(dnr2_hour_01_pomodora_1_location)
+    if dnr2_hour_01_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_01_pomodora_1_generate(dnr2_hour_01_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_01_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_01_pomodora_2_location = daily_note_routine_hour_01_pomodora_2_location()
+
+    if DNR2_HOUR_01_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_01_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_01_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_01_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_01_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_01_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_01_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_01_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_01_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_01_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_01_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_01_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_01_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_01_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_01_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_01_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_01_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_01_pomodora_2_generate(dnr2_hour_01_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_01_pomodora_2_location, 'a+') as dnr2_hour_01_file_obj:
+        dnr2_hour_01_file_obj.write(DNR2_HOUR_01_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_01_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_01_pomodora_2_directory = initial_check("")
+    dnr2_hour_01_pomodora_2_location = sbd + dnr2_hour_01_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_01_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_01_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_01_pomodora_2_location = daily_note_routine_hour_01_pomodora_2_location()
+    dnr2_hour_01_pomodora_2_file_exist_check = exists(dnr2_hour_01_pomodora_2_location)
+    if dnr2_hour_01_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_01_pomodora_2_generate(dnr2_hour_01_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_02_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_02_pomodora_1_location = daily_note_routine_hour_02_pomodora_1_location()
+
+    if DNR2_HOUR_02_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_02_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_02_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_02_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_02_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_02_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_02_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_02_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_02_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_02_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_02_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_02_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_02_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_02_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_02_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_02_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_02_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_02_pomodora_1_generate(dnr2_hour_02_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_02_pomodora_1_location, 'a+') as dnr2_hour_02_file_obj:
+        dnr2_hour_02_file_obj.write(DNR2_HOUR_02_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_02_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_02_pomodora_1_directory = initial_check("")
+    dnr2_hour_02_pomodora_1_location = sbd + dnr2_hour_02_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_02_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_02_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_02_pomodora_1_location = daily_note_routine_hour_02_pomodora_1_location()
+    dnr2_hour_02_pomodora_1_file_exist_check = exists(dnr2_hour_02_pomodora_1_location)
+    if dnr2_hour_02_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_02_pomodora_1_generate(dnr2_hour_02_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_02_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_02_pomodora_2_location = daily_note_routine_hour_02_pomodora_2_location()
+
+    if DNR2_HOUR_02_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_02_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_02_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_02_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_02_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_02_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_02_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_02_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_02_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_02_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_02_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_02_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_02_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_02_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_02_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_02_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_02_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_02_pomodora_2_generate(dnr2_hour_02_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_02_pomodora_2_location, 'a+') as dnr2_hour_02_file_obj:
+        dnr2_hour_02_file_obj.write(DNR2_HOUR_02_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_02_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_02_pomodora_2_directory = initial_check("")
+    dnr2_hour_02_pomodora_2_location = sbd + dnr2_hour_02_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_02_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_02_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_02_pomodora_2_location = daily_note_routine_hour_02_pomodora_2_location()
+    dnr2_hour_02_pomodora_2_file_exist_check = exists(dnr2_hour_02_pomodora_2_location)
+    if dnr2_hour_02_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_02_pomodora_2_generate(dnr2_hour_02_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_03_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_03_pomodora_1_location = daily_note_routine_hour_03_pomodora_1_location()
+
+    if DNR2_HOUR_03_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_03_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_03_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_03_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_03_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_03_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_03_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_03_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_03_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_03_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_03_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_03_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_03_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_03_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_03_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_03_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_03_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_03_pomodora_1_generate(dnr2_hour_03_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_03_pomodora_1_location, 'a+') as dnr2_hour_03_file_obj:
+        dnr2_hour_03_file_obj.write(DNR2_HOUR_03_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_03_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_03_pomodora_1_directory = initial_check("")
+    dnr2_hour_03_pomodora_1_location = sbd + dnr2_hour_03_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_03_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_03_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_03_pomodora_1_location = daily_note_routine_hour_03_pomodora_1_location()
+    dnr2_hour_03_pomodora_1_file_exist_check = exists(dnr2_hour_03_pomodora_1_location)
+    if dnr2_hour_03_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_03_pomodora_1_generate(dnr2_hour_03_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_03_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_03_pomodora_2_location = daily_note_routine_hour_03_pomodora_2_location()
+
+    if DNR2_HOUR_03_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_03_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_03_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_03_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_03_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_03_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_03_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_03_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_03_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_03_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_03_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_03_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_03_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_03_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_03_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_03_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_03_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_03_pomodora_2_generate(dnr2_hour_03_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_03_pomodora_2_location, 'a+') as dnr2_hour_03_file_obj:
+        dnr2_hour_03_file_obj.write(DNR2_HOUR_03_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_03_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_03_pomodora_2_directory = initial_check("")
+    dnr2_hour_03_pomodora_2_location = sbd + dnr2_hour_03_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_03_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_03_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_03_pomodora_2_location = daily_note_routine_hour_03_pomodora_2_location()
+    dnr2_hour_03_pomodora_2_file_exist_check = exists(dnr2_hour_03_pomodora_2_location)
+    if dnr2_hour_03_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_03_pomodora_2_generate(dnr2_hour_03_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_04_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_04_pomodora_1_location = daily_note_routine_hour_04_pomodora_1_location()
+
+    if DNR2_HOUR_04_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_04_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_04_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_04_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_04_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_04_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_04_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_04_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_04_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_04_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_04_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_04_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_04_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_04_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_04_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_04_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_04_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_04_pomodora_1_generate(dnr2_hour_04_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_04_pomodora_1_location, 'a+') as dnr2_hour_04_file_obj:
+        dnr2_hour_04_file_obj.write(DNR2_HOUR_04_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_04_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_04_pomodora_1_directory = initial_check("")
+    dnr2_hour_04_pomodora_1_location = sbd + dnr2_hour_04_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_04_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_04_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_04_pomodora_1_location = daily_note_routine_hour_04_pomodora_1_location()
+    dnr2_hour_04_pomodora_1_file_exist_check = exists(dnr2_hour_04_pomodora_1_location)
+    if dnr2_hour_04_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_04_pomodora_1_generate(dnr2_hour_04_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_04_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_04_pomodora_2_location = daily_note_routine_hour_04_pomodora_2_location()
+
+    if DNR2_HOUR_04_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_04_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_04_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_04_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_04_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_04_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_04_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_04_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_04_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_04_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_04_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_04_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_04_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_04_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_04_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_04_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_04_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_04_pomodora_2_generate(dnr2_hour_04_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_04_pomodora_2_location, 'a+') as dnr2_hour_04_file_obj:
+        dnr2_hour_04_file_obj.write(DNR2_HOUR_04_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_04_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_04_pomodora_2_directory = initial_check("")
+    dnr2_hour_04_pomodora_2_location = sbd + dnr2_hour_04_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_04_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_04_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_04_pomodora_2_location = daily_note_routine_hour_04_pomodora_2_location()
+    dnr2_hour_04_pomodora_2_file_exist_check = exists(dnr2_hour_04_pomodora_2_location)
+    if dnr2_hour_04_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_04_pomodora_2_generate(dnr2_hour_04_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_05_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_05_pomodora_1_location = daily_note_routine_hour_05_pomodora_1_location()
+
+    if DNR2_HOUR_05_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_05_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_05_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_05_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_05_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_05_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_05_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_05_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_05_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_05_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_05_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_05_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_05_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_05_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_05_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_05_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_05_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_05_pomodora_1_generate(dnr2_hour_05_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_05_pomodora_1_location, 'a+') as dnr2_hour_05_file_obj:
+        dnr2_hour_05_file_obj.write(DNR2_HOUR_05_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_05_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_05_pomodora_1_directory = initial_check("")
+    dnr2_hour_05_pomodora_1_location = sbd + dnr2_hour_05_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_05_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_05_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_05_pomodora_1_location = daily_note_routine_hour_05_pomodora_1_location()
+    dnr2_hour_05_pomodora_1_file_exist_check = exists(dnr2_hour_05_pomodora_1_location)
+    if dnr2_hour_05_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_05_pomodora_1_generate(dnr2_hour_05_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_05_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_05_pomodora_2_location = daily_note_routine_hour_05_pomodora_2_location()
+
+    if DNR2_HOUR_05_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_05_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_05_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_05_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_05_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_05_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_05_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_05_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_05_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_05_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_05_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_05_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_05_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_05_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_05_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_05_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_05_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_05_pomodora_2_generate(dnr2_hour_05_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_05_pomodora_2_location, 'a+') as dnr2_hour_05_file_obj:
+        dnr2_hour_05_file_obj.write(DNR2_HOUR_05_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_05_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_05_pomodora_2_directory = initial_check("")
+    dnr2_hour_05_pomodora_2_location = sbd + dnr2_hour_05_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_05_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_05_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_05_pomodora_2_location = daily_note_routine_hour_05_pomodora_2_location()
+    dnr2_hour_05_pomodora_2_file_exist_check = exists(dnr2_hour_05_pomodora_2_location)
+    if dnr2_hour_05_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_05_pomodora_2_generate(dnr2_hour_05_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_06_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_06_pomodora_1_location = daily_note_routine_hour_06_pomodora_1_location()
+
+    if DNR2_HOUR_06_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_06_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_06_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_06_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_06_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_06_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_06_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_06_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_06_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_06_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_06_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_06_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_06_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_06_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_06_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_06_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_06_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_06_pomodora_1_generate(dnr2_hour_06_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_06_pomodora_1_location, 'a+') as dnr2_hour_06_file_obj:
+        dnr2_hour_06_file_obj.write(DNR2_HOUR_06_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_06_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_06_pomodora_1_directory = initial_check("")
+    dnr2_hour_06_pomodora_1_location = sbd + dnr2_hour_06_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_06_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_06_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_06_pomodora_1_location = daily_note_routine_hour_06_pomodora_1_location()
+    dnr2_hour_06_pomodora_1_file_exist_check = exists(dnr2_hour_06_pomodora_1_location)
+    if dnr2_hour_06_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_06_pomodora_1_generate(dnr2_hour_06_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_06_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_06_pomodora_2_location = daily_note_routine_hour_06_pomodora_2_location()
+
+    if DNR2_HOUR_06_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_06_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_06_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_06_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_06_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_06_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_06_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_06_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_06_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_06_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_06_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_06_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_06_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_06_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_06_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_06_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_06_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_06_pomodora_2_generate(dnr2_hour_06_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_06_pomodora_2_location, 'a+') as dnr2_hour_06_file_obj:
+        dnr2_hour_06_file_obj.write(DNR2_HOUR_06_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_06_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_06_pomodora_2_directory = initial_check("")
+    dnr2_hour_06_pomodora_2_location = sbd + dnr2_hour_06_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_06_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_06_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_06_pomodora_2_location = daily_note_routine_hour_06_pomodora_2_location()
+    dnr2_hour_06_pomodora_2_file_exist_check = exists(dnr2_hour_06_pomodora_2_location)
+    if dnr2_hour_06_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_06_pomodora_2_generate(dnr2_hour_06_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_07_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_07_pomodora_1_location = daily_note_routine_hour_07_pomodora_1_location()
+
+    if DNR2_HOUR_07_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_07_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_07_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_07_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_07_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_07_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_07_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_07_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_07_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_07_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_07_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_07_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_07_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_07_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_07_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_07_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_07_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_07_pomodora_1_generate(dnr2_hour_07_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_07_pomodora_1_location, 'a+') as dnr2_hour_07_file_obj:
+        dnr2_hour_07_file_obj.write(DNR2_HOUR_07_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_07_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_07_pomodora_1_directory = initial_check("")
+    dnr2_hour_07_pomodora_1_location = sbd + dnr2_hour_07_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_07_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_07_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_07_pomodora_1_location = daily_note_routine_hour_07_pomodora_1_location()
+    dnr2_hour_07_pomodora_1_file_exist_check = exists(dnr2_hour_07_pomodora_1_location)
+    if dnr2_hour_07_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_07_pomodora_1_generate(dnr2_hour_07_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_07_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_07_pomodora_2_location = daily_note_routine_hour_07_pomodora_2_location()
+
+    if DNR2_HOUR_07_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_07_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_07_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_07_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_07_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_07_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_07_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_07_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_07_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_07_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_07_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_07_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_07_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_07_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_07_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_07_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_07_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_07_pomodora_2_generate(dnr2_hour_07_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_07_pomodora_2_location, 'a+') as dnr2_hour_07_file_obj:
+        dnr2_hour_07_file_obj.write(DNR2_HOUR_07_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_07_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_07_pomodora_2_directory = initial_check("")
+    dnr2_hour_07_pomodora_2_location = sbd + dnr2_hour_07_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_07_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_07_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_07_pomodora_2_location = daily_note_routine_hour_07_pomodora_2_location()
+    dnr2_hour_07_pomodora_2_file_exist_check = exists(dnr2_hour_07_pomodora_2_location)
+    if dnr2_hour_07_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_07_pomodora_2_generate(dnr2_hour_07_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_08_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_08_pomodora_1_location = daily_note_routine_hour_08_pomodora_1_location()
+
+    if DNR2_HOUR_08_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_08_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_08_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_08_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_08_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_08_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_08_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_08_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_08_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_08_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_08_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_08_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_08_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_08_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_08_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_08_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_08_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_08_pomodora_1_generate(dnr2_hour_08_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_08_pomodora_1_location, 'a+') as dnr2_hour_08_file_obj:
+        dnr2_hour_08_file_obj.write(DNR2_HOUR_08_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_08_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_08_pomodora_1_directory = initial_check("")
+    dnr2_hour_08_pomodora_1_location = sbd + dnr2_hour_08_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_08_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_08_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_08_pomodora_1_location = daily_note_routine_hour_08_pomodora_1_location()
+    dnr2_hour_08_pomodora_1_file_exist_check = exists(dnr2_hour_08_pomodora_1_location)
+    if dnr2_hour_08_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_08_pomodora_1_generate(dnr2_hour_08_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_08_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_08_pomodora_2_location = daily_note_routine_hour_08_pomodora_2_location()
+
+    if DNR2_HOUR_08_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_08_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_08_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_08_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_08_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_08_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_08_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_08_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_08_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_08_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_08_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_08_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_08_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_08_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_08_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_08_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_08_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_08_pomodora_2_generate(dnr2_hour_08_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_08_pomodora_2_location, 'a+') as dnr2_hour_08_file_obj:
+        dnr2_hour_08_file_obj.write(DNR2_HOUR_08_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_08_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_08_pomodora_2_directory = initial_check("")
+    dnr2_hour_08_pomodora_2_location = sbd + dnr2_hour_08_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_08_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_08_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_08_pomodora_2_location = daily_note_routine_hour_08_pomodora_2_location()
+    dnr2_hour_08_pomodora_2_file_exist_check = exists(dnr2_hour_08_pomodora_2_location)
+    if dnr2_hour_08_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_08_pomodora_2_generate(dnr2_hour_08_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_09_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_09_pomodora_1_location = daily_note_routine_hour_09_pomodora_1_location()
+
+    if DNR2_HOUR_09_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_09_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_09_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_09_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_09_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_09_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_09_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_09_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_09_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_09_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_09_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_09_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_09_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_09_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_09_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_09_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_09_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_09_pomodora_1_generate(dnr2_hour_09_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_09_pomodora_1_location, 'a+') as dnr2_hour_09_file_obj:
+        dnr2_hour_09_file_obj.write(DNR2_HOUR_09_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_09_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_09_pomodora_1_directory = initial_check("")
+    dnr2_hour_09_pomodora_1_location = sbd + dnr2_hour_09_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_09_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_09_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_09_pomodora_1_location = daily_note_routine_hour_09_pomodora_1_location()
+    dnr2_hour_09_pomodora_1_file_exist_check = exists(dnr2_hour_09_pomodora_1_location)
+    if dnr2_hour_09_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_09_pomodora_1_generate(dnr2_hour_09_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_09_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_09_pomodora_2_location = daily_note_routine_hour_09_pomodora_2_location()
+
+    if DNR2_HOUR_09_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_09_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_09_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_09_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_09_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_09_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_09_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_09_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_09_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_09_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_09_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_09_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_09_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_09_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_09_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_09_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_09_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_09_pomodora_2_generate(dnr2_hour_09_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_09_pomodora_2_location, 'a+') as dnr2_hour_09_file_obj:
+        dnr2_hour_09_file_obj.write(DNR2_HOUR_09_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_09_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_09_pomodora_2_directory = initial_check("")
+    dnr2_hour_09_pomodora_2_location = sbd + dnr2_hour_09_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_09_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_09_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_09_pomodora_2_location = daily_note_routine_hour_09_pomodora_2_location()
+    dnr2_hour_09_pomodora_2_file_exist_check = exists(dnr2_hour_09_pomodora_2_location)
+    if dnr2_hour_09_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_09_pomodora_2_generate(dnr2_hour_09_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_10_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_10_pomodora_1_location = daily_note_routine_hour_10_pomodora_1_location()
+
+    if DNR2_HOUR_10_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_10_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_10_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_10_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_10_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_10_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_10_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_10_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_10_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_10_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_10_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_10_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_10_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_10_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_10_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_10_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_10_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_10_pomodora_1_generate(dnr2_hour_10_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_10_pomodora_1_location, 'a+') as dnr2_hour_10_file_obj:
+        dnr2_hour_10_file_obj.write(DNR2_HOUR_10_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_10_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_10_pomodora_1_directory = initial_check("")
+    dnr2_hour_10_pomodora_1_location = sbd + dnr2_hour_10_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_10_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_10_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_10_pomodora_1_location = daily_note_routine_hour_10_pomodora_1_location()
+    dnr2_hour_10_pomodora_1_file_exist_check = exists(dnr2_hour_10_pomodora_1_location)
+    if dnr2_hour_10_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_10_pomodora_1_generate(dnr2_hour_10_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_10_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_10_pomodora_2_location = daily_note_routine_hour_10_pomodora_2_location()
+
+    if DNR2_HOUR_10_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_10_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_10_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_10_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_10_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_10_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_10_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_10_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_10_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_10_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_10_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_10_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_10_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_10_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_10_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_10_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_10_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_10_pomodora_2_generate(dnr2_hour_10_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_10_pomodora_2_location, 'a+') as dnr2_hour_10_file_obj:
+        dnr2_hour_10_file_obj.write(DNR2_HOUR_10_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_10_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_10_pomodora_2_directory = initial_check("")
+    dnr2_hour_10_pomodora_2_location = sbd + dnr2_hour_10_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_10_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_10_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_10_pomodora_2_location = daily_note_routine_hour_10_pomodora_2_location()
+    dnr2_hour_10_pomodora_2_file_exist_check = exists(dnr2_hour_10_pomodora_2_location)
+    if dnr2_hour_10_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_10_pomodora_2_generate(dnr2_hour_10_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_11_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_11_pomodora_1_location = daily_note_routine_hour_11_pomodora_1_location()
+
+    if DNR2_HOUR_11_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_11_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_11_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_11_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_11_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_11_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_11_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_11_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_11_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_11_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_11_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_11_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_11_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_11_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_11_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_11_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_11_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_11_pomodora_1_generate(dnr2_hour_11_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_11_pomodora_1_location, 'a+') as dnr2_hour_11_file_obj:
+        dnr2_hour_11_file_obj.write(DNR2_HOUR_11_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_11_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_11_pomodora_1_directory = initial_check("")
+    dnr2_hour_11_pomodora_1_location = sbd + dnr2_hour_11_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_11_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_11_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_11_pomodora_1_location = daily_note_routine_hour_11_pomodora_1_location()
+    dnr2_hour_11_pomodora_1_file_exist_check = exists(dnr2_hour_11_pomodora_1_location)
+    if dnr2_hour_11_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_11_pomodora_1_generate(dnr2_hour_11_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_11_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_11_pomodora_2_location = daily_note_routine_hour_11_pomodora_2_location()
+
+    if DNR2_HOUR_11_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_11_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_11_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_11_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_11_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_11_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_11_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_11_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_11_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_11_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_11_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_11_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_11_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_11_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_11_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_11_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_11_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_11_pomodora_2_generate(dnr2_hour_11_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_11_pomodora_2_location, 'a+') as dnr2_hour_11_file_obj:
+        dnr2_hour_11_file_obj.write(DNR2_HOUR_11_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_11_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_11_pomodora_2_directory = initial_check("")
+    dnr2_hour_11_pomodora_2_location = sbd + dnr2_hour_11_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_11_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_11_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_11_pomodora_2_location = daily_note_routine_hour_11_pomodora_2_location()
+    dnr2_hour_11_pomodora_2_file_exist_check = exists(dnr2_hour_11_pomodora_2_location)
+    if dnr2_hour_11_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_11_pomodora_2_generate(dnr2_hour_11_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_12_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_12_pomodora_1_location = daily_note_routine_hour_12_pomodora_1_location()
+
+    if DNR2_HOUR_12_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_12_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_12_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_12_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_12_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_12_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_12_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_12_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_12_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_12_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_12_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_12_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_12_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_12_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_12_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_12_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_12_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_12_pomodora_1_generate(dnr2_hour_12_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_12_pomodora_1_location, 'a+') as dnr2_hour_12_file_obj:
+        dnr2_hour_12_file_obj.write(DNR2_HOUR_12_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_12_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_12_pomodora_1_directory = initial_check("")
+    dnr2_hour_12_pomodora_1_location = sbd + dnr2_hour_12_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_12_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_12_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_12_pomodora_1_location = daily_note_routine_hour_12_pomodora_1_location()
+    dnr2_hour_12_pomodora_1_file_exist_check = exists(dnr2_hour_12_pomodora_1_location)
+    if dnr2_hour_12_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_12_pomodora_1_generate(dnr2_hour_12_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_12_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_12_pomodora_2_location = daily_note_routine_hour_12_pomodora_2_location()
+
+    if DNR2_HOUR_12_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_12_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_12_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_12_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_12_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_12_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_12_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_12_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_12_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_12_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_12_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_12_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_12_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_12_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_12_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_12_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_12_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_12_pomodora_2_generate(dnr2_hour_12_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_12_pomodora_2_location, 'a+') as dnr2_hour_12_file_obj:
+        dnr2_hour_12_file_obj.write(DNR2_HOUR_12_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_12_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_12_pomodora_2_directory = initial_check("")
+    dnr2_hour_12_pomodora_2_location = sbd + dnr2_hour_12_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_12_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_12_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_12_pomodora_2_location = daily_note_routine_hour_12_pomodora_2_location()
+    dnr2_hour_12_pomodora_2_file_exist_check = exists(dnr2_hour_12_pomodora_2_location)
+    if dnr2_hour_12_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_12_pomodora_2_generate(dnr2_hour_12_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_13_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_13_pomodora_1_location = daily_note_routine_hour_13_pomodora_1_location()
+
+    if DNR2_HOUR_13_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_13_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_13_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_13_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_13_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_13_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_13_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_13_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_13_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_13_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_13_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_13_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_13_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_13_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_13_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_13_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_13_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_13_pomodora_1_generate(dnr2_hour_13_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_13_pomodora_1_location, 'a+') as dnr2_hour_13_file_obj:
+        dnr2_hour_13_file_obj.write(DNR2_HOUR_13_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_13_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_13_pomodora_1_directory = initial_check("")
+    dnr2_hour_13_pomodora_1_location = sbd + dnr2_hour_13_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_13_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_13_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_13_pomodora_1_location = daily_note_routine_hour_13_pomodora_1_location()
+    dnr2_hour_13_pomodora_1_file_exist_check = exists(dnr2_hour_13_pomodora_1_location)
+    if dnr2_hour_13_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_13_pomodora_1_generate(dnr2_hour_13_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_13_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_13_pomodora_2_location = daily_note_routine_hour_13_pomodora_2_location()
+
+    if DNR2_HOUR_13_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_13_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_13_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_13_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_13_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_13_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_13_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_13_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_13_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_13_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_13_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_13_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_13_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_13_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_13_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_13_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_13_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_13_pomodora_2_generate(dnr2_hour_13_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_13_pomodora_2_location, 'a+') as dnr2_hour_13_file_obj:
+        dnr2_hour_13_file_obj.write(DNR2_HOUR_13_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_13_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_13_pomodora_2_directory = initial_check("")
+    dnr2_hour_13_pomodora_2_location = sbd + dnr2_hour_13_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_13_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_13_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_13_pomodora_2_location = daily_note_routine_hour_13_pomodora_2_location()
+    dnr2_hour_13_pomodora_2_file_exist_check = exists(dnr2_hour_13_pomodora_2_location)
+    if dnr2_hour_13_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_13_pomodora_2_generate(dnr2_hour_13_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_14_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_14_pomodora_1_location = daily_note_routine_hour_14_pomodora_1_location()
+
+    if DNR2_HOUR_14_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_14_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_14_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_14_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_14_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_14_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_14_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_14_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_14_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_14_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_14_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_14_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_14_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_14_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_14_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_14_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_14_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_14_pomodora_1_generate(dnr2_hour_14_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_14_pomodora_1_location, 'a+') as dnr2_hour_14_file_obj:
+        dnr2_hour_14_file_obj.write(DNR2_HOUR_14_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_14_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_14_pomodora_1_directory = initial_check("")
+    dnr2_hour_14_pomodora_1_location = sbd + dnr2_hour_14_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_14_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_14_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_14_pomodora_1_location = daily_note_routine_hour_14_pomodora_1_location()
+    dnr2_hour_14_pomodora_1_file_exist_check = exists(dnr2_hour_14_pomodora_1_location)
+    if dnr2_hour_14_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_14_pomodora_1_generate(dnr2_hour_14_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_14_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_14_pomodora_2_location = daily_note_routine_hour_14_pomodora_2_location()
+
+    if DNR2_HOUR_14_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_14_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_14_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_14_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_14_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_14_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_14_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_14_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_14_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_14_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_14_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_14_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_14_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_14_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_14_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_14_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_14_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_14_pomodora_2_generate(dnr2_hour_14_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_14_pomodora_2_location, 'a+') as dnr2_hour_14_file_obj:
+        dnr2_hour_14_file_obj.write(DNR2_HOUR_14_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_14_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_14_pomodora_2_directory = initial_check("")
+    dnr2_hour_14_pomodora_2_location = sbd + dnr2_hour_14_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_14_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_14_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_14_pomodora_2_location = daily_note_routine_hour_14_pomodora_2_location()
+    dnr2_hour_14_pomodora_2_file_exist_check = exists(dnr2_hour_14_pomodora_2_location)
+    if dnr2_hour_14_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_14_pomodora_2_generate(dnr2_hour_14_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_15_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_15_pomodora_1_location = daily_note_routine_hour_15_pomodora_1_location()
+
+    if DNR2_HOUR_15_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_15_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_15_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_15_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_15_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_15_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_15_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_15_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_15_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_15_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_15_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_15_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_15_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_15_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_15_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_15_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_15_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_15_pomodora_1_generate(dnr2_hour_15_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_15_pomodora_1_location, 'a+') as dnr2_hour_15_file_obj:
+        dnr2_hour_15_file_obj.write(DNR2_HOUR_15_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_15_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_15_pomodora_1_directory = initial_check("")
+    dnr2_hour_15_pomodora_1_location = sbd + dnr2_hour_15_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_15_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_15_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_15_pomodora_1_location = daily_note_routine_hour_15_pomodora_1_location()
+    dnr2_hour_15_pomodora_1_file_exist_check = exists(dnr2_hour_15_pomodora_1_location)
+    if dnr2_hour_15_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_15_pomodora_1_generate(dnr2_hour_15_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_15_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_15_pomodora_2_location = daily_note_routine_hour_15_pomodora_2_location()
+
+    if DNR2_HOUR_15_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_15_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_15_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_15_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_15_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_15_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_15_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_15_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_15_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_15_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_15_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_15_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_15_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_15_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_15_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_15_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_15_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_15_pomodora_2_generate(dnr2_hour_15_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_15_pomodora_2_location, 'a+') as dnr2_hour_15_file_obj:
+        dnr2_hour_15_file_obj.write(DNR2_HOUR_15_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_15_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_15_pomodora_2_directory = initial_check("")
+    dnr2_hour_15_pomodora_2_location = sbd + dnr2_hour_15_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_15_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_15_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_15_pomodora_2_location = daily_note_routine_hour_15_pomodora_2_location()
+    dnr2_hour_15_pomodora_2_file_exist_check = exists(dnr2_hour_15_pomodora_2_location)
+    if dnr2_hour_15_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_15_pomodora_2_generate(dnr2_hour_15_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_16_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_16_pomodora_1_location = daily_note_routine_hour_16_pomodora_1_location()
+
+    if DNR2_HOUR_16_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_16_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_16_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_16_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_16_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_16_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_16_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_16_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_16_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_16_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_16_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_16_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_16_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_16_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_16_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_16_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_16_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_16_pomodora_1_generate(dnr2_hour_16_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_16_pomodora_1_location, 'a+') as dnr2_hour_16_file_obj:
+        dnr2_hour_16_file_obj.write(DNR2_HOUR_16_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_16_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_16_pomodora_1_directory = initial_check("")
+    dnr2_hour_16_pomodora_1_location = sbd + dnr2_hour_16_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_16_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_16_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_16_pomodora_1_location = daily_note_routine_hour_16_pomodora_1_location()
+    dnr2_hour_16_pomodora_1_file_exist_check = exists(dnr2_hour_16_pomodora_1_location)
+    if dnr2_hour_16_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_16_pomodora_1_generate(dnr2_hour_16_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_16_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_16_pomodora_2_location = daily_note_routine_hour_16_pomodora_2_location()
+
+    if DNR2_HOUR_16_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_16_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_16_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_16_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_16_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_16_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_16_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_16_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_16_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_16_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_16_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_16_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_16_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_16_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_16_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_16_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_16_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_16_pomodora_2_generate(dnr2_hour_16_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_16_pomodora_2_location, 'a+') as dnr2_hour_16_file_obj:
+        dnr2_hour_16_file_obj.write(DNR2_HOUR_16_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_16_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_16_pomodora_2_directory = initial_check("")
+    dnr2_hour_16_pomodora_2_location = sbd + dnr2_hour_16_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_16_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_16_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_16_pomodora_2_location = daily_note_routine_hour_16_pomodora_2_location()
+    dnr2_hour_16_pomodora_2_file_exist_check = exists(dnr2_hour_16_pomodora_2_location)
+    if dnr2_hour_16_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_16_pomodora_2_generate(dnr2_hour_16_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_17_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_17_pomodora_1_location = daily_note_routine_hour_17_pomodora_1_location()
+
+    if DNR2_HOUR_17_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_17_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_17_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_17_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_17_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_17_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_17_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_17_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_17_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_17_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_17_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_17_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_17_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_17_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_17_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_17_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_17_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_17_pomodora_1_generate(dnr2_hour_17_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_17_pomodora_1_location, 'a+') as dnr2_hour_17_file_obj:
+        dnr2_hour_17_file_obj.write(DNR2_HOUR_17_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_17_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_17_pomodora_1_directory = initial_check("")
+    dnr2_hour_17_pomodora_1_location = sbd + dnr2_hour_17_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_17_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_17_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_17_pomodora_1_location = daily_note_routine_hour_17_pomodora_1_location()
+    dnr2_hour_17_pomodora_1_file_exist_check = exists(dnr2_hour_17_pomodora_1_location)
+    if dnr2_hour_17_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_17_pomodora_1_generate(dnr2_hour_17_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_17_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_17_pomodora_2_location = daily_note_routine_hour_17_pomodora_2_location()
+
+    if DNR2_HOUR_17_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_17_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_17_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_17_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_17_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_17_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_17_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_17_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_17_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_17_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_17_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_17_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_17_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_17_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_17_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_17_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_17_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_17_pomodora_2_generate(dnr2_hour_17_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_17_pomodora_2_location, 'a+') as dnr2_hour_17_file_obj:
+        dnr2_hour_17_file_obj.write(DNR2_HOUR_17_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_17_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_17_pomodora_2_directory = initial_check("")
+    dnr2_hour_17_pomodora_2_location = sbd + dnr2_hour_17_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_17_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_17_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_17_pomodora_2_location = daily_note_routine_hour_17_pomodora_2_location()
+    dnr2_hour_17_pomodora_2_file_exist_check = exists(dnr2_hour_17_pomodora_2_location)
+    if dnr2_hour_17_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_17_pomodora_2_generate(dnr2_hour_17_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_18_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_18_pomodora_1_location = daily_note_routine_hour_18_pomodora_1_location()
+
+    if DNR2_HOUR_18_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_18_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_18_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_18_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_18_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_18_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_18_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_18_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_18_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_18_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_18_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_18_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_18_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_18_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_18_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_18_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_18_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_18_pomodora_1_generate(dnr2_hour_18_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_18_pomodora_1_location, 'a+') as dnr2_hour_18_file_obj:
+        dnr2_hour_18_file_obj.write(DNR2_HOUR_18_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_18_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_18_pomodora_1_directory = initial_check("")
+    dnr2_hour_18_pomodora_1_location = sbd + dnr2_hour_18_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_18_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_18_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_18_pomodora_1_location = daily_note_routine_hour_18_pomodora_1_location()
+    dnr2_hour_18_pomodora_1_file_exist_check = exists(dnr2_hour_18_pomodora_1_location)
+    if dnr2_hour_18_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_18_pomodora_1_generate(dnr2_hour_18_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_18_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_18_pomodora_2_location = daily_note_routine_hour_18_pomodora_2_location()
+
+    if DNR2_HOUR_18_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_18_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_18_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_18_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_18_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_18_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_18_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_18_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_18_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_18_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_18_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_18_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_18_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_18_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_18_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_18_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_18_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_18_pomodora_2_generate(dnr2_hour_18_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_18_pomodora_2_location, 'a+') as dnr2_hour_18_file_obj:
+        dnr2_hour_18_file_obj.write(DNR2_HOUR_18_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_18_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_18_pomodora_2_directory = initial_check("")
+    dnr2_hour_18_pomodora_2_location = sbd + dnr2_hour_18_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_18_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_18_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_18_pomodora_2_location = daily_note_routine_hour_18_pomodora_2_location()
+    dnr2_hour_18_pomodora_2_file_exist_check = exists(dnr2_hour_18_pomodora_2_location)
+    if dnr2_hour_18_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_18_pomodora_2_generate(dnr2_hour_18_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_19_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_19_pomodora_1_location = daily_note_routine_hour_19_pomodora_1_location()
+
+    if DNR2_HOUR_19_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_19_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_19_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_19_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_19_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_19_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_19_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_19_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_19_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_19_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_19_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_19_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_19_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_19_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_19_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_19_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_19_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_19_pomodora_1_generate(dnr2_hour_19_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_19_pomodora_1_location, 'a+') as dnr2_hour_19_file_obj:
+        dnr2_hour_19_file_obj.write(DNR2_HOUR_19_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_19_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_19_pomodora_1_directory = initial_check("")
+    dnr2_hour_19_pomodora_1_location = sbd + dnr2_hour_19_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_19_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_19_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_19_pomodora_1_location = daily_note_routine_hour_19_pomodora_1_location()
+    dnr2_hour_19_pomodora_1_file_exist_check = exists(dnr2_hour_19_pomodora_1_location)
+    if dnr2_hour_19_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_19_pomodora_1_generate(dnr2_hour_19_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_19_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_19_pomodora_2_location = daily_note_routine_hour_19_pomodora_2_location()
+
+    if DNR2_HOUR_19_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_19_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_19_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_19_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_19_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_19_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_19_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_19_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_19_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_19_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_19_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_19_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_19_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_19_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_19_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_19_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_19_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_19_pomodora_2_generate(dnr2_hour_19_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_19_pomodora_2_location, 'a+') as dnr2_hour_19_file_obj:
+        dnr2_hour_19_file_obj.write(DNR2_HOUR_19_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_19_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_19_pomodora_2_directory = initial_check("")
+    dnr2_hour_19_pomodora_2_location = sbd + dnr2_hour_19_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_19_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_19_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_19_pomodora_2_location = daily_note_routine_hour_19_pomodora_2_location()
+    dnr2_hour_19_pomodora_2_file_exist_check = exists(dnr2_hour_19_pomodora_2_location)
+    if dnr2_hour_19_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_19_pomodora_2_generate(dnr2_hour_19_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_20_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_20_pomodora_1_location = daily_note_routine_hour_20_pomodora_1_location()
+
+    if DNR2_HOUR_20_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_20_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_20_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_20_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_20_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_20_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_20_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_20_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_20_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_20_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_20_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_20_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_20_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_20_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_20_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_20_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_20_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_20_pomodora_1_generate(dnr2_hour_20_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_20_pomodora_1_location, 'a+') as dnr2_hour_20_file_obj:
+        dnr2_hour_20_file_obj.write(DNR2_HOUR_20_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_20_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_20_pomodora_1_directory = initial_check("")
+    dnr2_hour_20_pomodora_1_location = sbd + dnr2_hour_20_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_20_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_20_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_20_pomodora_1_location = daily_note_routine_hour_20_pomodora_1_location()
+    dnr2_hour_20_pomodora_1_file_exist_check = exists(dnr2_hour_20_pomodora_1_location)
+    if dnr2_hour_20_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_20_pomodora_1_generate(dnr2_hour_20_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_20_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_20_pomodora_2_location = daily_note_routine_hour_20_pomodora_2_location()
+
+    if DNR2_HOUR_20_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_20_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_20_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_20_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_20_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_20_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_20_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_20_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_20_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_20_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_20_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_20_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_20_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_20_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_20_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_20_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_20_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_20_pomodora_2_generate(dnr2_hour_20_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_20_pomodora_2_location, 'a+') as dnr2_hour_20_file_obj:
+        dnr2_hour_20_file_obj.write(DNR2_HOUR_20_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_20_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_20_pomodora_2_directory = initial_check("")
+    dnr2_hour_20_pomodora_2_location = sbd + dnr2_hour_20_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_20_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_20_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_20_pomodora_2_location = daily_note_routine_hour_20_pomodora_2_location()
+    dnr2_hour_20_pomodora_2_file_exist_check = exists(dnr2_hour_20_pomodora_2_location)
+    if dnr2_hour_20_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_20_pomodora_2_generate(dnr2_hour_20_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_21_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_21_pomodora_1_location = daily_note_routine_hour_21_pomodora_1_location()
+
+    if DNR2_HOUR_21_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_21_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_21_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_21_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_21_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_21_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_21_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_21_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_21_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_21_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_21_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_21_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_21_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_21_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_21_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_21_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_21_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_21_pomodora_1_generate(dnr2_hour_21_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_21_pomodora_1_location, 'a+') as dnr2_hour_21_file_obj:
+        dnr2_hour_21_file_obj.write(DNR2_HOUR_21_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_21_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_21_pomodora_1_directory = initial_check("")
+    dnr2_hour_21_pomodora_1_location = sbd + dnr2_hour_21_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_21_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_21_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_21_pomodora_1_location = daily_note_routine_hour_21_pomodora_1_location()
+    dnr2_hour_21_pomodora_1_file_exist_check = exists(dnr2_hour_21_pomodora_1_location)
+    if dnr2_hour_21_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_21_pomodora_1_generate(dnr2_hour_21_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_21_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_21_pomodora_2_location = daily_note_routine_hour_21_pomodora_2_location()
+
+    if DNR2_HOUR_21_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_21_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_21_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_21_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_21_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_21_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_21_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_21_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_21_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_21_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_21_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_21_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_21_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_21_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_21_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_21_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_21_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_21_pomodora_2_generate(dnr2_hour_21_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_21_pomodora_2_location, 'a+') as dnr2_hour_21_file_obj:
+        dnr2_hour_21_file_obj.write(DNR2_HOUR_21_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_21_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_21_pomodora_2_directory = initial_check("")
+    dnr2_hour_21_pomodora_2_location = sbd + dnr2_hour_21_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_21_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_21_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_21_pomodora_2_location = daily_note_routine_hour_21_pomodora_2_location()
+    dnr2_hour_21_pomodora_2_file_exist_check = exists(dnr2_hour_21_pomodora_2_location)
+    if dnr2_hour_21_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_21_pomodora_2_generate(dnr2_hour_21_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_22_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_22_pomodora_1_location = daily_note_routine_hour_22_pomodora_1_location()
+
+    if DNR2_HOUR_22_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_22_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_22_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_22_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_22_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_22_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_22_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_22_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_22_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_22_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_22_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_22_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_22_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_22_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_22_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_22_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_22_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_22_pomodora_1_generate(dnr2_hour_22_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_22_pomodora_1_location, 'a+') as dnr2_hour_22_file_obj:
+        dnr2_hour_22_file_obj.write(DNR2_HOUR_22_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_22_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_22_pomodora_1_directory = initial_check("")
+    dnr2_hour_22_pomodora_1_location = sbd + dnr2_hour_22_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_22_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_22_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_22_pomodora_1_location = daily_note_routine_hour_22_pomodora_1_location()
+    dnr2_hour_22_pomodora_1_file_exist_check = exists(dnr2_hour_22_pomodora_1_location)
+    if dnr2_hour_22_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_22_pomodora_1_generate(dnr2_hour_22_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_22_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_22_pomodora_2_location = daily_note_routine_hour_22_pomodora_2_location()
+
+    if DNR2_HOUR_22_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_22_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_22_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_22_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_22_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_22_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_22_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_22_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_22_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_22_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_22_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_22_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_22_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_22_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_22_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_22_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_22_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_22_pomodora_2_generate(dnr2_hour_22_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_22_pomodora_2_location, 'a+') as dnr2_hour_22_file_obj:
+        dnr2_hour_22_file_obj.write(DNR2_HOUR_22_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_22_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_22_pomodora_2_directory = initial_check("")
+    dnr2_hour_22_pomodora_2_location = sbd + dnr2_hour_22_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_22_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_22_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_22_pomodora_2_location = daily_note_routine_hour_22_pomodora_2_location()
+    dnr2_hour_22_pomodora_2_file_exist_check = exists(dnr2_hour_22_pomodora_2_location)
+    if dnr2_hour_22_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_22_pomodora_2_generate(dnr2_hour_22_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_APPEND_STARTED
+
+
+def daily_note_routine_hour_23_pomodora_1_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_23_pomodora_1_location = daily_note_routine_hour_23_pomodora_1_location()
+
+    if DNR2_HOUR_23_POMODORA_1_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_23_pomodora_1_location, note_content)
+
+    elif DNR2_HOUR_23_POMODORA_1_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_23_pomodora_1_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_23_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_23_POMODORA_1_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_23_pomodora_1_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_23_pomodora_1_location, note_content, include_time)
+
+    elif DNR2_HOUR_23_POMODORA_1_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_23_pomodora_1_location, note_content)
+
+    if not DNR2_HOUR_23_POMODORA_1_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_23_pomodora_1_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_23_pomodora_1_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_23_pomodora_1_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_23_pomodora_1_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_23_pomodora_1_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_23_pomodora_1_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_GENERATE_STARTED
+
+
+def daily_note_routine_hour_23_pomodora_1_generate(dnr2_hour_23_pomodora_1_location):
+    """
+    """
+    with open(dnr2_hour_23_pomodora_1_location, 'a+') as dnr2_hour_23_file_obj:
+        dnr2_hour_23_file_obj.write(DNR2_HOUR_23_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_LOCATION_STARTED
+
+
+def daily_note_routine_hour_23_pomodora_1_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_23_pomodora_1_directory = initial_check("")
+    dnr2_hour_23_pomodora_1_location = sbd + dnr2_hour_23_pomodora_1_directory + Today + "_" + ".md"
+    return dnr2_hour_23_pomodora_1_location
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_23_pomodora_1_pregenerate_check():
+    """
+    """
+    dnr2_hour_23_pomodora_1_location = daily_note_routine_hour_23_pomodora_1_location()
+    dnr2_hour_23_pomodora_1_file_exist_check = exists(dnr2_hour_23_pomodora_1_location)
+    if dnr2_hour_23_pomodora_1_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_23_pomodora_1_generate(dnr2_hour_23_pomodora_1_location)
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_PREGENERATE_CHECK_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_APPEND_STARTED
+
+
+def daily_note_routine_hour_23_pomodora_2_append(note_content, include_time=True):
+    """
+    appends to
+    """
+    dnr2_hour_23_pomodora_2_location = daily_note_routine_hour_23_pomodora_2_location()
+
+    if DNR2_HOUR_23_POMODORA_2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dnr2_hour_23_pomodora_2_location, note_content)
+
+    elif DNR2_HOUR_23_POMODORA_2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dnr2_hour_23_pomodora_2_location, note_content, include_time)
+        else:
+            plain_text_append(dnr2_hour_23_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_23_POMODORA_2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dnr2_hour_23_pomodora_2_location, note_content, include_time)
+        else:
+            bullet_list_append(dnr2_hour_23_pomodora_2_location, note_content, include_time)
+
+    elif DNR2_HOUR_23_POMODORA_2_APPEND_TYPE == "Table":
+        table_append(dnr2_hour_23_pomodora_2_location, note_content)
+
+    if not DNR2_HOUR_23_POMODORA_2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dnr2_hour_23_pomodora_2_location, note_content, include_time)
+            else:
+                plain_text_append(dnr2_hour_23_pomodora_2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dnr2_hour_23_pomodora_2_location, note_content, include_time)
+            else:
+                bullet_list_append(dnr2_hour_23_pomodora_2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dnr2_hour_23_pomodora_2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dnr2_hour_23_pomodora_2_location, note_content)
+        else:
+            print("Error")
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_APPEND_FINISHED
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_GENERATE_STARTED
+
+
+def daily_note_routine_hour_23_pomodora_2_generate(dnr2_hour_23_pomodora_2_location):
+    """
+    """
+    with open(dnr2_hour_23_pomodora_2_location, 'a+') as dnr2_hour_23_file_obj:
+        dnr2_hour_23_file_obj.write(DNR2_HOUR_23_FILE_CONTENT_CREATION)
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_GENERATE_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_LOCATION_STARTED
+
+
+def daily_note_routine_hour_23_pomodora_2_location():
+    """
+    """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dnr2_hour_23_pomodora_2_directory = initial_check("")
+    dnr2_hour_23_pomodora_2_location = sbd + dnr2_hour_23_pomodora_2_directory + Today + "_" + ".md"
+    return dnr2_hour_23_pomodora_2_location
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_LOCATION_FINISHED
+
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_PREGENERATE_CHECK_STARTED
+
+
+def daily_note_routine_hour_23_pomodora_2_pregenerate_check():
+    """
+    """
+    dnr2_hour_23_pomodora_2_location = daily_note_routine_hour_23_pomodora_2_location()
+    dnr2_hour_23_pomodora_2_file_exist_check = exists(dnr2_hour_23_pomodora_2_location)
+    if dnr2_hour_23_pomodora_2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_routine_hour_23_pomodora_2_generate(dnr2_hour_23_pomodora_2_location)
+# DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_PREGENERATE_CHECK_FINISHED
+
+
+# DAILY_NOTE_ROUTINE_POMODORA FINISHED
+
+
+# Routine Hourly FUNCTIONS FINISHED # Routine RELATED FUNCTIONS FINISHED
 # Tasks RELATED FUNCTIONS STARTED
 def daily_note_tasks_append(note_content, include_time=True):
     """
@@ -2641,7 +6967,7 @@ def daily_note_tasks_pregenerate_check():
     else:
         daily_note_tasks_generate(dnt_location)
 
-# Tasks RELATED FUNCTIONS FINISHED  # Trackers RELATED FUNCTIONS STARTED # Trackers MOC FUNCTIONS STARTED
+# Tasks RELATED FUNCTIONS FINISHED  # Trackers RELATED FUNCTIONS STARTED# Trackers MOC FUNCTIONS STARTED
 
 
 def daily_note_trackers_moc_append(note_content, include_time=True):
@@ -3482,13 +7808,3 @@ def daily_note_trackers_water_pregenerate_check():
         daily_note_trackers_water_generate(dntw_location)
 
 # Trackers_WATER RELATED FUNCTIONS FINISHED # TRACKERS RELATED FUNCTIONS FINISHED
-
-
-# Testing below
-def test():
-    # daily_note_moc_pregenerate_check()
-    # daily_note_moc_append(input("Test data: "))
-    print("Testing completed")
-
-
-test()

@@ -161,6 +161,8 @@ def ic_01a(dir_code):
             dir_path = ic_01a2(dir_code)
         elif re.match("^01A8", dir_code):
             dir_path = ic_01a8(dir_code)
+        elif re.match("^01A9", dir_code):
+            dir_path = ic_01a9(dir_code)
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
@@ -241,8 +243,22 @@ def ic_01a8(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
-# ic_01a8-Ended
-# # ic_01A-Ended # ic_01B-Started
+# ic_01a8-Ended # ic_01a9-Started
+
+
+def ic_01a9(dir_code):
+    """
+    Takes dir_code as input and returns the absolute directory path of the code.
+    """
+    global dir_path
+    if dir_code == "01A9A":
+        dir_path = sbtc._01A9A
+    elif dir_code == "01A9B":
+        dir_path = sbtc._01A9B
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+# ic_01a9-Ended # ic_01A-Ended # ic_01B-Started
 
 
 def ic_01b(dir_code):

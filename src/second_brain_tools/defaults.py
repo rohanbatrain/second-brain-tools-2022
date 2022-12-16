@@ -278,14 +278,14 @@ tags: daily_note/{Today}/Trackers/Water
 # ------------------------------------#
 DNR2_HOUR_00_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_00
+hour_number: 00
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_00_Log
 
 """
 
@@ -293,14 +293,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_01_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_01
+hour_number: 01
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_01_Log
 
 """
 
@@ -308,14 +308,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_02_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_02
+hour_number: 02
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_02_Log
 
 """
 
@@ -323,14 +323,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_03_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_03
+hour_number: 03
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_03_Log
 
 """
 
@@ -338,14 +338,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_04_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_04
+hour_number: 04
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_04_Log
 
 """
 
@@ -353,14 +353,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_05_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_05
+hour_number: 05
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_05_Log
 
 """
 
@@ -368,14 +368,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_06_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_06
+hour_number: 06
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_06_Log
 
 """
 
@@ -383,14 +383,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_07_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_07
+hour_number: 07
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_07_Log
 
 """
 
@@ -398,14 +398,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_08_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_08
+hour_number: 08
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_08_Log
 
 """
 
@@ -413,14 +413,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_09_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_09
+hour_number: 09
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_09_Log
 
 """
 
@@ -428,14 +428,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_10_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_10
+hour_number: 10
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_10_Log
 
 """
 
@@ -443,14 +443,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_11_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_11
+hour_number: 11
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_11_Log
 
 """
 
@@ -458,14 +458,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_12_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_12
+hour_number: 12
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_12_Log
 
 """
 
@@ -473,14 +473,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_13_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_13
+hour_number: 13
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_13_Log
 
 """
 
@@ -488,14 +488,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_14_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_14
+hour_number: 14
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_14_Log
 
 """
 
@@ -503,14 +503,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_15_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_15
+hour_number: 15
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_15_Log
 
 """
 
@@ -518,14 +518,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_16_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_16
+hour_number: 16
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_16_Log
 
 """
 
@@ -533,14 +533,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_17_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_17
+hour_number: 17
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_17_Log
 
 """
 
@@ -548,14 +548,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_18_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_18
+hour_number: 18
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_18_Log
 
 """
 
@@ -563,14 +563,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_19_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour-19
+hour_number: 19
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_19_Log
 
 """
 
@@ -578,14 +578,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_20_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_20
+hour_number: 20
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_20_Log
 
 """
 
@@ -593,14 +593,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_21_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_21
+hour_number: 21
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_21_Log
 
 """
 
@@ -608,14 +608,14 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_22_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_22
+hour_number: 22
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_22_Log
 
 """
 
@@ -623,13 +623,13 @@ pomodora_task_02:
 # ------------------------------------#
 DNR2_HOUR_23_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: daily_note/{Today}/Routine/{Hour}
-hour_number: {Hour}
-pomodora_task_01:
-pomodora_task_02:
+tags: daily_note/{Today}/Routine/Hour_23
+hour_number: 23
+pomodora_task_01: [[{Today}_Routine_Pomodora_Task_01|Pomodora_Task_1]]
+pomodora_task_02: [[{Today}_Routine_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
-# {Hour}_Log
+# Hour_23_Log
 
 """
