@@ -101,7 +101,7 @@ def sbt_config_generation(second_brain_dir):
     with open('.sbt_config', 'a+') as dot_env:
         dot_env.write("######## Default Variables Assignation Started \n")
         dot_env.write("DIR_NOT_FOUND = \"Wrong argument passed, the dir code you specified doesn't exist\"\n")
-        dot_env.write("FILE_ALREADY_EXIST = \"File already exist\"\n")
+        dot_env.write("FILE_ALREADY_EXIST = \"File Exist Check => File exists.\"\n")
         dot_env.write("SECOND_BRAIN_DIRECTORY = " + "\"" + second_brain_dir + "\"\n")
         dot_env.write("######## Default Variables Assignation Finished\n\n")
         dot_env.write("######## Append Options Started \n\n")
