@@ -3,6 +3,13 @@ from second_brain_tools.time import Today
 
 # Importing production modules finished
 
+# Default String Started // Should be transfered to config once project is completed.
+INVALID_FILE_NAME_ERROR = "Error, The name you provided is invalid"
+NOTE_EXTENTION = ".md"
+NO_MARKDOWN_FILE = "No markdown files found in the directory"
+NOTE_CREATED_SUCCESFULLY = "Horray! Note Created Successfully."
+
+# Default String Finished
 
 # Daily Note File Creation Content String Started
 # Daily Note File Creation Content String Finished
