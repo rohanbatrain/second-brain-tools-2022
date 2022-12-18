@@ -16,6 +16,7 @@ Why does this file exist, and why not put this in __main__?
 # Importing production modules
 import typer
 from second_brain_tools.setup import setup as sbt_setup
+
 # Importing production modules finished
 
 # Defining default variables Started
@@ -69,6 +70,7 @@ def random_note():
 
 # Adding app_config commands Started
 
+
 @app_config.command("Setup")
 def config_setup():
     """
@@ -83,6 +85,8 @@ def config_check():
     A Check wizard to check what directories are missing.
     """
     sbt_setup()
+
+
 # Adding app_config commands Finished
 
 
@@ -153,6 +157,7 @@ def daily_note_append():
 def daily_note_regenerate():
     "Regenerates the daily note MOC."
     return
+
 
 # Adding app_daily_note commands Finished
 

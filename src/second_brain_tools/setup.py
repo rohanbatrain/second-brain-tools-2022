@@ -2,6 +2,7 @@
 import os
 import sys
 from git.repo.base import Repo
+
 # Importing production modules finished
 
 
@@ -119,7 +120,9 @@ def sbt_config_generation(second_brain_dir):
         dot_env.write("# -> Plain_Text\n")
         dot_env.write("# -> Bullet_List\n")
         dot_env.write("# -> Table\n\n")
-        dot_env.write("# Set a global default to append functions. If a type is not passed explicitely in the function then this variable would be invoked.\n")  # noqa: E501
+        dot_env.write(
+            "# Set a global default to append functions. If a type is not passed explicitely in the function then this variable would be invoked.\n"  # noqa: E501
+        )
         dot_env.write("GLOBAL_APPEND_TYPE = Table\n\n")
         dot_env.write("# For Daily Notes \n")
         dot_env.write("DNM_APPEND_TYPE = \n")
@@ -358,7 +361,9 @@ def sbt_config_generation(second_brain_dir):
         dot_env.write("_03C1A15 = \"03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A15_Kotlin/\"\n")
         dot_env.write("_03C1A16 = \"03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A16_Golang/\"\n")
         dot_env.write("_03C1A17 = \"03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A17_Perl/\"\n")
-        dot_env.write("_03C1A18 = \"03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A18_Visual-Basic-Dot-Net/\"\n")  # noqa: E501
+        dot_env.write(
+            "_03C1A18 = \"03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A18_Visual-Basic-Dot-Net/\"\n"
+        )  # noqa: E501
         dot_env.write("_03C1B1 = \"03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1B_Programming-Projects/Project-1/\"\n")
         dot_env.write("_03C1C1 = \"03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1C_Query-Languages/03C1C1_SQL/\"\n")
         dot_env.write("_03C2A = \"03_Knowledge-Base/03C_IT-Skills/03C2_Machine-Learning/03C2A_Reinforcement-Learning/\"\n")

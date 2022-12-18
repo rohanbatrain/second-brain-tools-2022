@@ -7,6 +7,7 @@ But i would really like to hardcode the absolute path for error pruning my scrip
 import re
 import second_brain_tools.config as sbtc
 import sys
+
 # Importing production modules finished
 # Default values assignation started
 DIR_NOT_FOUND = sbtc.DIR_NOT_FOUND
@@ -25,6 +26,8 @@ def initial_check(dir_code):
     dir_path = ic_custom(dir_code)
 
     return dir_path
+
+
 # Initial check Ended
 # -------------------------------------#
 # User-Custom Directories Started
@@ -47,6 +50,8 @@ def ic_custom(dir_code):
     else:
         dir_path = ic_root(dir_code)
     return dir_path
+
+
 # User-Custom Directories Ended
 # -------------------------------------#
 # Root-Started
@@ -100,6 +105,8 @@ def ic_root_regex(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # Root-Ended
 # 01-Started # ic_01-Started
 
@@ -126,6 +133,8 @@ def ic_01(dir_code):
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_01A-Started
 
 
@@ -166,6 +175,8 @@ def ic_01a(dir_code):
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_01a1-Started
 
 
@@ -176,6 +187,8 @@ def ic_01a1(dir_code):
     # Flow ended
     dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_01a1-Ended # ic_01a2-Started
 
 
@@ -196,6 +209,8 @@ def ic_01a2(dir_code):
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_01a2a-Started
 
 
@@ -209,6 +224,8 @@ def ic_01a2a(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_01a2a-Ended # ic_01a2b-Started
 
 
@@ -222,6 +239,8 @@ def ic_01a2b(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_01a2b-Ended
 # # ic_01a2-Ended
 # ic_01a8-Started
@@ -243,6 +262,8 @@ def ic_01a8(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_01a8-Ended # ic_01a9-Started
 
 
@@ -258,6 +279,8 @@ def ic_01a9(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_01a9-Ended # ic_01A-Ended # ic_01B-Started
 
 
@@ -278,6 +301,8 @@ def ic_01b(dir_code):
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_01B-Ended # ic_01B2-Started
 
 
@@ -292,6 +317,8 @@ def ic_01b3(dir_code):
         dir_path = sbtc._01B3B
     else:
         dir_path = DIR_NOT_FOUND
+
+
 # ic_01B2-Ended # ic_01C-Started
 
 
@@ -308,6 +335,8 @@ def ic_01c(dir_code):
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_01C1-Started
 
 
@@ -342,6 +371,8 @@ def ic_01c1(dir_code):
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_01C1-Ended # ic_01C1B-Started
 
 
@@ -357,6 +388,7 @@ def ic_01c1b(dir_code):
 
 
 # ic_01C1B-Ended # ic_01C1i-Started
+
 
 def ic_01c1i(dir_code):
     """
@@ -398,7 +430,7 @@ def ic_02(dir_code):
         dir_path = sbtc._02A
     elif dir_code == "02B":
         dir_path = sbtc._02B
-# 02_regex
+    # 02_regex
     else:
         if re.match("^02A", dir_code):
             dir_path = ic_02a(dir_code)
@@ -407,6 +439,8 @@ def ic_02(dir_code):
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_02a-Started
 
 
@@ -424,6 +458,8 @@ def ic_02a(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_02a-Ended # ic_02b-Started
 
 
@@ -437,6 +473,8 @@ def ic_02b(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_02b-Ended # ic_02-Ended # 02-Ended # 03-Started # ic_03-Started
 
 
@@ -465,6 +503,8 @@ def ic_03(dir_code):
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_03a-Started
 
 
@@ -484,6 +524,8 @@ def ic_03a(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_03a-Ended # ic_03b-Started
 
 
@@ -517,6 +559,8 @@ def ic_03b(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_03b-Ended # ic_03c-Started
 
 
@@ -545,6 +589,8 @@ def ic_03c(dir_code):
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_03c-Ended
 
 
@@ -569,6 +615,8 @@ def ic_03c1(dir_code):
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_03c1a-Started
 
 
@@ -585,6 +633,8 @@ def ic_03c1a(dir_code):
         dir_path = ic_03c1a_part_2(dir_code)
 
     return dir_path
+
+
 # ic_03c1a_part_1-Started
 
 
@@ -616,6 +666,8 @@ def ic_03c1a_part_1(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_03c1a_part_1-Ended # ic_03c1a_part_2-Started
 
 
@@ -643,6 +695,8 @@ def ic_03c1a_part_2(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_03c1a_part_2-Ended # ic_03c1a-Ended # ic_03c1b-Started
 
 
@@ -656,6 +710,8 @@ def ic_03c1b(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_03c1b-Ended # ic_03c1c-Started
 
 
@@ -669,6 +725,8 @@ def ic_03c1c(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_03c1c-Ended # ic_03c1-Ended # ic_03c2-Started
 
 
@@ -684,6 +742,8 @@ def ic_03c2(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_03c2-Ended # ic_03c3-Started
 
 
@@ -704,6 +764,8 @@ def ic_03c3(dir_code):
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_03c3a-Started
 
 
@@ -723,6 +785,8 @@ def ic_03c3a(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_03c3a-Ended # ic_03c3b-Started
 
 
@@ -736,6 +800,8 @@ def ic_03c3b(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_03c3b-Ended # ic_03c3-Ended # ic_03c4-Started
 
 
@@ -749,6 +815,8 @@ def ic_03c4(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_03c4-Ended # ic_03c-Ended # ic_03d-Started
 
 
@@ -770,6 +838,8 @@ def ic_03d(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_03d-Ended # ic_03-Ended # 03-Ended # 04-Started # ic_04-Started
 
 
@@ -785,7 +855,7 @@ def ic_04(dir_code):
     elif dir_code == "04C":
         dir_path = sbtc._04C
     # elif dir_code == "04D":
-        # dir_path = sbtc._04D
+    # dir_path = sbtc._04D
     else:
         if re.match("^04A", dir_code):
             dir_path = ic_04a(dir_code)
@@ -794,6 +864,8 @@ def ic_04(dir_code):
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_04A-Started
 
 
@@ -821,6 +893,8 @@ def ic_04a(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_04A-Ended # ic_04C-Started
 
 
@@ -834,6 +908,8 @@ def ic_04c(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # ic_04C-Ended # ic_04-Ended # 04-Ended # 05-Started
 
 
@@ -854,6 +930,8 @@ def ic_05(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # 05-Ended # 06-Started
 
 
@@ -878,9 +956,9 @@ def ic_06(dir_code):
         elif re.match("^06B", dir_code):
             dir_path = ic_06b(dir_code)
         # elif re.match("^06C", dir_code):
-            # dir_path = ic_06c(dir_code)
+        # dir_path = ic_06c(dir_code)
         # elif re.match("^06D", dir_code):
-            # dir_path = ic_06d(dir_code)
+        # dir_path = ic_06d(dir_code)
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
@@ -911,33 +989,33 @@ def ic_06b(dir_code):
 
 
 # def ic_06c(dir_code):
-    # """
-    # Takes dir_code as input and returns the absolute directory path of the code.
-    # """
-    # global dir_path
-    # if dir_code == "06C1":
-    #    dir_path = sbtc._06C1
-    # elif dir_code == "06C2":
-    #    dir_path = sbtc._06C2
-    # else:
-    #    dir_path = DIR_NOT_FOUND
-    # return dir_path
+# """
+# Takes dir_code as input and returns the absolute directory path of the code.
+# """
+# global dir_path
+# if dir_code == "06C1":
+#    dir_path = sbtc._06C1
+# elif dir_code == "06C2":
+#    dir_path = sbtc._06C2
+# else:
+#    dir_path = DIR_NOT_FOUND
+# return dir_path
 
 
 # def ic_06d(dir_code):
-    # """
-    # Takes dir_code as input and returns the absolute directory path of the code.
-    # """
-    # global dir_path
-    # if dir_code == "06D1":
-    #   dir_path = sbtc._06D1
-    # elif dir_code == "06D2":
-    #   dir_path = sbtc._06D2
-    # elif dir_code == "06D3":
-    #   dir_path = sbtc._06D3
-    # else:
-    #   dir_path = DIR_NOT_FOUND
-    # return dir_path
+# """
+# Takes dir_code as input and returns the absolute directory path of the code.
+# """
+# global dir_path
+# if dir_code == "06D1":
+#   dir_path = sbtc._06D1
+# elif dir_code == "06D2":
+#   dir_path = sbtc._06D2
+# elif dir_code == "06D3":
+#   dir_path = sbtc._06D3
+# else:
+#   dir_path = DIR_NOT_FOUND
+# return dir_path
 # 06-Ended # 07-Started
 
 
@@ -984,6 +1062,8 @@ def ic_07b(dir_code):
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
+
+
 # 07-Ended
 
 

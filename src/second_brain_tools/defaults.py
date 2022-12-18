@@ -1,5 +1,6 @@
 # Importing production modules // Meant for production branch
 from second_brain_tools.time import Today
+
 # Importing production modules finished
 
 
@@ -636,9 +637,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-23_Pomodora_Task_01|Pomodora_Task_2]]
 
 
 def capture_events_content_creation(event_name, event_type, event_location, event_summary):
-    """
-
-    """
+    """ """
     CE_FILE_CONTENT_CREATION = f"""---
 date: {Today}
 tags: {Today}/daily_note/event/{event_name}

@@ -5,16 +5,155 @@ from second_brain_tools.time import Today
 from second_brain_tools.config import PLAIN_TEXT_TIME_INCLUDE, LIST_TIME_INCLUDE, SECOND_BRAIN_DIRECTORY, FILE_ALREADY_EXIST
 from second_brain_tools.directories import initial_check
 from second_brain_tools.append import plain_text_append, bullet_list_append, table_append, paragraph_append
+
 # Importing production modules FINISHED
 
 # Default Append Strings Import Started
 # DAILY NOTES
-from second_brain_tools.config import DNM_APPEND_TYPE, DNBJ_APPEND_TYPE,  DNC_APPEND_TYPE,  DNE_APPEND_TYPE,  DNL_APPEND_TYPE,  DNR_APPEND_TYPE,  DNR2_APPEND_TYPE,  DNT_APPEND_TYPE,  DNT2_APPEND_TYPE,  DNTE_APPEND_TYPE,  DNTT_APPEND_TYPE,  DNTL_APPEND_TYPE,  DNTM_APPEND_TYPE,  DNTM2_APPEND_TYPE,  DNTM3_APPEND_TYPE,  DNTS_APPEND_TYPE,  DNTS2_APPEND_TYPE,  DNTW_APPEND_TYPE, GLOBAL_APPEND_TYPE, DNR2_HOUR_00_APPEND_TYPE, DNR2_HOUR_01_APPEND_TYPE, DNR2_HOUR_02_APPEND_TYPE, DNR2_HOUR_03_APPEND_TYPE, DNR2_HOUR_04_APPEND_TYPE, DNR2_HOUR_05_APPEND_TYPE, DNR2_HOUR_06_APPEND_TYPE, DNR2_HOUR_07_APPEND_TYPE, DNR2_HOUR_08_APPEND_TYPE, DNR2_HOUR_09_APPEND_TYPE, DNR2_HOUR_10_APPEND_TYPE, DNR2_HOUR_11_APPEND_TYPE, DNR2_HOUR_12_APPEND_TYPE, DNR2_HOUR_13_APPEND_TYPE, DNR2_HOUR_14_APPEND_TYPE, DNR2_HOUR_15_APPEND_TYPE, DNR2_HOUR_16_APPEND_TYPE, DNR2_HOUR_17_APPEND_TYPE, DNR2_HOUR_18_APPEND_TYPE, DNR2_HOUR_19_APPEND_TYPE, DNR2_HOUR_20_APPEND_TYPE, DNR2_HOUR_21_APPEND_TYPE, DNR2_HOUR_22_APPEND_TYPE, DNR2_HOUR_23_APPEND_TYPE  # noqa
-from second_brain_tools.config import DNR2_HOUR_00_POMODORA_1_APPEND_TYPE, DNR2_HOUR_01_POMODORA_1_APPEND_TYPE, DNR2_HOUR_02_POMODORA_1_APPEND_TYPE, DNR2_HOUR_03_POMODORA_1_APPEND_TYPE, DNR2_HOUR_04_POMODORA_1_APPEND_TYPE, DNR2_HOUR_05_POMODORA_1_APPEND_TYPE, DNR2_HOUR_06_POMODORA_1_APPEND_TYPE, DNR2_HOUR_07_POMODORA_1_APPEND_TYPE, DNR2_HOUR_08_POMODORA_1_APPEND_TYPE, DNR2_HOUR_09_POMODORA_1_APPEND_TYPE, DNR2_HOUR_10_POMODORA_1_APPEND_TYPE, DNR2_HOUR_11_POMODORA_1_APPEND_TYPE, DNR2_HOUR_12_POMODORA_1_APPEND_TYPE, DNR2_HOUR_13_POMODORA_1_APPEND_TYPE, DNR2_HOUR_14_POMODORA_1_APPEND_TYPE, DNR2_HOUR_15_POMODORA_1_APPEND_TYPE, DNR2_HOUR_16_POMODORA_1_APPEND_TYPE, DNR2_HOUR_17_POMODORA_1_APPEND_TYPE, DNR2_HOUR_18_POMODORA_1_APPEND_TYPE, DNR2_HOUR_19_POMODORA_1_APPEND_TYPE, DNR2_HOUR_20_POMODORA_1_APPEND_TYPE, DNR2_HOUR_21_POMODORA_1_APPEND_TYPE, DNR2_HOUR_22_POMODORA_1_APPEND_TYPE, DNR2_HOUR_23_POMODORA_1_APPEND_TYPE, DNR2_HOUR_00_POMODORA_2_APPEND_TYPE, DNR2_HOUR_01_POMODORA_2_APPEND_TYPE, DNR2_HOUR_02_POMODORA_2_APPEND_TYPE, DNR2_HOUR_03_POMODORA_2_APPEND_TYPE, DNR2_HOUR_04_POMODORA_2_APPEND_TYPE, DNR2_HOUR_05_POMODORA_2_APPEND_TYPE, DNR2_HOUR_06_POMODORA_2_APPEND_TYPE, DNR2_HOUR_07_POMODORA_2_APPEND_TYPE, DNR2_HOUR_08_POMODORA_2_APPEND_TYPE, DNR2_HOUR_09_POMODORA_2_APPEND_TYPE, DNR2_HOUR_10_POMODORA_2_APPEND_TYPE, DNR2_HOUR_11_POMODORA_2_APPEND_TYPE, DNR2_HOUR_12_POMODORA_2_APPEND_TYPE, DNR2_HOUR_13_POMODORA_2_APPEND_TYPE, DNR2_HOUR_14_POMODORA_2_APPEND_TYPE, DNR2_HOUR_15_POMODORA_2_APPEND_TYPE, DNR2_HOUR_16_POMODORA_2_APPEND_TYPE, DNR2_HOUR_17_POMODORA_2_APPEND_TYPE, DNR2_HOUR_18_POMODORA_2_APPEND_TYPE, DNR2_HOUR_19_POMODORA_2_APPEND_TYPE, DNR2_HOUR_20_POMODORA_2_APPEND_TYPE, DNR2_HOUR_21_POMODORA_2_APPEND_TYPE, DNR2_HOUR_22_POMODORA_2_APPEND_TYPE, DNR2_HOUR_23_POMODORA_2_APPEND_TYPE  # noqa: E501
+from second_brain_tools.config import (
+    DNM_APPEND_TYPE,
+    DNBJ_APPEND_TYPE,
+    DNC_APPEND_TYPE,
+    DNE_APPEND_TYPE,
+    DNL_APPEND_TYPE,
+    DNR_APPEND_TYPE,
+    DNR2_APPEND_TYPE,
+    DNT_APPEND_TYPE,
+    DNT2_APPEND_TYPE,
+    DNTE_APPEND_TYPE,
+    DNTT_APPEND_TYPE,
+    DNTL_APPEND_TYPE,
+    DNTM_APPEND_TYPE,
+    DNTM2_APPEND_TYPE,
+    DNTM3_APPEND_TYPE,
+    DNTS_APPEND_TYPE,
+    DNTS2_APPEND_TYPE,
+    DNTW_APPEND_TYPE,
+    GLOBAL_APPEND_TYPE,
+    DNR2_HOUR_00_APPEND_TYPE,
+    DNR2_HOUR_01_APPEND_TYPE,
+    DNR2_HOUR_02_APPEND_TYPE,
+    DNR2_HOUR_03_APPEND_TYPE,
+    DNR2_HOUR_04_APPEND_TYPE,
+    DNR2_HOUR_05_APPEND_TYPE,
+    DNR2_HOUR_06_APPEND_TYPE,
+    DNR2_HOUR_07_APPEND_TYPE,
+    DNR2_HOUR_08_APPEND_TYPE,
+    DNR2_HOUR_09_APPEND_TYPE,
+    DNR2_HOUR_10_APPEND_TYPE,
+    DNR2_HOUR_11_APPEND_TYPE,
+    DNR2_HOUR_12_APPEND_TYPE,
+    DNR2_HOUR_13_APPEND_TYPE,
+    DNR2_HOUR_14_APPEND_TYPE,
+    DNR2_HOUR_15_APPEND_TYPE,
+    DNR2_HOUR_16_APPEND_TYPE,
+    DNR2_HOUR_17_APPEND_TYPE,
+    DNR2_HOUR_18_APPEND_TYPE,
+    DNR2_HOUR_19_APPEND_TYPE,
+    DNR2_HOUR_20_APPEND_TYPE,
+    DNR2_HOUR_21_APPEND_TYPE,
+    DNR2_HOUR_22_APPEND_TYPE,
+    DNR2_HOUR_23_APPEND_TYPE,
+)  # noqa
+from second_brain_tools.config import (
+    DNR2_HOUR_00_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_01_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_02_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_03_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_04_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_05_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_06_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_07_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_08_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_09_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_10_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_11_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_12_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_13_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_14_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_15_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_16_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_17_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_18_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_19_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_20_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_21_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_22_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_23_POMODORA_1_APPEND_TYPE,
+    DNR2_HOUR_00_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_01_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_02_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_03_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_04_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_05_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_06_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_07_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_08_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_09_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_10_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_11_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_12_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_13_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_14_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_15_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_16_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_17_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_18_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_19_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_20_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_21_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_22_POMODORA_2_APPEND_TYPE,
+    DNR2_HOUR_23_POMODORA_2_APPEND_TYPE,
+)  # noqa: E501
+
 # Default Append Strings Import FINISHED
 
 # Default Content_Creation Strings Import Started
-from second_brain_tools.config import DNBJ_FILE_CONTENT_CREATION, DNC_FILE_CONTENT_CREATION, DNE_FILE_CONTENT_CREATION, DNL_FILE_CONTENT_CREATION, DNR_FILE_CONTENT_CREATION, DNR2_FILE_CONTENT_CREATION, DNT_FILE_CONTENT_CREATION, DNT2_FILE_CONTENT_CREATION, DNTE_FILE_CONTENT_CREATION, DNTT_FILE_CONTENT_CREATION, DNTL_FILE_CONTENT_CREATION, DNTM_FILE_CONTENT_CREATION, DNTM2_FILE_CONTENT_CREATION, DNTM3_FILE_CONTENT_CREATION, DNTS_FILE_CONTENT_CREATION, DNTS2_FILE_CONTENT_CREATION, DNTW_FILE_CONTENT_CREATION, DNM_FILE_CONTENT_CREATION, DNR2_HOUR_00_FILE_CONTENT_CREATION, DNR2_HOUR_01_FILE_CONTENT_CREATION, DNR2_HOUR_02_FILE_CONTENT_CREATION, DNR2_HOUR_03_FILE_CONTENT_CREATION, DNR2_HOUR_04_FILE_CONTENT_CREATION, DNR2_HOUR_05_FILE_CONTENT_CREATION, DNR2_HOUR_06_FILE_CONTENT_CREATION, DNR2_HOUR_07_FILE_CONTENT_CREATION, DNR2_HOUR_08_FILE_CONTENT_CREATION, DNR2_HOUR_09_FILE_CONTENT_CREATION, DNR2_HOUR_10_FILE_CONTENT_CREATION, DNR2_HOUR_11_FILE_CONTENT_CREATION, DNR2_HOUR_12_FILE_CONTENT_CREATION, DNR2_HOUR_13_FILE_CONTENT_CREATION, DNR2_HOUR_14_FILE_CONTENT_CREATION, DNR2_HOUR_15_FILE_CONTENT_CREATION, DNR2_HOUR_16_FILE_CONTENT_CREATION, DNR2_HOUR_17_FILE_CONTENT_CREATION, DNR2_HOUR_18_FILE_CONTENT_CREATION, DNR2_HOUR_19_FILE_CONTENT_CREATION, DNR2_HOUR_20_FILE_CONTENT_CREATION, DNR2_HOUR_21_FILE_CONTENT_CREATION, DNR2_HOUR_22_FILE_CONTENT_CREATION, DNR2_HOUR_23_FILE_CONTENT_CREATION  # noqa: E501
+from second_brain_tools.config import (
+    DNBJ_FILE_CONTENT_CREATION,
+    DNC_FILE_CONTENT_CREATION,
+    DNE_FILE_CONTENT_CREATION,
+    DNL_FILE_CONTENT_CREATION,
+    DNR_FILE_CONTENT_CREATION,
+    DNR2_FILE_CONTENT_CREATION,
+    DNT_FILE_CONTENT_CREATION,
+    DNT2_FILE_CONTENT_CREATION,
+    DNTE_FILE_CONTENT_CREATION,
+    DNTT_FILE_CONTENT_CREATION,
+    DNTL_FILE_CONTENT_CREATION,
+    DNTM_FILE_CONTENT_CREATION,
+    DNTM2_FILE_CONTENT_CREATION,
+    DNTM3_FILE_CONTENT_CREATION,
+    DNTS_FILE_CONTENT_CREATION,
+    DNTS2_FILE_CONTENT_CREATION,
+    DNTW_FILE_CONTENT_CREATION,
+    DNM_FILE_CONTENT_CREATION,
+    DNR2_HOUR_00_FILE_CONTENT_CREATION,
+    DNR2_HOUR_01_FILE_CONTENT_CREATION,
+    DNR2_HOUR_02_FILE_CONTENT_CREATION,
+    DNR2_HOUR_03_FILE_CONTENT_CREATION,
+    DNR2_HOUR_04_FILE_CONTENT_CREATION,
+    DNR2_HOUR_05_FILE_CONTENT_CREATION,
+    DNR2_HOUR_06_FILE_CONTENT_CREATION,
+    DNR2_HOUR_07_FILE_CONTENT_CREATION,
+    DNR2_HOUR_08_FILE_CONTENT_CREATION,
+    DNR2_HOUR_09_FILE_CONTENT_CREATION,
+    DNR2_HOUR_10_FILE_CONTENT_CREATION,
+    DNR2_HOUR_11_FILE_CONTENT_CREATION,
+    DNR2_HOUR_12_FILE_CONTENT_CREATION,
+    DNR2_HOUR_13_FILE_CONTENT_CREATION,
+    DNR2_HOUR_14_FILE_CONTENT_CREATION,
+    DNR2_HOUR_15_FILE_CONTENT_CREATION,
+    DNR2_HOUR_16_FILE_CONTENT_CREATION,
+    DNR2_HOUR_17_FILE_CONTENT_CREATION,
+    DNR2_HOUR_18_FILE_CONTENT_CREATION,
+    DNR2_HOUR_19_FILE_CONTENT_CREATION,
+    DNR2_HOUR_20_FILE_CONTENT_CREATION,
+    DNR2_HOUR_21_FILE_CONTENT_CREATION,
+    DNR2_HOUR_22_FILE_CONTENT_CREATION,
+    DNR2_HOUR_23_FILE_CONTENT_CREATION,
+)  # noqa: E501
+
 # Default Content_Creation Strings Import FINISHED
 
 
@@ -41,8 +180,7 @@ def daily_note_moc_pregenerate_check():
 
 
 def daily_note_moc_generate(dnm_location):
-    """
-    """
+    """ """
     with open(dnm_location, 'a+') as dnm_file_obj:
         dnm_file_obj.write(DNM_FILE_CONTENT_CREATION)
 
@@ -97,6 +235,8 @@ def daily_note_moc_append(note_content, include_time=True):
             paragraph_append(dnm_location, note_content)
         else:
             print("Error")
+
+
 # MOC RELATED FUNCTIONS FINISHED
 
 
@@ -156,17 +296,13 @@ def daily_note_bullet_journal_append(note_content, include_time=True):
 
 
 def daily_note_bullet_journal_generate(dnbj_location):
-    """
-
-    """
+    """ """
     with open(dnbj_location, 'a+') as dnbj_file_obj:
         dnbj_file_obj.write(DNBJ_FILE_CONTENT_CREATION)
 
 
 def daily_note_bullet_journal_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnbj_directory = initial_check("01C1B1")
     dnbj_location = sbd + dnbj_directory + Today + "_Bullet_Journal" + ".md"
@@ -174,9 +310,7 @@ def daily_note_bullet_journal_location():
 
 
 def daily_note_bullet_journal_pregenerate_check():
-    """
-
-    """
+    """ """
     dnbj_location = daily_note_bullet_journal_location()
     dnbj_file_exist_check = exists(dnbj_location)
     if dnbj_file_exist_check is True:
@@ -186,6 +320,7 @@ def daily_note_bullet_journal_pregenerate_check():
 
 
 # Bullet-Journal RELATED FUNCTIONS FINISHED  # Connections RELATED FUNCTIONS STARTED
+
 
 def daily_note_connections_append(note_content, include_time=True):
     """
@@ -240,17 +375,13 @@ def daily_note_connections_append(note_content, include_time=True):
 
 
 def daily_note_connections_generate(dnc_location):
-    """
-
-    """
+    """ """
     with open(dnc_location, 'a+') as dnc_file_obj:
         dnc_file_obj.write(DNC_FILE_CONTENT_CREATION)
 
 
 def daily_note_connections_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnc_directory = initial_check("01C1C")
     dnc_location = sbd + dnc_directory + Today + "_Connections" + ".md"
@@ -258,9 +389,7 @@ def daily_note_connections_location():
 
 
 def daily_note_connections_pregenerate_check():
-    """
-
-    """
+    """ """
     dnc_location = daily_note_connections_location()
     dnc_file_exist_check = exists(dnc_location)
     if dnc_file_exist_check is True:
@@ -325,17 +454,13 @@ def daily_note_events_append(note_content, include_time=True):
 
 
 def daily_note_events_generate(dne_location):
-    """
-
-    """
+    """ """
     with open(dne_location, 'a+') as dne_file_obj:
         dne_file_obj.write(DNE_FILE_CONTENT_CREATION)
 
 
 def daily_note_events_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dne_directory = initial_check("01C1D")
     dne_location = sbd + dne_directory + Today + "_Events" + ".md"
@@ -343,9 +468,7 @@ def daily_note_events_location():
 
 
 def daily_note_events_pregenerate_check():
-    """
-
-    """
+    """ """
     dne_location = daily_note_events_location()
     dne_file_exist_check = exists(dne_location)
     if dne_file_exist_check is True:
@@ -410,17 +533,13 @@ def daily_note_location_append(note_content, include_time=True):
 
 
 def daily_note_location_generate(dnl_location):
-    """
-
-    """
+    """ """
     with open(dnl_location, 'a+') as dnl_file_obj:
         dnl_file_obj.write(DNL_FILE_CONTENT_CREATION)
 
 
 def daily_note_location_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnl_directory = initial_check("01C1E")
     dnl_location = sbd + dnl_directory + Today + "_" + ".md"
@@ -428,15 +547,14 @@ def daily_note_location_location():
 
 
 def daily_note_location_pregenerate_check():
-    """
-
-    """
+    """ """
     dnl_location = daily_note_location_location()
     dnl_file_exist_check = exists(dnl_location)
     if dnl_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_location_generate(dnl_location)
+
 
 # Location RELATED FUNCTIONS FINISHED  # Reminders RELATED FUNCTIONS STARTED
 
@@ -495,17 +613,13 @@ def daily_note_reminders_append(note_content, include_time=True):
 
 
 def daily_note_reminders_generate(dnr_location):
-    """
-
-    """
+    """ """
     with open(dnr_location, 'a+') as dnr_file_obj:
         dnr_file_obj.write(DNR_FILE_CONTENT_CREATION)
 
 
 def daily_note_reminders_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr_directory = initial_check("01C1F")
     dnr_location = sbd + dnr_directory + Today + "_" + ".md"
@@ -513,15 +627,14 @@ def daily_note_reminders_location():
 
 
 def daily_note_reminders_pregenerate_check():
-    """
-
-    """
+    """ """
     dnr_location = daily_note_reminders_location()
     dnr_file_exist_check = exists(dnr_location)
     if dnr_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_reminders_generate(dnr_location)
+
 
 # Reminders RELATED FUNCTIONS FINISHED  # Routine RELATED FUNCTIONS STARTED
 
@@ -579,17 +692,13 @@ def daily_note_routine_append(note_content, include_time=True):
 
 
 def daily_note_routine_generate(dnr2_location):
-    """
-
-    """
+    """ """
     with open(dnr2_location, 'a+') as dnr2_file_obj:
         dnr2_file_obj.write(DNR2_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_directory = initial_check("01C1G25")
     dnr2_location = sbd + dnr2_directory + Today + "_" + ".md"
@@ -597,9 +706,7 @@ def daily_note_routine_location():
 
 
 def daily_note_routine_pregenerate_check():
-    """
-
-    """
+    """ """
     dnr2_location = daily_note_routine_location()
     dnr2_file_exist_check = exists(dnr2_location)
     if dnr2_file_exist_check is True:
@@ -662,15 +769,13 @@ def daily_note_routine_hour_00_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_00_generate(dnr2_hour_00_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_00_location, 'a+') as dnr2_hour_00_file_obj:
         dnr2_hour_00_file_obj.write(DNR2_HOUR_00_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_00_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_00_directory = initial_check("")
     dnr2_hour_00_location = sbd + dnr2_hour_00_directory + Today + "_" + ".md"
@@ -678,8 +783,7 @@ def daily_note_routine_hour_00_location():
 
 
 def daily_note_routine_hour_00_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_00_location = daily_note_routine_hour_00_location()
     dnr2_hour_00_file_exist_check = exists(dnr2_hour_00_location)
     if dnr2_hour_00_file_exist_check is True:
@@ -741,15 +845,13 @@ def daily_note_routine_hour_01_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_01_generate(dnr2_hour_01_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_01_location, 'a+') as dnr2_hour_01_file_obj:
         dnr2_hour_01_file_obj.write(DNR2_HOUR_01_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_01_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_01_directory = initial_check("")
     dnr2_hour_01_location = sbd + dnr2_hour_01_directory + Today + "_" + ".md"
@@ -757,8 +859,7 @@ def daily_note_routine_hour_01_location():
 
 
 def daily_note_routine_hour_01_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_01_location = daily_note_routine_hour_01_location()
     dnr2_hour_01_file_exist_check = exists(dnr2_hour_01_location)
     if dnr2_hour_01_file_exist_check is True:
@@ -821,15 +922,13 @@ def daily_note_routine_hour_02_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_02_generate(dnr2_hour_02_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_02_location, 'a+') as dnr2_hour_02_file_obj:
         dnr2_hour_02_file_obj.write(DNR2_HOUR_02_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_02_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_02_directory = initial_check("")
     dnr2_hour_02_location = sbd + dnr2_hour_02_directory + Today + "_" + ".md"
@@ -837,8 +936,7 @@ def daily_note_routine_hour_02_location():
 
 
 def daily_note_routine_hour_02_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_02_location = daily_note_routine_hour_02_location()
     dnr2_hour_02_file_exist_check = exists(dnr2_hour_02_location)
     if dnr2_hour_02_file_exist_check is True:
@@ -901,15 +999,13 @@ def daily_note_routine_hour_03_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_03_generate(dnr2_hour_03_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_03_location, 'a+') as dnr2_hour_03_file_obj:
         dnr2_hour_03_file_obj.write(DNR2_HOUR_03_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_03_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_03_directory = initial_check("")
     dnr2_hour_03_location = sbd + dnr2_hour_03_directory + Today + "_" + ".md"
@@ -917,8 +1013,7 @@ def daily_note_routine_hour_03_location():
 
 
 def daily_note_routine_hour_03_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_03_location = daily_note_routine_hour_03_location()
     dnr2_hour_03_file_exist_check = exists(dnr2_hour_03_location)
     if dnr2_hour_03_file_exist_check is True:
@@ -981,15 +1076,13 @@ def daily_note_routine_hour_04_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_04_generate(dnr2_hour_04_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_04_location, 'a+') as dnr2_hour_04_file_obj:
         dnr2_hour_04_file_obj.write(DNR2_HOUR_04_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_04_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_04_directory = initial_check("")
     dnr2_hour_04_location = sbd + dnr2_hour_04_directory + Today + "_" + ".md"
@@ -997,8 +1090,7 @@ def daily_note_routine_hour_04_location():
 
 
 def daily_note_routine_hour_04_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_04_location = daily_note_routine_hour_04_location()
     dnr2_hour_04_file_exist_check = exists(dnr2_hour_04_location)
     if dnr2_hour_04_file_exist_check is True:
@@ -1061,15 +1153,13 @@ def daily_note_routine_hour_05_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_05_generate(dnr2_hour_05_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_05_location, 'a+') as dnr2_hour_05_file_obj:
         dnr2_hour_05_file_obj.write(DNR2_HOUR_05_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_05_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_05_directory = initial_check("")
     dnr2_hour_05_location = sbd + dnr2_hour_05_directory + Today + "_" + ".md"
@@ -1077,8 +1167,7 @@ def daily_note_routine_hour_05_location():
 
 
 def daily_note_routine_hour_05_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_05_location = daily_note_routine_hour_05_location()
     dnr2_hour_05_file_exist_check = exists(dnr2_hour_05_location)
     if dnr2_hour_05_file_exist_check is True:
@@ -1143,15 +1232,13 @@ def daily_note_routine_hour_06_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_06_generate(dnr2_hour_06_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_06_location, 'a+') as dnr2_hour_06_file_obj:
         dnr2_hour_06_file_obj.write(DNR2_HOUR_06_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_06_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_06_directory = initial_check("")
     dnr2_hour_06_location = sbd + dnr2_hour_06_directory + Today + "_" + ".md"
@@ -1159,8 +1246,7 @@ def daily_note_routine_hour_06_location():
 
 
 def daily_note_routine_hour_06_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_06_location = daily_note_routine_hour_06_location()
     dnr2_hour_06_file_exist_check = exists(dnr2_hour_06_location)
     if dnr2_hour_06_file_exist_check is True:
@@ -1225,15 +1311,13 @@ def daily_note_routine_hour_07_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_07_generate(dnr2_hour_07_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_07_location, 'a+') as dnr2_hour_07_file_obj:
         dnr2_hour_07_file_obj.write(DNR2_HOUR_07_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_07_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_07_directory = initial_check("")
     dnr2_hour_07_location = sbd + dnr2_hour_07_directory + Today + "_" + ".md"
@@ -1241,8 +1325,7 @@ def daily_note_routine_hour_07_location():
 
 
 def daily_note_routine_hour_07_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_07_location = daily_note_routine_hour_07_location()
     dnr2_hour_07_file_exist_check = exists(dnr2_hour_07_location)
     if dnr2_hour_07_file_exist_check is True:
@@ -1307,15 +1390,13 @@ def daily_note_routine_hour_08_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_08_generate(dnr2_hour_08_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_08_location, 'a+') as dnr2_hour_08_file_obj:
         dnr2_hour_08_file_obj.write(DNR2_HOUR_08_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_08_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_08_directory = initial_check("")
     dnr2_hour_08_location = sbd + dnr2_hour_08_directory + Today + "_" + ".md"
@@ -1323,8 +1404,7 @@ def daily_note_routine_hour_08_location():
 
 
 def daily_note_routine_hour_08_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_08_location = daily_note_routine_hour_08_location()
     dnr2_hour_08_file_exist_check = exists(dnr2_hour_08_location)
     if dnr2_hour_08_file_exist_check is True:
@@ -1389,15 +1469,13 @@ def daily_note_routine_hour_09_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_09_generate(dnr2_hour_09_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_09_location, 'a+') as dnr2_hour_09_file_obj:
         dnr2_hour_09_file_obj.write(DNR2_HOUR_09_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_09_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_09_directory = initial_check("")
     dnr2_hour_09_location = sbd + dnr2_hour_09_directory + Today + "_" + ".md"
@@ -1405,8 +1483,7 @@ def daily_note_routine_hour_09_location():
 
 
 def daily_note_routine_hour_09_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_09_location = daily_note_routine_hour_09_location()
     dnr2_hour_09_file_exist_check = exists(dnr2_hour_09_location)
     if dnr2_hour_09_file_exist_check is True:
@@ -1471,15 +1548,13 @@ def daily_note_routine_hour_10_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_10_generate(dnr2_hour_10_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_10_location, 'a+') as dnr2_hour_10_file_obj:
         dnr2_hour_10_file_obj.write(DNR2_HOUR_10_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_10_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_10_directory = initial_check("")
     dnr2_hour_10_location = sbd + dnr2_hour_10_directory + Today + "_" + ".md"
@@ -1487,8 +1562,7 @@ def daily_note_routine_hour_10_location():
 
 
 def daily_note_routine_hour_10_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_10_location = daily_note_routine_hour_10_location()
     dnr2_hour_10_file_exist_check = exists(dnr2_hour_10_location)
     if dnr2_hour_10_file_exist_check is True:
@@ -1553,15 +1627,13 @@ def daily_note_routine_hour_11_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_11_generate(dnr2_hour_11_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_11_location, 'a+') as dnr2_hour_11_file_obj:
         dnr2_hour_11_file_obj.write(DNR2_HOUR_11_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_11_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_11_directory = initial_check("")
     dnr2_hour_11_location = sbd + dnr2_hour_11_directory + Today + "_" + ".md"
@@ -1569,8 +1641,7 @@ def daily_note_routine_hour_11_location():
 
 
 def daily_note_routine_hour_11_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_11_location = daily_note_routine_hour_11_location()
     dnr2_hour_11_file_exist_check = exists(dnr2_hour_11_location)
     if dnr2_hour_11_file_exist_check is True:
@@ -1635,15 +1706,13 @@ def daily_note_routine_hour_12_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_12_generate(dnr2_hour_12_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_12_location, 'a+') as dnr2_hour_12_file_obj:
         dnr2_hour_12_file_obj.write(DNR2_HOUR_12_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_12_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_12_directory = initial_check("")
     dnr2_hour_12_location = sbd + dnr2_hour_12_directory + Today + "_" + ".md"
@@ -1651,8 +1720,7 @@ def daily_note_routine_hour_12_location():
 
 
 def daily_note_routine_hour_12_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_12_location = daily_note_routine_hour_12_location()
     dnr2_hour_12_file_exist_check = exists(dnr2_hour_12_location)
     if dnr2_hour_12_file_exist_check is True:
@@ -1717,15 +1785,13 @@ def daily_note_routine_hour_13_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_13_generate(dnr2_hour_13_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_13_location, 'a+') as dnr2_hour_13_file_obj:
         dnr2_hour_13_file_obj.write(DNR2_HOUR_13_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_13_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_13_directory = initial_check("")
     dnr2_hour_13_location = sbd + dnr2_hour_13_directory + Today + "_" + ".md"
@@ -1733,8 +1799,7 @@ def daily_note_routine_hour_13_location():
 
 
 def daily_note_routine_hour_13_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_13_location = daily_note_routine_hour_13_location()
     dnr2_hour_13_file_exist_check = exists(dnr2_hour_13_location)
     if dnr2_hour_13_file_exist_check is True:
@@ -1799,15 +1864,13 @@ def daily_note_routine_hour_14_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_14_generate(dnr2_hour_14_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_14_location, 'a+') as dnr2_hour_14_file_obj:
         dnr2_hour_14_file_obj.write(DNR2_HOUR_14_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_14_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_14_directory = initial_check("")
     dnr2_hour_14_location = sbd + dnr2_hour_14_directory + Today + "_" + ".md"
@@ -1815,8 +1878,7 @@ def daily_note_routine_hour_14_location():
 
 
 def daily_note_routine_hour_14_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_14_location = daily_note_routine_hour_14_location()
     dnr2_hour_14_file_exist_check = exists(dnr2_hour_14_location)
     if dnr2_hour_14_file_exist_check is True:
@@ -1881,15 +1943,13 @@ def daily_note_routine_hour_15_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_15_generate(dnr2_hour_15_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_15_location, 'a+') as dnr2_hour_15_file_obj:
         dnr2_hour_15_file_obj.write(DNR2_HOUR_15_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_15_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_15_directory = initial_check("")
     dnr2_hour_15_location = sbd + dnr2_hour_15_directory + Today + "_" + ".md"
@@ -1897,8 +1957,7 @@ def daily_note_routine_hour_15_location():
 
 
 def daily_note_routine_hour_15_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_15_location = daily_note_routine_hour_15_location()
     dnr2_hour_15_file_exist_check = exists(dnr2_hour_15_location)
     if dnr2_hour_15_file_exist_check is True:
@@ -1963,15 +2022,13 @@ def daily_note_routine_hour_16_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_16_generate(dnr2_hour_16_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_16_location, 'a+') as dnr2_hour_16_file_obj:
         dnr2_hour_16_file_obj.write(DNR2_HOUR_16_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_16_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_16_directory = initial_check("")
     dnr2_hour_16_location = sbd + dnr2_hour_16_directory + Today + "_" + ".md"
@@ -1979,8 +2036,7 @@ def daily_note_routine_hour_16_location():
 
 
 def daily_note_routine_hour_16_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_16_location = daily_note_routine_hour_16_location()
     dnr2_hour_16_file_exist_check = exists(dnr2_hour_16_location)
     if dnr2_hour_16_file_exist_check is True:
@@ -2045,15 +2101,13 @@ def daily_note_routine_hour_17_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_17_generate(dnr2_hour_17_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_17_location, 'a+') as dnr2_hour_17_file_obj:
         dnr2_hour_17_file_obj.write(DNR2_HOUR_17_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_17_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_17_directory = initial_check("")
     dnr2_hour_17_location = sbd + dnr2_hour_17_directory + Today + "_" + ".md"
@@ -2061,8 +2115,7 @@ def daily_note_routine_hour_17_location():
 
 
 def daily_note_routine_hour_17_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_17_location = daily_note_routine_hour_17_location()
     dnr2_hour_17_file_exist_check = exists(dnr2_hour_17_location)
     if dnr2_hour_17_file_exist_check is True:
@@ -2127,15 +2180,13 @@ def daily_note_routine_hour_18_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_18_generate(dnr2_hour_18_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_18_location, 'a+') as dnr2_hour_18_file_obj:
         dnr2_hour_18_file_obj.write(DNR2_HOUR_18_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_18_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_18_directory = initial_check("")
     dnr2_hour_18_location = sbd + dnr2_hour_18_directory + Today + "_" + ".md"
@@ -2143,8 +2194,7 @@ def daily_note_routine_hour_18_location():
 
 
 def daily_note_routine_hour_18_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_18_location = daily_note_routine_hour_18_location()
     dnr2_hour_18_file_exist_check = exists(dnr2_hour_18_location)
     if dnr2_hour_18_file_exist_check is True:
@@ -2209,15 +2259,13 @@ def daily_note_routine_hour_19_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_19_generate(dnr2_hour_19_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_19_location, 'a+') as dnr2_hour_19_file_obj:
         dnr2_hour_19_file_obj.write(DNR2_HOUR_19_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_19_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_19_directory = initial_check("")
     dnr2_hour_19_location = sbd + dnr2_hour_19_directory + Today + "_" + ".md"
@@ -2225,8 +2273,7 @@ def daily_note_routine_hour_19_location():
 
 
 def daily_note_routine_hour_19_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_19_location = daily_note_routine_hour_19_location()
     dnr2_hour_19_file_exist_check = exists(dnr2_hour_19_location)
     if dnr2_hour_19_file_exist_check is True:
@@ -2289,15 +2336,13 @@ def daily_note_routine_hour_20_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_20_generate(dnr2_hour_20_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_20_location, 'a+') as dnr2_hour_20_file_obj:
         dnr2_hour_20_file_obj.write(DNR2_HOUR_20_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_20_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_20_directory = initial_check("")
     dnr2_hour_20_location = sbd + dnr2_hour_20_directory + Today + "_" + ".md"
@@ -2305,8 +2350,7 @@ def daily_note_routine_hour_20_location():
 
 
 def daily_note_routine_hour_20_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_20_location = daily_note_routine_hour_20_location()
     dnr2_hour_20_file_exist_check = exists(dnr2_hour_20_location)
     if dnr2_hour_20_file_exist_check is True:
@@ -2371,15 +2415,13 @@ def daily_note_routine_hour_21_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_21_generate(dnr2_hour_21_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_21_location, 'a+') as dnr2_hour_21_file_obj:
         dnr2_hour_21_file_obj.write(DNR2_HOUR_21_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_21_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_21_directory = initial_check("")
     dnr2_hour_21_location = sbd + dnr2_hour_21_directory + Today + "_" + ".md"
@@ -2387,8 +2429,7 @@ def daily_note_routine_hour_21_location():
 
 
 def daily_note_routine_hour_21_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_21_location = daily_note_routine_hour_21_location()
     dnr2_hour_21_file_exist_check = exists(dnr2_hour_21_location)
     if dnr2_hour_21_file_exist_check is True:
@@ -2451,15 +2492,13 @@ def daily_note_routine_hour_22_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_22_generate(dnr2_hour_22_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_22_location, 'a+') as dnr2_hour_22_file_obj:
         dnr2_hour_22_file_obj.write(DNR2_HOUR_22_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_22_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_22_directory = initial_check("")
     dnr2_hour_22_location = sbd + dnr2_hour_22_directory + Today + "_" + ".md"
@@ -2467,8 +2506,7 @@ def daily_note_routine_hour_22_location():
 
 
 def daily_note_routine_hour_22_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_22_location = daily_note_routine_hour_22_location()
     dnr2_hour_22_file_exist_check = exists(dnr2_hour_22_location)
     if dnr2_hour_22_file_exist_check is True:
@@ -2531,15 +2569,13 @@ def daily_note_routine_hour_23_append(note_content, include_time=True):
 
 
 def daily_note_routine_hour_23_generate(dnr2_hour_23_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_23_location, 'a+') as dnr2_hour_23_file_obj:
         dnr2_hour_23_file_obj.write(DNR2_HOUR_23_FILE_CONTENT_CREATION)
 
 
 def daily_note_routine_hour_23_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_23_directory = initial_check("")
     dnr2_hour_23_location = sbd + dnr2_hour_23_directory + Today + "_" + ".md"
@@ -2547,14 +2583,15 @@ def daily_note_routine_hour_23_location():
 
 
 def daily_note_routine_hour_23_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_23_location = daily_note_routine_hour_23_location()
     dnr2_hour_23_file_exist_check = exists(dnr2_hour_23_location)
     if dnr2_hour_23_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_23_generate(dnr2_hour_23_location)
+
+
 # Routine Hour_23 FUNCTIONS FINISHED
 
 # DAILY_NOTE_ROUTINE_POMODORA STARTED
@@ -2612,41 +2649,46 @@ def daily_note_routine_hour_00_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_00_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_00_pomodora_1_generate(dnr2_hour_00_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_00_pomodora_1_location, 'a+') as dnr2_hour_00_file_obj:
         dnr2_hour_00_file_obj.write(DNR2_HOUR_00_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_00_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_00_pomodora_1_directory = initial_check("")
     dnr2_hour_00_pomodora_1_location = sbd + dnr2_hour_00_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_00_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_00_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_00_pomodora_1_location = daily_note_routine_hour_00_pomodora_1_location()
     dnr2_hour_00_pomodora_1_file_exist_check = exists(dnr2_hour_00_pomodora_1_location)
     if dnr2_hour_00_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_00_pomodora_1_generate(dnr2_hour_00_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_APPEND_STARTED
@@ -2702,41 +2744,46 @@ def daily_note_routine_hour_00_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_00_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_00_pomodora_2_generate(dnr2_hour_00_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_00_pomodora_2_location, 'a+') as dnr2_hour_00_file_obj:
         dnr2_hour_00_file_obj.write(DNR2_HOUR_00_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_00_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_00_pomodora_2_directory = initial_check("")
     dnr2_hour_00_pomodora_2_location = sbd + dnr2_hour_00_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_00_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_00_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_00_pomodora_2_location = daily_note_routine_hour_00_pomodora_2_location()
     dnr2_hour_00_pomodora_2_file_exist_check = exists(dnr2_hour_00_pomodora_2_location)
     if dnr2_hour_00_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_00_pomodora_2_generate(dnr2_hour_00_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_00_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_APPEND_STARTED
@@ -2792,41 +2839,46 @@ def daily_note_routine_hour_01_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_01_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_01_pomodora_1_generate(dnr2_hour_01_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_01_pomodora_1_location, 'a+') as dnr2_hour_01_file_obj:
         dnr2_hour_01_file_obj.write(DNR2_HOUR_01_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_01_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_01_pomodora_1_directory = initial_check("")
     dnr2_hour_01_pomodora_1_location = sbd + dnr2_hour_01_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_01_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_01_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_01_pomodora_1_location = daily_note_routine_hour_00_pomodora_1_location()
     dnr2_hour_01_pomodora_1_file_exist_check = exists(dnr2_hour_01_pomodora_1_location)
     if dnr2_hour_01_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_01_pomodora_1_generate(dnr2_hour_01_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_APPEND_STARTED
@@ -2882,41 +2934,46 @@ def daily_note_routine_hour_01_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_01_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_01_pomodora_2_generate(dnr2_hour_01_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_01_pomodora_2_location, 'a+') as dnr2_hour_01_file_obj:
         dnr2_hour_01_file_obj.write(DNR2_HOUR_01_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_01_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_01_pomodora_2_directory = initial_check("")
     dnr2_hour_01_pomodora_2_location = sbd + dnr2_hour_01_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_01_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_01_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_01_pomodora_2_location = daily_note_routine_hour_01_pomodora_2_location()
     dnr2_hour_01_pomodora_2_file_exist_check = exists(dnr2_hour_01_pomodora_2_location)
     if dnr2_hour_01_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_01_pomodora_2_generate(dnr2_hour_01_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_01_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_APPEND_STARTED
@@ -2972,41 +3029,46 @@ def daily_note_routine_hour_02_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_02_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_02_pomodora_1_generate(dnr2_hour_02_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_02_pomodora_1_location, 'a+') as dnr2_hour_02_file_obj:
         dnr2_hour_02_file_obj.write(DNR2_HOUR_02_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_02_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_02_pomodora_1_directory = initial_check("")
     dnr2_hour_02_pomodora_1_location = sbd + dnr2_hour_02_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_02_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_02_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_02_pomodora_1_location = daily_note_routine_hour_02_pomodora_1_location()
     dnr2_hour_02_pomodora_1_file_exist_check = exists(dnr2_hour_02_pomodora_1_location)
     if dnr2_hour_02_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_02_pomodora_1_generate(dnr2_hour_02_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_APPEND_STARTED
@@ -3062,41 +3124,46 @@ def daily_note_routine_hour_02_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_02_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_02_pomodora_2_generate(dnr2_hour_02_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_02_pomodora_2_location, 'a+') as dnr2_hour_02_file_obj:
         dnr2_hour_02_file_obj.write(DNR2_HOUR_02_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_02_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_02_pomodora_2_directory = initial_check("")
     dnr2_hour_02_pomodora_2_location = sbd + dnr2_hour_02_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_02_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_02_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_02_pomodora_2_location = daily_note_routine_hour_02_pomodora_2_location()
     dnr2_hour_02_pomodora_2_file_exist_check = exists(dnr2_hour_02_pomodora_2_location)
     if dnr2_hour_02_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_02_pomodora_2_generate(dnr2_hour_02_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_02_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_APPEND_STARTED
@@ -3152,41 +3219,46 @@ def daily_note_routine_hour_03_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_03_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_03_pomodora_1_generate(dnr2_hour_03_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_03_pomodora_1_location, 'a+') as dnr2_hour_03_file_obj:
         dnr2_hour_03_file_obj.write(DNR2_HOUR_03_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_03_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_03_pomodora_1_directory = initial_check("")
     dnr2_hour_03_pomodora_1_location = sbd + dnr2_hour_03_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_03_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_03_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_03_pomodora_1_location = daily_note_routine_hour_03_pomodora_1_location()
     dnr2_hour_03_pomodora_1_file_exist_check = exists(dnr2_hour_03_pomodora_1_location)
     if dnr2_hour_03_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_03_pomodora_1_generate(dnr2_hour_03_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_APPEND_STARTED
@@ -3242,41 +3314,46 @@ def daily_note_routine_hour_03_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_03_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_03_pomodora_2_generate(dnr2_hour_03_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_03_pomodora_2_location, 'a+') as dnr2_hour_03_file_obj:
         dnr2_hour_03_file_obj.write(DNR2_HOUR_03_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_03_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_03_pomodora_2_directory = initial_check("")
     dnr2_hour_03_pomodora_2_location = sbd + dnr2_hour_03_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_03_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_03_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_03_pomodora_2_location = daily_note_routine_hour_03_pomodora_2_location()
     dnr2_hour_03_pomodora_2_file_exist_check = exists(dnr2_hour_03_pomodora_2_location)
     if dnr2_hour_03_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_03_pomodora_2_generate(dnr2_hour_03_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_03_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_APPEND_STARTED
@@ -3332,41 +3409,46 @@ def daily_note_routine_hour_04_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_04_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_04_pomodora_1_generate(dnr2_hour_04_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_04_pomodora_1_location, 'a+') as dnr2_hour_04_file_obj:
         dnr2_hour_04_file_obj.write(DNR2_HOUR_04_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_04_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_04_pomodora_1_directory = initial_check("")
     dnr2_hour_04_pomodora_1_location = sbd + dnr2_hour_04_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_04_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_04_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_04_pomodora_1_location = daily_note_routine_hour_04_pomodora_1_location()
     dnr2_hour_04_pomodora_1_file_exist_check = exists(dnr2_hour_04_pomodora_1_location)
     if dnr2_hour_04_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_04_pomodora_1_generate(dnr2_hour_04_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_APPEND_STARTED
@@ -3422,41 +3504,46 @@ def daily_note_routine_hour_04_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_04_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_04_pomodora_2_generate(dnr2_hour_04_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_04_pomodora_2_location, 'a+') as dnr2_hour_04_file_obj:
         dnr2_hour_04_file_obj.write(DNR2_HOUR_04_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_04_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_04_pomodora_2_directory = initial_check("")
     dnr2_hour_04_pomodora_2_location = sbd + dnr2_hour_04_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_04_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_04_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_04_pomodora_2_location = daily_note_routine_hour_04_pomodora_2_location()
     dnr2_hour_04_pomodora_2_file_exist_check = exists(dnr2_hour_04_pomodora_2_location)
     if dnr2_hour_04_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_04_pomodora_2_generate(dnr2_hour_04_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_04_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_APPEND_STARTED
@@ -3512,41 +3599,46 @@ def daily_note_routine_hour_05_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_05_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_05_pomodora_1_generate(dnr2_hour_05_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_05_pomodora_1_location, 'a+') as dnr2_hour_05_file_obj:
         dnr2_hour_05_file_obj.write(DNR2_HOUR_05_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_05_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_05_pomodora_1_directory = initial_check("")
     dnr2_hour_05_pomodora_1_location = sbd + dnr2_hour_05_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_05_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_05_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_05_pomodora_1_location = daily_note_routine_hour_05_pomodora_1_location()
     dnr2_hour_05_pomodora_1_file_exist_check = exists(dnr2_hour_05_pomodora_1_location)
     if dnr2_hour_05_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_05_pomodora_1_generate(dnr2_hour_05_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_APPEND_STARTED
@@ -3602,41 +3694,46 @@ def daily_note_routine_hour_05_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_05_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_05_pomodora_2_generate(dnr2_hour_05_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_05_pomodora_2_location, 'a+') as dnr2_hour_05_file_obj:
         dnr2_hour_05_file_obj.write(DNR2_HOUR_05_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_05_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_05_pomodora_2_directory = initial_check("")
     dnr2_hour_05_pomodora_2_location = sbd + dnr2_hour_05_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_05_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_05_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_05_pomodora_2_location = daily_note_routine_hour_05_pomodora_2_location()
     dnr2_hour_05_pomodora_2_file_exist_check = exists(dnr2_hour_05_pomodora_2_location)
     if dnr2_hour_05_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_05_pomodora_2_generate(dnr2_hour_05_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_05_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_APPEND_STARTED
@@ -3692,41 +3789,46 @@ def daily_note_routine_hour_06_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_06_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_06_pomodora_1_generate(dnr2_hour_06_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_06_pomodora_1_location, 'a+') as dnr2_hour_06_file_obj:
         dnr2_hour_06_file_obj.write(DNR2_HOUR_06_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_06_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_06_pomodora_1_directory = initial_check("")
     dnr2_hour_06_pomodora_1_location = sbd + dnr2_hour_06_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_06_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_06_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_06_pomodora_1_location = daily_note_routine_hour_06_pomodora_1_location()
     dnr2_hour_06_pomodora_1_file_exist_check = exists(dnr2_hour_06_pomodora_1_location)
     if dnr2_hour_06_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_06_pomodora_1_generate(dnr2_hour_06_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_APPEND_STARTED
@@ -3782,41 +3884,46 @@ def daily_note_routine_hour_06_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_06_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_06_pomodora_2_generate(dnr2_hour_06_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_06_pomodora_2_location, 'a+') as dnr2_hour_06_file_obj:
         dnr2_hour_06_file_obj.write(DNR2_HOUR_06_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_06_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_06_pomodora_2_directory = initial_check("")
     dnr2_hour_06_pomodora_2_location = sbd + dnr2_hour_06_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_06_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_06_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_06_pomodora_2_location = daily_note_routine_hour_06_pomodora_2_location()
     dnr2_hour_06_pomodora_2_file_exist_check = exists(dnr2_hour_06_pomodora_2_location)
     if dnr2_hour_06_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_06_pomodora_2_generate(dnr2_hour_06_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_06_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_APPEND_STARTED
@@ -3872,41 +3979,46 @@ def daily_note_routine_hour_07_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_07_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_07_pomodora_1_generate(dnr2_hour_07_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_07_pomodora_1_location, 'a+') as dnr2_hour_07_file_obj:
         dnr2_hour_07_file_obj.write(DNR2_HOUR_07_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_07_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_07_pomodora_1_directory = initial_check("")
     dnr2_hour_07_pomodora_1_location = sbd + dnr2_hour_07_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_07_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_07_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_07_pomodora_1_location = daily_note_routine_hour_07_pomodora_1_location()
     dnr2_hour_07_pomodora_1_file_exist_check = exists(dnr2_hour_07_pomodora_1_location)
     if dnr2_hour_07_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_07_pomodora_1_generate(dnr2_hour_07_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_APPEND_STARTED
@@ -3962,41 +4074,46 @@ def daily_note_routine_hour_07_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_07_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_07_pomodora_2_generate(dnr2_hour_07_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_07_pomodora_2_location, 'a+') as dnr2_hour_07_file_obj:
         dnr2_hour_07_file_obj.write(DNR2_HOUR_07_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_07_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_07_pomodora_2_directory = initial_check("")
     dnr2_hour_07_pomodora_2_location = sbd + dnr2_hour_07_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_07_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_07_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_07_pomodora_2_location = daily_note_routine_hour_07_pomodora_2_location()
     dnr2_hour_07_pomodora_2_file_exist_check = exists(dnr2_hour_07_pomodora_2_location)
     if dnr2_hour_07_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_07_pomodora_2_generate(dnr2_hour_07_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_07_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_APPEND_STARTED
@@ -4052,41 +4169,46 @@ def daily_note_routine_hour_08_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_08_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_08_pomodora_1_generate(dnr2_hour_08_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_08_pomodora_1_location, 'a+') as dnr2_hour_08_file_obj:
         dnr2_hour_08_file_obj.write(DNR2_HOUR_08_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_08_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_08_pomodora_1_directory = initial_check("")
     dnr2_hour_08_pomodora_1_location = sbd + dnr2_hour_08_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_08_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_08_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_08_pomodora_1_location = daily_note_routine_hour_08_pomodora_1_location()
     dnr2_hour_08_pomodora_1_file_exist_check = exists(dnr2_hour_08_pomodora_1_location)
     if dnr2_hour_08_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_08_pomodora_1_generate(dnr2_hour_08_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_APPEND_STARTED
@@ -4142,41 +4264,46 @@ def daily_note_routine_hour_08_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_08_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_08_pomodora_2_generate(dnr2_hour_08_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_08_pomodora_2_location, 'a+') as dnr2_hour_08_file_obj:
         dnr2_hour_08_file_obj.write(DNR2_HOUR_08_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_08_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_08_pomodora_2_directory = initial_check("")
     dnr2_hour_08_pomodora_2_location = sbd + dnr2_hour_08_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_08_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_08_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_08_pomodora_2_location = daily_note_routine_hour_08_pomodora_2_location()
     dnr2_hour_08_pomodora_2_file_exist_check = exists(dnr2_hour_08_pomodora_2_location)
     if dnr2_hour_08_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_08_pomodora_2_generate(dnr2_hour_08_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_08_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_APPEND_STARTED
@@ -4232,41 +4359,46 @@ def daily_note_routine_hour_09_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_09_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_09_pomodora_1_generate(dnr2_hour_09_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_09_pomodora_1_location, 'a+') as dnr2_hour_09_file_obj:
         dnr2_hour_09_file_obj.write(DNR2_HOUR_09_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_09_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_09_pomodora_1_directory = initial_check("")
     dnr2_hour_09_pomodora_1_location = sbd + dnr2_hour_09_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_09_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_09_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_09_pomodora_1_location = daily_note_routine_hour_09_pomodora_1_location()
     dnr2_hour_09_pomodora_1_file_exist_check = exists(dnr2_hour_09_pomodora_1_location)
     if dnr2_hour_09_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_09_pomodora_1_generate(dnr2_hour_09_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_APPEND_STARTED
@@ -4322,41 +4454,46 @@ def daily_note_routine_hour_09_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_09_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_09_pomodora_2_generate(dnr2_hour_09_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_09_pomodora_2_location, 'a+') as dnr2_hour_09_file_obj:
         dnr2_hour_09_file_obj.write(DNR2_HOUR_09_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_09_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_09_pomodora_2_directory = initial_check("")
     dnr2_hour_09_pomodora_2_location = sbd + dnr2_hour_09_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_09_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_09_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_09_pomodora_2_location = daily_note_routine_hour_09_pomodora_2_location()
     dnr2_hour_09_pomodora_2_file_exist_check = exists(dnr2_hour_09_pomodora_2_location)
     if dnr2_hour_09_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_09_pomodora_2_generate(dnr2_hour_09_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_09_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_APPEND_STARTED
@@ -4412,41 +4549,46 @@ def daily_note_routine_hour_10_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_10_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_10_pomodora_1_generate(dnr2_hour_10_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_10_pomodora_1_location, 'a+') as dnr2_hour_10_file_obj:
         dnr2_hour_10_file_obj.write(DNR2_HOUR_10_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_10_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_10_pomodora_1_directory = initial_check("")
     dnr2_hour_10_pomodora_1_location = sbd + dnr2_hour_10_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_10_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_10_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_10_pomodora_1_location = daily_note_routine_hour_10_pomodora_1_location()
     dnr2_hour_10_pomodora_1_file_exist_check = exists(dnr2_hour_10_pomodora_1_location)
     if dnr2_hour_10_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_10_pomodora_1_generate(dnr2_hour_10_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_APPEND_STARTED
@@ -4502,41 +4644,46 @@ def daily_note_routine_hour_10_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_10_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_10_pomodora_2_generate(dnr2_hour_10_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_10_pomodora_2_location, 'a+') as dnr2_hour_10_file_obj:
         dnr2_hour_10_file_obj.write(DNR2_HOUR_10_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_10_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_10_pomodora_2_directory = initial_check("")
     dnr2_hour_10_pomodora_2_location = sbd + dnr2_hour_10_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_10_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_10_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_10_pomodora_2_location = daily_note_routine_hour_10_pomodora_2_location()
     dnr2_hour_10_pomodora_2_file_exist_check = exists(dnr2_hour_10_pomodora_2_location)
     if dnr2_hour_10_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_10_pomodora_2_generate(dnr2_hour_10_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_10_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_APPEND_STARTED
@@ -4592,41 +4739,46 @@ def daily_note_routine_hour_11_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_11_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_11_pomodora_1_generate(dnr2_hour_11_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_11_pomodora_1_location, 'a+') as dnr2_hour_11_file_obj:
         dnr2_hour_11_file_obj.write(DNR2_HOUR_11_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_11_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_11_pomodora_1_directory = initial_check("")
     dnr2_hour_11_pomodora_1_location = sbd + dnr2_hour_11_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_11_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_11_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_11_pomodora_1_location = daily_note_routine_hour_11_pomodora_1_location()
     dnr2_hour_11_pomodora_1_file_exist_check = exists(dnr2_hour_11_pomodora_1_location)
     if dnr2_hour_11_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_11_pomodora_1_generate(dnr2_hour_11_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_APPEND_STARTED
@@ -4682,41 +4834,46 @@ def daily_note_routine_hour_11_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_11_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_11_pomodora_2_generate(dnr2_hour_11_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_11_pomodora_2_location, 'a+') as dnr2_hour_11_file_obj:
         dnr2_hour_11_file_obj.write(DNR2_HOUR_11_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_11_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_11_pomodora_2_directory = initial_check("")
     dnr2_hour_11_pomodora_2_location = sbd + dnr2_hour_11_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_11_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_11_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_11_pomodora_2_location = daily_note_routine_hour_11_pomodora_2_location()
     dnr2_hour_11_pomodora_2_file_exist_check = exists(dnr2_hour_11_pomodora_2_location)
     if dnr2_hour_11_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_11_pomodora_2_generate(dnr2_hour_11_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_11_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_APPEND_STARTED
@@ -4772,41 +4929,46 @@ def daily_note_routine_hour_12_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_12_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_12_pomodora_1_generate(dnr2_hour_12_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_12_pomodora_1_location, 'a+') as dnr2_hour_12_file_obj:
         dnr2_hour_12_file_obj.write(DNR2_HOUR_12_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_12_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_12_pomodora_1_directory = initial_check("")
     dnr2_hour_12_pomodora_1_location = sbd + dnr2_hour_12_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_12_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_12_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_12_pomodora_1_location = daily_note_routine_hour_12_pomodora_1_location()
     dnr2_hour_12_pomodora_1_file_exist_check = exists(dnr2_hour_12_pomodora_1_location)
     if dnr2_hour_12_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_12_pomodora_1_generate(dnr2_hour_12_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_APPEND_STARTED
@@ -4862,41 +5024,46 @@ def daily_note_routine_hour_12_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_12_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_12_pomodora_2_generate(dnr2_hour_12_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_12_pomodora_2_location, 'a+') as dnr2_hour_12_file_obj:
         dnr2_hour_12_file_obj.write(DNR2_HOUR_12_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_12_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_12_pomodora_2_directory = initial_check("")
     dnr2_hour_12_pomodora_2_location = sbd + dnr2_hour_12_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_12_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_12_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_12_pomodora_2_location = daily_note_routine_hour_12_pomodora_2_location()
     dnr2_hour_12_pomodora_2_file_exist_check = exists(dnr2_hour_12_pomodora_2_location)
     if dnr2_hour_12_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_12_pomodora_2_generate(dnr2_hour_12_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_12_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_APPEND_STARTED
@@ -4952,41 +5119,46 @@ def daily_note_routine_hour_13_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_13_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_13_pomodora_1_generate(dnr2_hour_13_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_13_pomodora_1_location, 'a+') as dnr2_hour_13_file_obj:
         dnr2_hour_13_file_obj.write(DNR2_HOUR_13_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_13_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_13_pomodora_1_directory = initial_check("")
     dnr2_hour_13_pomodora_1_location = sbd + dnr2_hour_13_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_13_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_13_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_13_pomodora_1_location = daily_note_routine_hour_13_pomodora_1_location()
     dnr2_hour_13_pomodora_1_file_exist_check = exists(dnr2_hour_13_pomodora_1_location)
     if dnr2_hour_13_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_13_pomodora_1_generate(dnr2_hour_13_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_APPEND_STARTED
@@ -5042,41 +5214,46 @@ def daily_note_routine_hour_13_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_13_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_13_pomodora_2_generate(dnr2_hour_13_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_13_pomodora_2_location, 'a+') as dnr2_hour_13_file_obj:
         dnr2_hour_13_file_obj.write(DNR2_HOUR_13_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_13_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_13_pomodora_2_directory = initial_check("")
     dnr2_hour_13_pomodora_2_location = sbd + dnr2_hour_13_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_13_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_13_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_13_pomodora_2_location = daily_note_routine_hour_13_pomodora_2_location()
     dnr2_hour_13_pomodora_2_file_exist_check = exists(dnr2_hour_13_pomodora_2_location)
     if dnr2_hour_13_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_13_pomodora_2_generate(dnr2_hour_13_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_13_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_APPEND_STARTED
@@ -5132,41 +5309,46 @@ def daily_note_routine_hour_14_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_14_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_14_pomodora_1_generate(dnr2_hour_14_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_14_pomodora_1_location, 'a+') as dnr2_hour_14_file_obj:
         dnr2_hour_14_file_obj.write(DNR2_HOUR_14_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_14_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_14_pomodora_1_directory = initial_check("")
     dnr2_hour_14_pomodora_1_location = sbd + dnr2_hour_14_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_14_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_14_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_14_pomodora_1_location = daily_note_routine_hour_14_pomodora_1_location()
     dnr2_hour_14_pomodora_1_file_exist_check = exists(dnr2_hour_14_pomodora_1_location)
     if dnr2_hour_14_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_14_pomodora_1_generate(dnr2_hour_14_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_APPEND_STARTED
@@ -5222,41 +5404,46 @@ def daily_note_routine_hour_14_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_14_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_14_pomodora_2_generate(dnr2_hour_14_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_14_pomodora_2_location, 'a+') as dnr2_hour_14_file_obj:
         dnr2_hour_14_file_obj.write(DNR2_HOUR_14_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_14_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_14_pomodora_2_directory = initial_check("")
     dnr2_hour_14_pomodora_2_location = sbd + dnr2_hour_14_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_14_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_14_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_14_pomodora_2_location = daily_note_routine_hour_14_pomodora_2_location()
     dnr2_hour_14_pomodora_2_file_exist_check = exists(dnr2_hour_14_pomodora_2_location)
     if dnr2_hour_14_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_14_pomodora_2_generate(dnr2_hour_14_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_14_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_APPEND_STARTED
@@ -5312,41 +5499,46 @@ def daily_note_routine_hour_15_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_15_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_15_pomodora_1_generate(dnr2_hour_15_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_15_pomodora_1_location, 'a+') as dnr2_hour_15_file_obj:
         dnr2_hour_15_file_obj.write(DNR2_HOUR_15_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_15_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_15_pomodora_1_directory = initial_check("")
     dnr2_hour_15_pomodora_1_location = sbd + dnr2_hour_15_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_15_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_15_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_15_pomodora_1_location = daily_note_routine_hour_15_pomodora_1_location()
     dnr2_hour_15_pomodora_1_file_exist_check = exists(dnr2_hour_15_pomodora_1_location)
     if dnr2_hour_15_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_15_pomodora_1_generate(dnr2_hour_15_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_APPEND_STARTED
@@ -5402,41 +5594,46 @@ def daily_note_routine_hour_15_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_15_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_15_pomodora_2_generate(dnr2_hour_15_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_15_pomodora_2_location, 'a+') as dnr2_hour_15_file_obj:
         dnr2_hour_15_file_obj.write(DNR2_HOUR_15_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_15_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_15_pomodora_2_directory = initial_check("")
     dnr2_hour_15_pomodora_2_location = sbd + dnr2_hour_15_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_15_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_15_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_15_pomodora_2_location = daily_note_routine_hour_15_pomodora_2_location()
     dnr2_hour_15_pomodora_2_file_exist_check = exists(dnr2_hour_15_pomodora_2_location)
     if dnr2_hour_15_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_15_pomodora_2_generate(dnr2_hour_15_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_15_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_APPEND_STARTED
@@ -5492,41 +5689,46 @@ def daily_note_routine_hour_16_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_16_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_16_pomodora_1_generate(dnr2_hour_16_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_16_pomodora_1_location, 'a+') as dnr2_hour_16_file_obj:
         dnr2_hour_16_file_obj.write(DNR2_HOUR_16_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_16_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_16_pomodora_1_directory = initial_check("")
     dnr2_hour_16_pomodora_1_location = sbd + dnr2_hour_16_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_16_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_16_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_16_pomodora_1_location = daily_note_routine_hour_16_pomodora_1_location()
     dnr2_hour_16_pomodora_1_file_exist_check = exists(dnr2_hour_16_pomodora_1_location)
     if dnr2_hour_16_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_16_pomodora_1_generate(dnr2_hour_16_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_APPEND_STARTED
@@ -5582,41 +5784,46 @@ def daily_note_routine_hour_16_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_16_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_16_pomodora_2_generate(dnr2_hour_16_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_16_pomodora_2_location, 'a+') as dnr2_hour_16_file_obj:
         dnr2_hour_16_file_obj.write(DNR2_HOUR_16_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_16_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_16_pomodora_2_directory = initial_check("")
     dnr2_hour_16_pomodora_2_location = sbd + dnr2_hour_16_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_16_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_16_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_16_pomodora_2_location = daily_note_routine_hour_16_pomodora_2_location()
     dnr2_hour_16_pomodora_2_file_exist_check = exists(dnr2_hour_16_pomodora_2_location)
     if dnr2_hour_16_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_16_pomodora_2_generate(dnr2_hour_16_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_16_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_APPEND_STARTED
@@ -5672,41 +5879,46 @@ def daily_note_routine_hour_17_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_17_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_17_pomodora_1_generate(dnr2_hour_17_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_17_pomodora_1_location, 'a+') as dnr2_hour_17_file_obj:
         dnr2_hour_17_file_obj.write(DNR2_HOUR_17_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_17_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_17_pomodora_1_directory = initial_check("")
     dnr2_hour_17_pomodora_1_location = sbd + dnr2_hour_17_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_17_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_17_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_17_pomodora_1_location = daily_note_routine_hour_17_pomodora_1_location()
     dnr2_hour_17_pomodora_1_file_exist_check = exists(dnr2_hour_17_pomodora_1_location)
     if dnr2_hour_17_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_17_pomodora_1_generate(dnr2_hour_17_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_APPEND_STARTED
@@ -5762,41 +5974,46 @@ def daily_note_routine_hour_17_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_17_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_17_pomodora_2_generate(dnr2_hour_17_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_17_pomodora_2_location, 'a+') as dnr2_hour_17_file_obj:
         dnr2_hour_17_file_obj.write(DNR2_HOUR_17_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_17_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_17_pomodora_2_directory = initial_check("")
     dnr2_hour_17_pomodora_2_location = sbd + dnr2_hour_17_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_17_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_17_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_17_pomodora_2_location = daily_note_routine_hour_17_pomodora_2_location()
     dnr2_hour_17_pomodora_2_file_exist_check = exists(dnr2_hour_17_pomodora_2_location)
     if dnr2_hour_17_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_17_pomodora_2_generate(dnr2_hour_17_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_17_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_APPEND_STARTED
@@ -5852,41 +6069,46 @@ def daily_note_routine_hour_18_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_18_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_18_pomodora_1_generate(dnr2_hour_18_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_18_pomodora_1_location, 'a+') as dnr2_hour_18_file_obj:
         dnr2_hour_18_file_obj.write(DNR2_HOUR_18_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_18_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_18_pomodora_1_directory = initial_check("")
     dnr2_hour_18_pomodora_1_location = sbd + dnr2_hour_18_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_18_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_18_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_18_pomodora_1_location = daily_note_routine_hour_18_pomodora_1_location()
     dnr2_hour_18_pomodora_1_file_exist_check = exists(dnr2_hour_18_pomodora_1_location)
     if dnr2_hour_18_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_18_pomodora_1_generate(dnr2_hour_18_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_APPEND_STARTED
@@ -5942,41 +6164,46 @@ def daily_note_routine_hour_18_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_18_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_18_pomodora_2_generate(dnr2_hour_18_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_18_pomodora_2_location, 'a+') as dnr2_hour_18_file_obj:
         dnr2_hour_18_file_obj.write(DNR2_HOUR_18_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_18_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_18_pomodora_2_directory = initial_check("")
     dnr2_hour_18_pomodora_2_location = sbd + dnr2_hour_18_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_18_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_18_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_18_pomodora_2_location = daily_note_routine_hour_18_pomodora_2_location()
     dnr2_hour_18_pomodora_2_file_exist_check = exists(dnr2_hour_18_pomodora_2_location)
     if dnr2_hour_18_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_18_pomodora_2_generate(dnr2_hour_18_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_18_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_APPEND_STARTED
@@ -6032,41 +6259,46 @@ def daily_note_routine_hour_19_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_19_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_19_pomodora_1_generate(dnr2_hour_19_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_19_pomodora_1_location, 'a+') as dnr2_hour_19_file_obj:
         dnr2_hour_19_file_obj.write(DNR2_HOUR_19_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_19_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_19_pomodora_1_directory = initial_check("")
     dnr2_hour_19_pomodora_1_location = sbd + dnr2_hour_19_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_19_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_19_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_19_pomodora_1_location = daily_note_routine_hour_19_pomodora_1_location()
     dnr2_hour_19_pomodora_1_file_exist_check = exists(dnr2_hour_19_pomodora_1_location)
     if dnr2_hour_19_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_19_pomodora_1_generate(dnr2_hour_19_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_APPEND_STARTED
@@ -6122,41 +6354,46 @@ def daily_note_routine_hour_19_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_19_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_19_pomodora_2_generate(dnr2_hour_19_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_19_pomodora_2_location, 'a+') as dnr2_hour_19_file_obj:
         dnr2_hour_19_file_obj.write(DNR2_HOUR_19_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_19_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_19_pomodora_2_directory = initial_check("")
     dnr2_hour_19_pomodora_2_location = sbd + dnr2_hour_19_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_19_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_19_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_19_pomodora_2_location = daily_note_routine_hour_19_pomodora_2_location()
     dnr2_hour_19_pomodora_2_file_exist_check = exists(dnr2_hour_19_pomodora_2_location)
     if dnr2_hour_19_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_19_pomodora_2_generate(dnr2_hour_19_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_19_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_APPEND_STARTED
@@ -6212,41 +6449,46 @@ def daily_note_routine_hour_20_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_20_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_20_pomodora_1_generate(dnr2_hour_20_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_20_pomodora_1_location, 'a+') as dnr2_hour_20_file_obj:
         dnr2_hour_20_file_obj.write(DNR2_HOUR_20_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_20_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_20_pomodora_1_directory = initial_check("")
     dnr2_hour_20_pomodora_1_location = sbd + dnr2_hour_20_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_20_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_20_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_20_pomodora_1_location = daily_note_routine_hour_20_pomodora_1_location()
     dnr2_hour_20_pomodora_1_file_exist_check = exists(dnr2_hour_20_pomodora_1_location)
     if dnr2_hour_20_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_20_pomodora_1_generate(dnr2_hour_20_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_APPEND_STARTED
@@ -6302,41 +6544,46 @@ def daily_note_routine_hour_20_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_20_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_20_pomodora_2_generate(dnr2_hour_20_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_20_pomodora_2_location, 'a+') as dnr2_hour_20_file_obj:
         dnr2_hour_20_file_obj.write(DNR2_HOUR_20_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_20_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_20_pomodora_2_directory = initial_check("")
     dnr2_hour_20_pomodora_2_location = sbd + dnr2_hour_20_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_20_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_20_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_20_pomodora_2_location = daily_note_routine_hour_20_pomodora_2_location()
     dnr2_hour_20_pomodora_2_file_exist_check = exists(dnr2_hour_20_pomodora_2_location)
     if dnr2_hour_20_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_20_pomodora_2_generate(dnr2_hour_20_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_20_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_APPEND_STARTED
@@ -6392,41 +6639,46 @@ def daily_note_routine_hour_21_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_21_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_21_pomodora_1_generate(dnr2_hour_21_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_21_pomodora_1_location, 'a+') as dnr2_hour_21_file_obj:
         dnr2_hour_21_file_obj.write(DNR2_HOUR_21_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_21_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_21_pomodora_1_directory = initial_check("")
     dnr2_hour_21_pomodora_1_location = sbd + dnr2_hour_21_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_21_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_21_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_21_pomodora_1_location = daily_note_routine_hour_21_pomodora_1_location()
     dnr2_hour_21_pomodora_1_file_exist_check = exists(dnr2_hour_21_pomodora_1_location)
     if dnr2_hour_21_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_21_pomodora_1_generate(dnr2_hour_21_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_APPEND_STARTED
@@ -6482,41 +6734,46 @@ def daily_note_routine_hour_21_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_21_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_21_pomodora_2_generate(dnr2_hour_21_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_21_pomodora_2_location, 'a+') as dnr2_hour_21_file_obj:
         dnr2_hour_21_file_obj.write(DNR2_HOUR_21_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_21_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_21_pomodora_2_directory = initial_check("")
     dnr2_hour_21_pomodora_2_location = sbd + dnr2_hour_21_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_21_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_21_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_21_pomodora_2_location = daily_note_routine_hour_21_pomodora_2_location()
     dnr2_hour_21_pomodora_2_file_exist_check = exists(dnr2_hour_21_pomodora_2_location)
     if dnr2_hour_21_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_21_pomodora_2_generate(dnr2_hour_21_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_21_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_APPEND_STARTED
@@ -6572,41 +6829,46 @@ def daily_note_routine_hour_22_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_22_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_22_pomodora_1_generate(dnr2_hour_22_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_22_pomodora_1_location, 'a+') as dnr2_hour_22_file_obj:
         dnr2_hour_22_file_obj.write(DNR2_HOUR_22_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_22_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_22_pomodora_1_directory = initial_check("")
     dnr2_hour_22_pomodora_1_location = sbd + dnr2_hour_22_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_22_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_22_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_22_pomodora_1_location = daily_note_routine_hour_22_pomodora_1_location()
     dnr2_hour_22_pomodora_1_file_exist_check = exists(dnr2_hour_22_pomodora_1_location)
     if dnr2_hour_22_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_22_pomodora_1_generate(dnr2_hour_22_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_APPEND_STARTED
@@ -6662,41 +6924,46 @@ def daily_note_routine_hour_22_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_22_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_22_pomodora_2_generate(dnr2_hour_22_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_22_pomodora_2_location, 'a+') as dnr2_hour_22_file_obj:
         dnr2_hour_22_file_obj.write(DNR2_HOUR_22_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_22_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_22_pomodora_2_directory = initial_check("")
     dnr2_hour_22_pomodora_2_location = sbd + dnr2_hour_22_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_22_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_22_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_22_pomodora_2_location = daily_note_routine_hour_22_pomodora_2_location()
     dnr2_hour_22_pomodora_2_file_exist_check = exists(dnr2_hour_22_pomodora_2_location)
     if dnr2_hour_22_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_22_pomodora_2_generate(dnr2_hour_22_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_22_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_APPEND_STARTED
@@ -6752,41 +7019,46 @@ def daily_note_routine_hour_23_pomodora_1_append(note_content, include_time=True
             paragraph_append(dnr2_hour_23_pomodora_1_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_GENERATE_STARTED
 
 
 def daily_note_routine_hour_23_pomodora_1_generate(dnr2_hour_23_pomodora_1_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_23_pomodora_1_location, 'a+') as dnr2_hour_23_file_obj:
         dnr2_hour_23_file_obj.write(DNR2_HOUR_23_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_LOCATION_STARTED
 
 
 def daily_note_routine_hour_23_pomodora_1_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_23_pomodora_1_directory = initial_check("")
     dnr2_hour_23_pomodora_1_location = sbd + dnr2_hour_23_pomodora_1_directory + Today + "_" + ".md"
     return dnr2_hour_23_pomodora_1_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_23_pomodora_1_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_23_pomodora_1_location = daily_note_routine_hour_23_pomodora_1_location()
     dnr2_hour_23_pomodora_1_file_exist_check = exists(dnr2_hour_23_pomodora_1_location)
     if dnr2_hour_23_pomodora_1_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_23_pomodora_1_generate(dnr2_hour_23_pomodora_1_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_1_PREGENERATE_CHECK_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_APPEND_STARTED
@@ -6842,41 +7114,46 @@ def daily_note_routine_hour_23_pomodora_2_append(note_content, include_time=True
             paragraph_append(dnr2_hour_23_pomodora_2_location, note_content)
         else:
             print("Error")
+
+
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_APPEND_FINISHED
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_GENERATE_STARTED
 
 
 def daily_note_routine_hour_23_pomodora_2_generate(dnr2_hour_23_pomodora_2_location):
-    """
-    """
+    """ """
     with open(dnr2_hour_23_pomodora_2_location, 'a+') as dnr2_hour_23_file_obj:
         dnr2_hour_23_file_obj.write(DNR2_HOUR_23_FILE_CONTENT_CREATION)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_GENERATE_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_LOCATION_STARTED
 
 
 def daily_note_routine_hour_23_pomodora_2_location():
-    """
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_23_pomodora_2_directory = initial_check("")
     dnr2_hour_23_pomodora_2_location = sbd + dnr2_hour_23_pomodora_2_directory + Today + "_" + ".md"
     return dnr2_hour_23_pomodora_2_location
+
+
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_LOCATION_FINISHED
 
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_PREGENERATE_CHECK_STARTED
 
 
 def daily_note_routine_hour_23_pomodora_2_pregenerate_check():
-    """
-    """
+    """ """
     dnr2_hour_23_pomodora_2_location = daily_note_routine_hour_23_pomodora_2_location()
     dnr2_hour_23_pomodora_2_file_exist_check = exists(dnr2_hour_23_pomodora_2_location)
     if dnr2_hour_23_pomodora_2_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_routine_hour_23_pomodora_2_generate(dnr2_hour_23_pomodora_2_location)
+
+
 # DAILY_NOTE_ROUTINE_HOUR_23_POMODORA_2_PREGENERATE_CHECK_FINISHED
 
 
@@ -6938,18 +7215,14 @@ def daily_note_tasks_append(note_content, include_time=True):
 
 
 def daily_note_tasks_generate(dnt_location):
-    """
-
-    """
+    """ """
 
     with open(dnt_location, 'a+') as dnt_file_obj:
         dnt_file_obj.write(DNT_FILE_CONTENT_CREATION)
 
 
 def daily_note_tasks_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnt_directory = initial_check("01C1H")
     dnt_location = sbd + dnt_directory + Today + "_" + ".md"
@@ -6957,15 +7230,14 @@ def daily_note_tasks_location():
 
 
 def daily_note_tasks_pregenerate_check():
-    """
-
-    """
+    """ """
     dnt_location = daily_note_tasks_location()
     dnt_file_exist_check = exists(dnt_location)
     if dnt_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_tasks_generate(dnt_location)
+
 
 # Tasks RELATED FUNCTIONS FINISHED  # Trackers RELATED FUNCTIONS STARTED# Trackers MOC FUNCTIONS STARTED
 
@@ -7023,17 +7295,13 @@ def daily_note_trackers_moc_append(note_content, include_time=True):
 
 
 def daily_note_trackers_moc_generate(dnt2_location):
-    """
-
-    """
+    """ """
     with open(dnt2_location, 'a+') as dnt2_file_obj:
         dnt2_file_obj.write(DNT2_FILE_CONTENT_CREATION)
 
 
 def daily_note_trackers_moc_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnt2_directory = initial_check("01C1I")
     dnt2_location = sbd + dnt2_directory + Today + "_" + ".md"
@@ -7041,9 +7309,7 @@ def daily_note_trackers_moc_location():
 
 
 def daily_note_trackers_moc_pregenerate_check():
-    """
-
-    """
+    """ """
     dnt2_location = daily_note_trackers_moc_location()
     dnt2_file_exist_check = exists(dnt2_location)
     if dnt2_file_exist_check is True:
@@ -7054,10 +7320,9 @@ def daily_note_trackers_moc_pregenerate_check():
 
 # Trackers MOC FUNCTIONS FINISHED # TRACKERS_EXERCISE RELATED FUNCTIONS STARTED
 
-def daily_note_trackers_exercise_append(note_content, include_time=True):
-    """
 
-    """
+def daily_note_trackers_exercise_append(note_content, include_time=True):
+    """ """
     dnte_location = daily_note_trackers_exercise_location()
 
     if DNTE_APPEND_TYPE == "Paragraph":
@@ -7107,17 +7372,13 @@ def daily_note_trackers_exercise_append(note_content, include_time=True):
 
 
 def daily_note_trackers_exercise_generate(dnte_location):
-    """
-
-    """
+    """ """
     with open(dnte_location, 'a+') as dnte_file_obj:
         dnte_file_obj.write(DNTE_FILE_CONTENT_CREATION)
 
 
 def daily_note_trackers_exercise_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnte_directory = initial_check("01C1I7")
     dnte_location = sbd + dnte_directory + Today + "_" + ".md"
@@ -7125,9 +7386,7 @@ def daily_note_trackers_exercise_location():
 
 
 def daily_note_trackers_exercise_pregenerate_check():
-    """
-
-    """
+    """ """
     dnte_location = daily_note_trackers_exercise_location()
     dnte_file_exist_check = exists(dnte_location)
     if dnte_file_exist_check is True:
@@ -7138,10 +7397,9 @@ def daily_note_trackers_exercise_pregenerate_check():
 
 # Trackers_EXERCISE RELATED FUNCTIONS FINISHED # TRACKERS_TRANSACTION RELATED FUNCTIONS STARTED
 
-def daily_note_trackers_transaction_append(note_content, include_time=True):
-    """
 
-    """
+def daily_note_trackers_transaction_append(note_content, include_time=True):
+    """ """
     dntt_location = daily_note_trackers_transaction_location()
 
     if DNTT_APPEND_TYPE == "Paragraph":
@@ -7191,17 +7449,13 @@ def daily_note_trackers_transaction_append(note_content, include_time=True):
 
 
 def daily_note_trackers_transaction_generate(dntt_location):
-    """
-
-    """
+    """ """
     with open(dntt_location, 'a+') as dntt_file_obj:
         dntt_file_obj.write(DNTT_FILE_CONTENT_CREATION)
 
 
 def daily_note_trackers_transaction_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dntt_directory = initial_check("01C1I1")
     dntt_location = sbd + dntt_directory + Today + "_" + ".md"
@@ -7209,9 +7463,7 @@ def daily_note_trackers_transaction_location():
 
 
 def daily_note_trackers_transaction_pregenerate_check():
-    """
-
-    """
+    """ """
     dntt_location = daily_note_trackers_transaction_location()
     dntt_file_exist_check = exists(dntt_location)
     if dntt_file_exist_check is True:
@@ -7222,10 +7474,9 @@ def daily_note_trackers_transaction_pregenerate_check():
 
 # Trackers_TRANSACTION RELATED FUNCTIONS FINISHED # TRACKERS_LOCATION RELATED FUNCTIONS STARTED
 
-def daily_note_trackers_location_append(note_content, include_time=True):
-    """
 
-    """
+def daily_note_trackers_location_append(note_content, include_time=True):
+    """ """
     dntl_location = daily_note_trackers_location_location()
 
     if DNTL_APPEND_TYPE == "Paragraph":
@@ -7275,17 +7526,13 @@ def daily_note_trackers_location_append(note_content, include_time=True):
 
 
 def daily_note_trackers_location_generate(dntl_location):
-    """
-
-    """
+    """ """
     with open(dntl_location, 'a+') as dntl_file_obj:
         dntl_file_obj.write(DNTL_FILE_CONTENT_CREATION)
 
 
 def daily_note_trackers_location_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dntl_directory = initial_check("01C1I9")
     dntl_location = sbd + dntl_directory + Today + "_" + ".md"
@@ -7293,9 +7540,7 @@ def daily_note_trackers_location_location():
 
 
 def daily_note_trackers_location_pregenerate_check():
-    """
-
-    """
+    """ """
     dntl_location = daily_note_trackers_location_location()
     dntl_file_exist_check = exists(dntl_location)
     if dntl_file_exist_check is True:
@@ -7306,10 +7551,9 @@ def daily_note_trackers_location_pregenerate_check():
 
 # Trackers_LOCATION RELATED FUNCTIONS FINISHED # TRACKERS_MEAL RELATED FUNCTIONS STARTED
 
-def daily_note_trackers_meal_append(note_content, include_time=True):
-    """
 
-    """
+def daily_note_trackers_meal_append(note_content, include_time=True):
+    """ """
     dntm_location = daily_note_trackers_meal_location()
 
     if DNTM_APPEND_TYPE == "Paragraph":
@@ -7359,17 +7603,13 @@ def daily_note_trackers_meal_append(note_content, include_time=True):
 
 
 def daily_note_trackers_meal_generate(dntm_location):
-    """
-
-    """
+    """ """
     with open(dntm_location, 'a+') as dntm_file_obj:
         dntm_file_obj.write(DNTM_FILE_CONTENT_CREATION)
 
 
 def daily_note_trackers_meal_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dntm_directory = initial_check("01C1I3")
     dntm_location = sbd + dntm_directory + Today + "_" + ".md"
@@ -7377,9 +7617,7 @@ def daily_note_trackers_meal_location():
 
 
 def daily_note_trackers_meal_pregenerate_check():
-    """
-
-    """
+    """ """
     dntm_location = daily_note_trackers_meal_location()
     dntm_file_exist_check = exists(dntm_location)
     if dntm_file_exist_check is True:
@@ -7390,10 +7628,9 @@ def daily_note_trackers_meal_pregenerate_check():
 
 # Trackers_MEAL RELATED FUNCTIONS FINISHED # TRACKERS_MEDICINE RELATED FUNCTIONS STARTED
 
-def daily_note_trackers_medicine_append(note_content, include_time=True):
-    """
 
-    """
+def daily_note_trackers_medicine_append(note_content, include_time=True):
+    """ """
     dntm2_location = daily_note_trackers_medicine_location()
 
     if DNTM2_APPEND_TYPE == "Paragraph":
@@ -7443,17 +7680,13 @@ def daily_note_trackers_medicine_append(note_content, include_time=True):
 
 
 def daily_note_trackers_medicine_generate(dntm2_location):
-    """
-
-    """
+    """ """
     with open(dntm2_location, 'a+') as dntm2_file_obj:
         dntm2_file_obj.write(DNTM2_FILE_CONTENT_CREATION)
 
 
 def daily_note_trackers_medicine_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dntm2_directory = initial_check("01C1I4")
     dntm2_location = sbd + dntm2_directory + Today + "_" + ".md"
@@ -7461,9 +7694,7 @@ def daily_note_trackers_medicine_location():
 
 
 def daily_note_trackers_medicine_pregenerate_check():
-    """
-
-    """
+    """ """
     dntm2_location = daily_note_trackers_medicine_location()
     dntm2_file_exist_check = exists(dntm2_location)
     if dntm2_file_exist_check is True:
@@ -7474,10 +7705,9 @@ def daily_note_trackers_medicine_pregenerate_check():
 
 # Trackers_MEDICINE RELATED FUNCTIONS FINISHED # TRACKERS_MOOD RELATED FUNCTIONS STARTED
 
-def daily_note_trackers_mood_append(note_content, include_time=True):
-    """
 
-    """
+def daily_note_trackers_mood_append(note_content, include_time=True):
+    """ """
     dntm3_location = daily_note_trackers_mood_location()
 
     if DNTM3_APPEND_TYPE == "Paragraph":
@@ -7527,17 +7757,13 @@ def daily_note_trackers_mood_append(note_content, include_time=True):
 
 
 def daily_note_trackers_mood_generate(dntm3_location):
-    """
-
-    """
+    """ """
     with open(dntm3_location, 'a+') as dntm3_file_obj:
         dntm3_file_obj.write(DNTM3_FILE_CONTENT_CREATION)
 
 
 def daily_note_trackers_mood_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dntm3_directory = initial_check("01C1I5")
     dntm3_location = sbd + dntm3_directory + Today + "_" + ".md"
@@ -7545,9 +7771,7 @@ def daily_note_trackers_mood_location():
 
 
 def daily_note_trackers_mood_pregenerate_check():
-    """
-
-    """
+    """ """
     dntm3_location = daily_note_trackers_mood_location()
     dntm3_file_exist_check = exists(dntm3_location)
     if dntm3_file_exist_check is True:
@@ -7558,10 +7782,9 @@ def daily_note_trackers_mood_pregenerate_check():
 
 # Trackers_MOOD RELATED FUNCTIONS FINISHED # TRACKERS_SLEEP RELATED FUNCTIONS STARTED
 
-def daily_note_trackers_sleep_append(note_content, include_time=True):
-    """
 
-    """
+def daily_note_trackers_sleep_append(note_content, include_time=True):
+    """ """
     dnts_location = daily_note_trackers_sleep_location()
 
     if DNTS_APPEND_TYPE == "Paragraph":
@@ -7611,17 +7834,13 @@ def daily_note_trackers_sleep_append(note_content, include_time=True):
 
 
 def daily_note_trackers_sleep_generate(dnts_location):
-    """
-
-    """
+    """ """
     with open(dnts_location, 'a+') as dnts_file_obj:
         dnts_file_obj.write(DNTS_FILE_CONTENT_CREATION)
 
 
 def daily_note_trackers_sleep_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnts_directory = initial_check("01C1I2")
     dnts_location = sbd + dnts_directory + Today + "_" + ".md"
@@ -7629,9 +7848,7 @@ def daily_note_trackers_sleep_location():
 
 
 def daily_note_trackers_sleep_pregenerate_check():
-    """
-
-    """
+    """ """
     dnts_location = daily_note_trackers_sleep_location()
     dnts_file_exist_check = exists(dnts_location)
     if dnts_file_exist_check is True:
@@ -7642,10 +7859,9 @@ def daily_note_trackers_sleep_pregenerate_check():
 
 # Trackers_SLEEP RELATED FUNCTIONS FINISHED # TRACKERS_SYMPTOMS RELATED FUNCTIONS STARTED
 
-def daily_note_trackers_symptoms_append(note_content, include_time=True):
-    """
 
-    """
+def daily_note_trackers_symptoms_append(note_content, include_time=True):
+    """ """
     dnts2_location = daily_note_trackers_symptoms_location()
 
     if DNTS2_APPEND_TYPE == "Paragraph":
@@ -7695,17 +7911,13 @@ def daily_note_trackers_symptoms_append(note_content, include_time=True):
 
 
 def daily_note_trackers_symptoms_generate(dnts2_location):
-    """
-
-    """
+    """ """
     with open(dnts2_location, 'a+') as dnts2_file_obj:
         dnts2_file_obj.write(DNTS2_FILE_CONTENT_CREATION)
 
 
 def daily_note_trackers_symptoms_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnts2_directory = initial_check("01C1I8")
     dnts2_location = sbd + dnts2_directory + Today + "_" + ".md"
@@ -7713,9 +7925,7 @@ def daily_note_trackers_symptoms_location():
 
 
 def daily_note_trackers_symptoms_pregenerate_check():
-    """
-
-    """
+    """ """
     dnts2_location = daily_note_trackers_symptoms_location()
     dnts2_file_exist_check = exists(dnts2_location)
     if dnts2_file_exist_check is True:
@@ -7726,10 +7936,9 @@ def daily_note_trackers_symptoms_pregenerate_check():
 
 # Trackers_SYMPTOMS RELATED FUNCTIONS FINISHED # TRACKERS_WATER RELATED FUNCTIONS STARTED
 
-def daily_note_trackers_water_append(note_content, include_time=True):
-    """
 
-    """
+def daily_note_trackers_water_append(note_content, include_time=True):
+    """ """
     dntw_location = daily_note_trackers_water_location()
 
     if DNTW_APPEND_TYPE == "Paragraph":
@@ -7779,17 +7988,13 @@ def daily_note_trackers_water_append(note_content, include_time=True):
 
 
 def daily_note_trackers_water_generate(dntw_location):
-    """
-
-    """
+    """ """
     with open(dntw_location, 'a+') as dntw_file_obj:
         dntw_file_obj.write(DNTW_FILE_CONTENT_CREATION)
 
 
 def daily_note_trackers_water_location():
-    """
-
-    """
+    """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dntw_directory = initial_check("01C1I6")
     dntw_location = sbd + dntw_directory + Today + "_" + ".md"
@@ -7797,14 +8002,13 @@ def daily_note_trackers_water_location():
 
 
 def daily_note_trackers_water_pregenerate_check():
-    """
-
-    """
+    """ """
     dntw_location = daily_note_trackers_water_location()
     dntw_file_exist_check = exists(dntw_location)
     if dntw_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
         daily_note_trackers_water_generate(dntw_location)
+
 
 # Trackers_WATER RELATED FUNCTIONS FINISHED # TRACKERS RELATED FUNCTIONS FINISHED
