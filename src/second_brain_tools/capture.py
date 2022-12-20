@@ -8,8 +8,10 @@ from second_brain_tools.directories import initial_check
 from second_brain_tools.defaults import (
     capture_event_content_creation,
     capture_task_content_creation,
+    capture_thought_content_creation,
     capture_reminder_content_creation,
     capture_bullet_journal_content_creation,
+    capture_link_content_creation,
     capture_routine_hour_00_pomodora_1_content_creation,
     capture_routine_hour_00_pomodora_2_content_creation,
     capture_routine_hour_01_pomodora_1_content_creation,
@@ -58,85 +60,18 @@ from second_brain_tools.defaults import (
     capture_routine_hour_22_pomodora_2_content_creation,
     capture_routine_hour_23_pomodora_1_content_creation,
     capture_routine_hour_23_pomodora_2_content_creation,
-
-
-
-
-
-
-
-
-
-
 )  # noqa
 
 # importing content creation
 
 # importing pregenerate_checks
 from second_brain_tools.daily_note import (
-
     daily_note_event_pregenerate_check,
     daily_note_task_pregenerate_check,
+    daily_note_thought_pregenerate_check,
     daily_note_reminder_pregenerate_check,
+    daily_note_link_pregenerate_check,
     daily_note_bullet_journal_pregenerate_check,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 )  # noqa
 
 # importing pregenerate_checks
@@ -145,71 +80,16 @@ from second_brain_tools.daily_note import (
 from second_brain_tools.daily_note import (
     daily_note_event_append,
     daily_note_task_append,
+    daily_note_thought_append,
     daily_note_reminder_append,
     daily_note_bullet_journal_append,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    daily_note_link_append,
 )  # noqa
 
 # importing appends
 
 
+# def capture_event
 def capture_event_file_creation(event_note_path, event_name, event_type, event_location, event_summary):
     """ """
     CE_FILE_CONTENT_CREATION = capture_event_content_creation(event_name, event_type, event_location, event_summary)
@@ -275,7 +155,78 @@ def capture_task(task_name, task_status, task_priority, task_labels, task_depend
         )  # noqa
 
 
-# def capture_tasks
+# def capture_thought
+def capture_thought_file_creation(
+    thought_note_path, thought_name, thought_labels,
+):  # noqa
+    """ """
+    CT2_FILE_CONTENT_CREATION = capture_thought_content_creation(
+        thought_name, thought_labels
+    )  # noqa
+    thought_name_check = len(thought_name)
+    if thought_name_check == "0":
+        print("Error! thought_name is empty.")
+    else:
+        with open(thought_note_path, 'a+') as ct2_file_obj:
+            ct2_file_obj.write(CT2_FILE_CONTENT_CREATION)
+        ct2_log = "[[" + Today + "_" + thought_name + "]]"
+        daily_note_thought_pregenerate_check()
+        daily_note_thought_append(ct2_log)
+
+
+def capture_thought(thought_name, thought_labels):
+    sbd = SECOND_BRAIN_DIRECTORY
+    thought_directory_location = initial_check("")
+    thought_working_directory = thought_directory_location + Today + "/"
+    thought_note_directory = sbd + thought_working_directory
+    thought_note_path = sbd + thought_working_directory + Today + "_" + thought_name + ".md"
+    ct2_file_exist_check = exists(thought_note_directory)
+    if ct2_file_exist_check is False:
+        os.makedirs(thought_note_directory)
+        capture_thought_file_creation(
+            thought_note_path, thought_name, thought_labels
+        )  # noqa
+    else:
+        capture_thought_file_creation(
+            thought_note_path, thought_name, thought_labels
+        )  # noqa
+
+
+# def capture_link
+def capture_link_file_creation(
+    link_note_path, link_name, link_labels,
+):  # noqa
+    """ """
+    CL_FILE_CONTENT_CREATION = capture_link_content_creation(
+        link_name, link_labels
+    )  # noqa
+    link_name_check = len(link_name)
+    if link_name_check == "0":
+        print("Error! link_name is empty.")
+    else:
+        with open(link_note_path, 'a+') as cl_file_obj:
+            cl_file_obj.write(CL_FILE_CONTENT_CREATION)
+        cl_log = "[[" + Today + "_" + link_name + "]]"
+        daily_note_link_pregenerate_check()
+        daily_note_link_append(cl_log)
+
+
+def capture_link(link_name, link_labels):
+    sbd = SECOND_BRAIN_DIRECTORY
+    link_directory_location = initial_check("")
+    link_working_directory = link_directory_location + Today + "/"
+    link_note_directory = sbd + link_working_directory
+    link_note_path = sbd + link_working_directory + Today + "_" + link_name + ".md"
+    cl_file_exist_check = exists(link_note_directory)
+    if cl_file_exist_check is False:
+        os.makedirs(link_note_directory)
+        capture_link_file_creation(
+            link_note_path, link_name, link_labels
+        )  # noqa
+    else:
+        capture_link_file_creation(
+            link_note_path, link_name, link_labels
+        )  # noqa
 
 
 # def capture_reminders
@@ -4005,5 +3956,6 @@ def capture_routine_hour_23_pomodora_2(
             routine_hour_23_pomodora_2_parent_task,
             routine_hour_23_pomodora_2_sub_task,
         )  # noqa
+
 
 # Hour_23_Pomodora_2

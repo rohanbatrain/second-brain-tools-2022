@@ -82,6 +82,17 @@ tags: {Today}/daily_note/Location
 """
 
 # ------------------------------------#
+DNL2_FILE_CONTENT_CREATION = f"""---
+date: {Today}
+tags: {Today}/daily_note/Link
+---
+
+# Link_Log
+
+
+"""
+
+# ------------------------------------#
 DNR_FILE_CONTENT_CREATION = f"""---
 date: {Today}
 tags: {Today}/daily_note/Reminders
@@ -185,6 +196,18 @@ tags: {Today}/daily_note/Trackers/Transaction
 # Transaction_Log
 
 > Below are all your Transactions you transacted Today.
+
+
+"""
+# ------------------------------------#
+DNTT2_FILE_CONTENT_CREATION = f"""---
+date: {Today}
+tags: {Today}/daily_note/Trackers/Thoughts
+---
+
+# Thoughts_Log
+
+> Below are all your Thoughts you had Today.
 
 
 """

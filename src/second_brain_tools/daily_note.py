@@ -22,7 +22,9 @@ from second_brain_tools.config import (
     DNT2_APPEND_TYPE,
     DNTE_APPEND_TYPE,
     DNTT_APPEND_TYPE,
+    DNTT2_APPEND_TYPE,
     DNTL_APPEND_TYPE,
+    DNTL2_APPEND_TYPE,
     DNTM_APPEND_TYPE,
     DNTM2_APPEND_TYPE,
     DNTM3_APPEND_TYPE,
@@ -120,7 +122,9 @@ from second_brain_tools.config import (
     DNT2_FILE_CONTENT_CREATION,
     DNTE_FILE_CONTENT_CREATION,
     DNTT_FILE_CONTENT_CREATION,
+    DNTT2_FILE_CONTENT_CREATION,
     DNTL_FILE_CONTENT_CREATION,
+    DNTL2_FILE_CONTENT_CREATION,
     DNTM_FILE_CONTENT_CREATION,
     DNTM2_FILE_CONTENT_CREATION,
     DNTM3_FILE_CONTENT_CREATION,
@@ -7472,9 +7476,167 @@ def daily_note_trackers_transaction_pregenerate_check():
         daily_note_trackers_transaction_generate(dntt_location)
 
 
-# Trackers_TRANSACTION RELATED FUNCTIONS FINISHED # TRACKERS_LOCATION RELATED FUNCTIONS STARTED
+# Trackers_TRANSACTION RELATED FUNCTIONS FINISHED
+
+# TRACKERS_THOUGHTS RELATED FUNCTIONS STARTED
 
 
+def daily_note_trackers_thought_append(note_content, include_time=True):
+    """ """
+    dntt2_location = daily_note_trackers_thought_location()
+
+    if DNTT2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dntt2_location, note_content)
+
+    elif DNTT2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dntt2_location, note_content, include_time)
+        else:
+            plain_text_append(dntt2_location, note_content, include_time)
+
+    elif DNTT2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dntt2_location, note_content, include_time)
+        else:
+            bullet_list_append(dntt2_location, note_content, include_time)
+
+    elif DNTT2_APPEND_TYPE == "Table":
+        table_append(dntt2_location, note_content)
+
+    if not DNTT2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dntt2_location, note_content, include_time)
+            else:
+                plain_text_append(dntt2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dntt2_location, note_content, include_time)
+            else:
+                bullet_list_append(dntt2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dntt2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dntt2_location, note_content)
+        else:
+            print("Error")
+
+
+def daily_note_trackers_thought_generate(dntt2_location):
+    """ """
+    with open(dntt2_location, 'a+') as dntt2_file_obj:
+        dntt2_file_obj.write(DNTT2_FILE_CONTENT_CREATION)
+
+
+def daily_note_trackers_thought_location():
+    """ """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dntt2_directory = initial_check("01C1I1")
+    dntt2_location = sbd + dntt2_directory + Today + "_" + ".md"
+    return dntt2_location
+
+
+def daily_note_trackers_thought_pregenerate_check():
+    """ """
+    dntt2_location = daily_note_trackers_thought_location()
+    dntt2_file_exist_check = exists(dntt2_location)
+    if dntt2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_trackers_thought_generate(dntt2_location)
+
+
+# TRACKERS_THOUGHTS RELATED FUNCTIONS FINISHED
+
+# TRACKERS_LINK RELATED FUNCTIONS STARTED
+
+
+def daily_note_trackers_link_append(note_content, include_time=True):
+    """ """
+    dntl2_location = daily_note_trackers_link_location()
+
+    if DNTL2_APPEND_TYPE == "Paragraph":
+        paragraph_append(dntl2_location, note_content)
+
+    elif DNTL2_APPEND_TYPE == "Plain_Text":
+        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+        if PT_Time_check == "False":
+            include_time = False
+            plain_text_append(dntl2_location, note_content, include_time)
+        else:
+            plain_text_append(dntl2_location, note_content, include_time)
+
+    elif DNTL2_APPEND_TYPE == "Bullet_List":
+        BL_Time_check = LIST_TIME_INCLUDE
+        if BL_Time_check == "False":
+            include_time = False
+            bullet_list_append(dntl2_location, note_content, include_time)
+        else:
+            bullet_list_append(dntl2_location, note_content, include_time)
+
+    elif DNTL2_APPEND_TYPE == "Table":
+        table_append(dntl2_location, note_content)
+
+    if not DNTL2_APPEND_TYPE:
+        if GLOBAL_APPEND_TYPE == "Plain_Text":
+            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
+            if PT_Time_check == "False":
+                include_time = False
+                plain_text_append(dntl2_location, note_content, include_time)
+            else:
+                plain_text_append(dntl2_location, note_content, include_time)
+
+        elif GLOBAL_APPEND_TYPE == "Bullet_List":
+            BL_Time_check = LIST_TIME_INCLUDE
+            if BL_Time_check == "False":
+                include_time = False
+                bullet_list_append(dntl2_location, note_content, include_time)
+            else:
+                bullet_list_append(dntl2_location, note_content, include_time)
+        elif GLOBAL_APPEND_TYPE == "Table":
+            table_append(dntl2_location, note_content)
+        elif GLOBAL_APPEND_TYPE == "Paragraph":
+            paragraph_append(dntl2_location, note_content)
+        else:
+            print("Error")
+
+
+def daily_note_trackers_link_generate(dntl2_location):
+    """ """
+    with open(dntl2_location, 'a+') as dntl2_file_obj:
+        dntl2_file_obj.write(DNTL2_FILE_CONTENT_CREATION)
+
+
+def daily_note_trackers_link_location():
+    """ """
+    sbd = SECOND_BRAIN_DIRECTORY
+    dntl2_directory = initial_check("01C1I1")
+    dntl2_location = sbd + dntl2_directory + Today + "_" + ".md"
+    return dntl2_location
+
+
+def daily_note_trackers_link_pregenerate_check():
+    """ """
+    dntl2_location = daily_note_trackers_link_location()
+    dntl2_file_exist_check = exists(dntl2_location)
+    if dntl2_file_exist_check is True:
+        print(FILE_ALREADY_EXIST)
+    else:
+        daily_note_trackers_link_generate(dntl2_location)
+
+
+# TRACKERS_LINK RELATED FUNCTIONS FINISHED
+
+# TRACKERS_LOCATION RELATED FUNCTIONS STARTED
 def daily_note_trackers_location_append(note_content, include_time=True):
     """ """
     dntl_location = daily_note_trackers_location_location()
