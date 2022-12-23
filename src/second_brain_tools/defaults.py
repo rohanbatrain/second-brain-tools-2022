@@ -82,17 +82,6 @@ tags: {Today}/daily_note/Location
 """
 
 # ------------------------------------#
-DNL2_FILE_CONTENT_CREATION = f"""---
-date: {Today}
-tags: {Today}/daily_note/Link
----
-
-# Link_Log
-
-
-"""
-
-# ------------------------------------#
 DNR_FILE_CONTENT_CREATION = f"""---
 date: {Today}
 tags: {Today}/daily_note/Reminders
@@ -211,6 +200,7 @@ tags: {Today}/daily_note/Trackers/Thoughts
 
 
 """
+
 # ------------------------------------#
 DNTL_FILE_CONTENT_CREATION = f"""---
 date: {Today}
@@ -221,6 +211,16 @@ tags: {Today}/daily_note/Trackers/Location
 # Location_Log
 
 > Below are all the locations you visited today.
+
+
+"""
+# ------------------------------------#
+DNTL2_FILE_CONTENT_CREATION = f"""---
+date: {Today}
+tags: {Today}/daily_note/Link
+---
+
+# Link_Log
 
 
 """
@@ -310,7 +310,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_00
 hour_number: 00
 pomodora_task_01: [[{Today}_Routine_Hour-00_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-00_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-00_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -325,7 +325,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_01
 hour_number: 01
 pomodora_task_01: [[{Today}_Routine_Hour-01_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-01_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-01_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -340,7 +340,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_02
 hour_number: 02
 pomodora_task_01: [[{Today}_Routine_Hour-02_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-02_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-02_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -355,7 +355,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_03
 hour_number: 03
 pomodora_task_01: [[{Today}_Routine_Hour-03_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-03_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-03_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -370,7 +370,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_04
 hour_number: 04
 pomodora_task_01: [[{Today}_Routine_Hour-04_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-04_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-04_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -385,7 +385,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_05
 hour_number: 05
 pomodora_task_01: [[{Today}_Routine_Hour-05_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-05_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-05_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -400,7 +400,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_06
 hour_number: 06
 pomodora_task_01: [[{Today}_Routine_Hour-06_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-06_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-06_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -415,7 +415,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_07
 hour_number: 07
 pomodora_task_01: [[{Today}_Routine_Hour-07_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-07_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-07_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -430,7 +430,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_08
 hour_number: 08
 pomodora_task_01: [[{Today}_Routine_Hour-08_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-08_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-08_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -445,7 +445,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_09
 hour_number: 09
 pomodora_task_01: [[{Today}_Routine_Hour-09_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-09_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-09_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -460,7 +460,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_10
 hour_number: 10
 pomodora_task_01: [[{Today}_Routine_Hour-10_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-10_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-10_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -475,7 +475,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_11
 hour_number: 11
 pomodora_task_01: [[{Today}_Routine_Hour-11_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-11_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-11_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -490,7 +490,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_12
 hour_number: 12
 pomodora_task_01: [[{Today}_Routine_Hour-12_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-12_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-12_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -505,7 +505,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_13
 hour_number: 13
 pomodora_task_01: [[{Today}_Routine_Hour-13_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-13_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-13_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -520,7 +520,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_14
 hour_number: 14
 pomodora_task_01: [[{Today}_Routine_Hour-14_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-14_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-14_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -535,7 +535,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_15
 hour_number: 15
 pomodora_task_01: [[{Today}_Routine_Hour-15_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-15_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-15_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -550,7 +550,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_16
 hour_number: 16
 pomodora_task_01: [[{Today}_Routine_Hour-16_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-16_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-16_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -565,7 +565,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_17
 hour_number: 17
 pomodora_task_01: [[{Today}_Routine_Hour-17_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-17_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-17_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -580,7 +580,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_18
 hour_number: 18
 pomodora_task_01: [[{Today}_Routine_Hour-18_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-18_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-18_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -595,7 +595,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour-19
 hour_number: 19
 pomodora_task_01: [[{Today}_Routine_Hour-19_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-19_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-19_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -610,7 +610,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_20
 hour_number: 20
 pomodora_task_01: [[{Today}_Routine_Hour-20_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-20_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-20_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -625,7 +625,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_21
 hour_number: 21
 pomodora_task_01: [[{Today}_Routine_Hour-21_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-21_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-21_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -640,7 +640,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_22
 hour_number: 22
 pomodora_task_01: [[{Today}_Routine_Hour-22_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-22_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-22_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -655,7 +655,7 @@ date: {Today}
 tags: {Today}/daily_note/Routine/Hour_23
 hour_number: 23
 pomodora_task_01: [[{Today}_Routine_Hour-23_Pomodora_Task_01|Pomodora_Task_1]]
-pomodora_task_02: [[{Today}_Routine_Hour-23_Pomodora_Task_01|Pomodora_Task_2]]
+pomodora_task_02: [[{Today}_Routine_Hour-23_Pomodora_Task_02|Pomodora_Task_2]]
 ---
 
 
@@ -666,7 +666,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-23_Pomodora_Task_01|Pomodora_Task_2]]
 # Capture.py
 
 
-def capture_events_content_creation(event_name, event_type, event_location, event_summary):
+def capture_event_content_creation(event_name, event_type, event_location, event_summary, event_status):
     """ """
     CE_FILE_CONTENT_CREATION = f"""---
 date: {Today}
@@ -675,9 +675,1606 @@ event_type: {event_type}
 event_name: {event_name}
 event_location: {event_location}
 event_summary: {event_summary}
+event_status: {event_status}
 ---
 
 # Event_Log
 
 """
     return CE_FILE_CONTENT_CREATION
+
+
+def capture_task_content_creation(Task_Name):
+    CT_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: {Today}/daily_note/tasks/{Task_Name}
+task_name: {Task_Name}
+task_status: {Task_Status}
+task_priority: {Task_Priority}
+task_labels: {Task_Labels}
+task_dependencies: {Task_Dependencies}
+task_parent_task: {Task_Parent_Task}
+task_sub_task: {TASK_SUB_TASK}
+    ---
+---
+
+# Task_Log
+
+
+"""
+    return CT_FILE_CONTENT_CREATION
+
+
+def capture_thought_content_creation(
+    Thought_Name,
+    Thought_Summary,
+    Thought_Content,
+):
+    CT2_FILE_CONTENT_CREATION = """---
+tags: {Today}/daily_note/thoughts/{Thought_Name}
+date: {Today}
+thought_name: {Thought_Name}
+thought_summary: {Thought_Summary}
+---
+
+# Thought_Log
+
+{Thought_Content}
+
+
+    """
+    return CT2_FILE_CONTENT_CREATION
+
+
+def capture_reminder_content_creation():
+    CR_FILE_CONTENT_CREATION = """---
+date: {Today}
+tags: {Today}/daily_note/Reminders/{Reminder_Name}
+reminder_name: {Reminder_Name}
+reminder_priority: {Reminder_Priority}
+reminder_labels: {Reminder_Labels}
+reminder_time_to_remind: {Time}
+---
+
+# Reminder_Log
+
+
+    """
+    return CR_FILE_CONTENT_CREATION
+
+
+def capture_bullet_journal_content_creation():
+    CBJ_FILE_CONTENT_CREATION = """---
+tags: {Today}/daily_note/Bullet_Journal/
+date: {Today}
+---
+
+# Bullet_Journal
+
+
+    """
+    return CBJ_FILE_CONTENT_CREATION
+
+
+def capture_transaction_content_creation():
+    CTCC_FILE_CONTENT_CREATION = """---
+tags: {Today}/daily_note/transactions/{Transaction_Type}
+time: {Transaction_Time}
+date: {Today}
+transaction_type: {Transaction_Type}
+transaction_amount: {Transaction_Amount}
+transaction_account: {Transaction_Account}
+transaction_invoice: {Transaction_Invoice}
+---
+
+# Transaction_Log
+
+    """
+    return CTCC_FILE_CONTENT_CREATION
+
+
+def capture_sleep_content_creation():
+    CSCC_FILE_CONTENT_CREATION = """---
+tags: {Today}/daily_note/sleep/{Sleep_Type}
+date: {Today}
+time: {Sleep_Time}
+sleep_type: {Sleep_Type}
+sleep_hours: {Sleep_Hours}
+---
+
+# Sleep_Log
+
+    """
+    return CSCC_FILE_CONTENT_CREATION
+
+
+def capture_meal_content_creation():
+    CMCC_FILE_CONTENT_CREATION = """---
+tags: {Today}/daily_note/meal/{Meal_Type}
+date: {Today}
+time: {Meal_Time}
+meal_type: {Meal_Type}
+meal_calories: {Meal_Calories}
+meal_taken: {Meal_Taken}
+---
+
+# Meal_Log
+
+    """
+    return CMCC_FILE_CONTENT_CREATION
+
+
+def capture_medicine_content_creation():
+    CM2CC_FILE_CONTENT_CREATION = """---
+tags: {Today}/daily_note/medicine/{Medicine_Type}
+date: {Today}
+time: {Medicine_Time}
+medicine_side_effect : "write if you observed any side effects"
+medicine_taken: {Medicine_Taken}
+---
+
+# Medicine_Log
+
+    """
+    return CM2CC_FILE_CONTENT_CREATION
+
+
+def capture_mood_tracker_content_creation():
+    CTCC_FILE_CONTENT_CREATION = """---
+tags: {Today}/daily_note/mood/{Mood_Status}
+mood_status: {Mood_Status}
+mood_reason: {Mood_Reason}
+---
+
+# Mood_Log
+
+    """
+    return CTCC_FILE_CONTENT_CREATION
+
+
+def capture_water_intake_content_creation():
+    CWICC_FILE_CONTENT_CREATION = """---
+tags: {Today}/daily_note/water_intake/
+date: {Today}
+time: {Water_Intake_Time}
+water_intake_ml: {Water_Intake_Amount_In_ML}
+---
+
+# Water_Log
+
+"""
+    return CWICC_FILE_CONTENT_CREATION
+
+
+def capture_exercise_content_creation():
+    CECC_CONTENT_CREATION = """---
+tags: {Today}/daily_note/exercise/
+date: {Today}
+time: {Exercise_Time}
+exercise_cohort: {Exercise_Cohort}
+exercise_status: {Exercise_Status}
+---
+
+# Exercise_Log
+
+"""
+    return CECC_CONTENT_CREATION
+
+
+def capture_link_content_creation():
+    CLCC_CONTENT_CREATION = """---
+tags: {Today}/daily_note/links/{Link_Domain_Name}
+name: {Link_Name}
+date: {Today}
+time: {Link_Time}
+---
+
+# Link_Log
+
+"""
+    return CLCC_CONTENT_CREATION
+
+
+def capture_symptoms_content_creation():
+    CSCC_CONTENT_CREATION = """---
+tags: {Today}/daily_note/symptoms/{Symptom_Name}
+name: {Symptom_Name}
+symptom_status: {Symptom_Status}
+---
+
+# Symptom_Log
+"""
+    return CSCC_CONTENT_CREATION
+
+
+# Capture/Routines Started
+def capture_routine_hour_00_pomodora_1_content_creation(
+    CR_HOUR_00_POMODORA_1_TASK_NAME,
+    CR_HOUR_00_POMODORA_1_TASK_STATUS,
+    CR_HOUR_00_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_00_POMODORA_1_TASK_LABELS,
+    CR_HOUR_00_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_00_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_00_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH00P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_00/Task_01
+    pomodora_task_name: {CR_HOUR_00_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_00_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_00_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_00_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_00_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_00_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_00_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH00P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_00_pomodora_2_content_creation(
+    CR_HOUR_00_POMODORA_2_TASK_NAME,
+    CR_HOUR_00_POMODORA_2_TASK_STATUS,
+    CR_HOUR_00_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_00_POMODORA_2_TASK_LABELS,
+    CR_HOUR_00_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_00_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_00_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH00P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_00/Task_02
+    pomodora_task_name: {CR_HOUR_00_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_00_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_00_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_00_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_00_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_00_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_00_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH00P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_01_pomodora_1_content_creation(
+    CR_HOUR_01_POMODORA_1_TASK_NAME,
+    CR_HOUR_01_POMODORA_1_TASK_STATUS,
+    CR_HOUR_01_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_01_POMODORA_1_TASK_LABELS,
+    CR_HOUR_01_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_01_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_01_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH01P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_01/Task_01
+    pomodora_task_name: {CR_HOUR_01_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_01_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_01_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_01_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_01_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_01_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_01_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH01P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_01_pomodora_2_content_creation(
+    CR_HOUR_01_POMODORA_2_TASK_NAME,
+    CR_HOUR_01_POMODORA_2_TASK_STATUS,
+    CR_HOUR_01_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_01_POMODORA_2_TASK_LABELS,
+    CR_HOUR_01_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_01_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_01_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH01P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_01/Task_02
+    pomodora_task_name: {CR_HOUR_01_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_01_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_01_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_01_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_01_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_01_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_01_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH01P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_02_pomodora_1_content_creation(
+    CR_HOUR_02_POMODORA_1_TASK_NAME,
+    CR_HOUR_02_POMODORA_1_TASK_STATUS,
+    CR_HOUR_02_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_02_POMODORA_1_TASK_LABELS,
+    CR_HOUR_02_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_02_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_02_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH02P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_02/Task_01
+    pomodora_task_name: {CR_HOUR_02_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_02_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_02_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_02_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_02_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_02_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_02_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH02P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_02_pomodora_2_content_creation(
+    CR_HOUR_02_POMODORA_2_TASK_NAME,
+    CR_HOUR_02_POMODORA_2_TASK_STATUS,
+    CR_HOUR_02_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_02_POMODORA_2_TASK_LABELS,
+    CR_HOUR_02_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_02_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_02_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH02P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_02/Task_02
+    pomodora_task_name: {CR_HOUR_02_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_02_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_02_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_02_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_02_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_02_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_02_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH02P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_03_pomodora_1_content_creation(
+    CR_HOUR_03_POMODORA_1_TASK_NAME,
+    CR_HOUR_03_POMODORA_1_TASK_STATUS,
+    CR_HOUR_03_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_03_POMODORA_1_TASK_LABELS,
+    CR_HOUR_03_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_03_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_03_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH03P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_03/Task_01
+    pomodora_task_name: {CR_HOUR_03_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_03_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_03_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_03_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_03_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_03_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_03_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH03P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_03_pomodora_2_content_creation(
+    CR_HOUR_03_POMODORA_2_TASK_NAME,
+    CR_HOUR_03_POMODORA_2_TASK_STATUS,
+    CR_HOUR_03_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_03_POMODORA_2_TASK_LABELS,
+    CR_HOUR_03_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_03_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_03_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH03P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_03/Task_02
+    pomodora_task_name: {CR_HOUR_03_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_03_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_03_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_03_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_03_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_03_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_03_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH03P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_04_pomodora_1_content_creation(
+    CR_HOUR_04_POMODORA_1_TASK_NAME,
+    CR_HOUR_04_POMODORA_1_TASK_STATUS,
+    CR_HOUR_04_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_04_POMODORA_1_TASK_LABELS,
+    CR_HOUR_04_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_04_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_04_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH04P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_04/Task_01
+    pomodora_task_name: {CR_HOUR_04_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_04_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_04_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_04_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_04_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_04_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_04_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH04P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_04_pomodora_2_content_creation(
+    CR_HOUR_04_POMODORA_2_TASK_NAME,
+    CR_HOUR_04_POMODORA_2_TASK_STATUS,
+    CR_HOUR_04_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_04_POMODORA_2_TASK_LABELS,
+    CR_HOUR_04_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_04_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_04_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH04P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_04/Task_02
+    pomodora_task_name: {CR_HOUR_04_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_04_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_04_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_04_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_04_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_04_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_04_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH04P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_05_pomodora_1_content_creation(
+    CR_HOUR_05_POMODORA_1_TASK_NAME,
+    CR_HOUR_05_POMODORA_1_TASK_STATUS,
+    CR_HOUR_05_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_05_POMODORA_1_TASK_LABELS,
+    CR_HOUR_05_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_05_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_05_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH05P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_05/Task_01
+    pomodora_task_name: {CR_HOUR_05_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_05_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_05_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_05_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_05_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_05_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_05_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH05P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_05_pomodora_2_content_creation(
+    CR_HOUR_05_POMODORA_2_TASK_NAME,
+    CR_HOUR_05_POMODORA_2_TASK_STATUS,
+    CR_HOUR_05_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_05_POMODORA_2_TASK_LABELS,
+    CR_HOUR_05_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_05_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_05_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH05P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_05/Task_02
+    pomodora_task_name: {CR_HOUR_05_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_05_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_05_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_05_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_05_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_05_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_05_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH05P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_06_pomodora_1_content_creation(
+    CR_HOUR_06_POMODORA_1_TASK_NAME,
+    CR_HOUR_06_POMODORA_1_TASK_STATUS,
+    CR_HOUR_06_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_06_POMODORA_1_TASK_LABELS,
+    CR_HOUR_06_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_06_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_06_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH06P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_06/Task_01
+    pomodora_task_name: {CR_HOUR_06_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_06_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_06_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_06_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_06_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_06_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_06_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH06P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_06_pomodora_2_content_creation(
+    CR_HOUR_06_POMODORA_2_TASK_NAME,
+    CR_HOUR_06_POMODORA_2_TASK_STATUS,
+    CR_HOUR_06_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_06_POMODORA_2_TASK_LABELS,
+    CR_HOUR_06_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_06_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_06_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH06P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_06/Task_02
+    pomodora_task_name: {CR_HOUR_06_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_06_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_06_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_06_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_06_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_06_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_06_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH06P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_07_pomodora_1_content_creation(
+    CR_HOUR_07_POMODORA_1_TASK_NAME,
+    CR_HOUR_07_POMODORA_1_TASK_STATUS,
+    CR_HOUR_07_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_07_POMODORA_1_TASK_LABELS,
+    CR_HOUR_07_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_07_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_07_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH07P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_07/Task_01
+    pomodora_task_name: {CR_HOUR_07_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_07_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_07_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_07_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_07_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_07_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_07_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH07P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_07_pomodora_2_content_creation(
+    CR_HOUR_07_POMODORA_2_TASK_NAME,
+    CR_HOUR_07_POMODORA_2_TASK_STATUS,
+    CR_HOUR_07_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_07_POMODORA_2_TASK_LABELS,
+    CR_HOUR_07_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_07_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_07_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH07P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_07/Task_02
+    pomodora_task_name: {CR_HOUR_07_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_07_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_07_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_07_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_07_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_07_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_07_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH07P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_08_pomodora_1_content_creation(
+    CR_HOUR_08_POMODORA_1_TASK_NAME,
+    CR_HOUR_08_POMODORA_1_TASK_STATUS,
+    CR_HOUR_08_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_08_POMODORA_1_TASK_LABELS,
+    CR_HOUR_08_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_08_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_08_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH08P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_08/Task_01
+    pomodora_task_name: {CR_HOUR_08_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_08_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_08_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_08_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_08_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_08_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_08_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH08P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_08_pomodora_2_content_creation(
+    CR_HOUR_08_POMODORA_2_TASK_NAME,
+    CR_HOUR_08_POMODORA_2_TASK_STATUS,
+    CR_HOUR_08_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_08_POMODORA_2_TASK_LABELS,
+    CR_HOUR_08_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_08_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_08_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH08P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_08/Task_02
+    pomodora_task_name: {CR_HOUR_08_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_08_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_08_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_08_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_08_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_08_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_08_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH08P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_09_pomodora_1_content_creation(
+    CR_HOUR_09_POMODORA_1_TASK_NAME,
+    CR_HOUR_09_POMODORA_1_TASK_STATUS,
+    CR_HOUR_09_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_09_POMODORA_1_TASK_LABELS,
+    CR_HOUR_09_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_09_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_09_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH09P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_09/Task_01
+    pomodora_task_name: {CR_HOUR_09_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_09_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_09_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_09_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_09_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_09_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_09_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH09P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_09_pomodora_2_content_creation(
+    CR_HOUR_09_POMODORA_2_TASK_NAME,
+    CR_HOUR_09_POMODORA_2_TASK_STATUS,
+    CR_HOUR_09_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_09_POMODORA_2_TASK_LABELS,
+    CR_HOUR_09_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_09_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_09_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH09P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_09/Task_02
+    pomodora_task_name: {CR_HOUR_09_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_09_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_09_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_09_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_09_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_09_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_09_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH09P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_10_pomodora_1_content_creation(
+    CR_HOUR_10_POMODORA_1_TASK_NAME,
+    CR_HOUR_10_POMODORA_1_TASK_STATUS,
+    CR_HOUR_10_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_10_POMODORA_1_TASK_LABELS,
+    CR_HOUR_10_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_10_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_10_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH10P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_10/Task_01
+    pomodora_task_name: {CR_HOUR_10_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_10_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_10_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_10_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_10_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_10_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_10_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH10P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_10_pomodora_2_content_creation(
+    CR_HOUR_10_POMODORA_2_TASK_NAME,
+    CR_HOUR_10_POMODORA_2_TASK_STATUS,
+    CR_HOUR_10_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_10_POMODORA_2_TASK_LABELS,
+    CR_HOUR_10_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_10_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_10_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH10P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_10/Task_02
+    pomodora_task_name: {CR_HOUR_10_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_10_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_10_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_10_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_10_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_10_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_10_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH10P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_11_pomodora_1_content_creation(
+    CR_HOUR_11_POMODORA_1_TASK_NAME,
+    CR_HOUR_11_POMODORA_1_TASK_STATUS,
+    CR_HOUR_11_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_11_POMODORA_1_TASK_LABELS,
+    CR_HOUR_11_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_11_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_11_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH11P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_11/Task_01
+    pomodora_task_name: {CR_HOUR_11_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_11_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_11_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_11_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_11_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_11_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_11_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH11P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_11_pomodora_2_content_creation(
+    CR_HOUR_11_POMODORA_2_TASK_NAME,
+    CR_HOUR_11_POMODORA_2_TASK_STATUS,
+    CR_HOUR_11_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_11_POMODORA_2_TASK_LABELS,
+    CR_HOUR_11_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_11_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_11_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH11P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_11/Task_02
+    pomodora_task_name: {CR_HOUR_11_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_11_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_11_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_11_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_11_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_11_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_11_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH11P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_12_pomodora_1_content_creation(
+    CR_HOUR_12_POMODORA_1_TASK_NAME,
+    CR_HOUR_12_POMODORA_1_TASK_STATUS,
+    CR_HOUR_12_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_12_POMODORA_1_TASK_LABELS,
+    CR_HOUR_12_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_12_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_12_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH12P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_12/Task_01
+    pomodora_task_name: {CR_HOUR_12_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_12_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_12_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_12_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_12_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_12_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_12_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH12P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_12_pomodora_2_content_creation(
+    CR_HOUR_12_POMODORA_2_TASK_NAME,
+    CR_HOUR_12_POMODORA_2_TASK_STATUS,
+    CR_HOUR_12_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_12_POMODORA_2_TASK_LABELS,
+    CR_HOUR_12_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_12_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_12_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH12P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_12/Task_02
+    pomodora_task_name: {CR_HOUR_12_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_12_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_12_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_12_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_12_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_12_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_12_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH12P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_13_pomodora_1_content_creation(
+    CR_HOUR_13_POMODORA_1_TASK_NAME,
+    CR_HOUR_13_POMODORA_1_TASK_STATUS,
+    CR_HOUR_13_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_13_POMODORA_1_TASK_LABELS,
+    CR_HOUR_13_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_13_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_13_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH13P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_13/Task_01
+    pomodora_task_name: {CR_HOUR_13_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_13_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_13_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_13_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_13_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_13_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_13_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH13P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_13_pomodora_2_content_creation(
+    CR_HOUR_13_POMODORA_2_TASK_NAME,
+    CR_HOUR_13_POMODORA_2_TASK_STATUS,
+    CR_HOUR_13_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_13_POMODORA_2_TASK_LABELS,
+    CR_HOUR_13_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_13_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_13_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH13P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_13/Task_02
+    pomodora_task_name: {CR_HOUR_13_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_13_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_13_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_13_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_13_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_13_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_13_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH13P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_14_pomodora_1_content_creation(
+    CR_HOUR_14_POMODORA_1_TASK_NAME,
+    CR_HOUR_14_POMODORA_1_TASK_STATUS,
+    CR_HOUR_14_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_14_POMODORA_1_TASK_LABELS,
+    CR_HOUR_14_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_14_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_14_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH14P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_14/Task_01
+    pomodora_task_name: {CR_HOUR_14_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_14_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_14_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_14_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_14_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_14_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_14_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH14P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_14_pomodora_2_content_creation(
+    CR_HOUR_14_POMODORA_2_TASK_NAME,
+    CR_HOUR_14_POMODORA_2_TASK_STATUS,
+    CR_HOUR_14_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_14_POMODORA_2_TASK_LABELS,
+    CR_HOUR_14_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_14_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_14_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH14P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_14/Task_02
+    pomodora_task_name: {CR_HOUR_14_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_14_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_14_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_14_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_14_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_14_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_14_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH14P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_15_pomodora_1_content_creation(
+    CR_HOUR_15_POMODORA_1_TASK_NAME,
+    CR_HOUR_15_POMODORA_1_TASK_STATUS,
+    CR_HOUR_15_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_15_POMODORA_1_TASK_LABELS,
+    CR_HOUR_15_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_15_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_15_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH15P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_15/Task_01
+    pomodora_task_name: {CR_HOUR_15_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_15_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_15_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_15_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_15_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_15_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_15_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH15P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_15_pomodora_2_content_creation(
+    CR_HOUR_15_POMODORA_2_TASK_NAME,
+    CR_HOUR_15_POMODORA_2_TASK_STATUS,
+    CR_HOUR_15_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_15_POMODORA_2_TASK_LABELS,
+    CR_HOUR_15_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_15_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_15_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH15P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_15/Task_02
+    pomodora_task_name: {CR_HOUR_15_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_15_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_15_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_15_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_15_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_15_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_15_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH15P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_16_pomodora_1_content_creation(
+    CR_HOUR_16_POMODORA_1_TASK_NAME,
+    CR_HOUR_16_POMODORA_1_TASK_STATUS,
+    CR_HOUR_16_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_16_POMODORA_1_TASK_LABELS,
+    CR_HOUR_16_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_16_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_16_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH16P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_16/Task_01
+    pomodora_task_name: {CR_HOUR_16_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_16_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_16_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_16_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_16_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_16_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_16_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH16P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_16_pomodora_2_content_creation(
+    CR_HOUR_16_POMODORA_2_TASK_NAME,
+    CR_HOUR_16_POMODORA_2_TASK_STATUS,
+    CR_HOUR_16_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_16_POMODORA_2_TASK_LABELS,
+    CR_HOUR_16_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_16_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_16_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH16P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_16/Task_02
+    pomodora_task_name: {CR_HOUR_16_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_16_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_16_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_16_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_16_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_16_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_16_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH16P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_17_pomodora_1_content_creation(
+    CR_HOUR_17_POMODORA_1_TASK_NAME,
+    CR_HOUR_17_POMODORA_1_TASK_STATUS,
+    CR_HOUR_17_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_17_POMODORA_1_TASK_LABELS,
+    CR_HOUR_17_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_17_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_17_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH17P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_17/Task_01
+    pomodora_task_name: {CR_HOUR_17_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_17_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_17_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_17_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_17_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_17_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_17_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH17P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_17_pomodora_2_content_creation(
+    CR_HOUR_17_POMODORA_2_TASK_NAME,
+    CR_HOUR_17_POMODORA_2_TASK_STATUS,
+    CR_HOUR_17_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_17_POMODORA_2_TASK_LABELS,
+    CR_HOUR_17_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_17_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_17_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH17P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_17/Task_02
+    pomodora_task_name: {CR_HOUR_17_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_17_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_17_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_17_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_17_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_17_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_17_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH17P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_18_pomodora_1_content_creation(
+    CR_HOUR_18_POMODORA_1_TASK_NAME,
+    CR_HOUR_18_POMODORA_1_TASK_STATUS,
+    CR_HOUR_18_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_18_POMODORA_1_TASK_LABELS,
+    CR_HOUR_18_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_18_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_18_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH18P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_18/Task_01
+    pomodora_task_name: {CR_HOUR_18_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_18_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_18_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_18_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_18_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_18_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_18_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH18P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_18_pomodora_2_content_creation(
+    CR_HOUR_18_POMODORA_2_TASK_NAME,
+    CR_HOUR_18_POMODORA_2_TASK_STATUS,
+    CR_HOUR_18_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_18_POMODORA_2_TASK_LABELS,
+    CR_HOUR_18_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_18_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_18_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH18P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_18/Task_02
+    pomodora_task_name: {CR_HOUR_18_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_18_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_18_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_18_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_18_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_18_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_18_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH18P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_19_pomodora_1_content_creation(
+    CR_HOUR_19_POMODORA_1_TASK_NAME,
+    CR_HOUR_19_POMODORA_1_TASK_STATUS,
+    CR_HOUR_19_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_19_POMODORA_1_TASK_LABELS,
+    CR_HOUR_19_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_19_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_19_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH19P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_19/Task_01
+    pomodora_task_name: {CR_HOUR_19_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_19_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_19_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_19_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_19_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_19_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_19_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH19P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_19_pomodora_2_content_creation(
+    CR_HOUR_19_POMODORA_2_TASK_NAME,
+    CR_HOUR_19_POMODORA_2_TASK_STATUS,
+    CR_HOUR_19_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_19_POMODORA_2_TASK_LABELS,
+    CR_HOUR_19_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_19_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_19_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH19P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_19/Task_02
+    pomodora_task_name: {CR_HOUR_19_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_19_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_19_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_19_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_19_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_19_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_19_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH19P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_20_pomodora_1_content_creation(
+    CR_HOUR_20_POMODORA_1_TASK_NAME,
+    CR_HOUR_20_POMODORA_1_TASK_STATUS,
+    CR_HOUR_20_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_20_POMODORA_1_TASK_LABELS,
+    CR_HOUR_20_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_20_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_20_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH20P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_20/Task_01
+    pomodora_task_name: {CR_HOUR_20_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_20_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_20_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_20_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_20_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_20_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_20_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH20P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_20_pomodora_2_content_creation(
+    CR_HOUR_20_POMODORA_2_TASK_NAME,
+    CR_HOUR_20_POMODORA_2_TASK_STATUS,
+    CR_HOUR_20_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_20_POMODORA_2_TASK_LABELS,
+    CR_HOUR_20_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_20_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_20_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH20P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_20/Task_02
+    pomodora_task_name: {CR_HOUR_20_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_20_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_20_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_20_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_20_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_20_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_20_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH20P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_21_pomodora_1_content_creation(
+    CR_HOUR_21_POMODORA_1_TASK_NAME,
+    CR_HOUR_21_POMODORA_1_TASK_STATUS,
+    CR_HOUR_21_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_21_POMODORA_1_TASK_LABELS,
+    CR_HOUR_21_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_21_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_21_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH21P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_21/Task_01
+    pomodora_task_name: {CR_HOUR_21_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_21_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_21_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_21_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_21_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_21_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_21_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH21P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_21_pomodora_2_content_creation(
+    CR_HOUR_21_POMODORA_2_TASK_NAME,
+    CR_HOUR_21_POMODORA_2_TASK_STATUS,
+    CR_HOUR_21_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_21_POMODORA_2_TASK_LABELS,
+    CR_HOUR_21_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_21_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_21_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH21P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_21/Task_02
+    pomodora_task_name: {CR_HOUR_21_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_21_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_21_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_21_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_21_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_21_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_21_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH21P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_22_pomodora_1_content_creation(
+    CR_HOUR_22_POMODORA_1_TASK_NAME,
+    CR_HOUR_22_POMODORA_1_TASK_STATUS,
+    CR_HOUR_22_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_22_POMODORA_1_TASK_LABELS,
+    CR_HOUR_22_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_22_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_22_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH22P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_22/Task_01
+    pomodora_task_name: {CR_HOUR_22_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_22_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_22_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_22_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_22_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_22_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_22_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH22P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_22_pomodora_2_content_creation(
+    CR_HOUR_22_POMODORA_2_TASK_NAME,
+    CR_HOUR_22_POMODORA_2_TASK_STATUS,
+    CR_HOUR_22_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_22_POMODORA_2_TASK_LABELS,
+    CR_HOUR_22_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_22_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_22_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH22P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_22/Task_02
+    pomodora_task_name: {CR_HOUR_22_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_22_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_22_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_22_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_22_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_22_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_22_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH22P2_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_23_pomodora_1_content_creation(
+    CR_HOUR_23_POMODORA_1_TASK_NAME,
+    CR_HOUR_23_POMODORA_1_TASK_STATUS,
+    CR_HOUR_23_POMODORA_1_TASK_PRIORITY,
+    CR_HOUR_23_POMODORA_1_TASK_LABELS,
+    CR_HOUR_23_POMODORA_1_TASK_DEPENDENCIES,
+    CR_HOUR_23_POMODORA_1_TASK_PARENT_TASK,
+    CR_HOUR_23_POMODORA_1_TASK_SUB_TASK,
+):
+    CRH23P1_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_23/Task_01
+    pomodora_task_name: {CR_HOUR_23_POMODORA_1_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_23_POMODORA_1_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_23_POMODORA_1_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_23_POMODORA_1_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_23_POMODORA_1_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_23_POMODORA_1_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_23_POMODORA_1_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_1_LOG
+
+
+"""
+    return CRH23P1_FILE_CONTENT_CREATION
+
+
+def capture_routine_hour_23_pomodora_2_content_creation(
+    CR_HOUR_23_POMODORA_2_TASK_NAME,
+    CR_HOUR_23_POMODORA_2_TASK_STATUS,
+    CR_HOUR_23_POMODORA_2_TASK_PRIORITY,
+    CR_HOUR_23_POMODORA_2_TASK_LABELS,
+    CR_HOUR_23_POMODORA_2_TASK_DEPENDENCIES,
+    CR_HOUR_23_POMODORA_2_TASK_PARENT_TASK,
+    CR_HOUR_23_POMODORA_2_TASK_SUB_TASK,
+):
+    CRH23P2_FILE_CONTENT_CREATION = """---
+    date: {Today}
+    tags: {Today}/daily_note/Routine/Hour_23/Task_02
+    pomodora_task_name: {CR_HOUR_23_POMODORA_2_TASK_NAME}
+    pomodora_task_status: {CR_HOUR_23_POMODORA_2_TASK_STATUS}
+    pomodora_task_priority: {CR_HOUR_23_POMODORA_2_TASK_PRIORITY}
+    pomodora_task_labels: {CR_HOUR_23_POMODORA_2_TASK_LABELS}
+    pomodora_task_dependencies: {CR_HOUR_23_POMODORA_2_TASK_DEPENDENCIES}
+    pomodora_task_parent_task: {CR_HOUR_23_POMODORA_2_TASK_PARENT_TASK}
+    pomodora_task_sub_task: {CR_HOUR_23_POMODORA_2_TASK_SUB_TASK}
+    ---
+
+
+# POMODORA_2_LOG
+
+
+"""
+    return CRH23P2_FILE_CONTENT_CREATION

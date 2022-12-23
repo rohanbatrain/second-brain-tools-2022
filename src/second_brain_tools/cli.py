@@ -20,6 +20,9 @@ from second_brain_tools.setup import setup as sbt_setup
 from second_brain_tools.quick_capture import quick_capture
 from second_brain_tools.misc import random_file_from_dir, view_note_with_dir
 from second_brain_tools.directories import initial_check
+from second_brain_tools.capture import capture_link, capture_thought
+from second_brain_tools.notes import create_note, delete_note, move_note, view_note
+
 # Importing production modules finished
 
 
@@ -54,6 +57,7 @@ app.add_typer(app_config, name="Config", help="Shows you configurable options.")
 
 
 # Starting the app fx()
+
 
 @app.command("Quick-Capture")
 def quick_capture_cli(name: str = typer.Option(..., prompt=True), content: str = typer.Option(..., prompt=True)):
@@ -93,22 +97,31 @@ def config_check_cli(dir_code):
     else:
         print("The directory does not exist")
 
+
 # Adding app_config commands Finished
 
 
 # Adding app_capture commands Started
 @app_capture.command("Thought")
-def capture_thought_cli():
+def capture_thought_cli(
+    name,
+    content,
+):
     """
     Had a thought? Capture it.
     """
+    capture_thought(name, content)
 
 
 @app_capture.command("Link")
-def capture_link_cli():
+def capture_link_cli(
+    name: str = typer.Option(..., prompt=True),
+    content: str = typer.Option(..., prompt=True),
+):
     """
     Got a url/link? Capture it.
     """
+    capture_link(name, content)
 
 
 # Adding app_capture commands Finished
@@ -118,26 +131,40 @@ def capture_link_cli():
 
 
 @app_notes.command("Create")
-def notes_create_cli():
-
+def notes_create_cli(
+    dir_code: str = typer.Option(..., prompt=True),
+    note_name: str = typer.Option(..., prompt=True),
+    note_body: str = typer.Option(..., prompt=True),
+):
+    create_note(dir_code, note_name, note_body)
     return
 
 
 @app_notes.command("View")
-def notes_view_cli():
-
+def notes_view_cli(
+    dir_code: str = typer.Option(..., prompt=True),
+    note_name: str = typer.Option(..., prompt=True),
+):
+    view_note(dir_code, note_name)
     return
 
 
 @app_notes.command("Move")
-def notes_move_cli():
-
+def notes_move_cli(
+    old_dir_code: str = typer.Option(..., prompt=True),
+    new_dir_code: str = typer.Option(..., prompt=True),
+    note_name: str = typer.Option(..., prompt=True),
+):
+    move_note(old_dir_code, new_dir_code, note_name)
     return
 
 
 @app_notes.command("Delete")
-def notes_delete_cli():
-
+def notes_delete_cli(
+    dir_code: str = typer.Option(..., prompt=True),
+    note_name: str = typer.Option(..., prompt=True),
+):
+    delete_note(dir_code, note_name)
     return
 
 

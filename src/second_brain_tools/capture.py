@@ -66,24 +66,24 @@ from second_brain_tools.defaults import (
 
 # importing pregenerate_checks
 from second_brain_tools.daily_note import (
-    daily_note_event_pregenerate_check,
-    daily_note_task_pregenerate_check,
-    daily_note_thought_pregenerate_check,
-    daily_note_reminder_pregenerate_check,
-    daily_note_link_pregenerate_check,
+    daily_note_events_pregenerate_check,
+    daily_note_tasks_pregenerate_check,
+    daily_note_reminders_pregenerate_check,
+    daily_note_trackers_link_pregenerate_check,
     daily_note_bullet_journal_pregenerate_check,
+    daily_note_trackers_thought_pregenerate_check,
 )  # noqa
 
 # importing pregenerate_checks
 
 # importing appends
 from second_brain_tools.daily_note import (
-    daily_note_event_append,
-    daily_note_task_append,
-    daily_note_thought_append,
-    daily_note_reminder_append,
+    daily_note_events_append,
+    daily_note_tasks_append,
+    daily_note_reminders_append,
     daily_note_bullet_journal_append,
-    daily_note_link_append,
+    daily_note_trackers_link_append,
+    daily_note_trackers_thoughts_append,
 )  # noqa
 
 # importing appends
@@ -100,8 +100,8 @@ def capture_event_file_creation(event_note_path, event_name, event_type, event_l
         with open(event_note_path, 'a+') as ce_file_obj:
             ce_file_obj.write(CE_FILE_CONTENT_CREATION)
         ce_log = "[[" + Today + "_" + event_name + "]]"
-        daily_note_event_pregenerate_check()
-        daily_note_event_append(ce_log)
+        daily_note_events_pregenerate_check()
+        daily_note_events_append(ce_log)
 
 
 def capture_event(event_name, event_type, event_location, event_summary):
@@ -133,8 +133,8 @@ def capture_task_file_creation(
         with open(task_note_path, 'a+') as ct_file_obj:
             ct_file_obj.write(CT_FILE_CONTENT_CREATION)
         ct_log = "[[" + Today + "_" + task_name + "]]"
-        daily_note_task_pregenerate_check()
-        daily_note_task_append(ct_log)
+        daily_note_tasks_pregenerate_check()
+        daily_note_tasks_append(ct_log)
 
 
 def capture_task(task_name, task_status, task_priority, task_labels, task_dependencies, task_parent_task, task_sub_task):
@@ -157,12 +157,12 @@ def capture_task(task_name, task_status, task_priority, task_labels, task_depend
 
 # def capture_thought
 def capture_thought_file_creation(
-    thought_note_path, thought_name, thought_labels,
+    thought_note_path,
+    thought_name,
+    thought_content,
 ):  # noqa
     """ """
-    CT2_FILE_CONTENT_CREATION = capture_thought_content_creation(
-        thought_name, thought_labels
-    )  # noqa
+    CT2_FILE_CONTENT_CREATION = capture_thought_content_creation(thought_name, thought_content,)  # noqa
     thought_name_check = len(thought_name)
     if thought_name_check == "0":
         print("Error! thought_name is empty.")
@@ -170,13 +170,13 @@ def capture_thought_file_creation(
         with open(thought_note_path, 'a+') as ct2_file_obj:
             ct2_file_obj.write(CT2_FILE_CONTENT_CREATION)
         ct2_log = "[[" + Today + "_" + thought_name + "]]"
-        daily_note_thought_pregenerate_check()
-        daily_note_thought_append(ct2_log)
+        daily_note_trackers_thought_pregenerate_check()
+        daily_note_trackers_thoughts_append(ct2_log)
 
 
-def capture_thought(thought_name, thought_labels):
+def capture_thought(thought_name, thought_content):
     sbd = SECOND_BRAIN_DIRECTORY
-    thought_directory_location = initial_check("")
+    thought_directory_location = initial_check("01A3")
     thought_working_directory = thought_directory_location + Today + "/"
     thought_note_directory = sbd + thought_working_directory
     thought_note_path = sbd + thought_working_directory + Today + "_" + thought_name + ".md"
@@ -184,22 +184,26 @@ def capture_thought(thought_name, thought_labels):
     if ct2_file_exist_check is False:
         os.makedirs(thought_note_directory)
         capture_thought_file_creation(
-            thought_note_path, thought_name, thought_labels
+            thought_note_path,
+            thought_name,
+            thought_content,
         )  # noqa
     else:
         capture_thought_file_creation(
-            thought_note_path, thought_name, thought_labels
+            thought_note_path,
+            thought_name,
+            thought_content,
         )  # noqa
 
 
 # def capture_link
 def capture_link_file_creation(
-    link_note_path, link_name, link_labels,
+    link_note_path,
+    link_name,
+    link_content,
 ):  # noqa
     """ """
-    CL_FILE_CONTENT_CREATION = capture_link_content_creation(
-        link_name, link_labels
-    )  # noqa
+    CL_FILE_CONTENT_CREATION = capture_link_content_creation(link_name, link_content,)  # noqa
     link_name_check = len(link_name)
     if link_name_check == "0":
         print("Error! link_name is empty.")
@@ -207,26 +211,25 @@ def capture_link_file_creation(
         with open(link_note_path, 'a+') as cl_file_obj:
             cl_file_obj.write(CL_FILE_CONTENT_CREATION)
         cl_log = "[[" + Today + "_" + link_name + "]]"
-        daily_note_link_pregenerate_check()
-        daily_note_link_append(cl_log)
+        daily_note_trackers_link_pregenerate_check()
+        daily_note_trackers_link_append(cl_log)
 
 
-def capture_link(link_name, link_labels):
+def capture_link(
+    link_name,
+    link_content,
+):
     sbd = SECOND_BRAIN_DIRECTORY
-    link_directory_location = initial_check("")
+    link_directory_location = initial_check("01A2")
     link_working_directory = link_directory_location + Today + "/"
     link_note_directory = sbd + link_working_directory
     link_note_path = sbd + link_working_directory + Today + "_" + link_name + ".md"
     cl_file_exist_check = exists(link_note_directory)
     if cl_file_exist_check is False:
         os.makedirs(link_note_directory)
-        capture_link_file_creation(
-            link_note_path, link_name, link_labels
-        )  # noqa
+        capture_link_file_creation(link_note_path, link_name, link_content,)  # noqa
     else:
-        capture_link_file_creation(
-            link_note_path, link_name, link_labels
-        )  # noqa
+        capture_link_file_creation(link_note_path, link_name, link_content,)  # noqa
 
 
 # def capture_reminders
@@ -240,8 +243,8 @@ def capture_reminder_file_creation(reminder_note_path, reminder_name, reminder_p
         with open(reminder_note_path, 'a+') as cr_file_obj:
             cr_file_obj.write(CR_FILE_CONTENT_CREATION)
         cr_log = "[[" + Today + "_" + reminder_name + "]]"
-        daily_note_reminder_pregenerate_check()
-        daily_note_reminder_append(cr_log)
+        daily_note_reminders_pregenerate_check()
+        daily_note_reminders_append(cr_log)
 
 
 def capture_reminder(reminder_name, reminder_priority, reminder_labels, reminder_time_to_remind):
