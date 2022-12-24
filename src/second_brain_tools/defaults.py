@@ -14,7 +14,7 @@ NOTE_CREATED_SUCCESFULLY = "Horray! Note Created Successfully."
 # Daily Note File Creation Content String Started
 # Daily Note File Creation Content String Finished
 DNM_FILE_CONTENT_CREATION = f"""---
-tags :{Today}/daily_note
+tags :/daily_note/{Today}
 date : {Today}
 ---
 
@@ -39,7 +39,7 @@ SBT WILL APPEND AFTER THIS CODEBLOCK.
 
 DNBJ_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/journal/bullet_journal
+tags: daily_note/journal/bullet_journal/{Today}
 ---
 
 # Bullet_Journal_Log
@@ -52,7 +52,7 @@ tags: {Today}/daily_note/journal/bullet_journal
 
 DNC_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Connections
+tags: daily_note/Connections/{Today}
 ---
 
 # Connections_Log
@@ -62,7 +62,7 @@ tags: {Today}/daily_note/Connections
 # ------------------------------------#
 DNE_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Events
+tags: daily_note/Events/{Today}
 ---
 
 # Events_Log
@@ -73,7 +73,7 @@ tags: {Today}/daily_note/Events
 # ------------------------------------#
 DNL_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Location
+tags: daily_note/Location/{Today}
 ---
 
 # Location_Log
@@ -84,7 +84,7 @@ tags: {Today}/daily_note/Location
 # ------------------------------------#
 DNR_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Reminders
+tags: daily_note/Reminders/{Today}
 ---
 
 # Reminders_Log
@@ -95,7 +95,7 @@ tags: {Today}/daily_note/Reminders
 # ------------------------------------#
 DNR2_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine
+tags: daily_note/Routine/{Today}
 ---
 
 # Routine_Hours
@@ -133,7 +133,7 @@ tags: {Today}/daily_note/Routine
 # ------------------------------------#
 DNT_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Tasks
+tags: daily_note/Tasks/{Today}
 ---
 
 # Tasks_Log
@@ -143,7 +143,7 @@ tags: {Today}/daily_note/Tasks
 # ------------------------------------#
 DNT2_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Trackers
+tags: daily_note/Trackers/{Today}
 ---
 
 # Trackers_Links
@@ -166,7 +166,7 @@ tags: {Today}/daily_note/Trackers
 # ------------------------------------#
 DNTE_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Trackers/Exercise
+tags: daily_note/Trackers/Exercise/{Today}
 ---
 
 
@@ -179,7 +179,7 @@ tags: {Today}/daily_note/Trackers/Exercise
 # ------------------------------------#
 DNTT_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Trackers/Transaction
+tags: daily_note/Trackers/Transaction/{Today}
 ---
 
 # Transaction_Log
@@ -191,7 +191,7 @@ tags: {Today}/daily_note/Trackers/Transaction
 # ------------------------------------#
 DNTT2_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Trackers/Thoughts
+tags: daily_note/Trackers/Thoughts/{Today}
 ---
 
 # Thoughts_Log
@@ -204,7 +204,7 @@ tags: {Today}/daily_note/Trackers/Thoughts
 # ------------------------------------#
 DNTL_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Trackers/Location
+tags: daily_note/Trackers/Location/{Today}
 ---
 
 
@@ -217,7 +217,7 @@ tags: {Today}/daily_note/Trackers/Location
 # ------------------------------------#
 DNTL2_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Link
+tags: daily_note/Link/{Today}
 ---
 
 # Link_Log
@@ -227,7 +227,7 @@ tags: {Today}/daily_note/Link
 # ------------------------------------#
 DNTM_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Trackers/Meal
+tags: daily_note/Trackers/Meal/{Today}
 ---
 
 
@@ -240,7 +240,7 @@ tags: {Today}/daily_note/Trackers/Meal
 # ------------------------------------#
 DNTM2_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Trackers/Medicine
+tags: daily_note/Trackers/Medicine/{Today}
 ---
 
 
@@ -253,7 +253,7 @@ tags: {Today}/daily_note/Trackers/Medicine
 # ------------------------------------#
 DNTM3_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Trackers/Mood
+tags: daily_note/Trackers/Mood/{Today}
 ---
 
 
@@ -266,7 +266,7 @@ tags: {Today}/daily_note/Trackers/Mood
 # ------------------------------------#
 DNTS_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Trackers/Sleep
+tags: daily_note/Trackers/Sleep/{Today}
 ---
 
 
@@ -279,7 +279,7 @@ tags: {Today}/daily_note/Trackers/Sleep
 # ------------------------------------#
 DNTS2_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Trackers/Symptoms
+tags: daily_note/Trackers/Symptoms/{Today}
 ---
 
 
@@ -292,7 +292,7 @@ tags: {Today}/daily_note/Trackers/Symptoms
 # ------------------------------------#
 DNTW_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Trackers/Water
+tags: daily_note/Trackers/Water/{Today}
 ---
 
 
@@ -307,7 +307,7 @@ tags: {Today}/daily_note/Trackers/Water
 # ------------------------------------#
 DNR2_HOUR_00_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_00
+tags: daily_note/Routine/Hour_00/{Today}
 hour_number: 00
 pomodora_task_01: [[{Today}_Routine_Hour-00_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-00_Pomodora_Task_02|Pomodora_Task_2]]
@@ -322,7 +322,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-00_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_01_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_01
+tags: daily_note/Routine/Hour_01/{Today}
 hour_number: 01
 pomodora_task_01: [[{Today}_Routine_Hour-01_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-01_Pomodora_Task_02|Pomodora_Task_2]]
@@ -337,7 +337,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-01_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_02_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_02
+tags: daily_note/Routine/Hour_02/{Today}
 hour_number: 02
 pomodora_task_01: [[{Today}_Routine_Hour-02_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-02_Pomodora_Task_02|Pomodora_Task_2]]
@@ -352,7 +352,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-02_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_03_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_03
+tags: daily_note/Routine/Hour_03/{Today}
 hour_number: 03
 pomodora_task_01: [[{Today}_Routine_Hour-03_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-03_Pomodora_Task_02|Pomodora_Task_2]]
@@ -367,7 +367,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-03_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_04_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_04
+tags: daily_note/Routine/Hour_04/{Today}
 hour_number: 04
 pomodora_task_01: [[{Today}_Routine_Hour-04_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-04_Pomodora_Task_02|Pomodora_Task_2]]
@@ -382,7 +382,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-04_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_05_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_05
+tags: daily_note/Routine/Hour_05/{Today}
 hour_number: 05
 pomodora_task_01: [[{Today}_Routine_Hour-05_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-05_Pomodora_Task_02|Pomodora_Task_2]]
@@ -397,7 +397,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-05_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_06_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_06
+tags: daily_note/Routine/Hour_06/{Today}
 hour_number: 06
 pomodora_task_01: [[{Today}_Routine_Hour-06_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-06_Pomodora_Task_02|Pomodora_Task_2]]
@@ -412,7 +412,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-06_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_07_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_07
+tags: daily_note/Routine/Hour_07/{Today}
 hour_number: 07
 pomodora_task_01: [[{Today}_Routine_Hour-07_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-07_Pomodora_Task_02|Pomodora_Task_2]]
@@ -427,7 +427,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-07_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_08_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_08
+tags: daily_note/Routine/Hour_08/{Today}
 hour_number: 08
 pomodora_task_01: [[{Today}_Routine_Hour-08_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-08_Pomodora_Task_02|Pomodora_Task_2]]
@@ -442,7 +442,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-08_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_09_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_09
+tags: daily_note/Routine/Hour_09/{Today}
 hour_number: 09
 pomodora_task_01: [[{Today}_Routine_Hour-09_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-09_Pomodora_Task_02|Pomodora_Task_2]]
@@ -457,7 +457,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-09_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_10_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_10
+tags: daily_note/Routine/Hour_10/{Today}
 hour_number: 10
 pomodora_task_01: [[{Today}_Routine_Hour-10_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-10_Pomodora_Task_02|Pomodora_Task_2]]
@@ -472,7 +472,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-10_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_11_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_11
+tags: daily_note/Routine/Hour_11/{Today}
 hour_number: 11
 pomodora_task_01: [[{Today}_Routine_Hour-11_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-11_Pomodora_Task_02|Pomodora_Task_2]]
@@ -487,7 +487,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-11_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_12_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_12
+tags: daily_note/Routine/Hour_12/{Today}
 hour_number: 12
 pomodora_task_01: [[{Today}_Routine_Hour-12_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-12_Pomodora_Task_02|Pomodora_Task_2]]
@@ -502,7 +502,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-12_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_13_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_13
+tags: daily_note/Routine/Hour_13/{Today}
 hour_number: 13
 pomodora_task_01: [[{Today}_Routine_Hour-13_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-13_Pomodora_Task_02|Pomodora_Task_2]]
@@ -517,7 +517,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-13_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_14_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_14
+tags: daily_note/Routine/Hour_14/{Today}
 hour_number: 14
 pomodora_task_01: [[{Today}_Routine_Hour-14_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-14_Pomodora_Task_02|Pomodora_Task_2]]
@@ -532,7 +532,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-14_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_15_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_15
+tags: daily_note/Routine/Hour_15/{Today}
 hour_number: 15
 pomodora_task_01: [[{Today}_Routine_Hour-15_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-15_Pomodora_Task_02|Pomodora_Task_2]]
@@ -547,7 +547,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-15_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_16_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_16
+tags: daily_note/Routine/Hour_16/{Today}
 hour_number: 16
 pomodora_task_01: [[{Today}_Routine_Hour-16_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-16_Pomodora_Task_02|Pomodora_Task_2]]
@@ -562,7 +562,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-16_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_17_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_17
+tags: daily_note/Routine/Hour_17/{Today}
 hour_number: 17
 pomodora_task_01: [[{Today}_Routine_Hour-17_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-17_Pomodora_Task_02|Pomodora_Task_2]]
@@ -577,7 +577,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-17_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_18_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_18
+tags: daily_note/Routine/Hour_18/{Today}
 hour_number: 18
 pomodora_task_01: [[{Today}_Routine_Hour-18_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-18_Pomodora_Task_02|Pomodora_Task_2]]
@@ -592,7 +592,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-18_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_19_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour-19
+tags: daily_note/Routine/Hour-19/{Today}
 hour_number: 19
 pomodora_task_01: [[{Today}_Routine_Hour-19_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-19_Pomodora_Task_02|Pomodora_Task_2]]
@@ -607,7 +607,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-19_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_20_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_20
+tags: daily_note/Routine/Hour_20/{Today}
 hour_number: 20
 pomodora_task_01: [[{Today}_Routine_Hour-20_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-20_Pomodora_Task_02|Pomodora_Task_2]]
@@ -622,7 +622,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-20_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_21_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_21
+tags: daily_note/Routine/Hour_21/{Today}
 hour_number: 21
 pomodora_task_01: [[{Today}_Routine_Hour-21_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-21_Pomodora_Task_02|Pomodora_Task_2]]
@@ -637,7 +637,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-21_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_22_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_22
+tags: daily_note/Routine/Hour_22/{Today}
 hour_number: 22
 pomodora_task_01: [[{Today}_Routine_Hour-22_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-22_Pomodora_Task_02|Pomodora_Task_2]]
@@ -652,7 +652,7 @@ pomodora_task_02: [[{Today}_Routine_Hour-22_Pomodora_Task_02|Pomodora_Task_2]]
 # ------------------------------------#
 DNR2_HOUR_23_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/Routine/Hour_23
+tags: daily_note/Routine/Hour_23/{Today}
 hour_number: 23
 pomodora_task_01: [[{Today}_Routine_Hour-23_Pomodora_Task_01|Pomodora_Task_1]]
 pomodora_task_02: [[{Today}_Routine_Hour-23_Pomodora_Task_02|Pomodora_Task_2]]
@@ -670,7 +670,7 @@ def capture_event_content_creation(event_name, event_type, event_location, event
     """ """
     CE_FILE_CONTENT_CREATION = f"""---
 date: {Today}
-tags: {Today}/daily_note/event/{event_name}
+tags: daily_note/event/{Today}/{event_name}
 event_type: {event_type}
 event_name: {event_name}
 event_location: {event_location}
@@ -687,7 +687,7 @@ event_status: {event_status}
 def capture_task_content_creation(Task_Name):
     CT_FILE_CONTENT_CREATION = """---
 date: {Today}
-tags: {Today}/daily_note/tasks/{Task_Name}
+tags: daily_note/tasks/{Today}/{Task_Name}
 task_name: {Task_Name}
 task_status: {Task_Status}
 task_priority: {Task_Priority}
@@ -711,7 +711,7 @@ def capture_thought_content_creation(
     Thought_Content,
 ):
     CT2_FILE_CONTENT_CREATION = """---
-tags: {Today}/daily_note/thoughts/{Thought_Name}
+tags: daily_note/thoughts/{Today}/{Thought_Name}
 date: {Today}
 time: {CURRENT_TIME}
 thought_name: {Thought_Name}
@@ -731,7 +731,7 @@ def capture_reminder_content_creation():
     CR_FILE_CONTENT_CREATION = """---
 date: {Today}
 time: {CURRENT_TIME}
-tags: {Today}/daily_note/Reminders/{Reminder_Name}
+tags: daily_note/Reminders/{Today}/{Reminder_Name}
 reminder_name: {Reminder_Name}
 reminder_priority: {Reminder_Priority}
 reminder_labels: {Reminder_Labels}
@@ -747,7 +747,7 @@ reminder_time_to_remind: {Reminder_Time}
 
 def capture_bullet_journal_content_creation():
     CBJ_FILE_CONTENT_CREATION = """---
-tags: {Today}/daily_note/Bullet_Journal/
+tags: daily_note/Bullet_Journal/{Today}
 date: {Today}
 time: {CURRENT_TIME}
 ---
@@ -761,7 +761,7 @@ time: {CURRENT_TIME}
 
 def capture_transaction_content_creation():
     CTCC_FILE_CONTENT_CREATION = """---
-tags: {Today}/daily_note/transactions/{Transaction_Type}
+tags: daily_note/transactions/{Transaction_Type}/{Today}
 time: {CURRENT_TIME}
 date: {Today}
 transaction_time: {Transaction_Time}
@@ -779,7 +779,7 @@ transaction_invoice: {Transaction_Invoice}
 
 def capture_sleep_content_creation():
     CSCC_FILE_CONTENT_CREATION = """---
-tags: {Today}/daily_note/sleep/{Sleep_Type}
+tags: daily_note/sleep/{Sleep_Type}/{Today}
 date: {Today}
 time: {CURRENT_TIME}
 sleep_type: {Sleep_Type}
@@ -795,7 +795,7 @@ sleep_time: {Sleep_Time}
 
 def capture_meal_content_creation():
     CMCC_FILE_CONTENT_CREATION = """---
-tags: {Today}/daily_note/meal/{Meal_Type}
+tags: daily_note/meal/{Meal_Type}/{Today}
 date: {Today}
 time: {Meal_Time}
 meal_type: {Meal_Type}
@@ -811,7 +811,7 @@ meal_taken: {Meal_Taken}
 
 def capture_medicine_content_creation():
     CM2CC_FILE_CONTENT_CREATION = """---
-tags: {Today}/daily_note/medicine/{Medicine_Type}
+tags: daily_note/medicine/{Medicine_Type}/{Today}
 date: {Today}
 time: {CURRENT_TIME}
 medicine_time: {Medicine_Time}
@@ -827,7 +827,7 @@ medicine_taken: {Medicine_Taken}
 
 def capture_mood_tracker_content_creation():
     CTCC_FILE_CONTENT_CREATION = """---
-tags: {Today}/daily_note/mood/{Mood_Status}
+tags: daily_note/mood/{Mood_Status}/{Today}
 date: {Today}
 time: {CURRENT_TIME}
 mood_status: {Mood_Status}
@@ -842,7 +842,7 @@ mood_reason: {Mood_Reason}
 
 def capture_water_intake_content_creation():
     CWICC_FILE_CONTENT_CREATION = """---
-tags: {Today}/daily_note/water_intake/
+tags: daily_note/water_intake/{Today}
 date: {Today}
 time: {CURRENT_TIME}
 water_intake_time: {Water_Intake_Time}
@@ -857,7 +857,7 @@ water_intake_ml: {Water_Intake_Amount_In_ML}
 
 def capture_exercise_content_creation():
     CECC_CONTENT_CREATION = """---
-tags: {Today}/daily_note/exercise/
+tags: daily_note/exercise//{Today}
 date: {Today}
 time: {CURRENT_TIME}
 exercise_time: {Exercise_Time}
@@ -873,7 +873,7 @@ exercise_status: {Exercise_Status}
 
 def capture_link_content_creation():
     CLCC_CONTENT_CREATION = """---
-tags: {Today}/daily_note/links/{Link_Domain_Name}
+tags: daily_note/links/{Link_Domain_Name}/{Today}
 name: {Link_Name}
 date: {Today}
 time: {CURRENT_TIME}
@@ -888,7 +888,7 @@ url: {URL}
 
 def capture_symptoms_content_creation():
     CSCC_CONTENT_CREATION = """---
-tags: {Today}/daily_note/symptoms/{Symptom_Name}
+tags: daily_note/symptoms/{Symptom_Name}/{Today}
 date: {Today}
 time: {CURRENT_TIME}
 name: {Symptom_Name}
@@ -913,7 +913,7 @@ def capture_routine_hour_00_pomodora_1_content_creation(
 ):
     CRH00P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_00/Task_01
+    tags: daily_note/Routine/Hour_00/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_00_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_00_POMODORA_1_TASK_STATUS}
@@ -943,7 +943,7 @@ def capture_routine_hour_00_pomodora_2_content_creation(
 ):
     CRH00P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_00/Task_02
+    tags: daily_note/Routine/Hour_00/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_00_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_00_POMODORA_2_TASK_STATUS}
@@ -973,7 +973,7 @@ def capture_routine_hour_01_pomodora_1_content_creation(
 ):
     CRH01P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_01/Task_01
+    tags: daily_note/Routine/Hour_01/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_01_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_01_POMODORA_1_TASK_STATUS}
@@ -1003,7 +1003,7 @@ def capture_routine_hour_01_pomodora_2_content_creation(
 ):
     CRH01P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_01/Task_02
+    tags: daily_note/Routine/Hour_01/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_01_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_01_POMODORA_2_TASK_STATUS}
@@ -1033,7 +1033,7 @@ def capture_routine_hour_02_pomodora_1_content_creation(
 ):
     CRH02P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_02/Task_01
+    tags: daily_note/Routine/Hour_02/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_02_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_02_POMODORA_1_TASK_STATUS}
@@ -1063,7 +1063,7 @@ def capture_routine_hour_02_pomodora_2_content_creation(
 ):
     CRH02P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_02/Task_02
+    tags: daily_note/Routine/Hour_02/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_02_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_02_POMODORA_2_TASK_STATUS}
@@ -1093,7 +1093,7 @@ def capture_routine_hour_03_pomodora_1_content_creation(
 ):
     CRH03P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_03/Task_01
+    tags: daily_note/Routine/Hour_03/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_03_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_03_POMODORA_1_TASK_STATUS}
@@ -1123,7 +1123,7 @@ def capture_routine_hour_03_pomodora_2_content_creation(
 ):
     CRH03P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_03/Task_02
+    tags: daily_note/Routine/Hour_03/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_03_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_03_POMODORA_2_TASK_STATUS}
@@ -1153,7 +1153,7 @@ def capture_routine_hour_04_pomodora_1_content_creation(
 ):
     CRH04P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_04/Task_01
+    tags: daily_note/Routine/Hour_04/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_04_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_04_POMODORA_1_TASK_STATUS}
@@ -1183,7 +1183,7 @@ def capture_routine_hour_04_pomodora_2_content_creation(
 ):
     CRH04P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_04/Task_02
+    tags: daily_note/Routine/Hour_04/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_04_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_04_POMODORA_2_TASK_STATUS}
@@ -1213,7 +1213,7 @@ def capture_routine_hour_05_pomodora_1_content_creation(
 ):
     CRH05P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_05/Task_01
+    tags: daily_note/Routine/Hour_05/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_05_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_05_POMODORA_1_TASK_STATUS}
@@ -1243,7 +1243,7 @@ def capture_routine_hour_05_pomodora_2_content_creation(
 ):
     CRH05P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_05/Task_02
+    tags: daily_note/Routine/Hour_05/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_05_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_05_POMODORA_2_TASK_STATUS}
@@ -1273,7 +1273,7 @@ def capture_routine_hour_06_pomodora_1_content_creation(
 ):
     CRH06P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_06/Task_01
+    tags: daily_note/Routine/Hour_06/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_06_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_06_POMODORA_1_TASK_STATUS}
@@ -1303,7 +1303,7 @@ def capture_routine_hour_06_pomodora_2_content_creation(
 ):
     CRH06P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_06/Task_02
+    tags: daily_note/Routine/Hour_06/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_06_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_06_POMODORA_2_TASK_STATUS}
@@ -1333,7 +1333,7 @@ def capture_routine_hour_07_pomodora_1_content_creation(
 ):
     CRH07P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_07/Task_01
+    tags: daily_note/Routine/Hour_07/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_07_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_07_POMODORA_1_TASK_STATUS}
@@ -1363,7 +1363,7 @@ def capture_routine_hour_07_pomodora_2_content_creation(
 ):
     CRH07P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_07/Task_02
+    tags: daily_note/Routine/Hour_07/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_07_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_07_POMODORA_2_TASK_STATUS}
@@ -1393,7 +1393,7 @@ def capture_routine_hour_08_pomodora_1_content_creation(
 ):
     CRH08P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_08/Task_01
+    tags: daily_note/Routine/Hour_08/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_08_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_08_POMODORA_1_TASK_STATUS}
@@ -1423,7 +1423,7 @@ def capture_routine_hour_08_pomodora_2_content_creation(
 ):
     CRH08P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_08/Task_02
+    tags: daily_note/Routine/Hour_08/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_08_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_08_POMODORA_2_TASK_STATUS}
@@ -1453,7 +1453,7 @@ def capture_routine_hour_09_pomodora_1_content_creation(
 ):
     CRH09P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_09/Task_01
+    tags: daily_note/Routine/Hour_09/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_09_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_09_POMODORA_1_TASK_STATUS}
@@ -1483,7 +1483,7 @@ def capture_routine_hour_09_pomodora_2_content_creation(
 ):
     CRH09P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_09/Task_02
+    tags: daily_note/Routine/Hour_09/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_09_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_09_POMODORA_2_TASK_STATUS}
@@ -1513,7 +1513,7 @@ def capture_routine_hour_10_pomodora_1_content_creation(
 ):
     CRH10P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_10/Task_01
+    tags: daily_note/Routine/Hour_10/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_10_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_10_POMODORA_1_TASK_STATUS}
@@ -1543,7 +1543,7 @@ def capture_routine_hour_10_pomodora_2_content_creation(
 ):
     CRH10P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_10/Task_02
+    tags: daily_note/Routine/Hour_10/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_10_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_10_POMODORA_2_TASK_STATUS}
@@ -1573,7 +1573,7 @@ def capture_routine_hour_11_pomodora_1_content_creation(
 ):
     CRH11P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_11/Task_01
+    tags: daily_note/Routine/Hour_11/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_11_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_11_POMODORA_1_TASK_STATUS}
@@ -1603,7 +1603,7 @@ def capture_routine_hour_11_pomodora_2_content_creation(
 ):
     CRH11P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_11/Task_02
+    tags: daily_note/Routine/Hour_11/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_11_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_11_POMODORA_2_TASK_STATUS}
@@ -1633,7 +1633,7 @@ def capture_routine_hour_12_pomodora_1_content_creation(
 ):
     CRH12P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_12/Task_01
+    tags: daily_note/Routine/Hour_12/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_12_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_12_POMODORA_1_TASK_STATUS}
@@ -1663,7 +1663,7 @@ def capture_routine_hour_12_pomodora_2_content_creation(
 ):
     CRH12P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_12/Task_02
+    tags: daily_note/Routine/Hour_12/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_12_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_12_POMODORA_2_TASK_STATUS}
@@ -1693,7 +1693,7 @@ def capture_routine_hour_13_pomodora_1_content_creation(
 ):
     CRH13P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_13/Task_01
+    tags: daily_note/Routine/Hour_13/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_13_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_13_POMODORA_1_TASK_STATUS}
@@ -1723,7 +1723,7 @@ def capture_routine_hour_13_pomodora_2_content_creation(
 ):
     CRH13P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_13/Task_02
+    tags: daily_note/Routine/Hour_13/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_13_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_13_POMODORA_2_TASK_STATUS}
@@ -1753,7 +1753,7 @@ def capture_routine_hour_14_pomodora_1_content_creation(
 ):
     CRH14P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_14/Task_01
+    tags: daily_note/Routine/Hour_14/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_14_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_14_POMODORA_1_TASK_STATUS}
@@ -1783,7 +1783,7 @@ def capture_routine_hour_14_pomodora_2_content_creation(
 ):
     CRH14P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_14/Task_02
+    tags: daily_note/Routine/Hour_14/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_14_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_14_POMODORA_2_TASK_STATUS}
@@ -1813,7 +1813,7 @@ def capture_routine_hour_15_pomodora_1_content_creation(
 ):
     CRH15P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_15/Task_01
+    tags: daily_note/Routine/Hour_15/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_15_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_15_POMODORA_1_TASK_STATUS}
@@ -1843,7 +1843,7 @@ def capture_routine_hour_15_pomodora_2_content_creation(
 ):
     CRH15P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_15/Task_02
+    tags: daily_note/Routine/Hour_15/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_15_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_15_POMODORA_2_TASK_STATUS}
@@ -1873,7 +1873,7 @@ def capture_routine_hour_16_pomodora_1_content_creation(
 ):
     CRH16P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_16/Task_01
+    tags: daily_note/Routine/Hour_16/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_16_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_16_POMODORA_1_TASK_STATUS}
@@ -1903,7 +1903,7 @@ def capture_routine_hour_16_pomodora_2_content_creation(
 ):
     CRH16P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_16/Task_02
+    tags: daily_note/Routine/Hour_16/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_16_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_16_POMODORA_2_TASK_STATUS}
@@ -1933,7 +1933,7 @@ def capture_routine_hour_17_pomodora_1_content_creation(
 ):
     CRH17P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_17/Task_01
+    tags: daily_note/Routine/Hour_17/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_17_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_17_POMODORA_1_TASK_STATUS}
@@ -1963,7 +1963,7 @@ def capture_routine_hour_17_pomodora_2_content_creation(
 ):
     CRH17P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_17/Task_02
+    tags: daily_note/Routine/Hour_17/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_17_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_17_POMODORA_2_TASK_STATUS}
@@ -1993,7 +1993,7 @@ def capture_routine_hour_18_pomodora_1_content_creation(
 ):
     CRH18P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_18/Task_01
+    tags: daily_note/Routine/Hour_18/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_18_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_18_POMODORA_1_TASK_STATUS}
@@ -2023,7 +2023,7 @@ def capture_routine_hour_18_pomodora_2_content_creation(
 ):
     CRH18P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_18/Task_02
+    tags: daily_note/Routine/Hour_18/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_18_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_18_POMODORA_2_TASK_STATUS}
@@ -2053,7 +2053,7 @@ def capture_routine_hour_19_pomodora_1_content_creation(
 ):
     CRH19P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_19/Task_01
+    tags: daily_note/Routine/Hour_19/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_19_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_19_POMODORA_1_TASK_STATUS}
@@ -2083,7 +2083,7 @@ def capture_routine_hour_19_pomodora_2_content_creation(
 ):
     CRH19P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_19/Task_02
+    tags: daily_note/Routine/Hour_19/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_19_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_19_POMODORA_2_TASK_STATUS}
@@ -2113,7 +2113,7 @@ def capture_routine_hour_20_pomodora_1_content_creation(
 ):
     CRH20P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_20/Task_01
+    tags: daily_note/Routine/Hour_20/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_20_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_20_POMODORA_1_TASK_STATUS}
@@ -2143,7 +2143,7 @@ def capture_routine_hour_20_pomodora_2_content_creation(
 ):
     CRH20P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_20/Task_02
+    tags: daily_note/Routine/Hour_20/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_20_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_20_POMODORA_2_TASK_STATUS}
@@ -2173,7 +2173,7 @@ def capture_routine_hour_21_pomodora_1_content_creation(
 ):
     CRH21P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_21/Task_01
+    tags: daily_note/Routine/Hour_21/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_21_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_21_POMODORA_1_TASK_STATUS}
@@ -2203,7 +2203,7 @@ def capture_routine_hour_21_pomodora_2_content_creation(
 ):
     CRH21P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_21/Task_02
+    tags: daily_note/Routine/Hour_21/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_21_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_21_POMODORA_2_TASK_STATUS}
@@ -2233,7 +2233,7 @@ def capture_routine_hour_22_pomodora_1_content_creation(
 ):
     CRH22P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_22/Task_01
+    tags: daily_note/Routine/Hour_22/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_22_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_22_POMODORA_1_TASK_STATUS}
@@ -2263,7 +2263,7 @@ def capture_routine_hour_22_pomodora_2_content_creation(
 ):
     CRH22P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_22/Task_02
+    tags: daily_note/Routine/Hour_22/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_22_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_22_POMODORA_2_TASK_STATUS}
@@ -2293,7 +2293,7 @@ def capture_routine_hour_23_pomodora_1_content_creation(
 ):
     CRH23P1_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_23/Task_01
+    tags: daily_note/Routine/Hour_23/Task_01/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_23_POMODORA_1_TASK_NAME}
     pomodora_task_status: {CR_HOUR_23_POMODORA_1_TASK_STATUS}
@@ -2323,7 +2323,7 @@ def capture_routine_hour_23_pomodora_2_content_creation(
 ):
     CRH23P2_FILE_CONTENT_CREATION = """---
     date: {Today}
-    tags: {Today}/daily_note/Routine/Hour_23/Task_02
+    tags: daily_note/Routine/Hour_23/Task_02/{Today}
     time: {CURRENT_TIME}
     pomodora_task_name: {CR_HOUR_23_POMODORA_2_TASK_NAME}
     pomodora_task_status: {CR_HOUR_23_POMODORA_2_TASK_STATUS}
