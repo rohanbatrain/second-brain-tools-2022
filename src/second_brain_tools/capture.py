@@ -1,5 +1,6 @@
 import os
 from os.path import exists
+from rich import print
 from second_brain_tools.time import Today
 from second_brain_tools.config import SECOND_BRAIN_DIRECTORY
 from second_brain_tools.directories import initial_check

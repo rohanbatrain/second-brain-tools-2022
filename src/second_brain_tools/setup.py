@@ -2,7 +2,7 @@
 import os
 import sys
 from git.repo.base import Repo
-
+from rich import print
 # Importing production modules finished
 
 

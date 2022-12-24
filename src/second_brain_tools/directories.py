@@ -7,6 +7,7 @@ But i would really like to hardcode the absolute path for error pruning my scrip
 import re
 import second_brain_tools.config as sbtc
 import sys
+from rich import print
 
 # Importing production modules finished
 # Default values assignation started

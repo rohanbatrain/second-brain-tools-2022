@@ -9,6 +9,7 @@ from second_brain_tools.defaults import NO_MARKDOWN_FILE
 from rich.console import Console
 from second_brain_tools.config import SECOND_BRAIN_DIRECTORY
 from rich.markdown import Markdown
+from rich import print
 
 
 def file_name_check(fnc_name):

@@ -5,6 +5,7 @@ from second_brain_tools.time import Today
 from second_brain_tools.config import PLAIN_TEXT_TIME_INCLUDE, LIST_TIME_INCLUDE, SECOND_BRAIN_DIRECTORY, FILE_ALREADY_EXIST
 from second_brain_tools.directories import initial_check
 from second_brain_tools.append import plain_text_append, bullet_list_append, table_append, paragraph_append
+from rich import print
 
 # Importing production modules FINISHED
 

@@ -1,6 +1,7 @@
 # Importing production modules // Meant for production branch
 from second_brain_tools.config import PLAIN_TEXT_TIME_INCLUDE, TIME_APPEND_TEXT, CURRENT_TIME, LIST_TIME_INCLUDE
 from second_brain_tools.directories import initial_check
+from rich import print
 # Importing production modules finished
 
 # Default strings assignation Started

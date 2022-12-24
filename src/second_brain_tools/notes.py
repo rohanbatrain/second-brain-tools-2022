@@ -4,6 +4,7 @@ from second_brain_tools.directories import initial_check
 from second_brain_tools.config import SECOND_BRAIN_DIRECTORY
 from rich.console import Console
 from rich.markdown import Markdown
+from rich import print
 
 # importing modules finished
 

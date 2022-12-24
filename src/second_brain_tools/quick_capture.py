@@ -2,6 +2,7 @@ from second_brain_tools.config import SECOND_BRAIN_DIRECTORY
 from second_brain_tools.directories import initial_check
 from second_brain_tools.defaults import NOTE_EXTENTION, NOTE_CREATED_SUCCESFULLY, INVALID_FILE_NAME_ERROR
 from second_brain_tools.misc import file_name_check, file_creation
+from rich import print
 
 
 def quick_capture(qc_note_name, qc_note_content):

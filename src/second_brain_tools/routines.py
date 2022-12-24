@@ -1,5 +1,6 @@
 import os
 from os.path import exists
+from rich import print
 from second_brain_tools.defaults import (
     capture_routine_hour_00_pomodora_1_content_creation,
     capture_routine_hour_00_pomodora_2_content_creation,

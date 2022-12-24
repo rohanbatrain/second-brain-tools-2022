@@ -72,3 +72,4 @@ docs/_build
 
 # Mypy Cache
 .mypy_cache/
+src/second_brain_tools/lines

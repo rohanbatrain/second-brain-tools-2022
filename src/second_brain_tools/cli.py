@@ -18,6 +18,7 @@ from second_brain_tools.notes import create_note, delete_note, move_note, view_n
 # importing modules that are needed by other modules
 from rich.console import Console  # noqa: F401
 from rich.markdown import Markdown  # noqa: F401
+from rich import print
 
 
 # Main function, which calls typer app here
