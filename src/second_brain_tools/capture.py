@@ -5,6 +5,7 @@ from second_brain_tools.time import Today
 from second_brain_tools.config import SECOND_BRAIN_DIRECTORY
 from second_brain_tools.directories import initial_check
 from second_brain_tools.url import get_domain, get_last_section_of_url
+import re
 
 # importing content creation
 from second_brain_tools.defaults import (
@@ -44,7 +45,7 @@ from second_brain_tools.daily_note import (
 
 
 # def capture_event
-def capture_event_file_creation(event_note_path, event_name, event_type, event_location, event_summary):
+def capture_event_file_creation(event_note_path, event_name, event_type, event_location, event_summary, event_status):
     """_summary_
 
     Args:
@@ -54,7 +55,7 @@ def capture_event_file_creation(event_note_path, event_name, event_type, event_l
         event_location (_type_): _description_
         event_summary (_type_): _description_
     """
-    CE_FILE_CONTENT_CREATION = capture_event_content_creation(event_name, event_type, event_location, event_summary)
+    CE_FILE_CONTENT_CREATION = capture_event_content_creation(event_name, event_type, event_location, event_summary, event_status)
     event_name_check = len(event_name)
     if event_name_check == "0":
         print("Error! event_name is empty.")
@@ -66,7 +67,7 @@ def capture_event_file_creation(event_note_path, event_name, event_type, event_l
         daily_note_events_append(ce_log)
 
 
-def capture_event(event_name, event_type, event_location, event_summary):
+def capture_event(event_name, event_type, event_location, event_summary, event_status):
     """_summary_
 
     Args:
@@ -76,16 +77,16 @@ def capture_event(event_name, event_type, event_location, event_summary):
         event_summary (_type_): _description_
     """
     sbd = SECOND_BRAIN_DIRECTORY
-    event_directory_location = initial_check("01C1D")
+    event_directory_location = initial_check("04B")
     event_working_directory = event_directory_location + Today + "/"
     event_note_directory = sbd + event_working_directory
     event_note_path = sbd + event_working_directory + Today + "_" + event_name + ".md"
     ce_file_exist_check = exists(event_note_directory)
     if ce_file_exist_check is False:
         os.makedirs(event_note_directory)
-        capture_event_file_creation(event_note_path, event_name, event_type, event_location, event_summary)
+        capture_event_file_creation(event_note_path, event_name, event_type, event_location, event_summary, event_status)
     else:
-        capture_event_file_creation(event_note_path, event_name, event_type, event_location, event_summary)
+        capture_event_file_creation(event_note_path, event_name, event_type, event_location, event_summary, event_status)
 
 
 # def capture_tasks
@@ -109,7 +110,7 @@ def capture_task_file_creation(
 
 def capture_task(task_name, task_status, task_priority, task_labels, task_dependencies, task_parent_task, task_sub_task):
     sbd = SECOND_BRAIN_DIRECTORY
-    task_directory_location = initial_check("01C1H")
+    task_directory_location = initial_check("01A6")
     task_working_directory = task_directory_location + Today + "/"
     task_note_directory = sbd + task_working_directory
     task_note_path = sbd + task_working_directory + Today + "_" + task_name + ".md"
@@ -129,10 +130,12 @@ def capture_task(task_name, task_status, task_priority, task_labels, task_depend
 def capture_thought_file_creation(
     thought_note_path,
     thought_name,
+    thought_summary,
     thought_content,
 ):
     CT2_FILE_CONTENT_CREATION = capture_thought_content_creation(
         thought_name,
+        thought_summary,
         thought_content,
     )
     thought_name_check = len(thought_name)
@@ -146,7 +149,7 @@ def capture_thought_file_creation(
         daily_note_trackers_thoughts_append(ct2_log)
 
 
-def capture_thought(thought_name, thought_content):
+def capture_thought(thought_name, thought_summary, thought_content):
     sbd = SECOND_BRAIN_DIRECTORY
     thought_directory_location = initial_check("01A3")
     thought_working_directory = thought_directory_location + Today + "/"
@@ -158,12 +161,14 @@ def capture_thought(thought_name, thought_content):
         capture_thought_file_creation(
             thought_note_path,
             thought_name,
+            thought_summary,
             thought_content,
         )
     else:
         capture_thought_file_creation(
             thought_note_path,
             thought_name,
+            thought_summary,
             thought_content,
         )
 
@@ -172,70 +177,23 @@ def capture_thought(thought_name, thought_content):
 def capture_link(url):
     domain = get_domain(url)
     link_name = get_last_section_of_url(url)
-    if domain == "reddit.com":
-        capture_link_reddit(link_name, url)
-    elif domain == "linkedin.com":
-        capture_link_linkedin(link_name, url)
+    if re.match(r"linkedin\.com$", domain, re.IGNORECASE):
+        capture_link_linkedin(link_name, url, domain)
+    elif re.match(r"reddit\.com$", domain, re.IGNORECASE):
+        capture_link_reddit(link_name, url, domain)
+    else:
+        capture_link_root(link_name, url, domain)
 
 
-# def capture_link_reddit
-def capture_link_reddit_file_creation(
+# def capture_link_root
+def capture_link_root_file_creation(
     link_note_path,
     link_name,
     link_content,
+    link_domain
 ):
     """ """
-    CL_FILE_CONTENT_CREATION = capture_link_content_creation(
-        link_name,
-        link_content,
-    )
-    link_name_check = len(link_name)
-    if link_name_check == "0":
-        print("Error! link_name is empty.")
-    else:
-        with open(link_note_path, 'a+') as cl_file_obj:
-            cl_file_obj.write(CL_FILE_CONTENT_CREATION)
-        cl_log = "[[" + Today + "_Reddit_" + link_name + "]]"
-        daily_note_trackers_link_pregenerate_check()
-        daily_note_trackers_link_append(cl_log)
-
-
-def capture_link_reddit(
-    link_name,
-    link_content,
-):
-    sbd = SECOND_BRAIN_DIRECTORY
-    link_directory_location = initial_check("01A2A1")
-    link_working_directory = link_directory_location + Today + "/"
-    link_note_directory = sbd + link_working_directory
-    link_note_path = sbd + link_working_directory + Today + "_Reddit_" + link_name + ".md"
-    cl_file_exist_check = exists(link_note_directory)
-    if cl_file_exist_check is False:
-        os.makedirs(link_note_directory)
-        capture_link_reddit_file_creation(
-            link_note_path,
-            link_name,
-            link_content,
-        )
-    else:
-        capture_link_reddit_file_creation(
-            link_note_path,
-            link_name,
-            link_content,
-        )
-
-
-# def capture_link_linkedin
-def capture_link_linkedin_file_creation(
-    link_note_path,
-    link_name,
-    link_content,
-):
-    """ """
-    CL_FILE_CONTENT_CREATION = capture_link_content_creation(
-        link_name,
-        link_content,
-    )
+    CL_FILE_CONTENT_CREATION = capture_link_content_creation(link_name, link_content, link_domain)
     link_name_check = len(link_name)
     if link_name_check == "0":
         print("Error! link_name is empty.")
@@ -247,9 +205,10 @@ def capture_link_linkedin_file_creation(
         daily_note_trackers_link_append(cl_log)
 
 
-def capture_link_linkedin(
+def capture_link_root(
     link_name,
     link_content,
+    link_domain
 ):
     sbd = SECOND_BRAIN_DIRECTORY
     link_directory_location = initial_check("01A2")
@@ -259,53 +218,119 @@ def capture_link_linkedin(
     cl_file_exist_check = exists(link_note_directory)
     if cl_file_exist_check is False:
         os.makedirs(link_note_directory)
+        capture_link_root_file_creation(
+            link_note_path,
+            link_name,
+            link_content,
+            link_domain
+        )
+    else:
+        capture_link_root_file_creation(
+            link_note_path,
+            link_name,
+            link_content,
+            link_domain
+        )
+
+
+# def capture_link_reddit
+def capture_link_reddit_file_creation(
+    link_note_path,
+    link_name,
+    link_content,
+    link_domain,
+):
+    """ """
+    CLR_FILE_CONTENT_CREATION = capture_link_content_creation(
+        link_name,
+        link_content,
+        link_domain,
+    )
+    link_name_check = len(link_name)
+    if link_name_check == "0":
+        print("Error! link_name is empty.")
+    else:
+        with open(link_note_path, 'a+') as cl_file_obj:
+            cl_file_obj.write(CLR_FILE_CONTENT_CREATION)
+        cl_log = "[[" + Today + "_Reddit_" + link_name + "]]"
+        daily_note_trackers_link_pregenerate_check()
+        daily_note_trackers_link_append(cl_log)
+
+
+def capture_link_reddit(
+    link_name,
+    link_content,
+    link_domain
+):
+    sbd = SECOND_BRAIN_DIRECTORY
+    link_directory_location = initial_check("01A2A1")
+    link_working_directory = link_directory_location + Today + "/"
+    link_note_directory = sbd + link_working_directory
+    link_note_path = sbd + link_working_directory + Today + "_Reddit_" + link_name + ".md"
+    clr_file_exist_check = exists(link_note_directory)
+    if clr_file_exist_check is False:
+        os.makedirs(link_note_directory)
+        capture_link_reddit_file_creation(
+            link_note_path,
+            link_name,
+            link_content,
+            link_domain,
+        )
+    else:
+        capture_link_reddit_file_creation(
+            link_note_path,
+            link_name,
+            link_content,
+            link_domain,
+        )
+
+
+# def capture_link_linkedin
+def capture_link_linkedin_file_creation(link_note_path, link_name, link_content, link_domain):
+    """ """
+    CLL_FILE_CONTENT_CREATION = capture_link_content_creation(
+        link_name,
+        link_content,
+        link_domain,
+    )
+    link_name_check = len(link_name)
+    if link_name_check == "0":
+        print("Error! link_name is empty.")
+    else:
+        with open(link_note_path, 'a+') as cl_file_obj:
+            cl_file_obj.write(CLL_FILE_CONTENT_CREATION)
+        cl_log = "[[" + Today + "_Linkedin_" + link_name + "]]"
+        daily_note_trackers_link_pregenerate_check()
+        daily_note_trackers_link_append(cl_log)
+
+
+def capture_link_linkedin(
+    link_name,
+    link_content,
+    link_domain
+):
+    sbd = SECOND_BRAIN_DIRECTORY
+    link_directory_location = initial_check("01A2B1")
+    link_working_directory = link_directory_location + Today + "/"
+    link_note_directory = sbd + link_working_directory
+    link_note_path = sbd + link_working_directory + Today + "_Linkedin_" + link_name + ".md"
+    cl_file_exist_check = exists(link_note_directory)
+    if cl_file_exist_check is False:
+        os.makedirs(link_note_directory)
         capture_link_linkedin_file_creation(
             link_note_path,
             link_name,
             link_content,
+            link_domain,
         )
     else:
         capture_link_linkedin_file_creation(
             link_note_path,
             link_name,
             link_content,
+            link_domain,
         )
 
-
-# # def capture_link
-# def capture_link_file_creation(
-#     link_note_path,
-#     link_name,
-#     link_content,
-# ):
-#     """ """
-#     CL_FILE_CONTENT_CREATION = capture_link_content_creation(link_name, link_content,)
-#     link_name_check = len(link_name)
-#     if link_name_check == "0":
-#         print("Error! link_name is empty.")
-#     else:
-#         with open(link_note_path, 'a+') as cl_file_obj:
-#             cl_file_obj.write(CL_FILE_CONTENT_CREATION)
-#         cl_log = "[[" + Today + "_" + link_name + "]]"
-#         daily_note_trackers_link_pregenerate_check()
-#         daily_note_trackers_link_append(cl_log)
-
-
-# def capture_link(
-#     link_name,
-#     link_content,
-# ):
-#     sbd = SECOND_BRAIN_DIRECTORY
-#     link_directory_location = initial_check("01A2")
-#     link_working_directory = link_directory_location + Today + "/"
-#     link_note_directory = sbd + link_working_directory
-#     link_note_path = sbd + link_working_directory + Today + "_" + link_name + ".md"
-#     cl_file_exist_check = exists(link_note_directory)
-#     if cl_file_exist_check is False:
-#         os.makedirs(link_note_directory)
-#         capture_link_file_creation(link_note_path, link_name, link_content,)
-#     else:
-#         capture_link_file_creation(link_note_path, link_name, link_content,)
 
 # def capture_reminders
 def capture_reminder_file_creation(reminder_note_path, reminder_name, reminder_priority, reminder_labels, reminder_time_to_remind):
@@ -350,7 +375,7 @@ def capture_bullet_journal_file_creation(bullet_journal_note_path):
     daily_note_bullet_journal_append(cbj_log)
 
 
-def capture_bullet_journal(bullet_journal_type, bullet_journal_location, bullet_journal_summary):
+def capture_bullet_journal():
     sbd = SECOND_BRAIN_DIRECTORY
     bullet_journal_directory_location = initial_check("01C1B")
     bullet_journal_working_directory = bullet_journal_directory_location + Today + "/"
@@ -359,9 +384,9 @@ def capture_bullet_journal(bullet_journal_type, bullet_journal_location, bullet_
     cbj_file_exist_check = exists(bullet_journal_note_directory)
     if cbj_file_exist_check is False:
         os.makedirs(bullet_journal_note_directory)
-        capture_bullet_journal_file_creation(bullet_journal_note_path, bullet_journal_type, bullet_journal_location, bullet_journal_summary)
+        capture_bullet_journal_file_creation(bullet_journal_note_path)
     else:
-        capture_bullet_journal_file_creation(bullet_journal_note_path, bullet_journal_type, bullet_journal_location, bullet_journal_summary)
+        capture_bullet_journal_file_creation(bullet_journal_note_path)
 
 
 # def capture_bullet_journal

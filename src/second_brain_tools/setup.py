@@ -776,7 +776,7 @@ def sbt_config_generation(second_brain_dir):
         dot_env.write("_01C1 = \"01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/\"\n")
         dot_env.write("_01C1A = \"01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1A_MOC/\"\n")
         dot_env.write("_01C1B = \"01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1B_Bullet-Journal/\"\n")
-        dot_env.write("_01C1B1 = \"01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1B_Journal/01C1B1_Bullet-Journal\"\n")
+        dot_env.write("_01C1B1 = \"01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1B_Journal/01C1B1_Bullet-Journal/\"\n")
         dot_env.write("_01C1C = \"01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1C_Connections/\"\n")
         dot_env.write("_01C1D = \"01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1D_Events/\"\n")
         dot_env.write("_01C1E = \"01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1E_Location/\"\n")

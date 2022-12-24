@@ -416,6 +416,10 @@ def ic_01c1i(dir_code):
         dir_path = sbtc._01C1I8
     elif dir_code == "01C1I9":
         dir_path = sbtc._01C1I9
+    elif dir_code == "01C1I10":
+        dir_path = sbtc._01C1I10
+    elif dir_code == "01C1I11":
+        dir_path = sbtc._01C1I11
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
@@ -1086,7 +1090,7 @@ def directories_test():
         sys.exit()
     else:
         print(initial_check(test_code))
-    directories_test()
+        directories_test()
 
 
 # directories_test()

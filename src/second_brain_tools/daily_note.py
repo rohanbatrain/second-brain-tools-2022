@@ -7620,8 +7620,8 @@ def daily_note_trackers_link_generate(dntl2_location):
 def daily_note_trackers_link_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
-    dntl2_directory = initial_check("01C1I1")
-    dntl2_location = sbd + dntl2_directory + Today + "_" + ".md"
+    dntl2_directory = initial_check("01C1I10")
+    dntl2_location = sbd + dntl2_directory + Today + "_Links" + ".md"
     return dntl2_location
 
 

@@ -51,15 +51,34 @@ def bullet_list_append(note_path, note_content, list_include_time):
 
 def table_append(note_path, note_content):
     with open(note_path, 'a+') as ta_object:
-        if note_content == "%TABLE_HEADER%" or "%TH%":
+        last_line_check = table_append_last_line_check(note_path, note_content)
+        if last_line_check is False:
             ta_object.write("| You Logged -> | on |\n")
             ta_object.write("| ------------- | ----- |\n")
+            ta_object.write(f"|{note_content}| {CURRENT_TIME} | \n")
         else:
             ta_object.write(f"|{note_content}| {CURRENT_TIME} | \n")
 
 
-# Append to a note
+def table_append_last_line_check(note_path, note_content):
+    with open(note_path, 'r') as tallc_object:
+        # Read the contents of the file
+        contents = tallc_object.read()
+        # Split the contents into a list of lines
+        lines = contents.split('\n')
+        # Iterate over the lines in reverse order
+        for line in reversed(lines):
+            # Skip empty lines
+            if line == '':
+                continue
+            # Return True if the line matches the given string
+            if line == "| ------------- | ----- |":
+                return True
+        # Return False if no non-empty line is found
+        return False
 
+
+# Append to a note
 def append_note(append_type, note_dir_code, note_name, note_content, include_time):
     note_path = initial_check(note_dir_code) + note_name
     if append_type == "paragraph" or "Paragraph" or "PARAGRAPH":

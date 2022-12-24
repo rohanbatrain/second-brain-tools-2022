@@ -5,6 +5,7 @@ from second_brain_tools.setup import setup as sbt_setup
 from second_brain_tools.quick_capture import quick_capture
 from second_brain_tools.misc import random_file_from_dir
 from second_brain_tools.directories import initial_check
+from second_brain_tools.daily_note import daily_note_bullet_journal_append
 from second_brain_tools.capture import (
     capture_link,
     capture_thought,
@@ -59,6 +60,12 @@ def quick_capture_cli(name: str = typer.Option(..., prompt=True), content: str =
     quick_capture(name, content)
 
 
+@app.command("Bullet-Journal")
+def daily_note_bullet_journal_cli(content: str = typer.Option(..., prompt=True)):
+    daily_note_bullet_journal_append(content)
+    return
+
+
 @app.command("Random-Note")
 def random_note_cli(dir_code: str = typer.Option("04A", prompt=False)):
     """
@@ -96,12 +103,13 @@ def config_check_cli(dir_code):
 @app_capture.command("Thought")
 def capture_thought_cli(
     name: str = typer.Option(..., prompt=True),
+    summary: str = typer.Option(..., prompt=True),
     content: str = typer.Option(..., prompt=True),
 ):
     """
     Had a thought? Capture it.
     """
-    capture_thought(name, content)
+    capture_thought(name, summary, content)
 
 
 @app_capture.command("Link")
@@ -117,11 +125,12 @@ def capture_link_cli(
 @app_capture.command("Event")
 def capture_event_cli(
     name: str = typer.Option(..., prompt=True),
-    type: str = typer.Option(..., prompt=True),
+    Type: str = typer.Option(..., prompt=True),
     location: str = typer.Option(..., prompt=True),
     summary: str = typer.Option(..., prompt=True),
+    status: str = typer.Option(..., prompt=True),
 ):
-    capture_event(name, type, location, summary)
+    capture_event(name, Type, location, summary, status)
 
 
 @app_capture.command("Task")
@@ -205,7 +214,7 @@ def daily_note_regenerate_cli():
     "Regenerates the daily note MOC."
     return
 
-
+# daily_note_bullet_journal_append
 # Adding app_daily_note commands Finished
 
 # Adding app commands Finished
