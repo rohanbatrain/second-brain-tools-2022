@@ -1,7 +1,5 @@
 import re
 
-url = "https://www.reddit.com/r/2007scape/comments/yfjzlj/tombs_of_amascut_drop_mechanics_osmumtens_fang/"
-
 
 def get_domain(url):
     # Use a regular expression to extract the domain from the URL

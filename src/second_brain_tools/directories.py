@@ -42,6 +42,8 @@ def ic_custom(dir_code):
         dir_path = sbtc.example
     elif dir_code == "example_elif":
         dir_path = sbtc.example_elif
+    elif dir_code == "root":
+        dir_path = sbtc.SECOND_BRAIN_DIRECTORY
     # Add your directories here.
     # Add your directories here.
     # Add your directories here.
@@ -61,7 +63,7 @@ def ic_root(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "01":
         dir_path = sbtc._01
     elif dir_code == "02":
@@ -87,7 +89,7 @@ def ic_root_regex(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if re.match("^01", dir_code):
         dir_path = ic_01(dir_code)
     elif re.match("^02", dir_code):
@@ -115,7 +117,7 @@ def ic_01(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "01A":
         dir_path = sbtc._01A
     elif dir_code == "01B":
@@ -142,7 +144,7 @@ def ic_01a(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "01A1":
         dir_path = sbtc._01A1
     elif dir_code == "01A2":
@@ -196,7 +198,7 @@ def ic_01a2(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "01A2A":
         dir_path = sbtc._01A2A
     elif dir_code == "01A2B":
@@ -218,7 +220,7 @@ def ic_01a2a(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "01A2A1":
         dir_path = sbtc._01A2A1
     else:
@@ -233,7 +235,7 @@ def ic_01a2b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "01A2B1":
         dir_path = sbtc._01A2B1
     else:
@@ -250,7 +252,7 @@ def ic_01a8(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "01A8A":
         dir_path = sbtc._01A8A
     elif dir_code == "01A8B":
@@ -271,7 +273,7 @@ def ic_01a9(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "01A9A":
         dir_path = sbtc._01A9A
     elif dir_code == "01A9B":
@@ -288,7 +290,7 @@ def ic_01b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "01B1":
         dir_path = sbtc._01B1
     elif dir_code == "01B2":
@@ -310,13 +312,13 @@ def ic_01b3(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
     if dir_code == "01B3A":
         dir_path = sbtc._01B3A
     elif dir_code == "01B3B":
         dir_path = sbtc._01B3B
     else:
         dir_path = DIR_NOT_FOUND
+    return dir_path
 
 
 # ic_01B2-Ended # ic_01C-Started
@@ -326,7 +328,7 @@ def ic_01c(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "01C1":
         dir_path = sbtc._01C1
     else:
@@ -344,7 +346,7 @@ def ic_01c1(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "01C1A":
         dir_path = sbtc._01C1A
     elif dir_code == "01C1B":
@@ -394,7 +396,7 @@ def ic_01c1i(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "01C1I1":
         dir_path = sbtc._01C1I1
     elif dir_code == "01C1I2":
@@ -425,7 +427,7 @@ def ic_02(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "02A":
         dir_path = sbtc._02A
     elif dir_code == "02B":
@@ -448,7 +450,7 @@ def ic_02a(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "02A1":
         dir_path = sbtc._02A1
     elif dir_code == "02A2":
@@ -467,7 +469,7 @@ def ic_02b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "02B1":
         dir_path = sbtc._02B1
     else:
@@ -482,7 +484,7 @@ def ic_03(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "03A":
         dir_path = sbtc._03A
     elif dir_code == "03B":
@@ -512,7 +514,7 @@ def ic_03a(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "03A1":
         dir_path = sbtc._03A1
     elif dir_code == "03A2":
@@ -533,7 +535,7 @@ def ic_03b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "03B1":
         dir_path = sbtc._03B1
     elif dir_code == "03B2":
@@ -568,7 +570,7 @@ def ic_03c(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "03C1":
         dir_path = sbtc._03C1
     elif dir_code == "03C2":
@@ -598,7 +600,7 @@ def ic_03c1(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "03C1A":
         dir_path = sbtc._03C1A
     elif dir_code == "03C1B":
@@ -642,7 +644,7 @@ def ic_03c1a_part_1(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "03C1A1":
         dir_path = sbtc._03C1A1
     elif dir_code == "03C1A2":
@@ -675,7 +677,7 @@ def ic_03c1a_part_2(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "03C1A11":
         dir_path = sbtc._03C1A11
     elif dir_code == "03C1A12":
@@ -704,7 +706,7 @@ def ic_03c1b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "03C1B1":
         dir_path = sbtc._03C1B1
     else:
@@ -719,7 +721,7 @@ def ic_03c1c(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "03C1C1":
         dir_path = sbtc._03C1C1
     else:
@@ -734,7 +736,7 @@ def ic_03c2(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "03C2A":
         dir_path = sbtc._03C2A
     elif dir_code == "03C2B":
@@ -751,7 +753,7 @@ def ic_03c3(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "03C3A":
         dir_path = sbtc._03C3A
     elif dir_code == "03C3B":
@@ -773,7 +775,7 @@ def ic_03c3a(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "03C3A1":
         dir_path = sbtc._03C3A1
     elif dir_code == "03C3A2":
@@ -794,7 +796,7 @@ def ic_03c3b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "03C3B1":
         dir_path = sbtc._03C3B1
     else:
@@ -809,7 +811,7 @@ def ic_03c4(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "03C4A":
         dir_path = sbtc._03C4A
     else:
@@ -824,7 +826,7 @@ def ic_03d(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "03D1":
         dir_path = sbtc._03D1
     elif dir_code == "03D2":
@@ -847,7 +849,7 @@ def ic_04(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "04A":
         dir_path = sbtc._04A
     elif dir_code == "04B":
@@ -873,7 +875,7 @@ def ic_04a(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "04A1":
         dir_path = sbtc._04A1
     elif dir_code == "04A2":
@@ -902,7 +904,7 @@ def ic_04c(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "04C1":
         dir_path = sbtc._04C1
     else:
@@ -939,7 +941,7 @@ def ic_06(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "06A":
         dir_path = sbtc._06A
     elif dir_code == "06B":
@@ -968,7 +970,7 @@ def ic_06a(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "06A1":
         dir_path = sbtc._06A1
     else:
@@ -980,7 +982,7 @@ def ic_06b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "06B1":
         dir_path = sbtc._06B1
     else:
@@ -1023,7 +1025,7 @@ def ic_07(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "07A":
         dir_path = sbtc._07A
     elif dir_code == "07B":
@@ -1042,7 +1044,7 @@ def ic_07a(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "07A1":
         dir_path = sbtc._07A1
     elif dir_code == "07A2":
@@ -1056,7 +1058,7 @@ def ic_07b(dir_code):
     """
     Takes dir_code as input and returns the absolute directory path of the code.
     """
-    global dir_path
+
     if dir_code == "07B1":
         dir_path = sbtc._07B1
     else:

@@ -1,29 +1,23 @@
-"""
-Module that contains the command line app.
-
-Why does this file exist, and why not put this in __main__?
-
-  You might be tempted to import things from __main__ later, but that will cause
-  problems: the code will get executed twice:
-
-  - When you run `python -m second_brain_tools` python will execute
-    ``__main__.py`` as a script. That means there won't be any
-    ``second_brain_tools.__main__`` in ``sys.modules``.
-  - When you import __main__ it will get executed again(as a module) because
-    there's no ``second_brain_tools.__main__`` in ``sys.modules``.
-"""
-# // Meant for production branch
 # Importing production modules
 import typer
 import os
 from second_brain_tools.setup import setup as sbt_setup
 from second_brain_tools.quick_capture import quick_capture
-from second_brain_tools.misc import random_file_from_dir, view_note_with_dir
+from second_brain_tools.misc import random_file_from_dir
 from second_brain_tools.directories import initial_check
-from second_brain_tools.capture import capture_link, capture_thought
+from second_brain_tools.capture import (
+    capture_link,
+    capture_thought,
+    capture_event,
+    capture_task,
+    capture_reminder,
+    )
 from second_brain_tools.notes import create_note, delete_note, move_note, view_note
-
 # Importing production modules finished
+
+# importing modules that are needed by other modules
+from rich.console import Console  # noqa: F401
+from rich.markdown import Markdown  # noqa: F401
 
 
 # Main function, which calls typer app here
@@ -36,6 +30,7 @@ def main():
 
 
 # Typer app Started
+
 # Defining typers Started
 app = typer.Typer()
 app_notes = typer.Typer()
@@ -43,22 +38,18 @@ app_daily_note = typer.Typer()
 app_capture = typer.Typer()
 app_config = typer.Typer()
 # Defining typers Finished
+
 # Adding typers to main app Started
 app.add_typer(app_notes, name="Notes", help="Notes specific commands.")
 app.add_typer(app_capture, name="Capture", help="Capture a note using predefined flows.")
 app.add_typer(app_daily_note, name="Daily-Note", help="Daily Note Specific Commands.")
 app.add_typer(app_config, name="Config", help="Shows you configurable options.")
 # Adding typers to main app Finished
+
 # Typer app Finished
 
 
-# Starting the module
-# Finishing the module
-
-
 # Starting the app fx()
-
-
 @app.command("Quick-Capture")
 def quick_capture_cli(name: str = typer.Option(..., prompt=True), content: str = typer.Option(..., prompt=True)):
     """
@@ -68,12 +59,11 @@ def quick_capture_cli(name: str = typer.Option(..., prompt=True), content: str =
 
 
 @app.command("Random-Note")
-def random_note_cli(dir_code: str = typer.Option(..., prompt=True)):
+def random_note_cli(dir_code: str = typer.Option("04A", prompt=False)):
     """
     View a random note from your vault.
     """
-    rnc_dir = random_file_from_dir(dir_code)
-    view_note_with_dir(rnc_dir)
+    random_file_from_dir(dir_code)
 
 
 # Adding app_config commands Started
@@ -104,8 +94,8 @@ def config_check_cli(dir_code):
 # Adding app_capture commands Started
 @app_capture.command("Thought")
 def capture_thought_cli(
-    name,
-    content,
+    name: str = typer.Option(..., prompt=True),
+    content: str = typer.Option(..., prompt=True),
 ):
     """
     Had a thought? Capture it.
@@ -115,21 +105,50 @@ def capture_thought_cli(
 
 @app_capture.command("Link")
 def capture_link_cli(
-    name: str = typer.Option(..., prompt=True),
-    content: str = typer.Option(..., prompt=True),
+    url: str = typer.Option(..., prompt=True),
 ):
     """
     Got a url/link? Capture it.
     """
-    capture_link(name, content)
+    capture_link(url)
 
+
+@app_capture.command("Event")
+def capture_event_cli(
+    name: str = typer.Option(..., prompt=True),
+    type: str = typer.Option(..., prompt=True),
+    location: str = typer.Option(..., prompt=True),
+    summary: str = typer.Option(..., prompt=True),
+):
+    capture_event(name, type, location, summary)
+
+
+@app_capture.command("Task")
+def capture_task_cli(
+    name: str = typer.Option(..., prompt=True),
+    status: str = typer.Option(..., prompt=True),
+    priority: str = typer.Option(..., prompt=True),
+    labels: str = typer.Option(..., prompt=True),
+    dependencies: str = typer.Option(..., prompt=True),
+    parent_task: str = typer.Option(..., prompt=True),
+    sub_task: str = typer.Option(..., prompt=True),
+):
+    capture_task(name, status, priority, labels, dependencies, parent_task, sub_task)
+
+
+@app_capture.command("Reminder")
+def capture_reminder_cli(
+    name: str = typer.Option(..., prompt=True),
+    priority: str = typer.Option(..., prompt=True),
+    labels: str = typer.Option(..., prompt=True),
+    time_to_remind: str = typer.Option(..., prompt=True),
+):
+    capture_reminder(name, priority, labels, time_to_remind)
 
 # Adding app_capture commands Finished
 
 
 # Adding app_notes commands Started
-
-
 @app_notes.command("Create")
 def notes_create_cli(
     dir_code: str = typer.Option(..., prompt=True),
