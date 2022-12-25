@@ -17,13 +17,21 @@ from second_brain_tools.capture import (
     capture_event,
     capture_task,
     capture_reminder,
+    capture_meal,
+    capture_sleep,
+    capture_medicine,
+    capture_mood,
+    capture_water_intake,
+    capture_exercise,
+    capture_transaction,
+    capture_symptom,
 )
 from second_brain_tools.notes import create_note, delete_note, move_note, view_note
 
 # Importing production modules finished
 
 # importing modules that are needed by other modules
-from rich.console import Console  # noqa: F401
+from rich.console import List, Capture, Console  # noqa: F401
 from rich.markdown import Markdown  # noqa: F401
 from rich import print
 
@@ -68,6 +76,9 @@ def quick_capture_cli(name: str = typer.Option(..., prompt=True), content: str =
 
 @app.command("Bullet-Journal")
 def daily_note_bullet_journal_cli(content: str = typer.Option(..., prompt=True)):
+    """
+    Capture a bullet point to your journal.
+    """
     daily_note_bullet_journal_pregenerate_check()
     daily_note_bullet_journal_append(content)
     return
@@ -85,7 +96,7 @@ def random_note_cli(dir_code: str = typer.Option("04A", prompt=False)):
 @app_config.command("Setup")
 def config_setup_cli():
     """
-    A setup wizard to configure second_brain_tools
+    A setup wizard to configure second_brain_tools.
     """
     sbt_setup()
 
@@ -114,7 +125,7 @@ def capture_thought_cli(
     content: str = typer.Option(..., prompt=True),
 ):
     """
-    Had a thought? Capture it.
+    Got a thought, capture it!
     """
     capture_thought(name, summary, content)
 
@@ -137,6 +148,9 @@ def capture_event_cli(
     summary: str = typer.Option(..., prompt=True),
     status: str = typer.Option(..., prompt=True),
 ):
+    """
+    Capture an event
+    """
     capture_event(name, Type, location, summary, status)
 
 
@@ -146,10 +160,13 @@ def capture_task_cli(
     status: str = typer.Option(..., prompt=True),
     priority: str = typer.Option(..., prompt=True),
     labels: str = typer.Option(..., prompt=True),
-    dependencies: str = typer.Option(..., prompt=True),
-    parent_task: str = typer.Option(..., prompt=True),
-    sub_task: str = typer.Option(..., prompt=True),
+    dependencies: str = typer.Option("NULL", prompt=True),
+    parent_task: str = typer.Option("NULL", prompt=True),
+    sub_task: str = typer.Option("NULL", prompt=True),
 ):
+    """
+    Capture a todo task
+    """
     capture_task(name, status, priority, labels, dependencies, parent_task, sub_task)
 
 
@@ -160,7 +177,113 @@ def capture_reminder_cli(
     labels: str = typer.Option(..., prompt=True),
     time_to_remind: str = typer.Option(..., prompt=True),
 ):
+    """
+    Capture a reminder.
+    """
     capture_reminder(name, priority, labels, time_to_remind)
+
+
+@app_capture.command("Meal")
+def capture_meal_cli(
+    name: str = typer.Option(..., prompt=True),
+    time: str = typer.Option(..., prompt=True),
+    Type: str = typer.Option(..., prompt=True),
+    calories: str = typer.Option(..., prompt=True),
+    taken: str = typer.Option(..., prompt=True)
+):
+    """
+    Capture a meal.
+    """
+    capture_meal(name, time, Type, calories, taken)
+
+
+@app_capture.command("Sleep")
+def capture_sleep_cli(
+    Name: str = typer.Option(..., prompt=True),
+    Type: str = typer.Option(..., prompt=True),
+    Hours: str = typer.Option(..., prompt=True),
+    Time: str = typer.Option(..., prompt=True),
+):
+    """
+    Capture a nap.
+    """
+    capture_sleep(Name, Type, Hours, Time)
+
+
+@app_capture.command("Medicine")
+def capture_medicine_cli(
+    name: str = typer.Option(..., prompt=True),
+    time: str = typer.Option(..., prompt=True),
+    Type: str = typer.Option(..., prompt=True),
+    taken: str = typer.Option(..., prompt=True),
+):
+    """
+    Capture your medicine.
+    """
+    capture_medicine(name, time, Type, taken)
+
+
+@app_capture.command("Mood")
+def capture_mood_cli(
+    name: str = typer.Option(..., prompt=True),
+    status: str = typer.Option(..., prompt=True),
+    reason: str = typer.Option(..., prompt=True),
+):
+    """
+    Capture your mood.
+    """
+    capture_mood(name, status, reason)
+
+
+@app_capture.command("Water-Intake")
+def capture_water_intake_cli(
+    name: str = typer.Option(..., prompt=True),
+    time: str = typer.Option(..., prompt=True),
+    amount: str = typer.Option(..., prompt=True),
+):
+    """
+    Capture your water intake.
+    """
+    capture_water_intake(name, time, amount)
+
+
+@app_capture.command("Exercise")
+def capture_exercise_cli(
+    name: str = typer.Option(..., prompt=True),
+    time: str = typer.Option(..., prompt=True),
+    cohort: str = typer.Option(..., prompt=True),
+    status: str = typer.Option(..., prompt=True),
+):
+    """
+    Capture your exercise/workouts.
+    """
+    capture_exercise(name, time, cohort, status)
+
+
+@app_capture.command("Transaction")
+def capture_transaction_cli(
+    name: str = typer.Option(..., prompt=True),
+    time: str = typer.Option(..., prompt=True),
+    type: str = typer.Option(..., prompt=True),
+    amount: str = typer.Option(..., prompt=True),
+    account: str = typer.Option(..., prompt=True),
+    invoice_url: str = typer.Option(..., prompt=True),
+):
+    """
+    Capture a transaction.
+    """
+    capture_transaction(name, time, type, amount, account, invoice_url)
+
+
+@app_capture.command("Symptom")
+def capture_symptom_cli(
+    name: str = typer.Option(..., prompt=True),
+    status: str = typer.Option(..., prompt=True),
+):
+    """
+    Capture a symptom.
+    """
+    capture_symptom(name, status)
 
 
 # Adding app_capture commands Finished
@@ -173,6 +296,9 @@ def notes_create_cli(
     note_name: str = typer.Option(..., prompt=True),
     note_body: str = typer.Option(..., prompt=True),
 ):
+    """
+    Create a note in your desired directory.
+    """
     create_note(dir_code, note_name, note_body)
     return
 
@@ -182,6 +308,9 @@ def notes_view_cli(
     dir_code: str = typer.Option(..., prompt=True),
     note_name: str = typer.Option(..., prompt=True),
 ):
+    """
+    View a note in your desired directory.
+    """
     view_note(dir_code, note_name)
     return
 
@@ -192,6 +321,9 @@ def notes_move_cli(
     new_dir_code: str = typer.Option(..., prompt=True),
     note_name: str = typer.Option(..., prompt=True),
 ):
+    """
+    Move a note from/to your desired directory.
+    """
     move_note(old_dir_code, new_dir_code, note_name)
     return
 
@@ -201,6 +333,9 @@ def notes_delete_cli(
     dir_code: str = typer.Option(..., prompt=True),
     note_name: str = typer.Option(..., prompt=True),
 ):
+    """
+    Deleted a note from your desired directory.
+    """
     delete_note(dir_code, note_name)
     return
 

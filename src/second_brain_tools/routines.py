@@ -57,8 +57,6 @@ from second_brain_tools.directories import initial_check
 
 
 # Hour_00_Pomodora_1
-
-
 def capture_routine_hour_00_pomodora_1_file_creation(
     routine_hour_00_pomodora_1_note_path,
     routine_hour_00_pomodora_1_name,
@@ -3721,3 +3719,5 @@ def capture_routine_hour_23_pomodora_2(
 
 
 # Hour_23_Pomodora_2
+
+# A really heavy function to generate routine is being defined.

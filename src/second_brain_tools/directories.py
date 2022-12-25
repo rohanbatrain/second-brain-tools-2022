@@ -5,8 +5,8 @@ But i would really like to hardcode the absolute path for error pruning my scrip
 """
 # Importing production modules Started
 import re
-import second_brain_tools.config as sbtc
 import sys
+import second_brain_tools.config as sbtc
 from rich import print
 
 # Importing production modules finished
@@ -166,6 +166,14 @@ def ic_01a(dir_code):
         dir_path = sbtc._01A9
     elif dir_code == "01A10":
         dir_path = sbtc._01A10
+    elif dir_code == "01A11":
+        dir_path = sbtc._01A11
+    elif dir_code == "01A12":
+        dir_path = sbtc._01A12
+    elif dir_code == "01A13":
+        dir_path = sbtc._01A13
+    elif dir_code == "01A14":
+        dir_path = sbtc._01A14
     else:
         if re.match("^01A1", dir_code):
             dir_path = ic_01a1(dir_code)
@@ -371,6 +379,8 @@ def ic_01c1(dir_code):
             dir_path = ic_01c1b(dir_code)
         elif re.match("^01C1I", dir_code):
             dir_path = ic_01c1i(dir_code)
+        elif re.match("^01C1G", dir_code):
+            dir_path = ic_01c1g(dir_code)
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
@@ -425,6 +435,71 @@ def ic_01c1i(dir_code):
     return dir_path
 
 
+def ic_01c1g(dir_code):
+    # checks if the ending char is a single digit number b/w 1-9
+    check = check_ending_char(dir_code)
+    if check is True:
+        ic_01c1g_part_1(dir_code)
+    else:
+        ic_01c1g_part_2(dir_code)
+
+
+def ic_01c1g_part_1(dir_code):
+    if dir_code == "01C1G1":
+        dir_path = sbtc._01C1G1
+    elif dir_code == "01C1G2":
+        dir_path = sbtc._01C1G2
+    elif dir_code == "01C1G3":
+        dir_path = sbtc._01C1G3
+    elif dir_code == "01C1G4":
+        dir_path = sbtc._01C1G4
+    elif dir_code == "01C1G5":
+        dir_path = sbtc._01C1G5
+    elif dir_code == "01C1G6":
+        dir_path = sbtc._01C1G6
+    elif dir_code == "01C1G7":
+        dir_path = sbtc._01C1G7
+    elif dir_code == "01C1G8":
+        dir_path = sbtc._01C1G8
+    elif dir_code == "01C1G9":
+        dir_path = sbtc._01C1G9
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
+
+
+def ic_01c1g_part_2(dir_code):
+    if dir_code == "01C1G10":
+        dir_path = sbtc._01C1G10
+    elif dir_code == "01C1G11":
+        dir_path = sbtc._01C1G11
+    elif dir_code == "01C1G12":
+        dir_path = sbtc._01C1G12
+    elif dir_code == "01C1G13":
+        dir_path = sbtc._01C1G13
+    elif dir_code == "01C1G14":
+        dir_path = sbtc._01C1G14
+    elif dir_code == "01C1G15":
+        dir_path = sbtc._01C1G15
+    elif dir_code == "01C1G16":
+        dir_path = sbtc._01C1G16
+    elif dir_code == "01C1G17":
+        dir_path = sbtc._01C1G17
+    elif dir_code == "01C1G18":
+        dir_path = sbtc._01C1G18
+    elif dir_code == "01C1G19":
+        dir_path = sbtc._01C1G19
+    elif dir_code == "01C1G20":
+        dir_path = sbtc._01C1G20
+    elif dir_code == "01C1G21":
+        dir_path = sbtc._01C1G21
+    elif dir_code == "01C1G22":
+        dir_path = sbtc._01C1G22
+    elif dir_code == "01C1G23":
+        dir_path = sbtc._01C1G23
+    else:
+        dir_path = DIR_NOT_FOUND
+    return dir_path
 # ic_01C1i-Ended # ic_01C-Ended # ic_01-Ended # 01-Ended # 02-Started # c_02-Started
 
 

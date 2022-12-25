@@ -215,7 +215,7 @@ tags: daily_note/Trackers/Location/{Today}
 
 """
 # ------------------------------------#
-DNTL2_FILE_CONTENT_CREATION = f"""---
+DNTL_FILE_CONTENT_CREATION = f"""---
 date: {Today}
 tags: daily_note/Link/{Today}
 ---
@@ -260,7 +260,6 @@ tags: daily_note/Trackers/Mood/{Today}
 # Mood_Log
 
 > Below are all the Mood you Tracked Today.
-
 
 """
 # ------------------------------------#
@@ -730,7 +729,7 @@ thought_summary: {Thought_Summary}
 {Thought_Content}
 
 
-    """
+"""
     return CT2_FILE_CONTENT_CREATION
 
 
@@ -753,7 +752,7 @@ reminder_time_to_remind: {Reminder_Time}
 # Reminder_Log
 
 
-    """
+"""
     return CR_FILE_CONTENT_CREATION
 
 
@@ -767,7 +766,7 @@ time: {CURRENT_TIME}
 # Bullet_Journal
 
 
-    """
+"""
     return CBJ_FILE_CONTENT_CREATION
 
 
@@ -793,7 +792,7 @@ transaction_invoice: {Transaction_Invoice}
 
 # Transaction_Log
 
-    """
+"""
     return CTCC_FILE_CONTENT_CREATION
 
 
@@ -810,7 +809,7 @@ sleep_time: {Sleep_Time}
 
 # Sleep_Log
 
-    """
+"""
     return CSCC_FILE_CONTENT_CREATION
 
 
@@ -827,7 +826,7 @@ meal_taken: {Meal_Taken}
 
 # Meal_Log
 
-    """
+"""
     return CMCC_FILE_CONTENT_CREATION
 
 
@@ -845,7 +844,7 @@ medicine_taken: {Medicine_Taken}
 
 # Medicine_Log
 
-    """
+"""
     return CM2CC_FILE_CONTENT_CREATION
 
 
@@ -865,7 +864,8 @@ mood_reason: {Mood_Reason}
 
 # Mood_Log
 
-    """
+
+"""
     return CTCC_FILE_CONTENT_CREATION
 
 
@@ -928,7 +928,7 @@ url: {URL}
     return CLCC_CONTENT_CREATION
 
 
-def capture_symptoms_content_creation(
+def capture_symptom_content_creation(
     Symptom_Name,
     Symptom_Status,
 ):

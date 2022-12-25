@@ -4,12 +4,13 @@ Which means they are either very micro and/or too micro to hold somewhere else.
 """
 import os
 import random
-from second_brain_tools.directories import initial_check
+import re
 from second_brain_tools.defaults import NO_MARKDOWN_FILE
 from rich.console import Console
 from second_brain_tools.config import SECOND_BRAIN_DIRECTORY
 from rich.markdown import Markdown
 from rich import print
+from second_brain_tools.directories import initial_check
 
 
 def file_name_check(fnc_name):
@@ -61,6 +62,10 @@ def view_note_with_dir(vnwd_dir):
             console.print(Markdown(content))
     else:
         print(NO_MARKDOWN_FILE)
+
+
+def check_ending_char(string):
+    return bool(re.search(r'[1-9]$', string))
 
 
 """

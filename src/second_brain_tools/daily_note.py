@@ -24,8 +24,8 @@ from second_brain_tools.config import (
     DNTE_APPEND_TYPE,
     DNTT_APPEND_TYPE,
     DNTT2_APPEND_TYPE,
+    # DNTL_APPEND_TYPE,
     DNTL_APPEND_TYPE,
-    DNTL2_APPEND_TYPE,
     DNTM_APPEND_TYPE,
     DNTM2_APPEND_TYPE,
     DNTM3_APPEND_TYPE,
@@ -125,7 +125,6 @@ from second_brain_tools.config import (
     DNTT_FILE_CONTENT_CREATION,
     DNTT2_FILE_CONTENT_CREATION,
     DNTL_FILE_CONTENT_CREATION,
-    DNTL2_FILE_CONTENT_CREATION,
     DNTM_FILE_CONTENT_CREATION,
     DNTM2_FILE_CONTENT_CREATION,
     DNTM3_FILE_CONTENT_CREATION,
@@ -547,7 +546,7 @@ def daily_note_location_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnl_directory = initial_check("01C1E")
-    dnl_location = sbd + dnl_directory + Today + "_" + ".md"
+    dnl_location = sbd + dnl_directory + Today + "_Location" + ".md"
     return dnl_location
 
 
@@ -627,7 +626,7 @@ def daily_note_reminders_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr_directory = initial_check("01C1F")
-    dnr_location = sbd + dnr_directory + Today + "_" + ".md"
+    dnr_location = sbd + dnr_directory + Today + "_Reminders" + ".md"
     return dnr_location
 
 
@@ -706,7 +705,7 @@ def daily_note_routine_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_directory = initial_check("01C1G25")
-    dnr2_location = sbd + dnr2_directory + Today + "_" + ".md"
+    dnr2_location = sbd + dnr2_directory + Today + "_Routines" + ".md"
     return dnr2_location
 
 
@@ -783,7 +782,7 @@ def daily_note_routine_hour_00_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_00_directory = initial_check("01C1G1")
-    dnr2_hour_00_location = sbd + dnr2_hour_00_directory + Today + "_" + ".md"
+    dnr2_hour_00_location = sbd + dnr2_hour_00_directory + Today + "_Hour_00" + ".md"
     return dnr2_hour_00_location
 
 
@@ -859,7 +858,7 @@ def daily_note_routine_hour_01_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_01_directory = initial_check("01C1G2")
-    dnr2_hour_01_location = sbd + dnr2_hour_01_directory + Today + "_" + ".md"
+    dnr2_hour_01_location = sbd + dnr2_hour_01_directory + Today + "_Hour_01" + ".md"
     return dnr2_hour_01_location
 
 
@@ -936,7 +935,7 @@ def daily_note_routine_hour_02_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_02_directory = initial_check("01C1G3")
-    dnr2_hour_02_location = sbd + dnr2_hour_02_directory + Today + "_" + ".md"
+    dnr2_hour_02_location = sbd + dnr2_hour_02_directory + Today + "_Hour_02" + ".md"
     return dnr2_hour_02_location
 
 
@@ -1013,7 +1012,7 @@ def daily_note_routine_hour_03_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_03_directory = initial_check("01C1G4")
-    dnr2_hour_03_location = sbd + dnr2_hour_03_directory + Today + "_" + ".md"
+    dnr2_hour_03_location = sbd + dnr2_hour_03_directory + Today + "_Hour_03" + ".md"
     return dnr2_hour_03_location
 
 
@@ -1090,7 +1089,7 @@ def daily_note_routine_hour_04_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_04_directory = initial_check("01C1G5")
-    dnr2_hour_04_location = sbd + dnr2_hour_04_directory + Today + "_" + ".md"
+    dnr2_hour_04_location = sbd + dnr2_hour_04_directory + Today + "_Hour_04" + ".md"
     return dnr2_hour_04_location
 
 
@@ -1167,7 +1166,7 @@ def daily_note_routine_hour_05_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_05_directory = initial_check("01C1G6")
-    dnr2_hour_05_location = sbd + dnr2_hour_05_directory + Today + "_" + ".md"
+    dnr2_hour_05_location = sbd + dnr2_hour_05_directory + Today + "_Hour_05" + ".md"
     return dnr2_hour_05_location
 
 
@@ -1246,7 +1245,7 @@ def daily_note_routine_hour_06_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_06_directory = initial_check("01C1G7")
-    dnr2_hour_06_location = sbd + dnr2_hour_06_directory + Today + "_" + ".md"
+    dnr2_hour_06_location = sbd + dnr2_hour_06_directory + Today + "_Hour_06" + ".md"
     return dnr2_hour_06_location
 
 
@@ -1325,7 +1324,7 @@ def daily_note_routine_hour_07_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_07_directory = initial_check("01C1G8")
-    dnr2_hour_07_location = sbd + dnr2_hour_07_directory + Today + "_" + ".md"
+    dnr2_hour_07_location = sbd + dnr2_hour_07_directory + Today + "_Hour_07" + ".md"
     return dnr2_hour_07_location
 
 
@@ -1404,7 +1403,7 @@ def daily_note_routine_hour_08_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_08_directory = initial_check("01C1G9")
-    dnr2_hour_08_location = sbd + dnr2_hour_08_directory + Today + "_" + ".md"
+    dnr2_hour_08_location = sbd + dnr2_hour_08_directory + Today + "_Hour_08" + ".md"
     return dnr2_hour_08_location
 
 
@@ -1483,7 +1482,7 @@ def daily_note_routine_hour_09_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_09_directory = initial_check("01C1G10")
-    dnr2_hour_09_location = sbd + dnr2_hour_09_directory + Today + "_" + ".md"
+    dnr2_hour_09_location = sbd + dnr2_hour_09_directory + Today + "_Hour_09" + ".md"
     return dnr2_hour_09_location
 
 
@@ -1562,7 +1561,7 @@ def daily_note_routine_hour_10_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_10_directory = initial_check("01C1G11")
-    dnr2_hour_10_location = sbd + dnr2_hour_10_directory + Today + "_" + ".md"
+    dnr2_hour_10_location = sbd + dnr2_hour_10_directory + Today + "_Hour_10" + ".md"
     return dnr2_hour_10_location
 
 
@@ -1641,7 +1640,7 @@ def daily_note_routine_hour_11_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_11_directory = initial_check("01C1G12")
-    dnr2_hour_11_location = sbd + dnr2_hour_11_directory + Today + "_" + ".md"
+    dnr2_hour_11_location = sbd + dnr2_hour_11_directory + Today + "_Hour_11" + ".md"
     return dnr2_hour_11_location
 
 
@@ -1720,7 +1719,7 @@ def daily_note_routine_hour_12_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_12_directory = initial_check("01C1G13")
-    dnr2_hour_12_location = sbd + dnr2_hour_12_directory + Today + "_" + ".md"
+    dnr2_hour_12_location = sbd + dnr2_hour_12_directory + Today + "_Hour_12" + ".md"
     return dnr2_hour_12_location
 
 
@@ -1799,7 +1798,7 @@ def daily_note_routine_hour_13_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_13_directory = initial_check("01C1G14")
-    dnr2_hour_13_location = sbd + dnr2_hour_13_directory + Today + "_" + ".md"
+    dnr2_hour_13_location = sbd + dnr2_hour_13_directory + Today + "_Hour_13" + ".md"
     return dnr2_hour_13_location
 
 
@@ -1878,7 +1877,7 @@ def daily_note_routine_hour_14_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_14_directory = initial_check("01C1G15")
-    dnr2_hour_14_location = sbd + dnr2_hour_14_directory + Today + "_" + ".md"
+    dnr2_hour_14_location = sbd + dnr2_hour_14_directory + Today + "_Hour_14" + ".md"
     return dnr2_hour_14_location
 
 
@@ -1957,7 +1956,7 @@ def daily_note_routine_hour_15_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_15_directory = initial_check("01C1G16")
-    dnr2_hour_15_location = sbd + dnr2_hour_15_directory + Today + "_" + ".md"
+    dnr2_hour_15_location = sbd + dnr2_hour_15_directory + Today + "_Hour_15" + ".md"
     return dnr2_hour_15_location
 
 
@@ -2036,7 +2035,7 @@ def daily_note_routine_hour_16_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_16_directory = initial_check("01C1G17")
-    dnr2_hour_16_location = sbd + dnr2_hour_16_directory + Today + "_" + ".md"
+    dnr2_hour_16_location = sbd + dnr2_hour_16_directory + Today + "_Hour_16" + ".md"
     return dnr2_hour_16_location
 
 
@@ -2115,7 +2114,7 @@ def daily_note_routine_hour_17_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_17_directory = initial_check("01C1G18")
-    dnr2_hour_17_location = sbd + dnr2_hour_17_directory + Today + "_" + ".md"
+    dnr2_hour_17_location = sbd + dnr2_hour_17_directory + Today + "_Hour_17" + ".md"
     return dnr2_hour_17_location
 
 
@@ -2194,7 +2193,7 @@ def daily_note_routine_hour_18_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_18_directory = initial_check("01C1G19")
-    dnr2_hour_18_location = sbd + dnr2_hour_18_directory + Today + "_" + ".md"
+    dnr2_hour_18_location = sbd + dnr2_hour_18_directory + Today + "_Hour_18" + ".md"
     return dnr2_hour_18_location
 
 
@@ -2273,7 +2272,7 @@ def daily_note_routine_hour_19_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_19_directory = initial_check("01C1G20")
-    dnr2_hour_19_location = sbd + dnr2_hour_19_directory + Today + "_" + ".md"
+    dnr2_hour_19_location = sbd + dnr2_hour_19_directory + Today + "_Hour_19 " + ".md"
     return dnr2_hour_19_location
 
 
@@ -2350,7 +2349,7 @@ def daily_note_routine_hour_20_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_20_directory = initial_check("01C1G21")
-    dnr2_hour_20_location = sbd + dnr2_hour_20_directory + Today + "_" + ".md"
+    dnr2_hour_20_location = sbd + dnr2_hour_20_directory + Today + "_Hour_20 " + ".md"
     return dnr2_hour_20_location
 
 
@@ -2429,7 +2428,7 @@ def daily_note_routine_hour_21_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_21_directory = initial_check("01C1G22")
-    dnr2_hour_21_location = sbd + dnr2_hour_21_directory + Today + "_" + ".md"
+    dnr2_hour_21_location = sbd + dnr2_hour_21_directory + Today + "_Hour_21 " + ".md"
     return dnr2_hour_21_location
 
 
@@ -2506,7 +2505,7 @@ def daily_note_routine_hour_22_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_22_directory = initial_check("01C1G23")
-    dnr2_hour_22_location = sbd + dnr2_hour_22_directory + Today + "_" + ".md"
+    dnr2_hour_22_location = sbd + dnr2_hour_22_directory + Today + "_Hour_22 " + ".md"
     return dnr2_hour_22_location
 
 
@@ -2583,7 +2582,7 @@ def daily_note_routine_hour_23_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_23_directory = initial_check("01C1G24")
-    dnr2_hour_23_location = sbd + dnr2_hour_23_directory + Today + "_" + ".md"
+    dnr2_hour_23_location = sbd + dnr2_hour_23_directory + Today + "_Hour_23 " + ".md"
     return dnr2_hour_23_location
 
 
@@ -2675,7 +2674,7 @@ def daily_note_routine_hour_00_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_00_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_00_pomodora_1_location = sbd + dnr2_hour_00_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_00_pomodora_1_location = sbd + dnr2_hour_00_pomodora_1_directory + Today + "_Hour_00_Pomodora_1" + ".md"
     return dnr2_hour_00_pomodora_1_location
 
 
@@ -2770,7 +2769,7 @@ def daily_note_routine_hour_00_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_00_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_00_pomodora_2_location = sbd + dnr2_hour_00_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_00_pomodora_2_location = sbd + dnr2_hour_00_pomodora_2_directory + Today + "_Hour_00_Pomodora_2" + ".md"
     return dnr2_hour_00_pomodora_2_location
 
 
@@ -2865,7 +2864,7 @@ def daily_note_routine_hour_01_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_01_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_01_pomodora_1_location = sbd + dnr2_hour_01_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_01_pomodora_1_location = sbd + dnr2_hour_01_pomodora_1_directory + Today + "_Hour_01_Pomodora_1" + ".md"
     return dnr2_hour_01_pomodora_1_location
 
 
@@ -2960,7 +2959,7 @@ def daily_note_routine_hour_01_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_01_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_01_pomodora_2_location = sbd + dnr2_hour_01_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_01_pomodora_2_location = sbd + dnr2_hour_01_pomodora_2_directory + Today + "_Hour_01_Pomodora_2" + ".md"
     return dnr2_hour_01_pomodora_2_location
 
 
@@ -3055,7 +3054,7 @@ def daily_note_routine_hour_02_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_02_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_02_pomodora_1_location = sbd + dnr2_hour_02_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_02_pomodora_1_location = sbd + dnr2_hour_02_pomodora_1_directory + Today + "_Hour_02_Pomodora_1" + ".md"
     return dnr2_hour_02_pomodora_1_location
 
 
@@ -3150,7 +3149,7 @@ def daily_note_routine_hour_02_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_02_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_02_pomodora_2_location = sbd + dnr2_hour_02_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_02_pomodora_2_location = sbd + dnr2_hour_02_pomodora_2_directory + Today + "_Hour_02_Pomodora_2" + ".md"
     return dnr2_hour_02_pomodora_2_location
 
 
@@ -3245,7 +3244,7 @@ def daily_note_routine_hour_03_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_03_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_03_pomodora_1_location = sbd + dnr2_hour_03_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_03_pomodora_1_location = sbd + dnr2_hour_03_pomodora_1_directory + Today + "_Hour_03_Pomodora_1" + ".md"
     return dnr2_hour_03_pomodora_1_location
 
 
@@ -3340,7 +3339,7 @@ def daily_note_routine_hour_03_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_03_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_03_pomodora_2_location = sbd + dnr2_hour_03_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_03_pomodora_2_location = sbd + dnr2_hour_03_pomodora_2_directory + Today + "_Hour_03_Pomodora_2" + ".md"
     return dnr2_hour_03_pomodora_2_location
 
 
@@ -3435,7 +3434,7 @@ def daily_note_routine_hour_04_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_04_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_04_pomodora_1_location = sbd + dnr2_hour_04_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_04_pomodora_1_location = sbd + dnr2_hour_04_pomodora_1_directory + Today + "_Hour_04_Pomodora_1" + ".md"
     return dnr2_hour_04_pomodora_1_location
 
 
@@ -3530,7 +3529,7 @@ def daily_note_routine_hour_04_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_04_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_04_pomodora_2_location = sbd + dnr2_hour_04_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_04_pomodora_2_location = sbd + dnr2_hour_04_pomodora_2_directory + Today + "_Hour_04_Pomodora_2" + ".md"
     return dnr2_hour_04_pomodora_2_location
 
 
@@ -3625,7 +3624,7 @@ def daily_note_routine_hour_05_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_05_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_05_pomodora_1_location = sbd + dnr2_hour_05_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_05_pomodora_1_location = sbd + dnr2_hour_05_pomodora_1_directory + Today + "_Hour_05_Pomodora_1" + ".md"
     return dnr2_hour_05_pomodora_1_location
 
 
@@ -3720,7 +3719,7 @@ def daily_note_routine_hour_05_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_05_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_05_pomodora_2_location = sbd + dnr2_hour_05_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_05_pomodora_2_location = sbd + dnr2_hour_05_pomodora_2_directory + Today + "_Hour_05_Pomodora_2" + ".md"
     return dnr2_hour_05_pomodora_2_location
 
 
@@ -3815,7 +3814,7 @@ def daily_note_routine_hour_06_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_06_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_06_pomodora_1_location = sbd + dnr2_hour_06_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_06_pomodora_1_location = sbd + dnr2_hour_06_pomodora_1_directory + Today + "_Hour_06_Pomodora_1" + ".md"
     return dnr2_hour_06_pomodora_1_location
 
 
@@ -3910,7 +3909,7 @@ def daily_note_routine_hour_06_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_06_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_06_pomodora_2_location = sbd + dnr2_hour_06_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_06_pomodora_2_location = sbd + dnr2_hour_06_pomodora_2_directory + Today + "_Hour_06_Pomodora_2" + ".md"
     return dnr2_hour_06_pomodora_2_location
 
 
@@ -4005,7 +4004,7 @@ def daily_note_routine_hour_07_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_07_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_07_pomodora_1_location = sbd + dnr2_hour_07_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_07_pomodora_1_location = sbd + dnr2_hour_07_pomodora_1_directory + Today + "_Hour_07_Pomodora_1" + ".md"
     return dnr2_hour_07_pomodora_1_location
 
 
@@ -4100,7 +4099,7 @@ def daily_note_routine_hour_07_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_07_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_07_pomodora_2_location = sbd + dnr2_hour_07_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_07_pomodora_2_location = sbd + dnr2_hour_07_pomodora_2_directory + Today + "_Hour_07_Pomodora_2" + ".md"
     return dnr2_hour_07_pomodora_2_location
 
 
@@ -4195,7 +4194,7 @@ def daily_note_routine_hour_08_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_08_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_08_pomodora_1_location = sbd + dnr2_hour_08_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_08_pomodora_1_location = sbd + dnr2_hour_08_pomodora_1_directory + Today + "_Hour_08_Pomodora_1" + ".md"
     return dnr2_hour_08_pomodora_1_location
 
 
@@ -4290,7 +4289,7 @@ def daily_note_routine_hour_08_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_08_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_08_pomodora_2_location = sbd + dnr2_hour_08_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_08_pomodora_2_location = sbd + dnr2_hour_08_pomodora_2_directory + Today + "_Hour_08_Pomodora_2" + ".md"
     return dnr2_hour_08_pomodora_2_location
 
 
@@ -4385,7 +4384,7 @@ def daily_note_routine_hour_09_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_09_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_09_pomodora_1_location = sbd + dnr2_hour_09_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_09_pomodora_1_location = sbd + dnr2_hour_09_pomodora_1_directory + Today + "_Hour_09_Pomodora_1" + ".md"
     return dnr2_hour_09_pomodora_1_location
 
 
@@ -4480,7 +4479,7 @@ def daily_note_routine_hour_09_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_09_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_09_pomodora_2_location = sbd + dnr2_hour_09_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_09_pomodora_2_location = sbd + dnr2_hour_09_pomodora_2_directory + Today + "_Hour_09_Pomodora_2" + ".md"
     return dnr2_hour_09_pomodora_2_location
 
 
@@ -4575,7 +4574,7 @@ def daily_note_routine_hour_10_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_10_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_10_pomodora_1_location = sbd + dnr2_hour_10_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_10_pomodora_1_location = sbd + dnr2_hour_10_pomodora_1_directory + Today + "_Hour_10_Pomodora_1" + ".md"
     return dnr2_hour_10_pomodora_1_location
 
 
@@ -4670,7 +4669,7 @@ def daily_note_routine_hour_10_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_10_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_10_pomodora_2_location = sbd + dnr2_hour_10_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_10_pomodora_2_location = sbd + dnr2_hour_10_pomodora_2_directory + Today + "_Hour_10_Pomodora_2" + ".md"
     return dnr2_hour_10_pomodora_2_location
 
 
@@ -4765,7 +4764,7 @@ def daily_note_routine_hour_11_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_11_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_11_pomodora_1_location = sbd + dnr2_hour_11_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_11_pomodora_1_location = sbd + dnr2_hour_11_pomodora_1_directory + Today + "_Hour_11_Pomodora_1" + ".md"
     return dnr2_hour_11_pomodora_1_location
 
 
@@ -4860,7 +4859,7 @@ def daily_note_routine_hour_11_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_11_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_11_pomodora_2_location = sbd + dnr2_hour_11_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_11_pomodora_2_location = sbd + dnr2_hour_11_pomodora_2_directory + Today + "_Hour_11_Pomodora_2" + ".md"
     return dnr2_hour_11_pomodora_2_location
 
 
@@ -4955,7 +4954,7 @@ def daily_note_routine_hour_12_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_12_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_12_pomodora_1_location = sbd + dnr2_hour_12_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_12_pomodora_1_location = sbd + dnr2_hour_12_pomodora_1_directory + Today + "_Hour_12_Pomodora_1" + ".md"
     return dnr2_hour_12_pomodora_1_location
 
 
@@ -5050,7 +5049,7 @@ def daily_note_routine_hour_12_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_12_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_12_pomodora_2_location = sbd + dnr2_hour_12_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_12_pomodora_2_location = sbd + dnr2_hour_12_pomodora_2_directory + Today + "_Hour_12_Pomodora_2" + ".md"
     return dnr2_hour_12_pomodora_2_location
 
 
@@ -5145,7 +5144,7 @@ def daily_note_routine_hour_13_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_13_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_13_pomodora_1_location = sbd + dnr2_hour_13_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_13_pomodora_1_location = sbd + dnr2_hour_13_pomodora_1_directory + Today + "_Hour_13_Pomodora_1" + ".md"
     return dnr2_hour_13_pomodora_1_location
 
 
@@ -5240,7 +5239,7 @@ def daily_note_routine_hour_13_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_13_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_13_pomodora_2_location = sbd + dnr2_hour_13_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_13_pomodora_2_location = sbd + dnr2_hour_13_pomodora_2_directory + Today + "_Hour_13_Pomodora_2" + ".md"
     return dnr2_hour_13_pomodora_2_location
 
 
@@ -5335,7 +5334,7 @@ def daily_note_routine_hour_14_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_14_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_14_pomodora_1_location = sbd + dnr2_hour_14_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_14_pomodora_1_location = sbd + dnr2_hour_14_pomodora_1_directory + Today + "_Hour_14_Pomodora_1" + ".md"
     return dnr2_hour_14_pomodora_1_location
 
 
@@ -5430,7 +5429,7 @@ def daily_note_routine_hour_14_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_14_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_14_pomodora_2_location = sbd + dnr2_hour_14_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_14_pomodora_2_location = sbd + dnr2_hour_14_pomodora_2_directory + Today + "_Hour_14_Pomodora_2" + ".md"
     return dnr2_hour_14_pomodora_2_location
 
 
@@ -5525,7 +5524,7 @@ def daily_note_routine_hour_15_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_15_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_15_pomodora_1_location = sbd + dnr2_hour_15_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_15_pomodora_1_location = sbd + dnr2_hour_15_pomodora_1_directory + Today + "_Hour_15_Pomodora_1" + ".md"
     return dnr2_hour_15_pomodora_1_location
 
 
@@ -5620,7 +5619,7 @@ def daily_note_routine_hour_15_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_15_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_15_pomodora_2_location = sbd + dnr2_hour_15_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_15_pomodora_2_location = sbd + dnr2_hour_15_pomodora_2_directory + Today + "_Hour_15_Pomodora_2" + ".md"
     return dnr2_hour_15_pomodora_2_location
 
 
@@ -5715,7 +5714,7 @@ def daily_note_routine_hour_16_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_16_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_16_pomodora_1_location = sbd + dnr2_hour_16_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_16_pomodora_1_location = sbd + dnr2_hour_16_pomodora_1_directory + Today + "_Hour_16_Pomodora_1" + ".md"
     return dnr2_hour_16_pomodora_1_location
 
 
@@ -5810,7 +5809,7 @@ def daily_note_routine_hour_16_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_16_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_16_pomodora_2_location = sbd + dnr2_hour_16_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_16_pomodora_2_location = sbd + dnr2_hour_16_pomodora_2_directory + Today + "_Hour_16_Pomodora_2" + ".md"
     return dnr2_hour_16_pomodora_2_location
 
 
@@ -5905,7 +5904,7 @@ def daily_note_routine_hour_17_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_17_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_17_pomodora_1_location = sbd + dnr2_hour_17_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_17_pomodora_1_location = sbd + dnr2_hour_17_pomodora_1_directory + Today + "_Hour_17_Pomodora_1" + ".md"
     return dnr2_hour_17_pomodora_1_location
 
 
@@ -6000,7 +5999,7 @@ def daily_note_routine_hour_17_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_17_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_17_pomodora_2_location = sbd + dnr2_hour_17_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_17_pomodora_2_location = sbd + dnr2_hour_17_pomodora_2_directory + Today + "_Hour_17_Pomodora_2" + ".md"
     return dnr2_hour_17_pomodora_2_location
 
 
@@ -6095,7 +6094,7 @@ def daily_note_routine_hour_18_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_18_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_18_pomodora_1_location = sbd + dnr2_hour_18_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_18_pomodora_1_location = sbd + dnr2_hour_18_pomodora_1_directory + Today + "_Hour_18_Pomodora_1" + ".md"
     return dnr2_hour_18_pomodora_1_location
 
 
@@ -6190,7 +6189,7 @@ def daily_note_routine_hour_18_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_18_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_18_pomodora_2_location = sbd + dnr2_hour_18_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_18_pomodora_2_location = sbd + dnr2_hour_18_pomodora_2_directory + Today + "_Hour_18_Pomodora_2" + ".md"
     return dnr2_hour_18_pomodora_2_location
 
 
@@ -6285,7 +6284,7 @@ def daily_note_routine_hour_19_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_19_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_19_pomodora_1_location = sbd + dnr2_hour_19_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_19_pomodora_1_location = sbd + dnr2_hour_19_pomodora_1_directory + Today + "_Hour_19_Pomodora_1" + ".md"
     return dnr2_hour_19_pomodora_1_location
 
 
@@ -6380,7 +6379,7 @@ def daily_note_routine_hour_19_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_19_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_19_pomodora_2_location = sbd + dnr2_hour_19_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_19_pomodora_2_location = sbd + dnr2_hour_19_pomodora_2_directory + Today + "_Hour_19_Pomodora_2" + ".md"
     return dnr2_hour_19_pomodora_2_location
 
 
@@ -6475,7 +6474,7 @@ def daily_note_routine_hour_20_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_20_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_20_pomodora_1_location = sbd + dnr2_hour_20_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_20_pomodora_1_location = sbd + dnr2_hour_20_pomodora_1_directory + Today + "_Hour_20_Pomodora_1" + ".md"
     return dnr2_hour_20_pomodora_1_location
 
 
@@ -6570,7 +6569,7 @@ def daily_note_routine_hour_20_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_20_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_20_pomodora_2_location = sbd + dnr2_hour_20_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_20_pomodora_2_location = sbd + dnr2_hour_20_pomodora_2_directory + Today + "_Hour_20_Pomodora_2" + ".md"
     return dnr2_hour_20_pomodora_2_location
 
 
@@ -6665,7 +6664,7 @@ def daily_note_routine_hour_21_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_21_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_21_pomodora_1_location = sbd + dnr2_hour_21_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_21_pomodora_1_location = sbd + dnr2_hour_21_pomodora_1_directory + Today + "_Hour_21_Pomodora_1" + ".md"
     return dnr2_hour_21_pomodora_1_location
 
 
@@ -6760,7 +6759,7 @@ def daily_note_routine_hour_21_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_21_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_21_pomodora_2_location = sbd + dnr2_hour_21_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_21_pomodora_2_location = sbd + dnr2_hour_21_pomodora_2_directory + Today + "_Hour_21_Pomodora_2" + ".md"
     return dnr2_hour_21_pomodora_2_location
 
 
@@ -6855,7 +6854,7 @@ def daily_note_routine_hour_22_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_22_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_22_pomodora_1_location = sbd + dnr2_hour_22_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_22_pomodora_1_location = sbd + dnr2_hour_22_pomodora_1_directory + Today + "_Hour_22_Pomodora_1" + ".md"
     return dnr2_hour_22_pomodora_1_location
 
 
@@ -6950,7 +6949,7 @@ def daily_note_routine_hour_22_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_22_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_22_pomodora_2_location = sbd + dnr2_hour_22_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_22_pomodora_2_location = sbd + dnr2_hour_22_pomodora_2_directory + Today + "_Hour_22_Pomodora_2" + ".md"
     return dnr2_hour_22_pomodora_2_location
 
 
@@ -7045,7 +7044,7 @@ def daily_note_routine_hour_23_pomodora_1_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_23_pomodora_1_directory = initial_check("01A9A")
-    dnr2_hour_23_pomodora_1_location = sbd + dnr2_hour_23_pomodora_1_directory + Today + "_" + ".md"
+    dnr2_hour_23_pomodora_1_location = sbd + dnr2_hour_23_pomodora_1_directory + Today + "_Hour_23_Pomodora_1" + ".md"
     return dnr2_hour_23_pomodora_1_location
 
 
@@ -7140,7 +7139,7 @@ def daily_note_routine_hour_23_pomodora_2_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnr2_hour_23_pomodora_2_directory = initial_check("01A9B")
-    dnr2_hour_23_pomodora_2_location = sbd + dnr2_hour_23_pomodora_2_directory + Today + "_" + ".md"
+    dnr2_hour_23_pomodora_2_location = sbd + dnr2_hour_23_pomodora_2_directory + Today + "_Hour_23_Pomodora_2" + ".md"
     return dnr2_hour_23_pomodora_2_location
 
 
@@ -7230,7 +7229,7 @@ def daily_note_tasks_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnt_directory = initial_check("01C1H")
-    dnt_location = sbd + dnt_directory + Today + "_" + ".md"
+    dnt_location = sbd + dnt_directory + Today + "_Tasks" + ".md"
     return dnt_location
 
 
@@ -7309,7 +7308,7 @@ def daily_note_trackers_moc_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnt2_directory = initial_check("01C1I")
-    dnt2_location = sbd + dnt2_directory + Today + "_" + ".md"
+    dnt2_location = sbd + dnt2_directory + Today + "_Trackers" + ".md"
     return dnt2_location
 
 
@@ -7386,7 +7385,7 @@ def daily_note_trackers_exercise_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnte_directory = initial_check("01C1I7")
-    dnte_location = sbd + dnte_directory + Today + "_" + ".md"
+    dnte_location = sbd + dnte_directory + Today + "_Exercise" + ".md"
     return dnte_location
 
 
@@ -7463,7 +7462,7 @@ def daily_note_trackers_transaction_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dntt_directory = initial_check("01C1I1")
-    dntt_location = sbd + dntt_directory + Today + "_" + ".md"
+    dntt_location = sbd + dntt_directory + Today + "_Transaction" + ".md"
     return dntt_location
 
 
@@ -7542,7 +7541,7 @@ def daily_note_trackers_thought_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dntt2_directory = initial_check("01C1I1")
-    dntt2_location = sbd + dntt2_directory + Today + "_" + ".md"
+    dntt2_location = sbd + dntt2_directory + Today + "_Thought" + ".md"
     return dntt2_location
 
 
@@ -7563,84 +7562,7 @@ def daily_note_trackers_thought_pregenerate_check():
 
 def daily_note_trackers_link_append(note_content, include_time=True):
     """ """
-    dntl2_location = daily_note_trackers_link_location()
-
-    if DNTL2_APPEND_TYPE == "Paragraph":
-        paragraph_append(dntl2_location, note_content)
-
-    elif DNTL2_APPEND_TYPE == "Plain_Text":
-        PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
-        if PT_Time_check == "False":
-            include_time = False
-            plain_text_append(dntl2_location, note_content, include_time)
-        else:
-            plain_text_append(dntl2_location, note_content, include_time)
-
-    elif DNTL2_APPEND_TYPE == "Bullet_List":
-        BL_Time_check = LIST_TIME_INCLUDE
-        if BL_Time_check == "False":
-            include_time = False
-            bullet_list_append(dntl2_location, note_content, include_time)
-        else:
-            bullet_list_append(dntl2_location, note_content, include_time)
-
-    elif DNTL2_APPEND_TYPE == "Table":
-        table_append(dntl2_location, note_content)
-
-    if not DNTL2_APPEND_TYPE:
-        if GLOBAL_APPEND_TYPE == "Plain_Text":
-            PT_Time_check = PLAIN_TEXT_TIME_INCLUDE
-            if PT_Time_check == "False":
-                include_time = False
-                plain_text_append(dntl2_location, note_content, include_time)
-            else:
-                plain_text_append(dntl2_location, note_content, include_time)
-
-        elif GLOBAL_APPEND_TYPE == "Bullet_List":
-            BL_Time_check = LIST_TIME_INCLUDE
-            if BL_Time_check == "False":
-                include_time = False
-                bullet_list_append(dntl2_location, note_content, include_time)
-            else:
-                bullet_list_append(dntl2_location, note_content, include_time)
-        elif GLOBAL_APPEND_TYPE == "Table":
-            table_append(dntl2_location, note_content)
-        elif GLOBAL_APPEND_TYPE == "Paragraph":
-            paragraph_append(dntl2_location, note_content)
-        else:
-            print("Error")
-
-
-def daily_note_trackers_link_generate(dntl2_location):
-    """ """
-    with open(dntl2_location, 'a+') as dntl2_file_obj:
-        dntl2_file_obj.write(DNTL2_FILE_CONTENT_CREATION)
-
-
-def daily_note_trackers_link_location():
-    """ """
-    sbd = SECOND_BRAIN_DIRECTORY
-    dntl2_directory = initial_check("01C1I10")
-    dntl2_location = sbd + dntl2_directory + Today + "_Links" + ".md"
-    return dntl2_location
-
-
-def daily_note_trackers_link_pregenerate_check():
-    """ """
-    dntl2_location = daily_note_trackers_link_location()
-    dntl2_file_exist_check = exists(dntl2_location)
-    if dntl2_file_exist_check is True:
-        print(FILE_ALREADY_EXIST)
-    else:
-        daily_note_trackers_link_generate(dntl2_location)
-
-
-# TRACKERS_LINK RELATED FUNCTIONS FINISHED
-
-# TRACKERS_LOCATION RELATED FUNCTIONS STARTED
-def daily_note_trackers_location_append(note_content, include_time=True):
-    """ """
-    dntl_location = daily_note_trackers_location_location()
+    dntl_location = daily_note_trackers_link_location()
 
     if DNTL_APPEND_TYPE == "Paragraph":
         paragraph_append(dntl_location, note_content)
@@ -7688,33 +7610,34 @@ def daily_note_trackers_location_append(note_content, include_time=True):
             print("Error")
 
 
-def daily_note_trackers_location_generate(dntl_location):
+def daily_note_trackers_link_generate(dntl_location):
     """ """
     with open(dntl_location, 'a+') as dntl_file_obj:
         dntl_file_obj.write(DNTL_FILE_CONTENT_CREATION)
 
 
-def daily_note_trackers_location_location():
+def daily_note_trackers_link_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
-    dntl_directory = initial_check("01C1I9")
-    dntl_location = sbd + dntl_directory + Today + "_" + ".md"
+    dntl_directory = initial_check("01C1I10")
+    dntl_location = sbd + dntl_directory + Today + "_Links" + ".md"
     return dntl_location
 
 
-def daily_note_trackers_location_pregenerate_check():
+def daily_note_trackers_link_pregenerate_check():
     """ """
-    dntl_location = daily_note_trackers_location_location()
+    dntl_location = daily_note_trackers_link_location()
     dntl_file_exist_check = exists(dntl_location)
     if dntl_file_exist_check is True:
         print(FILE_ALREADY_EXIST)
     else:
-        daily_note_trackers_location_generate(dntl_location)
+        daily_note_trackers_link_generate(dntl_location)
 
 
-# Trackers_LOCATION RELATED FUNCTIONS FINISHED # TRACKERS_MEAL RELATED FUNCTIONS STARTED
+# TRACKERS_LINK RELATED FUNCTIONS FINISHED
 
 
+# TRACKERS_MEAL RELATED FUNCTIONS STARTED
 def daily_note_trackers_meal_append(note_content, include_time=True):
     """ """
     dntm_location = daily_note_trackers_meal_location()
@@ -7775,7 +7698,7 @@ def daily_note_trackers_meal_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dntm_directory = initial_check("01C1I3")
-    dntm_location = sbd + dntm_directory + Today + "_" + ".md"
+    dntm_location = sbd + dntm_directory + Today + "_Meal" + ".md"
     return dntm_location
 
 
@@ -7852,7 +7775,7 @@ def daily_note_trackers_medicine_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dntm2_directory = initial_check("01C1I4")
-    dntm2_location = sbd + dntm2_directory + Today + "_" + ".md"
+    dntm2_location = sbd + dntm2_directory + Today + "_Medicine" + ".md"
     return dntm2_location
 
 
@@ -7929,7 +7852,7 @@ def daily_note_trackers_mood_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dntm3_directory = initial_check("01C1I5")
-    dntm3_location = sbd + dntm3_directory + Today + "_" + ".md"
+    dntm3_location = sbd + dntm3_directory + Today + "_Mood" + ".md"
     return dntm3_location
 
 
@@ -8006,7 +7929,7 @@ def daily_note_trackers_sleep_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnts_directory = initial_check("01C1I2")
-    dnts_location = sbd + dnts_directory + Today + "_" + ".md"
+    dnts_location = sbd + dnts_directory + Today + "_Sleep" + ".md"
     return dnts_location
 
 
@@ -8083,7 +8006,7 @@ def daily_note_trackers_symptoms_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dnts2_directory = initial_check("01C1I8")
-    dnts2_location = sbd + dnts2_directory + Today + "_" + ".md"
+    dnts2_location = sbd + dnts2_directory + Today + "_Symptoms" + ".md"
     return dnts2_location
 
 
@@ -8160,7 +8083,7 @@ def daily_note_trackers_water_location():
     """ """
     sbd = SECOND_BRAIN_DIRECTORY
     dntw_directory = initial_check("01C1I6")
-    dntw_location = sbd + dntw_directory + Today + "_" + ".md"
+    dntw_location = sbd + dntw_directory + Today + "_Water" + ".md"
     return dntw_location
 
 
