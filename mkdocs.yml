@@ -1,3 +1,6 @@
-site_name: My Docs
+site_name: Second-Brain-Tools
+site_url: https://rohanbatrain.github.io/Second-Brain-Tools
 theme:
   name: material
+nav:
+    - Home: index.md

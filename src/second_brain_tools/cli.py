@@ -5,15 +5,21 @@ from second_brain_tools.setup import setup as sbt_setup
 from second_brain_tools.quick_capture import quick_capture
 from second_brain_tools.misc import random_file_from_dir
 from second_brain_tools.directories import initial_check
-from second_brain_tools.daily_note import daily_note_bullet_journal_append
+from second_brain_tools.daily_note import (
+    daily_note_bullet_journal_append,
+    daily_note_bullet_journal_pregenerate_check,
+    daily_note_moc_append,
+    daily_note_moc_pregenerate_check,
+)
 from second_brain_tools.capture import (
     capture_link,
     capture_thought,
     capture_event,
     capture_task,
     capture_reminder,
-    )
+)
 from second_brain_tools.notes import create_note, delete_note, move_note, view_note
+
 # Importing production modules finished
 
 # importing modules that are needed by other modules
@@ -62,6 +68,7 @@ def quick_capture_cli(name: str = typer.Option(..., prompt=True), content: str =
 
 @app.command("Bullet-Journal")
 def daily_note_bullet_journal_cli(content: str = typer.Option(..., prompt=True)):
+    daily_note_bullet_journal_pregenerate_check()
     daily_note_bullet_journal_append(content)
     return
 
@@ -155,6 +162,7 @@ def capture_reminder_cli(
 ):
     capture_reminder(name, priority, labels, time_to_remind)
 
+
 # Adding app_capture commands Finished
 
 
@@ -204,17 +212,14 @@ def notes_delete_cli(
 
 
 @app_daily_note.command("Append")
-def daily_note_append_cli():
+def daily_note_append_cli(
+    content: str = typer.Option(..., prompt=True),
+):
     "Append your daily note MOC using sbt."
-    return
-
-
-@app_daily_note.command("Regenerate")
-def daily_note_regenerate_cli():
-    "Regenerates the daily note MOC."
+    daily_note_moc_pregenerate_check()
+    daily_note_moc_append(content)
     return
 
 # daily_note_bullet_journal_append
 # Adding app_daily_note commands Finished
-
 # Adding app commands Finished

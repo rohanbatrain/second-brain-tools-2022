@@ -369,7 +369,7 @@ def ic_01c1(dir_code):
     else:
         if re.match("^01C1B", dir_code):
             dir_path = ic_01c1b(dir_code)
-        if re.match("^01C1I", dir_code):
+        elif re.match("^01C1I", dir_code):
             dir_path = ic_01c1i(dir_code)
         else:
             dir_path = DIR_NOT_FOUND

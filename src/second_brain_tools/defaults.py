@@ -772,6 +772,7 @@ time: {CURRENT_TIME}
 
 
 def capture_transaction_content_creation(
+    Transaction_Name,
     Transaction_Time,
     Transaction_Type,
     Transaction_Amount,
@@ -782,6 +783,7 @@ def capture_transaction_content_creation(
 tags: daily_note/transactions/{Transaction_Type}/{Today}
 time: {CURRENT_TIME}
 date: {Today}
+transaction_name: {Transaction_Name}
 transaction_time: {Transaction_Time}
 transaction_type: {Transaction_Type}
 transaction_amount: {Transaction_Amount}
@@ -795,11 +797,12 @@ transaction_invoice: {Transaction_Invoice}
     return CTCC_FILE_CONTENT_CREATION
 
 
-def capture_sleep_content_creation(Sleep_Type, Sleep_Hours, Sleep_Time):
+def capture_sleep_content_creation(Sleep_name, Sleep_Type, Sleep_Hours, Sleep_Time):
     CSCC_FILE_CONTENT_CREATION = f"""---
 tags: daily_note/sleep/{Sleep_Type}/{Today}
 date: {Today}
 time: {CURRENT_TIME}
+sleep_name: {Sleep_name}
 sleep_type: {Sleep_Type}
 sleep_hours: {Sleep_Hours}
 sleep_time: {Sleep_Time}
@@ -811,11 +814,12 @@ sleep_time: {Sleep_Time}
     return CSCC_FILE_CONTENT_CREATION
 
 
-def capture_meal_content_creation(Meal_Time, Meal_Type, Meal_Calories, Meal_Taken):
+def capture_meal_content_creation(Meal_Name, Meal_Time, Meal_Type, Meal_Calories, Meal_Taken):
     CMCC_FILE_CONTENT_CREATION = f"""---
 tags: daily_note/meal/{Meal_Type}/{Today}
 date: {Today}
 time: {Meal_Time}
+meal_name: {Meal_Name}
 meal_type: {Meal_Type}
 meal_calories: {Meal_Calories}
 meal_taken: {Meal_Taken}
@@ -845,7 +849,8 @@ medicine_taken: {Medicine_Taken}
     return CM2CC_FILE_CONTENT_CREATION
 
 
-def capture_mood_tracker_content_creation(
+def capture_mood_content_creation(
+    Mood_Name,
     Mood_Status,
     Mood_Reason
 ):
@@ -853,6 +858,7 @@ def capture_mood_tracker_content_creation(
 tags: daily_note/mood/{Mood_Status}/{Today}
 date: {Today}
 time: {CURRENT_TIME}
+name: {Mood_Name}
 mood_status: {Mood_Status}
 mood_reason: {Mood_Reason}
 ---
@@ -864,6 +870,7 @@ mood_reason: {Mood_Reason}
 
 
 def capture_water_intake_content_creation(
+    Water_Intake_Name,
     Water_Intake_Time,
     Water_Intake_Amount_In_ML
 ):
@@ -871,6 +878,7 @@ def capture_water_intake_content_creation(
 tags: daily_note/water_intake/{Today}
 date: {Today}
 time: {CURRENT_TIME}
+name: {Water_Intake_Name}
 water_intake_time: {Water_Intake_Time}
 water_intake_ml: {Water_Intake_Amount_In_ML}
 ---
@@ -882,6 +890,7 @@ water_intake_ml: {Water_Intake_Amount_In_ML}
 
 
 def capture_exercise_content_creation(
+    Exercise_Name,
     Exercise_Time,
     Exercise_Cohort,
     Exercise_Status,
@@ -890,6 +899,7 @@ def capture_exercise_content_creation(
 tags: daily_note/exercise//{Today}
 date: {Today}
 time: {CURRENT_TIME}
+exercise_name: {Exercise_Name}
 exercise_time: {Exercise_Time}
 exercise_cohort: {Exercise_Cohort}
 exercise_status: {Exercise_Status}
