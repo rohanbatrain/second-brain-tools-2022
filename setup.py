@@ -81,6 +81,7 @@ setup(
     entry_points={
         'console_scripts': [
             'second-brain-tools = second_brain_tools.cli:main',
+            'sbt =  second_brain_tools.cli:main',
         ]
     },
 )
