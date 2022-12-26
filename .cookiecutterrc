@@ -64,7 +64,7 @@ default_context:
     test_matrix_separate_coverage: 'no'
     travis:                    'no'
     travis_osx:                'no'
-    version:                   '0.0.1'
+    version:                   '0.0.3'
     version_manager:           'bump2version'
     website:                   'rohanbatra.in'
     year_from:                 '2022'
