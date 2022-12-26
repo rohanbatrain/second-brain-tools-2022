@@ -1,3 +1,7 @@
+"""
+This module contain all the functions that are append related.
+These functions have a single role that is to append with the given parameters.
+"""
 # Importing production modules // Meant for production branch
 from second_brain_tools.config import PLAIN_TEXT_TIME_INCLUDE, TIME_APPEND_TEXT, CURRENT_TIME, LIST_TIME_INCLUDE
 from second_brain_tools.directories import initial_check

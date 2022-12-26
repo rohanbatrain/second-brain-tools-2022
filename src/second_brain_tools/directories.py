@@ -380,7 +380,7 @@ def ic_01c1(dir_code):
         elif re.match("^01C1I", dir_code):
             dir_path = ic_01c1i(dir_code)
         elif re.match("^01C1G", dir_code):
-            dir_path = ic_01c1g(dir_code)
+            dir_path = ic_01c1g_part_1(dir_code)
         else:
             dir_path = DIR_NOT_FOUND
     return dir_path
@@ -435,15 +435,6 @@ def ic_01c1i(dir_code):
     return dir_path
 
 
-def ic_01c1g(dir_code):
-    # checks if the ending char is a single digit number b/w 1-9
-    check = check_ending_char(dir_code)
-    if check is True:
-        ic_01c1g_part_1(dir_code)
-    else:
-        ic_01c1g_part_2(dir_code)
-
-
 def ic_01c1g_part_1(dir_code):
     if dir_code == "01C1G1":
         dir_path = sbtc._01C1G1
@@ -464,7 +455,7 @@ def ic_01c1g_part_1(dir_code):
     elif dir_code == "01C1G9":
         dir_path = sbtc._01C1G9
     else:
-        dir_path = DIR_NOT_FOUND
+        dir_path = ic_01c1g_part_2(dir_code)
     return dir_path
 
 
@@ -497,6 +488,10 @@ def ic_01c1g_part_2(dir_code):
         dir_path = sbtc._01C1G22
     elif dir_code == "01C1G23":
         dir_path = sbtc._01C1G23
+    elif dir_code == "01C1G24":
+        dir_path = sbtc._01C1G24
+    elif dir_code == "01C1G25":
+        dir_path = sbtc._01C1G25
     else:
         dir_path = DIR_NOT_FOUND
     return dir_path
