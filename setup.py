@@ -20,7 +20,7 @@ def read(*names, **kwargs):
 
 setup(
     name='second_brain_tools',
-    version='version='0.0.3'',
+    version='0.0.3',
     license='Apache-2.0',
     description="""This project is a toolset for Second Brain,
     This would help us to quickly and more efficiently create notes using Second Brain Vault.
@@ -70,7 +70,11 @@ setup(
     ],
     python_requires='>=3.7',
     install_requires=[
-        'python-dotenv==0.21.0'
+        'python-dotenv',
+        'rich',
+        'typer',
+        'click',
+        'gitpython'
         # eg: 'aspectlib==1.1.1', 'six>=1.7',
     ],
     extras_require={
