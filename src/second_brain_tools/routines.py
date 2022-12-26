@@ -55,6 +55,84 @@ from second_brain_tools.time import Today
 from second_brain_tools.config import SECOND_BRAIN_DIRECTORY
 from second_brain_tools.directories import initial_check
 
+from second_brain_tools.daily_note import (
+    daily_note_routine_hour_00_pregenerate_check,
+    daily_note_routine_hour_01_pregenerate_check,
+    daily_note_routine_hour_02_pregenerate_check,
+    daily_note_routine_hour_03_pregenerate_check,
+    daily_note_routine_hour_04_pregenerate_check,
+    daily_note_routine_hour_05_pregenerate_check,
+    daily_note_routine_hour_06_pregenerate_check,
+    daily_note_routine_hour_07_pregenerate_check,
+    daily_note_routine_hour_08_pregenerate_check,
+    daily_note_routine_hour_09_pregenerate_check,
+    daily_note_routine_hour_10_pregenerate_check,
+    daily_note_routine_hour_11_pregenerate_check,
+    daily_note_routine_hour_12_pregenerate_check,
+    daily_note_routine_hour_13_pregenerate_check,
+    daily_note_routine_hour_14_pregenerate_check,
+    daily_note_routine_hour_15_pregenerate_check,
+    daily_note_routine_hour_16_pregenerate_check,
+    daily_note_routine_hour_17_pregenerate_check,
+    daily_note_routine_hour_18_pregenerate_check,
+    daily_note_routine_hour_19_pregenerate_check,
+    daily_note_routine_hour_20_pregenerate_check,
+    daily_note_routine_hour_21_pregenerate_check,
+    daily_note_routine_hour_22_pregenerate_check,
+    daily_note_routine_hour_23_pregenerate_check,
+    daily_note_routine_pregenerate_check,
+    daily_note_trackers_moc_pregenerate_check,
+    daily_note_moc_pregenerate_check,
+    daily_note_routine_hour_00_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_00_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_01_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_01_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_02_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_02_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_03_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_03_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_04_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_04_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_05_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_05_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_06_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_06_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_07_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_07_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_08_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_08_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_09_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_09_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_10_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_10_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_11_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_11_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_12_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_12_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_13_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_13_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_14_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_14_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_15_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_15_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_16_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_16_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_17_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_17_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_18_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_18_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_19_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_19_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_20_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_20_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_21_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_21_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_22_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_22_pomodora_2_pregenerate_check,
+    daily_note_routine_hour_23_pomodora_1_pregenerate_check,
+    daily_note_routine_hour_23_pomodora_2_pregenerate_check,
+)
+
 
 # Hour_00_Pomodora_1
 def capture_routine_hour_00_pomodora_1_file_creation(
@@ -3720,4 +3798,89 @@ def capture_routine_hour_23_pomodora_2(
 
 # Hour_23_Pomodora_2
 
+
 # A really heavy function to generate routine is being defined.
+def generate_routines():
+    daily_note_routine_pregenerate_check()
+    daily_note_routine_hour_00_pregenerate_check()
+    daily_note_routine_hour_01_pregenerate_check()
+    daily_note_routine_hour_02_pregenerate_check()
+    daily_note_routine_hour_03_pregenerate_check()
+    daily_note_routine_hour_04_pregenerate_check()
+    daily_note_routine_hour_05_pregenerate_check()
+    daily_note_routine_hour_06_pregenerate_check()
+    daily_note_routine_hour_07_pregenerate_check()
+    daily_note_routine_hour_08_pregenerate_check()
+    daily_note_routine_hour_09_pregenerate_check()
+    daily_note_routine_hour_10_pregenerate_check()
+    daily_note_routine_hour_11_pregenerate_check()
+    daily_note_routine_hour_12_pregenerate_check()
+    daily_note_routine_hour_13_pregenerate_check()
+    daily_note_routine_hour_14_pregenerate_check()
+    daily_note_routine_hour_15_pregenerate_check()
+    daily_note_routine_hour_16_pregenerate_check()
+    daily_note_routine_hour_17_pregenerate_check()
+    daily_note_routine_hour_18_pregenerate_check()
+    daily_note_routine_hour_19_pregenerate_check()
+    daily_note_routine_hour_20_pregenerate_check()
+    daily_note_routine_hour_21_pregenerate_check()
+    daily_note_routine_hour_22_pregenerate_check()
+    daily_note_routine_hour_23_pregenerate_check()
+
+
+def generate_daily_moc():
+    daily_note_moc_pregenerate_check()
+    daily_note_trackers_moc_pregenerate_check()
+    generate_routines()
+    generate_pomodoras()
+
+
+def generate_pomodoras():
+    daily_note_routine_hour_00_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_00_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_01_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_01_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_02_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_02_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_03_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_03_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_04_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_04_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_05_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_05_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_06_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_06_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_07_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_07_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_08_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_08_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_09_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_09_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_10_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_10_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_11_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_11_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_12_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_12_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_13_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_13_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_14_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_14_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_15_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_15_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_16_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_16_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_17_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_17_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_18_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_18_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_19_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_19_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_20_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_20_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_21_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_21_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_22_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_22_pomodora_2_pregenerate_check()
+    daily_note_routine_hour_23_pomodora_1_pregenerate_check()
+    daily_note_routine_hour_23_pomodora_2_pregenerate_check()
