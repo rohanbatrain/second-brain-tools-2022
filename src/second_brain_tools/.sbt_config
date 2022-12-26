@@ -1,0 +1,761 @@
+######## Default Variables Assignation Started 
+DIR_NOT_FOUND = "Wrong argument passed, the dir code you specified doesn't exist"
+FILE_ALREADY_EXIST = "File Exist Check => File exists."
+SECOND_BRAIN_DIRECTORY = "/home/rohan/Vaults/SBT_TOOLS_TESTING/"
+######## Default Variables Assignation Finished
+######## Append Options Started 
+
+# Include Time, Supported options are True/False; Default is set to True. 
+
+# Include Time at the end of bullet, numeric list?
+
+LIST_TIME_INCLUDE = 
+
+# Include Time at the start of Plain Text?
+
+PLAIN_TEXT_TIME_INCLUDE = 
+
+# What Text to append in before/after the content? Please don't leave spaces at the end of the string below, Time would be automatically added at the end of the line below with two spaces.
+
+TIME_APPEND_TEXT = This log was added at ->
+
+# Append Type Supported Options are 
+
+# -> Paragraph
+# -> Plain_Text
+# -> Bullet_List
+# -> Table
+
+# Set a global default to append functions. If a type is not passed explicitely in the function then this variable would be invoked.
+GLOBAL_APPEND_TYPE = Table
+
+# For Daily Notes 
+DNM_APPEND_TYPE = 
+DNBJ_APPEND_TYPE = 
+DNC_APPEND_TYPE = 
+DNE_APPEND_TYPE = 
+DNL_APPEND_TYPE = 
+DNR_APPEND_TYPE = 
+DNR2_APPEND_TYPE = 
+DNT_APPEND_TYPE = 
+DNT2_APPEND_TYPE = 
+DNTE_APPEND_TYPE = 
+DNTT_APPEND_TYPE = 
+DNTT2_APPEND_TYPE = 
+DNTL_APPEND_TYPE = 
+DNTL_APPEND_TYPE = 
+DNTM_APPEND_TYPE = 
+DNTM2_APPEND_TYPE = 
+DNTM3_APPEND_TYPE = 
+DNTS_APPEND_TYPE = 
+DNTS2_APPEND_TYPE = 
+DNTW_APPEND_TYPE = 
+
+# Hourly < Part of Daily_Note/Routines ; Started
+DNR2_HOUR_00_APPEND_TYPE = 
+DNR2_HOUR_01_APPEND_TYPE = 
+DNR2_HOUR_02_APPEND_TYPE = 
+DNR2_HOUR_03_APPEND_TYPE = 
+DNR2_HOUR_04_APPEND_TYPE = 
+DNR2_HOUR_05_APPEND_TYPE = 
+DNR2_HOUR_06_APPEND_TYPE = 
+DNR2_HOUR_07_APPEND_TYPE = 
+DNR2_HOUR_08_APPEND_TYPE = 
+DNR2_HOUR_09_APPEND_TYPE = 
+DNR2_HOUR_10_APPEND_TYPE = 
+DNR2_HOUR_11_APPEND_TYPE = 
+DNR2_HOUR_12_APPEND_TYPE = 
+DNR2_HOUR_13_APPEND_TYPE = 
+DNR2_HOUR_14_APPEND_TYPE = 
+DNR2_HOUR_15_APPEND_TYPE = 
+DNR2_HOUR_16_APPEND_TYPE = 
+DNR2_HOUR_17_APPEND_TYPE = 
+DNR2_HOUR_18_APPEND_TYPE = 
+DNR2_HOUR_19_APPEND_TYPE = 
+DNR2_HOUR_20_APPEND_TYPE = 
+DNR2_HOUR_21_APPEND_TYPE = 
+DNR2_HOUR_22_APPEND_TYPE = 
+DNR2_HOUR_23_APPEND_TYPE = 
+# Hourly < Part of Daily_Note/Routines ; Finished 
+
+# Pomodoras < Part of Daily_Note/Routines/Hourly ; Started
+DNR2_HOUR_1_POMODORA_00_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_00_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_01_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_01_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_02_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_02_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_03_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_03_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_04_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_04_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_05_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_05_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_06_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_06_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_07_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_07_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_08_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_08_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_09_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_09_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_10_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_10_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_11_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_11_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_12_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_12_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_13_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_13_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_14_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_14_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_15_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_15_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_16_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_16_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_17_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_17_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_18_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_18_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_19_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_19_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_20_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_20_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_21_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_21_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_22_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_22_APPEND_TYPE = 
+DNR2_HOUR_1_POMODORA_23_APPEND_TYPE = 
+DNR2_HOUR_2_POMODORA_23_APPEND_TYPE = 
+# Pomodoras < Part of Daily_Note/Routines/Hourly ; Finished
+# Routine Started, Please set your routines here.
+
+# Hour_00_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_00 ; Started
+CR_HOUR_00_POMODORA_1_TASK_NAME = 
+CR_HOUR_00_POMODORA_1_TASK_STATUS = 
+CR_HOUR_00_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_00_POMODORA_1_TASK_LABELS = 
+CR_HOUR_00_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_00_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_00_POMODORA_1_TASK_SUB_TASK = 
+# Hour_00_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_00_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_00_POMODORA_2_TASK_NAME = 
+CR_HOUR_00_POMODORA_2_TASK_STATUS = 
+CR_HOUR_00_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_00_POMODORA_2_TASK_LABELS = 
+CR_HOUR_00_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_00_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_00_POMODORA_2_TASK_SUB_TASK = 
+# Hour_00_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_00 ; Finished
+# Hour_01_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_01 ; Started
+CR_HOUR_01_POMODORA_1_TASK_NAME = 
+CR_HOUR_01_POMODORA_1_TASK_STATUS = 
+CR_HOUR_01_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_01_POMODORA_1_TASK_LABELS = 
+CR_HOUR_01_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_01_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_01_POMODORA_1_TASK_SUB_TASK = 
+# Hour_01_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_01_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_01_POMODORA_2_TASK_NAME = 
+CR_HOUR_01_POMODORA_2_TASK_STATUS = 
+CR_HOUR_01_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_01_POMODORA_2_TASK_LABELS = 
+CR_HOUR_01_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_01_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_01_POMODORA_2_TASK_SUB_TASK = 
+# Hour_01_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_01 ; Finished
+# Hour_02_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_02 ; Started
+CR_HOUR_02_POMODORA_1_TASK_NAME = 
+CR_HOUR_02_POMODORA_1_TASK_STATUS = 
+CR_HOUR_02_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_02_POMODORA_1_TASK_LABELS = 
+CR_HOUR_02_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_02_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_02_POMODORA_1_TASK_SUB_TASK = 
+# Hour_02_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_02_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_02_POMODORA_2_TASK_NAME = 
+CR_HOUR_02_POMODORA_2_TASK_STATUS = 
+CR_HOUR_02_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_02_POMODORA_2_TASK_LABELS = 
+CR_HOUR_02_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_02_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_02_POMODORA_2_TASK_SUB_TASK = 
+# Hour_02_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_02 ; Finished
+# Hour_03_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_03 ; Started
+CR_HOUR_03_POMODORA_1_TASK_NAME = 
+CR_HOUR_03_POMODORA_1_TASK_STATUS = 
+CR_HOUR_03_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_03_POMODORA_1_TASK_LABELS = 
+CR_HOUR_03_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_03_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_03_POMODORA_1_TASK_SUB_TASK = 
+# Hour_03_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_03_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_03_POMODORA_2_TASK_NAME = 
+CR_HOUR_03_POMODORA_2_TASK_STATUS = 
+CR_HOUR_03_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_03_POMODORA_2_TASK_LABELS = 
+CR_HOUR_03_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_03_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_03_POMODORA_2_TASK_SUB_TASK = 
+# Hour_03_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_03 ; Finished
+# Hour_04_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_04 ; Started
+CR_HOUR_04_POMODORA_1_TASK_NAME = 
+CR_HOUR_04_POMODORA_1_TASK_STATUS = 
+CR_HOUR_04_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_04_POMODORA_1_TASK_LABELS = 
+CR_HOUR_04_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_04_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_04_POMODORA_1_TASK_SUB_TASK = 
+# Hour_04_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_04_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_04_POMODORA_2_TASK_NAME = 
+CR_HOUR_04_POMODORA_2_TASK_STATUS = 
+CR_HOUR_04_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_04_POMODORA_2_TASK_LABELS = 
+CR_HOUR_04_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_04_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_04_POMODORA_2_TASK_SUB_TASK = 
+# Hour_04_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_04 ; Finished
+# Hour_05_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_05 ; Started
+CR_HOUR_05_POMODORA_1_TASK_NAME = 
+CR_HOUR_05_POMODORA_1_TASK_STATUS = 
+CR_HOUR_05_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_05_POMODORA_1_TASK_LABELS = 
+CR_HOUR_05_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_05_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_05_POMODORA_1_TASK_SUB_TASK = 
+# Hour_05_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_05_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_05_POMODORA_2_TASK_NAME = 
+CR_HOUR_05_POMODORA_2_TASK_STATUS = 
+CR_HOUR_05_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_05_POMODORA_2_TASK_LABELS = 
+CR_HOUR_05_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_05_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_05_POMODORA_2_TASK_SUB_TASK = 
+# Hour_05_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_05 ; Finished
+# Hour_06_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_06 ; Started
+CR_HOUR_06_POMODORA_1_TASK_NAME = 
+CR_HOUR_06_POMODORA_1_TASK_STATUS = 
+CR_HOUR_06_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_06_POMODORA_1_TASK_LABELS = 
+CR_HOUR_06_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_06_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_06_POMODORA_1_TASK_SUB_TASK = 
+# Hour_06_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_06_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_06_POMODORA_2_TASK_NAME = 
+CR_HOUR_06_POMODORA_2_TASK_STATUS = 
+CR_HOUR_06_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_06_POMODORA_2_TASK_LABELS = 
+CR_HOUR_06_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_06_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_06_POMODORA_2_TASK_SUB_TASK = 
+# Hour_06_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_06 ; Finished
+# Hour_07_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_07 ; Started
+CR_HOUR_07_POMODORA_1_TASK_NAME = 
+CR_HOUR_07_POMODORA_1_TASK_STATUS = 
+CR_HOUR_07_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_07_POMODORA_1_TASK_LABELS = 
+CR_HOUR_07_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_07_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_07_POMODORA_1_TASK_SUB_TASK = 
+# Hour_07_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_07_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_07_POMODORA_2_TASK_NAME = 
+CR_HOUR_07_POMODORA_2_TASK_STATUS = 
+CR_HOUR_07_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_07_POMODORA_2_TASK_LABELS = 
+CR_HOUR_07_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_07_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_07_POMODORA_2_TASK_SUB_TASK = 
+# Hour_07_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_07 ; Finished
+# Hour_08_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_08 ; Started
+CR_HOUR_08_POMODORA_1_TASK_NAME = 
+CR_HOUR_08_POMODORA_1_TASK_STATUS = 
+CR_HOUR_08_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_08_POMODORA_1_TASK_LABELS = 
+CR_HOUR_08_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_08_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_08_POMODORA_1_TASK_SUB_TASK = 
+# Hour_08_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_08_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_08_POMODORA_2_TASK_NAME = 
+CR_HOUR_08_POMODORA_2_TASK_STATUS = 
+CR_HOUR_08_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_08_POMODORA_2_TASK_LABELS = 
+CR_HOUR_08_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_08_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_08_POMODORA_2_TASK_SUB_TASK = 
+# Hour_08_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_08 ; Finished
+# Hour_09_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_09 ; Started
+CR_HOUR_09_POMODORA_1_TASK_NAME = 
+CR_HOUR_09_POMODORA_1_TASK_STATUS = 
+CR_HOUR_09_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_09_POMODORA_1_TASK_LABELS = 
+CR_HOUR_09_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_09_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_09_POMODORA_1_TASK_SUB_TASK = 
+# Hour_09_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_09_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_09_POMODORA_2_TASK_NAME = 
+CR_HOUR_09_POMODORA_2_TASK_STATUS = 
+CR_HOUR_09_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_09_POMODORA_2_TASK_LABELS = 
+CR_HOUR_09_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_09_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_09_POMODORA_2_TASK_SUB_TASK = 
+# Hour_09_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_09 ; Finished
+# Hour_10_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_10 ; Started
+CR_HOUR_10_POMODORA_1_TASK_NAME = 
+CR_HOUR_10_POMODORA_1_TASK_STATUS = 
+CR_HOUR_10_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_10_POMODORA_1_TASK_LABELS = 
+CR_HOUR_10_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_10_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_10_POMODORA_1_TASK_SUB_TASK = 
+# Hour_10_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_10_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_10_POMODORA_2_TASK_NAME = 
+CR_HOUR_10_POMODORA_2_TASK_STATUS = 
+CR_HOUR_10_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_10_POMODORA_2_TASK_LABELS = 
+CR_HOUR_10_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_10_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_10_POMODORA_2_TASK_SUB_TASK = 
+# Hour_10_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_10 ; Finished
+# Hour_11_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_11 ; Started
+CR_HOUR_11_POMODORA_1_TASK_NAME = 
+CR_HOUR_11_POMODORA_1_TASK_STATUS = 
+CR_HOUR_11_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_11_POMODORA_1_TASK_LABELS = 
+CR_HOUR_11_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_11_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_11_POMODORA_1_TASK_SUB_TASK = 
+# Hour_11_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_11_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_11_POMODORA_2_TASK_NAME = 
+CR_HOUR_11_POMODORA_2_TASK_STATUS = 
+CR_HOUR_11_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_11_POMODORA_2_TASK_LABELS = 
+CR_HOUR_11_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_11_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_11_POMODORA_2_TASK_SUB_TASK = 
+# Hour_11_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_11 ; Finished
+# Hour_12_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_12 ; Started
+CR_HOUR_12_POMODORA_1_TASK_NAME = 
+CR_HOUR_12_POMODORA_1_TASK_STATUS = 
+CR_HOUR_12_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_12_POMODORA_1_TASK_LABELS = 
+CR_HOUR_12_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_12_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_12_POMODORA_1_TASK_SUB_TASK = 
+# Hour_12_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_12_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_12_POMODORA_2_TASK_NAME = 
+CR_HOUR_12_POMODORA_2_TASK_STATUS = 
+CR_HOUR_12_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_12_POMODORA_2_TASK_LABELS = 
+CR_HOUR_12_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_12_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_12_POMODORA_2_TASK_SUB_TASK = 
+# Hour_12_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_12 ; Finished
+# Hour_13_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_13 ; Started
+CR_HOUR_13_POMODORA_1_TASK_NAME = 
+CR_HOUR_13_POMODORA_1_TASK_STATUS = 
+CR_HOUR_13_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_13_POMODORA_1_TASK_LABELS = 
+CR_HOUR_13_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_13_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_13_POMODORA_1_TASK_SUB_TASK = 
+# Hour_13_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_13_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_13_POMODORA_2_TASK_NAME = 
+CR_HOUR_13_POMODORA_2_TASK_STATUS = 
+CR_HOUR_13_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_13_POMODORA_2_TASK_LABELS = 
+CR_HOUR_13_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_13_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_13_POMODORA_2_TASK_SUB_TASK = 
+# Hour_13_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_13 ; Finished
+# Hour_14_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_14 ; Started
+CR_HOUR_14_POMODORA_1_TASK_NAME = 
+CR_HOUR_14_POMODORA_1_TASK_STATUS = 
+CR_HOUR_14_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_14_POMODORA_1_TASK_LABELS = 
+CR_HOUR_14_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_14_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_14_POMODORA_1_TASK_SUB_TASK = 
+# Hour_14_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_14_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_14_POMODORA_2_TASK_NAME = 
+CR_HOUR_14_POMODORA_2_TASK_STATUS = 
+CR_HOUR_14_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_14_POMODORA_2_TASK_LABELS = 
+CR_HOUR_14_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_14_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_14_POMODORA_2_TASK_SUB_TASK = 
+# Hour_14_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_14 ; Finished
+# Hour_15_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_15 ; Started
+CR_HOUR_15_POMODORA_1_TASK_NAME = 
+CR_HOUR_15_POMODORA_1_TASK_STATUS = 
+CR_HOUR_15_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_15_POMODORA_1_TASK_LABELS = 
+CR_HOUR_15_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_15_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_15_POMODORA_1_TASK_SUB_TASK = 
+# Hour_15_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_15_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_15_POMODORA_2_TASK_NAME = 
+CR_HOUR_15_POMODORA_2_TASK_STATUS = 
+CR_HOUR_15_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_15_POMODORA_2_TASK_LABELS = 
+CR_HOUR_15_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_15_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_15_POMODORA_2_TASK_SUB_TASK = 
+# Hour_15_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_15 ; Finished
+# Hour_16_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_16 ; Started
+CR_HOUR_16_POMODORA_1_TASK_NAME = 
+CR_HOUR_16_POMODORA_1_TASK_STATUS = 
+CR_HOUR_16_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_16_POMODORA_1_TASK_LABELS = 
+CR_HOUR_16_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_16_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_16_POMODORA_1_TASK_SUB_TASK = 
+# Hour_16_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_16_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_16_POMODORA_2_TASK_NAME = 
+CR_HOUR_16_POMODORA_2_TASK_STATUS = 
+CR_HOUR_16_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_16_POMODORA_2_TASK_LABELS = 
+CR_HOUR_16_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_16_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_16_POMODORA_2_TASK_SUB_TASK = 
+# Hour_16_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_16 ; Finished
+# Hour_17_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_17 ; Started
+CR_HOUR_17_POMODORA_1_TASK_NAME = 
+CR_HOUR_17_POMODORA_1_TASK_STATUS = 
+CR_HOUR_17_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_17_POMODORA_1_TASK_LABELS = 
+CR_HOUR_17_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_17_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_17_POMODORA_1_TASK_SUB_TASK = 
+# Hour_17_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_17_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_17_POMODORA_2_TASK_NAME = 
+CR_HOUR_17_POMODORA_2_TASK_STATUS = 
+CR_HOUR_17_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_17_POMODORA_2_TASK_LABELS = 
+CR_HOUR_17_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_17_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_17_POMODORA_2_TASK_SUB_TASK = 
+# Hour_17_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_17 ; Finished
+# Hour_18_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_18 ; Started
+CR_HOUR_18_POMODORA_1_TASK_NAME = 
+CR_HOUR_18_POMODORA_1_TASK_STATUS = 
+CR_HOUR_18_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_18_POMODORA_1_TASK_LABELS = 
+CR_HOUR_18_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_18_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_18_POMODORA_1_TASK_SUB_TASK = 
+# Hour_18_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_18_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_18_POMODORA_2_TASK_NAME = 
+CR_HOUR_18_POMODORA_2_TASK_STATUS = 
+CR_HOUR_18_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_18_POMODORA_2_TASK_LABELS = 
+CR_HOUR_18_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_18_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_18_POMODORA_2_TASK_SUB_TASK = 
+# Hour_18_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_18 ; Finished
+# Hour_19_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_19 ; Started
+CR_HOUR_19_POMODORA_1_TASK_NAME = 
+CR_HOUR_19_POMODORA_1_TASK_STATUS = 
+CR_HOUR_19_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_19_POMODORA_1_TASK_LABELS = 
+CR_HOUR_19_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_19_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_19_POMODORA_1_TASK_SUB_TASK = 
+# Hour_19_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_19_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_19_POMODORA_2_TASK_NAME = 
+CR_HOUR_19_POMODORA_2_TASK_STATUS = 
+CR_HOUR_19_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_19_POMODORA_2_TASK_LABELS = 
+CR_HOUR_19_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_19_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_19_POMODORA_2_TASK_SUB_TASK = 
+# Hour_19_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_19 ; Finished
+# Hour_20_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_20 ; Started
+CR_HOUR_20_POMODORA_1_TASK_NAME = 
+CR_HOUR_20_POMODORA_1_TASK_STATUS = 
+CR_HOUR_20_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_20_POMODORA_1_TASK_LABELS = 
+CR_HOUR_20_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_20_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_20_POMODORA_1_TASK_SUB_TASK = 
+# Hour_20_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_20_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_20_POMODORA_2_TASK_NAME = 
+CR_HOUR_20_POMODORA_2_TASK_STATUS = 
+CR_HOUR_20_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_20_POMODORA_2_TASK_LABELS = 
+CR_HOUR_20_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_20_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_20_POMODORA_2_TASK_SUB_TASK = 
+# Hour_20_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_20 ; Finished
+# Hour_21_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_21 ; Started
+CR_HOUR_21_POMODORA_1_TASK_NAME = 
+CR_HOUR_21_POMODORA_1_TASK_STATUS = 
+CR_HOUR_21_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_21_POMODORA_1_TASK_LABELS = 
+CR_HOUR_21_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_21_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_21_POMODORA_1_TASK_SUB_TASK = 
+# Hour_21_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_21_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_21_POMODORA_2_TASK_NAME = 
+CR_HOUR_21_POMODORA_2_TASK_STATUS = 
+CR_HOUR_21_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_21_POMODORA_2_TASK_LABELS = 
+CR_HOUR_21_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_21_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_21_POMODORA_2_TASK_SUB_TASK = 
+# Hour_21_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_21 ; Finished
+# Hour_22_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_22 ; Started
+CR_HOUR_22_POMODORA_1_TASK_NAME = 
+CR_HOUR_22_POMODORA_1_TASK_STATUS = 
+CR_HOUR_22_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_22_POMODORA_1_TASK_LABELS = 
+CR_HOUR_22_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_22_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_22_POMODORA_1_TASK_SUB_TASK = 
+# Hour_22_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_22_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_22_POMODORA_2_TASK_NAME = 
+CR_HOUR_22_POMODORA_2_TASK_STATUS = 
+CR_HOUR_22_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_22_POMODORA_2_TASK_LABELS = 
+CR_HOUR_22_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_22_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_22_POMODORA_2_TASK_SUB_TASK = 
+# Hour_22_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_22 ; Finished
+# Hour_23_POMODORA_1  < Part of Daily_Note/Routines/Hourly/Hour_23 ; Started
+CR_HOUR_23_POMODORA_1_TASK_NAME = 
+CR_HOUR_23_POMODORA_1_TASK_STATUS = 
+CR_HOUR_23_POMODORA_1_TASK_PRIORITY = 
+CR_HOUR_23_POMODORA_1_TASK_LABELS = 
+CR_HOUR_23_POMODORA_1_TASK_DEPENDENCIES = 
+CR_HOUR_23_POMODORA_1_TASK_PARENT_TASK = 
+CR_HOUR_23_POMODORA_1_TASK_SUB_TASK = 
+# Hour_23_POMODORA_1  < Part of Daily_Note/Routines/Hourly ; Finished
+# Hour_23_POMODORA_2  < Part of Daily_Note/Routines/Hourly ; Started
+CR_HOUR_23_POMODORA_2_TASK_NAME = 
+CR_HOUR_23_POMODORA_2_TASK_STATUS = 
+CR_HOUR_23_POMODORA_2_TASK_PRIORITY = 
+CR_HOUR_23_POMODORA_2_TASK_LABELS = 
+CR_HOUR_23_POMODORA_2_TASK_DEPENDENCIES = 
+CR_HOUR_23_POMODORA_2_TASK_PARENT_TASK = 
+CR_HOUR_23_POMODORA_2_TASK_SUB_TASK = 
+# Hour_23_POMODORA_2  < Part of Daily_Note/Routines/Hourly/Hour_23 ; Finished
+# Routine Finished, Please set your routines Above.
+######## Append Options Finished 
+
+######## Default Example Directories Defining Started #######
+example = "This/is/an/example/"
+example_elif = "This/is/an/example/"
+######## Default Example Directories Defining Finished #######
+
+######## Default Directories Defining Started #######
+_01 = "01_Capture-System/"
+_02 = "02_Production-System/"
+_03 = "03_Knowledge-Base/"
+_04 = "04_Evergreen/"
+_05 = "05_Projects/"
+_06 = "06_Personal/"
+_07 = "07_Attachments-and-Templates/"
+_08 = "08_Archive/"
+_01A = "01_Capture-System/01A_Inbox/"
+_01B = "01_Capture-System/01B_Processed/"
+_01B1 = "01_Capture-System/01B_Processed/01B1_Completed_Tasks/"
+_01B2 = "01_Capture-System/01B_Processed/01B2_Completed-Routine-Tasks/"
+_01B3 = "01_Capture-System/01B_Processed/01B3_Lists/"
+_01C = "01_Capture-System/01C_Periodic-Notes/"
+_01A1 = "01_Capture-System/01A_Inbox/01A1_Quick-Capture/"
+_01A2 = "01_Capture-System/01A_Inbox/01A2_Link-Capture/"
+_01A3 = "01_Capture-System/01A_Inbox/01A3_Thought-Capture/"
+_01A4 = "01_Capture-System/01A_Inbox/01A4_API-Capture/"
+_01A5 = "01_Capture-System/01A_Inbox/01A5_Shared-Vaults/"
+_01A6 = "01_Capture-System/01A_Inbox/01A6_Tasks/"
+_01A7 = "01_Capture-System/01A_Inbox/01A7_Log-Capture/"
+_01A8 = "01_Capture-System/01A_Inbox/01A8_Recommendation_Capture/"
+_01A9 = "01_Capture-System/01A_Inbox/01A9_Routine-Tasks/"
+_01A9A = "01_Capture-System/01A_Inbox/01A9_Routine-Tasks/01A9A_Pomodora-Task-1/"
+_01A9B = "01_Capture-System/01A_Inbox/01A9_Routine-Tasks/01A9B_Pomodora-Task-2/"
+_01A10 = "01_Capture-System/01A_Inbox/01A10_Reminders/"
+_01A11 = "01_Capture-System/01A_Inbox/01A11_Exercises/"
+_01A12 = "01_Capture-System/01A_Inbox/01A12_Meals/"
+_01A13 = "01_Capture-System/01A_Inbox/01A13_Medicines/"
+_01A14 = "01_Capture-System/01A_Inbox/01A14_Transactions/"
+_01A2A = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2A_Social-Networking/"
+_01A2B = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2B_Professional-Networking/"
+_01A2A1 = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2A_Social-Networking/01A2A1_Reddit/"
+_01A2B1 = "01_Capture-System/01A_Inbox/01A2_Link-Capture/01A2B_Professional-Networking/01A2B1_LinkedIn/"
+_01A8A = "01_Capture-System/01A_Inbox/01A8_Recommendation_Capture/01A8A_Books/"
+_01A8B = "01_Capture-System/01A_Inbox/01A8_Recommendation_Capture/01A8B_Movies/"
+_01A8C = "01_Capture-System/01A_Inbox/01A8_Recommendation_Capture/01A8C_Music/"
+_01A8D = "01_Capture-System/01A_Inbox/01A8_Recommendation_Capture/01A8D_Web-Series/"
+_01B = "01_Capture-System/01B_Processed/"
+_01C = "01_Capture-System/01C_Periodic-Notes/"
+_01B3A = "01_Capture-System/01B_Processed/01B3_Lists/01B3A_Playlists/"
+_01B3B = "01_Capture-System/01B_Processed/01B3_Lists/01B3B_Wishlists/"
+_01C1 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/"
+_01C1A = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1A_MOC/"
+_01C1B = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1B_Journal/"
+_01C1B1 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1B_Journal/01C1B1_Bullet-Journal/"
+_01C1C = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1C_Connections/"
+_01C1D = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1D_Events/"
+_01C1E = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1E_Location/"
+_01C1F = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1F_Reminders/"
+_01C1G = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/"
+_01C1G10 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G10_Hour-09/"
+_01C1G11 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G11_Hour-10/"
+_01C1G12 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G12_Hour-11/"
+_01C1G13 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G13_Hour-12/"
+_01C1G14 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G14_Hour-13/"
+_01C1G15 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G15_Hour-14/"
+_01C1G16 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G16_Hour-15/"
+_01C1G17 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G17_Hour-16/"
+_01C1G18 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G18_Hour-17/"
+_01C1G19 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G19_Hour-18/"
+_01C1G1 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G1_Hour-00/"
+_01C1G20 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G20_Hour-19/"
+_01C1G21 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G21_Hour-20/"
+_01C1G22 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G22_Hour-21/"
+_01C1G23 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G23_Hour-22/"
+_01C1G24 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G24_Hour-23/"
+_01C1G25 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G25_MOC/"
+_01C1G2 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G2_Hour-01/"
+_01C1G3 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G3_Hour-02/"
+_01C1G4 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G4_Hour-03/"
+_01C1G5 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G5_Hour-04/"
+_01C1G6 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G6_Hour-05/"
+_01C1G7 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G7_Hour-06/"
+_01C1G8 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G8_Hour-07/"
+_01C1G9 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1G_Routine/01C1G9_Hour-08/"
+_01C1H = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1H_Tasks/"
+_01C1I = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1I_Trackers/"
+_01C1I1 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1I_Trackers/01C1I1_Transaction/"
+_01C1I2 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1I_Trackers/01C1I2_Sleep/"
+_01C1I3 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1I_Trackers/01C1I3_Meal/"
+_01C1I4 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1I_Trackers/01C1I4_Medicine/"
+_01C1I5 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1I_Trackers/01C1I5_Mood/"
+_01C1I6 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1I_Trackers/01C1I6_Water/"
+_01C1I7 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1I_Trackers/01C1I7_Exercise/"
+_01C1I8 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1I_Trackers/01C1I8_Symptoms/"
+_01C1I9 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1I_Trackers/01C1I9_Location/"
+_01C1I10 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1I_Trackers/01C1I9_Link/"
+_01C1I11 = "01_Capture-System/01C_Periodic-Notes/01C1_Daily_Note/01C1I_Trackers/01C1I10_Thought/"
+_02A = "02_Production-System/02A_Youtube/"
+_02B = "02_Production-System/02B_Medium/"
+_02A1 = "02_Production-System/02A_Youtube/02A1_Videos/"
+_02A2 = "02_Production-System/02A_Youtube/02A2_Shorts/"
+_02A3 = "02_Production-System/02A_Youtube/02A3_Stories/"
+_02B1 = "02_Production-System/02B_Medium/02B1_Articles/"
+_03A = "03_Knowledge-Base/03A_Science/"
+_03B = "03_Knowledge-Base/03B_Languages/"
+_03C = "03_Knowledge-Base/03C_IT-Skills/"
+_03D = "03_Knowledge-Base/03D_Theology/"
+_03A1 = "03_Knowledge-Base/03A_Science/03A1_Chemistry/"
+_03A2 = "03_Knowledge-Base/03A_Science/03A2_Computer-Science/"
+_03A3 = "03_Knowledge-Base/03A_Science/03A3_Mathematics/"
+_03A4 = "03_Knowledge-Base/03A_Science/03A4_Physics/"
+_03B1 = "03_Knowledge-Base/03B_Languages/03B1_Hindi/"
+_03B2 = "03_Knowledge-Base/03B_Languages/03B2_English/"
+_03B3 = "03_Knowledge-Base/03B_Languages/03B3_Sanskrit/"
+_03B4 = "03_Knowledge-Base/03B_Languages/03B4_Japanese/"
+_03B5 = "03_Knowledge-Base/03B_Languages/03B5_Bengali/"
+_03B6 = "03_Knowledge-Base/03B_Languages/03B6_Korean/"
+_03B7 = "03_Knowledge-Base/03B_Languages/03B7_Punjabi/"
+_03B8 = "03_Knowledge-Base/03B_Languages/03B8_Russian/"
+_03B9 = "03_Knowledge-Base/03B_Languages/03B9_French/"
+_03B10 = "03_Knowledge-Base/03B_Languages/03B10_Spanish/"
+_03B11 = "03_Knowledge-Base/03B_Languages/03B11_Urdu/"
+_03C1 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/"
+_03C2 = "03_Knowledge-Base/03C_IT-Skills/03C2_Machine-Learning/"
+_03C3 = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/"
+_03C4 = "03_Knowledge-Base/03C_IT-Skills/03C4_System-Administration/"
+_03C1A = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/"
+_03C1B = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1B_Programming-Projects/"
+_03C1C = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1C_Query-Languages/"
+_03C1A1 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A1_Bash/"
+_03C1A2 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A2_Python/"
+_03C1A3 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A3_C-Lang/"
+_03C1A4 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A4_Javascript/"
+_03C1A5 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A5_Dart/"
+_03C1A6 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A6_Flutter/"
+_03C1A7 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A7_C++/"
+_03C1A8 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A8_TypeScript/"
+_03C1A9 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A9_Java/"
+_03C1A10 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A10_C-Sharp/"
+_03C1A11 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A11_PHP/"
+_03C1A12 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A12_Groovy/"
+_03C1A13 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A13_Ruby/"
+_03C1A14 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A14_Rust/"
+_03C1A15 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A15_Kotlin/"
+_03C1A16 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A16_Golang/"
+_03C1A17 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A17_Perl/"
+_03C1A18 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1A_Programming-Languages/03C1A18_Visual-Basic-Dot-Net/"
+_03C1B1 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1B_Programming-Projects/Project-1/"
+_03C1C1 = "03_Knowledge-Base/03C_IT-Skills/03C1_Programming/03C1C_Query-Languages/03C1C1_SQL/"
+_03C2A = "03_Knowledge-Base/03C_IT-Skills/03C2_Machine-Learning/03C2A_Reinforcement-Learning/"
+_03C2B = "03_Knowledge-Base/03C_IT-Skills/03C2_Machine-Learning/03C2B_Deep-Learning/"
+_03C3A = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/"
+_03C3B = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3B_Operating-System/"
+_03C3A1 = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A1__Unreal-Engine/"
+_03C3A2 = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A2__Blender/"
+_03C3A3 = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A3__Unity/"
+_03C3A4 = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3A_Application/03C3A4__MariaDB/"
+_03C3B1 = "03_Knowledge-Base/03C_IT-Skills/03C3_Software/03C3B_Operating-System/03C3B1_Linux/"
+_03C4A = "03_Knowledge-Base/03C_IT-Skills/03C4_System-Administration/03C4A_Web-Servers/"
+_03D1 = "03_Knowledge-Base/03D_Theology/03D1_Hinduism/"
+_03D2 = "03_Knowledge-Base/03D_Theology/03D2_Sikhism/"
+_03D3 = "03_Knowledge-Base/03D_Theology/03D3_Buddhism/"
+_03D4 = "03_Knowledge-Base/03D_Theology/03D4_Islam/"
+_03D5 = "03_Knowledge-Base/03D_Theology/03D5_Christianity/"
+_04A = "04_Evergreen/04A_Network/"
+_04B = "04_Evergreen/04B_Events/"
+_04C = "04_Evergreen/04C_Locations/"
+_04D = "04_Evergreen/04D_Bullet-Journal/"
+_04A1 = "04_Evergreen/04A_Network/04A1_Bros/"
+_04A2 = "04_Evergreen/04A_Network/04A2_Class-Room/"
+_04A3 = "04_Evergreen/04A_Network/04A3_Social-Media/"
+_04A4 = "04_Evergreen/04A_Network/04A4_Friends/"
+_04A5 = "04_Evergreen/04A_Network/04A5_Family/"
+_04A6 = "04_Evergreen/04A_Network/04A6_Corporate/"
+_04A7 = "04_Evergreen/04A_Network/04A7_Relatives/"
+_04A99 = "04_Evergreen/04A_Network/04A99_Miscellaneous/"
+_04B1 = "04_Evergreen/04B_Events/04B1_Incidents/"
+_04B2 = "04_Evergreen/04B_Events/04B2_Planned-Events/"
+_04C1 = "04_Evergreen/04C_Locations/04C1_School/"
+_05A = "05_Projects/05A_Brands/"
+_05B = "05_Projects/05B_Startup/"
+_05C = "05_Projects/05C_Business/"
+_05D = "05_Projects/05D_Story-Writing/"
+_05E = "05_Projects/05E_Competitions/"
+_06A = "06_Personal/06A_Brand/"
+_06B = "06_Personal/06B_Projects/"
+_06A1 = "06_Personal/06A_Brand/06A1_Brand-1/"
+_06B1 = "06_Personal/06B_Projects/06B1_Home-Lab/"
+_07A = "07_Attachments-and-Templates/07A_Attachments/"
+_07A1 = "07_Attachments-and-Templates/07A_Attachments/07A1_Memories/"
+_07A2 = "07_Attachments-and-Templates/07A_Attachments/07A2_Shared-Vaults/"
+_07B = "07_Attachments-and-Templates/07B_Templates/"
+_07B1 = "07_Attachments-and-Templates/07B_Templates/07B1_Periodic-Notes/"
+
+######## Default Directories Defining Finished ###### 
+
