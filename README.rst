@@ -84,6 +84,12 @@ To use the project:
 
     from second_brain_tools import cli  
     cli.main()
+    
+Or from your terminal
+
+.. code-block:: bash
+
+    second-brain-tools --help
 
 
 Development
