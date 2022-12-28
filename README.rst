@@ -67,7 +67,7 @@ Installation
 
 ::
 
-    pip install second-brain-tools
+    pip3 install second-brain-tools
 
 You can also install the in-development version with::
 
