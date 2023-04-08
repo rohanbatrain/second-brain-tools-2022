@@ -1,5 +1,5 @@
 ========
-EOF
+EOL
 ========
 
 The project has been flagged as EOL (End of Life) on December 2022. Moving forward to more simplistic approach for better automation and other changes. You can still use the structure but please dont expect more updates or support.
