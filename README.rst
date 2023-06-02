@@ -83,8 +83,6 @@ You can also install the in-development version with::
 Documentation
 =============
 
-Please note the developement is paused for 3 months due to 12th -> (CBSE BOARDS 2023) 
-
 To use the project:
 
 .. code-block:: python
