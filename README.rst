@@ -96,9 +96,7 @@ Or from your terminal
 
     second-brain-tools --help
     
-Currently no time for writing docs, join me on the discussion on obsidian forums.
 
-https://forum.obsidian.md/t/second-brain-vault-template-cli/50758
 
 
 
