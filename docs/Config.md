@@ -37,5 +37,8 @@ Lets see each one in action.
 
 ![sbt-config-setup-local-dir](https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/ac312f87-d716-4f6f-9100-6a7a4116e0f3)
 
-2. Remote Github Directory
+2. Your Git Repository
 
+![sbt-config-setup-config-already-exist](https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/83388df6-2251-45aa-b546-ae65ded906aa)
+
+3. Our Github Repository
