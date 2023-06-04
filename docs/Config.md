@@ -42,3 +42,5 @@ Lets see each one in action.
 ![sbt-config-setup-config-already-exist](https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/83388df6-2251-45aa-b546-ae65ded906aa)
 
 3. Our Github Repository
+
+![sbt-config-setup-our-github-repo](https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/4dc6a80a-100a-44b6-a4fe-c784eaf6d6f0)
