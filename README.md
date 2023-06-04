@@ -2,6 +2,7 @@
 
 I am releasing a hotfix for the PyPI package, version 0.0.4. This update addresses a minor issue caused by a change in the naming scheme of GitHub repositories, which was preventing the package from building properly in all Python environments. Additionally, I would like to inform you that support for pypy37 has been discontinued. 
 
+I am currently addressing the challenges caused by the insufficient documentation and actively working on improving it.
 
 # EOL
 
@@ -30,9 +31,12 @@ This project is a toolset for Second Brain. It helps to quickly and efficiently 
 
 # Installation
 
-```bash
-pip3 install second-brain-tools
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/91c98561-b5de-4e76-9abe-09f4916724db">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/91c98561-b5de-4e76-9abe-09f4916724db">
+  <img width="600" alt="Installing second-brain-tools" src="https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/91c98561-b5de-4e76-9abe-09f4916724db">
+</picture>
+
 
 You can also install the in-development version with:
 
@@ -51,9 +55,11 @@ cli.main()
 
 Or from your terminal:
 
-```bash
-second-brain-tools --help
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/b33f560b-add4-43c9-a68b-e03981eaaaf1">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/b33f560b-add4-43c9-a68b-e03981eaaaf1">
+  <img width="1920" alt="Installing second-brain-tools" src="https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/b33f560b-add4-43c9-a68b-e03981eaaaf1">
+</picture>
 
 # Development
 
