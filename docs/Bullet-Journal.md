@@ -1,6 +1,6 @@
 # Bullet Journal
 
-You have the option to handle your bullet journal using a command-line interface (CLI) application, which offers two supported methods. The first method, CLI, caters to individuals operating within an interactive shell. The second method involves utilizing flags, specifically designed for those who desire scripting capabilities within their specific shell. Let's see each one in action.
+You have the option to handle your bullet journal using second-brain-tools, which offers two supported methods. The first method, CLI, caters to individuals operating within an interactive shell. The second method involves utilizing flags, specifically designed for those who desire scripting capabilities within their specific shell. Let's see each one in action.
 
 ## Options
 
