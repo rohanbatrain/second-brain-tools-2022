@@ -7,7 +7,7 @@ from rich import print
 
 
 # Default variable assignation started.
-DEFAULT_GIT_URL = "https://github.com/rohanbatrain/Second-Brain"
+DEFAULT_GIT_URL = "https://github.com/rohanbatrain/Second-Brain-2022"
 NO_VAULT = f"""A Second Brain Vault is required in order to run this script
 \n You can get a copy from : {DEFAULT_GIT_URL}"""
 # Default variable assignation completed
