@@ -12,3 +12,15 @@ Users are advised to exercise caution and discretion when utilizing the tools an
 * `second-brain-tools --show-completion [bash|zsh|fish|powershell|pwsh]` - shows completion  for your desired shell.
 
 ![second-brain-tools_help-message.gif](https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/b33f560b-add4-43c9-a68b-e03981eaaaf1)
+
+
+## Alias
+
+
+* `sbt --help` - Display Help.
+* `sbt --install-completion [bash|zsh|fish|powershell|pwsh] ` - Install auto completion for your desired shell.
+* `sbt --show-completion [bash|zsh|fish|powershell|pwsh]` - shows completion  for your desired shell.
+
+![sbt-help](https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/cbb971f0-7c16-43a9-9185-f296b909753e)
+
+
