@@ -13,3 +13,9 @@ You have the option to handle your bullet journal using a command-line interface
 You would automatically drop in to interactive mode if no flags are passed.
 
 ![sbt-bj-interactive](https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/55dd955d-fc50-40d8-94f6-ec950c227d10)
+
+## Scripting mode 
+
+You would use this in your prefered scripting language in the following way.
+
+![sbt-bj-scripting](https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/31fe3b4c-804c-4aec-b7be-218b9fc50198)
