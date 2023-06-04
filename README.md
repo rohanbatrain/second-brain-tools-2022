@@ -18,7 +18,7 @@ The project has been flagged as EOL (End of Life) on December 2022. Moving forwa
 [![PyPI Wheel](https://img.shields.io/pypi/wheel/second-brain-tools.svg)](https://pypi.org/project/second-brain-tools)
 [![Supported versions](https://img.shields.io/pypi/pyversions/second-brain-tools.svg)](https://pypi.org/project/second-brain-tools)
 [![Supported implementations](https://img.shields.io/pypi/implementation/second-brain-tools.svg)](https://pypi.org/project/second-brain-tools)
-[![Commits since latest release](https://img.shields.io/github/commits-since/rohanbatrain/Second-Brain-Tools/v0.0.3.svg)](https://github.com/rohanbatrain/Second-Brain-Tools/compare/v0.0.3...main)
+[![Commits since latest release](https://img.shields.io/github/commits-since/rohanbatrain/Second-Brain-Tools/v0.0.4.svg)](https://github.com/rohanbatrain/Second-Brain-Tools/compare/v0.0.4...main)
 
 This project is a toolset for Second Brain. It helps to quickly and efficiently create notes using Second Brain Vault.
 
