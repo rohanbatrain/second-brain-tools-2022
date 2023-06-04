@@ -5,7 +5,7 @@ Please note that the Second-Brain-Tools project is intended solely as a public a
 Users are advised to exercise caution and discretion when utilizing the tools and content available in Second-Brain-Tools. We do not assume any responsibility for any errors, omissions, or consequences arising from the use of this project.
 
 
-## Commands
+## Options
 
 * `second-brain-tools --help` - Display Help.
 * `second-brain-tools --install-completion [bash|zsh|fish|powershell|pwsh] ` - Install auto completion for your desired shell.
