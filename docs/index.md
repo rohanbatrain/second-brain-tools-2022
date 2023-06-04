@@ -1,17 +1,15 @@
-# Welcome to MkDocs
+# Welcome to Second-Brain-Tools
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Please note that the Second-Brain-Tools project is intended solely as a public archive and is not to be considered a production version. The tools provided within this project are meant for informational and educational purposes only. While efforts have been made to ensure the accuracy and reliability of the information, we cannot guarantee its completeness or suitability for any specific purpose.
+
+Users are advised to exercise caution and discretion when utilizing the tools and content available in Second-Brain-Tools. We do not assume any responsibility for any errors, omissions, or consequences arising from the use of this project.
+
 
 ## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* `second-brain-tools --help` - Display Help.
+* `second-brain-tools --install-completion [bash|zsh|fish|powershell|pwsh] ` - Install auto completion for your desired shell.
+* `second-brain-tools --show-completion [bash|zsh|fish|powershell|pwsh]` - shows completion  for your desired shell.
+* `second-brain-tools ` - Print help message and exit.
 
-## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
