@@ -1,3 +1,8 @@
+# 2023
+
+Hotfixing the pypi with v0.0.4 due to a slight change in naming scheme of github repositories due to which the build was not working on any python environment. Further, support has been seized for pypy37. 
+
+
 # EOL
 
 The project has been flagged as EOL (End of Life) on December 2022. Moving forward to more simplistic approach for better automation and other changes. You can still use the structure but please dont expect more updates or support.
