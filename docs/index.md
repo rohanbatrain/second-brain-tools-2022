@@ -10,6 +10,5 @@ Users are advised to exercise caution and discretion when utilizing the tools an
 * `second-brain-tools --help` - Display Help.
 * `second-brain-tools --install-completion [bash|zsh|fish|powershell|pwsh] ` - Install auto completion for your desired shell.
 * `second-brain-tools --show-completion [bash|zsh|fish|powershell|pwsh]` - shows completion  for your desired shell.
-* `second-brain-tools ` - Print help message and exit.
 
-![](https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/b33f560b-add4-43c9-a68b-e03981eaaaf1)
+![second-brain-tools_help-message.gif](https://github.com/rohanbatrain/Second-Brain-Tools-2022/assets/116573125/b33f560b-add4-43c9-a68b-e03981eaaaf1)
