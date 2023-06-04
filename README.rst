@@ -1,134 +1,74 @@
-========
-EOL
-========
+# EOL
 
 The project has been flagged as EOL (End of Life) on December 2022. Moving forward to more simplistic approach for better automation and other changes. You can still use the structure but please dont expect more updates or support.
 
+## Overview
 
-Overview
-========
+[![GitHub Actions Build Status](https://github.com/rohanbatrain/Second-Brain-Tools/actions/workflows/pylint.yml/badge.svg)](https://github.com/rohanbatrain/Second-Brain-Tools/actions/)
+[![GitHub Actions Build Status](https://github.com/rohanbatrain/Second-Brain-Tools/actions/workflows/build.yml/badge.svg)](https://github.com/rohanbatrain/Second-Brain-Tools/actions/)
+[![GitHub Actions Build Status](https://github.com/rohanbatrain/Second-Brain-Tools/actions/workflows/mkdocs.yml/badge.svg)](https://github.com/rohanbatrain/Second-Brain-Tools/actions/)
+[![Coverage Status](https://codecov.io/gh/rohanbatrain/Second-Brain-Tools/branch/main/graphs/badge.svg?branch=main)](https://codecov.io/github/rohanbatrain/Second-Brain-Tools)
+[![PyPI Package latest release](https://img.shields.io/pypi/v/second-brain-tools.svg)](https://pypi.org/project/second-brain-tools)
+[![PyPI Wheel](https://img.shields.io/pypi/wheel/second-brain-tools.svg)](https://pypi.org/project/second-brain-tools)
+[![Supported versions](https://img.shields.io/pypi/pyversions/second-brain-tools.svg)](https://pypi.org/project/second-brain-tools)
+[![Supported implementations](https://img.shields.io/pypi/implementation/second-brain-tools.svg)](https://pypi.org/project/second-brain-tools)
+[![Commits since latest release](https://img.shields.io/github/commits-since/rohanbatrain/Second-Brain-Tools/v0.0.3.svg)](https://github.com/rohanbatrain/Second-Brain-Tools/compare/v0.0.3...main)
 
-.. start-badges
+This project is a toolset for Second Brain. It helps to quickly and efficiently create notes using Second Brain Vault.
 
-.. list-table::
-    :stub-columns: 1
+- Free software: Apache Software License 2.0
 
-    * - tests
-      - | |pylint| |build| |mkdocs| |codecov|
-    * - package
-      - | |version| |wheel| |supported-versions| |supported-implementations|
-        | |commits-since|
+## Prerequisites
 
-.. |pylint| image:: https://github.com/rohanbatrain/Second-Brain-Tools/actions/workflows/pylint.yml/badge.svg
-    :alt: GitHub Actions Build Status
-    :target: https://github.com/rohanbatrain/Second-Brain-Tools/actions/
-    
-.. |build| image:: https://github.com/rohanbatrain/Second-Brain-Tools/actions/workflows/build.yml/badge.svg
-    :alt: GitHub Actions Build Status
-    :target: https://github.com/rohanbatrain/Second-Brain-Tools/actions/
+1. Make sure you have Python 3 and pip installed.
+2. Please install Git on your specific system in order to run this code.
 
-.. |mkdocs| image:: https://github.com/rohanbatrain/Second-Brain-Tools/actions/workflows/mkdocs.yml/badge.svg
-    :alt: GitHub Actions Build Status
-    :target: https://github.com/rohanbatrain/Second-Brain-Tools/actions/
+# Installation
 
-.. |codecov| image:: https://codecov.io/gh/rohanbatrain/Second-Brain-Tools/branch/main/graphs/badge.svg?branch=main
-    :alt: Coverage Status
-    :target: https://codecov.io/github/rohanbatrain/Second-Brain-Tools
+```bash
+pip3 install second-brain-tools
+```
 
-.. |requires| image:: https://requires.io/github/rohanbatrain/Second-Brain-Tools/requirements.svg?branch=main
-    :alt: Requirements Status
-    :target: https://requires.io/github/rohanbatrain/Second-Brain-Tools/requirements/?branch=main
+You can also install the in-development version with:
 
-.. |version| image:: https://img.shields.io/pypi/v/second-brain-tools.svg
-    :alt: PyPI Package latest release
-    :target: https://pypi.org/project/second-brain-tools
+```bash
+pip install https://github.com/rohanbatrain/Second-Brain-Tools/archive/main.zip
+```
 
-.. |wheel| image:: https://img.shields.io/pypi/wheel/second-brain-tools.svg
-    :alt: PyPI Wheel
-    :target: https://pypi.org/project/second-brain-tools
-
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/second-brain-tools.svg
-    :alt: Supported versions
-    :target: https://pypi.org/project/second-brain-tools
-
-.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/second-brain-tools.svg
-    :alt: Supported implementations
-    :target: https://pypi.org/project/second-brain-tools
-
-.. |commits-since| image:: https://img.shields.io/github/commits-since/rohanbatrain/Second-Brain-Tools/v0.0.3.svg
-    :alt: Commits since latest release
-    :target: https://github.com/rohanbatrain/Second-Brain-Tools/compare/v0.0.3...main
-
-
-
-.. end-badges
-
-This project is a toolset for Second Brain, This would help us to quickly and more efficiently create notes using
-Second Brain Vault.
-
-* Free software: Apache Software License 2.0
-
-
-Prerequisites 
-============
-
-1. make sure you have python3 and pip installed.
-2. please install git on your specific system in order to run this code.
-
-
-Installation
-============
-
-::
-
-    pip3 install second-brain-tools
-
-You can also install the in-development version with::
-
-    pip install https://github.com/rohanbatrain/Second-Brain-Tools/archive/main.zip
-
-
-Documentation
-=============
+# Documentation
 
 To use the project:
 
-.. code-block:: python
+```python
+from second_brain_tools import cli  
+cli.main()
+```
 
-    from second_brain_tools import cli  
-    cli.main()
-    
-Or from your terminal
+Or from your terminal:
 
-.. code-block:: bash
+```bash
+second-brain-tools --help
+```
 
-    second-brain-tools --help
-    
+# Development
 
+To run all the tests, run:
 
+```bash
+tox
+```
 
+Note, to combine the coverage data from all the tox environments, run the following commands based on your operating system:
 
+- Windows:
 
-Development
-===========
+```bash
+set PYTEST_ADDOPTS=--cov-append
+tox
+```
 
-To run all the tests run::
+- Other:
 
-    tox
-
-Note, to combine the coverage data from all the tox environments run:
-
-.. list-table::
-    :widths: 10 90
-    :stub-columns: 1
-
-    - - Windows
-      - ::
-
-            set PYTEST_ADDOPTS=--cov-append
-            tox
-
-    - - Other
-      - ::
-
-            PYTEST_ADDOPTS=--cov-append tox
+```bash
+PYTEST_ADDOPTS=--cov-append tox
+```
