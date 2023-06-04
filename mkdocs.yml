@@ -5,6 +5,7 @@ theme:
 nav:
     - Home: index.md
     - Config: Config.md
+      - .sbt_config: SBT-Config.md
     - Bullet-Journal: Bullet-Journal.md
     - Capture: Capture.md
     - Daily-Note: Daily-Note.md
