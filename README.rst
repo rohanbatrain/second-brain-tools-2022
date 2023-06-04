@@ -68,6 +68,14 @@ Second Brain Vault.
 
 * Free software: Apache Software License 2.0
 
+
+Prerequisites 
+============
+
+1. make sure you have python3 and pip installed.
+2. please install git on your specific system in order to run this code.
+
+
 Installation
 ============
 
