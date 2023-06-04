@@ -1,6 +1,6 @@
 # 2023
 
-Hotfixing the pypi with v0.0.4 due to a slight change in naming scheme of github repositories due to which the build was not working on any python environment. Further, support has been seized for pypy37. 
+Hotfixing the pypi package with v0.0.4 due to a slight change in naming scheme of github repositories due to which the build was not working on any python environment. Further, support has been seized for pypy37. 
 
 
 # EOL
