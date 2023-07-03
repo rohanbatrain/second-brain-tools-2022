@@ -2,7 +2,7 @@
 
 ## July
 
-The partial documentation to get you started is live [here[(https://rohanbatrain.github.io/second-brain-tools-2022/). No plans for making any further documentation or hotfixes for this project.
+The partial documentation to get you started is live [here](https://rohanbatrain.github.io/second-brain-tools-2022/). No plans for making any further documentation or hotfixes for this project.
 
 
 ## June
