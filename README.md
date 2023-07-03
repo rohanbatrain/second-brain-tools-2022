@@ -1,5 +1,12 @@
 # 2023
 
+## July
+
+The partial documentation to get you started is live [here[(https://rohanbatrain.github.io/second-brain-tools-2022/). No plans for making any further documentation or hotfixes for this project.
+
+
+## June
+
 I am releasing a hotfix for the PyPI package, version 0.0.4. This update addresses a minor issue caused by a change in the naming scheme of GitHub repositories, which was preventing the package from building properly in all Python environments. Additionally, I would like to inform you that support for pypy37 has been discontinued. 
 
 I am currently addressing the challenges caused by the insufficient documentation and actively working on improving it.
