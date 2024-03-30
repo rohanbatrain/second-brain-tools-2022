@@ -1,3 +1,7 @@
+# 2024
+
+We are making minor upgrades to adapt this project for integration into my Semester-2 college assignment.
+
 # 2023
 
 ## July
