@@ -4,6 +4,9 @@ This project is no longer maintained as our focus has shifted. Although flagged 
 
 # Second Brain Tools
 
+![2](https://github.com/user-attachments/assets/6d8b07da-20e0-420c-8463-530c7de073e3)
+
+
 [![GitHub Actions Build Status](https://github.com/rohanbatrain/Second-Brain-Tools/actions/workflows/pylint.yml/badge.svg)](https://github.com/rohanbatrain/Second-Brain-Tools/actions/)
 [![GitHub Actions Build Status](https://github.com/rohanbatrain/Second-Brain-Tools/actions/workflows/build.yml/badge.svg)](https://github.com/rohanbatrain/Second-Brain-Tools/actions/)
 [![GitHub Actions Build Status](https://github.com/rohanbatrain/Second-Brain-Tools/actions/workflows/mkdocs.yml/badge.svg)](https://github.com/rohanbatrain/Second-Brain-Tools/actions/)
