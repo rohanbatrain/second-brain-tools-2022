@@ -2,6 +2,8 @@
 
 This project is no longer maintained as our focus has shifted. Although flagged as End of Life (EOL) since December 2022, Second Brain Tools remains available for reference and legacy purposes.
 
+docs : https://rohanbatrain.github.io/second-brain-tools-2022/
+
 # Second Brain Tools
 
 ![2](https://github.com/user-attachments/assets/6d8b07da-20e0-420c-8463-530c7de073e3)
